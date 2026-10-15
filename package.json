@@ -1,0 +1,29 @@
+{
+  "name": "magyar-path",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "validate": "tsx scripts/validate.ts",
+    "build": "npm run validate && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "teacher-hash": "tsx scripts/teacher-hash.ts"
+  },
+  "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "5.2.8",
+    "@fontsource/atkinson-hyperlegible": "5.2.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.3",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "@vitejs/plugin-react": "4.4.1",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
+    "vite": "6.3.5",
+    "zod": "3.24.4"
+  }
+}
