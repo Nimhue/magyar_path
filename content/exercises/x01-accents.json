@@ -1,0 +1,25 @@
+{
+  "id": "x01-accents",
+  "lesson": "l01-abece",
+  "title": "Ékezetek",
+  "titleEn": "Accent marks",
+  "intro": "One small mark, a different word. Listen carefully and read the accents.",
+  "items": [
+    { "type": "listen", "say": "ágy", "options": ["agy", "ágy"], "answer": "ágy", "explain": "ágy = bed, agy = brain" },
+    { "type": "listen", "say": "hat", "options": ["hat", "hát"], "answer": "hat", "explain": "hat = six, hát = back / well" },
+    { "type": "listen", "say": "egér", "options": ["Eger", "egér"], "answer": "egér", "explain": "egér = mouse, Eger = a city" },
+    { "type": "listen", "say": "őrült", "options": ["örült", "őrült"], "answer": "őrült", "explain": "őrült = crazy, örült = was happy" },
+    { "type": "choice", "prompt": "Ez egy ___. (This is a bed.)", "options": ["agy", "ágy"], "answer": "ágy" },
+    { "type": "choice", "prompt": "What does “fél” mean?", "options": ["up", "half / is afraid"], "answer": "half / is afraid", "explain": "fel = up, fél = half / is afraid" },
+    { "type": "choice", "prompt": "What does “tőr” mean?", "options": ["to break", "dagger"], "answer": "dagger" },
+    { "type": "match", "prompt": "Match each word to its meaning.", "pairs": [
+      { "left": "agy", "right": "brain" },
+      { "left": "hát", "right": "back" },
+      { "left": "tör", "right": "breaks" },
+      { "left": "fel", "right": "up" }
+    ] },
+    { "type": "choice", "prompt": "Which vowel is the long version of ö?", "options": ["ó", "ő", "ü", "ű"], "answer": "ő", "explain": "ö and ü get a double mark when long: ő, ű." },
+    { "type": "type", "prompt": "Write the word for “six”.", "answer": "hat" },
+    { "type": "type", "prompt": "Write the word for “mouse”.", "answer": "egér" }
+  ]
+}

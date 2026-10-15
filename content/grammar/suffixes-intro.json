@@ -1,0 +1,25 @@
+{
+  "id": "suffixes-intro",
+  "order": 6,
+  "title": "Az első végződések",
+  "titleEn": "Your first word endings",
+  "level": "A1",
+  "lesson": "l03-oran",
+  "summary": "Hungarian builds meaning by adding endings to words. Three you have already met: -hat/-het, -an/-en and -ul/-ül.",
+  "sections": [
+    { "type": "text", "text": "Instead of extra words, Hungarian often adds an **ending** (végződés). Most endings have a back and a front version, chosen by vowel harmony." },
+    {
+      "type": "table",
+      "head": ["Ending", "Meaning", "Example"],
+      "rows": [
+        ["**-hat / -het**", "can, may (on verbs)", "kérdez → kérdez**het**ek (may I ask)"],
+        ["**-an / -en**", "-ly (makes an adverb)", "lassú → lass**an** (slowly)"],
+        ["**-abb / -ebb**", "-er (comparing)", "lassú → lass**abb** (slower)"],
+        ["**-ul / -ül**", "in a language", "magyar → magyar**ul**, angol → angol**ul**"],
+        ["**-i**", "from a place", "Szeged → szeged**i**"]
+      ]
+    },
+    { "type": "text", "text": "They stack: *lassú → lassabb → lass**abban*** (more slowly)." },
+    { "type": "tip", "text": "Notice that *lassú* drops its long ú before an ending. Small changes like this are common; just learn the forms as you meet them." }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "x03-greetings",
+  "lesson": "l03-oran",
+  "title": "Köszönés",
+  "titleEn": "Greetings",
+  "intro": "Think about the time of day and who you are talking to.",
+  "items": [
+    { "type": "choice", "prompt": "8:00, you meet your neighbour, an older lady you don't know well.", "options": ["Jó reggelt kívánok!", "Szia!", "Jó estét!", "Sziasztok!"], "answer": "Jó reggelt kívánok!" },
+    { "type": "choice", "prompt": "14:00, you walk into a shop.", "options": ["Jó napot kívánok!", "Szia!", "Jó éjt!", "Jó reggelt!"], "answer": "Jó napot kívánok!" },
+    { "type": "choice", "prompt": "You meet three friends at a café.", "options": ["Sziasztok!", "Szia!", "Viszontlátásra!", "Jó napot kívánok!"], "answer": "Sziasztok!" },
+    { "type": "choice", "prompt": "You leave the doctor's office.", "options": ["Viszontlátásra!", "Sziasztok!", "Szia!"], "answer": "Viszontlátásra!" },
+    { "type": "choice", "prompt": "19:00, you arrive at a formal dinner.", "options": ["Jó estét kívánok!", "Jó reggelt!", "Szervusz!"], "answer": "Jó estét kívánok!" },
+    { "type": "choice", "prompt": "You say goodnight to your partner.", "options": ["Jó éjt!", "Jó napot!", "Viszontlátásra!"], "answer": "Jó éjt!" },
+    { "type": "choice", "prompt": "Someone introduces themselves to you. You answer:", "options": ["Nagyon örülök!", "Fogalmam sincs.", "Tessék?"], "answer": "Nagyon örülök!" },
+    { "type": "sort", "prompt": "Formal (F) or informal (I)?", "buckets": ["F", "I"], "items": [
+      { "text": "Jó napot kívánok!", "bucket": "F" },
+      { "text": "Viszontlátásra!", "bucket": "F" },
+      { "text": "Jó estét kívánok!", "bucket": "F" },
+      { "text": "Szia!", "bucket": "I" },
+      { "text": "Sziasztok!", "bucket": "I" },
+      { "text": "Szervusz!", "bucket": "I" }
+    ] },
+    { "type": "choice", "prompt": "Why do we say “Jó napot” and not “Jó nap”?", "options": ["It is the object of “kívánok” (I wish), so it gets -t", "Because it is plural", "Because it is formal"], "answer": "It is the object of “kívánok” (I wish), so it gets -t" },
+    { "type": "type", "prompt": "Informal “hi” to one person:", "answer": ["Szia!", "Szervusz!"] },
+    { "type": "type", "prompt": "Formal “goodbye”:", "answer": ["Viszontlátásra!", "Viszlát!"] }
+  ]
+}

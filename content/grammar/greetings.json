@@ -1,0 +1,44 @@
+{
+  "id": "greetings",
+  "order": 5,
+  "title": "Köszönés: tegezés és önözés",
+  "titleEn": "Greetings: informal and formal",
+  "level": "A1",
+  "lesson": "l03-oran",
+  "summary": "Hungarian greetings change with the time of day and with how formal you are. Pick the wrong one and you sound either rude or stiff.",
+  "sections": [
+    { "type": "text", "text": "Hungarian has two ways of addressing someone. **Tegezés** uses *te* (informal: friends, family, children, often colleagues and young people). **Önözés** uses *Ön* (formal: strangers, older people, shops, offices). The textbook marks them **I** and **F**." },
+    { "type": "heading", "text": "Hello" },
+    {
+      "type": "table",
+      "head": ["When", "Formal (F)", "Informal (I)"],
+      "rows": [
+        ["Morning", "Jó reggelt kívánok!", "Jó reggelt!"],
+        ["Daytime", "Jó napot kívánok!", "Szia! / Szervusz!"],
+        ["Evening", "Jó estét kívánok!", "Szia! / Szervusz!"],
+        ["To a group", "Jó napot kívánok!", "Sziasztok! / Szervusztok!"]
+      ]
+    },
+    { "type": "heading", "text": "Goodbye" },
+    {
+      "type": "table",
+      "head": ["", "Formal (F)", "Informal (I)"],
+      "rows": [
+        ["Any time", "Viszontlátásra! (Viszlát!)", "Szia! / Sziasztok!"],
+        ["At night", "Jó éjszakát kívánok!", "Jó éjt! / Jó éjszakát!"]
+      ]
+    },
+    { "type": "tip", "text": "**Szia** means both hello and goodbye. Use **Sziasztok** when speaking to more than one person." },
+    { "type": "tip", "text": "**Csókolom** (“I kiss it”) is what children say to adults, and what some people say to older women. **Kezét csókolom** (“I kiss your hand”) is an old-fashioned polite greeting to a woman. You will hear both, but you don't need to use them." },
+    { "type": "heading", "text": "Why “reggelt”, “napot”, “estét”?" },
+    { "type": "text", "text": "The full greeting is “Good morning **I wish**” (*Jó reggelt kívánok*). The greeting is the **object** of *kívánok*, so it gets the object ending **-t**: reggel → reggel**t**, nap → nap**ot**, este → est**ét**. The short forms keep the -t." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Jó napot kívánok! Kovács Péter vagyok.", "en": "Hello! I'm Péter Kovács.", "note": "formal introduction" },
+        { "hu": "Nagyon örülök!", "en": "Nice to meet you!" },
+        { "hu": "Szia, Anna! — Szia!", "en": "Hi, Anna! — Hi!" }
+      ]
+    }
+  ]
+}

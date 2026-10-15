@@ -1,0 +1,34 @@
+{
+  "id": "r04-bemutatkozas",
+  "lesson": "l04-letige",
+  "title": "Bemutatkozás",
+  "titleEn": "Introductions",
+  "intro": "Lukas introduces himself and two other people. Watch where “vagyok” appears and where “van” is left out.",
+  "paragraphs": [
+    "Szia! Lukas vagyok. Német vagyok, berlini. Huszonhat éves vagyok, és mérnök vagyok.",
+    "Ő Anna. Anna lengyel, és diák. Anna húsz éves.",
+    "Ő pedig Kovács tanárnő. A tanárnő magyar, budapesti. Ő a magyartanárunk.",
+    "Mi diákok vagyunk Budapesten. Budapest nagy város, de Magyarország kicsi."
+  ],
+  "glossary": {
+    "lukas": "Lukas (a name)",
+    "anna": "Anna (a name)",
+    "berlini": "from Berlin",
+    "huszonhat": "twenty-six (26)",
+    "és": "and",
+    "pedig": "and (as for…), shows a contrast",
+    "kovács": "Kovács (a common surname; literally blacksmith)",
+    "a": "the",
+    "magyartanárunk": "our Hungarian teacher",
+    "diákok": "students",
+    "budapesten": "in Budapest",
+    "budapest": "Budapest",
+    "de": "but"
+  },
+  "questions": [
+    { "q": "Hány éves Lukas?", "qEn": "How old is Lukas?", "options": ["26", "20", "25"], "answer": "26" },
+    { "q": "Milyen nemzetiségű Anna?", "qEn": "What nationality is Anna?", "options": ["lengyel", "német", "magyar"], "answer": "lengyel" },
+    { "q": "Mi Lukas?", "qEn": "What does Lukas do?", "options": ["mérnök", "diák", "tanár"], "answer": "mérnök" },
+    { "q": "Milyen Magyarország?", "qEn": "What is Hungary like?", "options": ["kicsi", "nagy"], "answer": "kicsi" }
+  ]
+}

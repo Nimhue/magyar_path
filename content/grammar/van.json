@@ -1,0 +1,108 @@
+{
+  "id": "van",
+  "order": 7,
+  "title": "A létige: van (lenni)",
+  "titleEn": "The verb “to be”",
+  "level": "A1",
+  "lesson": "l04-letige",
+  "summary": "vagyok, vagy, van, vagyunk, vagytok, vannak — and the rule that makes van vanish.",
+  "sections": [
+    {
+      "type": "text",
+      "text": "The **létige** is the verb “to be”. Its dictionary form is **van** (is), and its infinitive is **lenni** (to be)."
+    },
+    {
+      "type": "table",
+      "head": [
+        "Singular",
+        "",
+        "Plural",
+        ""
+      ],
+      "rows": [
+        [
+          "én",
+          "**vagyok**",
+          "mi",
+          "**vagyunk**"
+        ],
+        [
+          "te *(informal)*",
+          "**vagy**",
+          "ti *(informal)*",
+          "**vagytok**"
+        ],
+        [
+          "Ön *(formal)*",
+          "(van)",
+          "Önök *(formal)*",
+          "(vannak)"
+        ],
+        [
+          "ő",
+          "(van)",
+          "ők",
+          "(vannak)"
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "tone": "warn",
+      "text": "**The big rule:** when you say *who* or *what* someone is (a name, job, age, nationality, or an adjective), **van and vannak are left out** in the 3rd person and with Ön/Önök. **András diák.** = András is a student. Never “András van diák”."
+    },
+    {
+      "type": "text",
+      "text": "Because *Ön* is grammatically 3rd person, formal “you” behaves like he/she: **Ön tanár.** = You are a teacher."
+    },
+    {
+      "type": "heading",
+      "text": "What you can say with it"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Question",
+        "Answer"
+      ],
+      "rows": [
+        [
+          "Ki vagy? / Ki Ön? / Ki ő?",
+          "Éva vagyok. / Ön Sarah. / Ő András."
+        ],
+        [
+          "Mi vagy? / Mi Ön? / Mi ő?",
+          "Mérnök vagyok. / Ön tanár. / András diák."
+        ],
+        [
+          "Mi ez?",
+          "Ez egy város."
+        ],
+        [
+          "Hány éves vagy? / Hány éves Ön?",
+          "Húsz éves vagyok. / Ön negyvenegy éves."
+        ],
+        [
+          "Milyen nemzetiségű vagy?",
+          "Német vagyok. / Ön orosz. / András magyar."
+        ],
+        [
+          "Milyen Magyarország?",
+          "Magyarország kicsi."
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "text": "You can usually drop the pronoun too, because the verb already shows who: **Mérnök vagyok** is more natural than *Én mérnök vagyok*. Use *én* for contrast: *Én mérnök vagyok, ő tanár.*"
+    },
+    {
+      "type": "text",
+      "text": "Build a sentence: pick a person and a word."
+    },
+    {
+      "type": "widget",
+      "widget": "van"
+    }
+  ]
+}

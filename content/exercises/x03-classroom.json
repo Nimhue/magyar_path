@@ -1,0 +1,26 @@
+{
+  "id": "x03-classroom",
+  "lesson": "l03-oran",
+  "title": "Mit mondasz?",
+  "titleEn": "What do you say?",
+  "intro": "Pick the right phrase for each situation in class or on the street.",
+  "items": [
+    { "type": "choice", "prompt": "The teacher speaks too fast. You say:", "options": ["Lassabban, legyen szíves!", "Fogalmam sincs.", "Szívesen.", "Tessék!"], "answer": "Lassabban, legyen szíves!" },
+    { "type": "choice", "prompt": "You didn't hear what someone said. You say:", "options": ["Tessék?", "Köszönöm.", "Igen.", "Viszlát!"], "answer": "Tessék?" },
+    { "type": "choice", "prompt": "You hand a pen to a classmate. You say:", "options": ["Tessék!", "Bocsánat!", "Nem tudom.", "Szia!"], "answer": "Tessék!" },
+    { "type": "choice", "prompt": "Someone thanks you. You answer:", "options": ["Szívesen.", "Tessék?", "Sajnos.", "Elnézést!"], "answer": "Szívesen." },
+    { "type": "choice", "prompt": "You want to know what “kert” means. You ask:", "options": ["Mit jelent az, hogy „kert”?", "Hogy mondják magyarul azt, hogy „kert”?", "Világos minden?"], "answer": "Mit jelent az, hogy „kert”?" },
+    { "type": "choice", "prompt": "You want to know the Hungarian word for “window”. You ask:", "options": ["Hogy mondják magyarul azt, hogy „window”?", "Mit jelent az, hogy „window”?", "Mit mondasz?"], "answer": "Hogy mondják magyarul azt, hogy „window”?" },
+    { "type": "choice", "prompt": "A stranger asks you something in fast Hungarian. You explain:", "options": ["Bocsánat, külföldi vagyok. Nem beszélek magyarul.", "Jó éjszakát!", "Egészségedre!"], "answer": "Bocsánat, külföldi vagyok. Nem beszélek magyarul." },
+    { "type": "choice", "prompt": "Someone sneezes. You say:", "options": ["Egészségedre!", "Csókolom!", "Tessék!"], "answer": "Egészségedre!" },
+    { "type": "match", "prompt": "Match the phrase to its meaning.", "pairs": [
+      { "left": "Nem tudom.", "right": "I don't know." },
+      { "left": "Nem értem.", "right": "I don't understand." },
+      { "left": "Fogalmam sincs.", "right": "I have no idea." },
+      { "left": "Világos minden?", "right": "Is everything clear?" }
+    ] },
+    { "type": "type", "prompt": "Write: “I have a question.”", "answer": "Van egy kérdésem." },
+    { "type": "type", "prompt": "Write: “Thank you.”", "answer": "Köszönöm." },
+    { "type": "type", "prompt": "lassú (slow) → lassabb (slower) → ___ (more slowly)", "answer": "lassabban" }
+  ]
+}

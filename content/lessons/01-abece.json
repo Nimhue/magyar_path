@@ -1,0 +1,507 @@
+{
+  "id": "l01-abece",
+  "order": 1,
+  "title": "Az ábécé",
+  "titleEn": "The alphabet and its sounds",
+  "date": "2026-09-28",
+  "level": "A1",
+  "summary": "The Hungarian alphabet through international words, the special letters (cs, sz, zs, gy, ny, ty, ly, dz, dzs), and how accent marks change meaning.",
+  "grammar": [
+    "alphabet",
+    "accents"
+  ],
+  "exercises": [
+    "x01-sounds",
+    "x01-accents"
+  ],
+  "readings": [
+    "r01-szoba"
+  ],
+  "homework": [
+    "Textbook pp. 12–13: exercises 4a and 4b",
+    "Make a list of 10–15 interesting or challenging words"
+  ],
+  "vocab": [
+    {
+      "name": "Nemzetközi szavak · International words",
+      "items": [
+        {
+          "hu": "autó",
+          "en": "car"
+        },
+        {
+          "hu": "ágy",
+          "en": "bed",
+          "note": "Compare: agy = brain"
+        },
+        {
+          "hu": "busz",
+          "en": "bus",
+          "note": "s sounds like English “sh”, sz like “s”"
+        },
+        {
+          "hu": "citrom",
+          "en": "lemon",
+          "note": "c sounds like “ts”"
+        },
+        {
+          "hu": "csokoládé",
+          "en": "chocolate",
+          "note": "cs sounds like English “ch”"
+        },
+        {
+          "hu": "dokumentum",
+          "en": "document"
+        },
+        {
+          "hu": "dzsip",
+          "en": "jeep",
+          "note": "dzs sounds like English “j” in jam"
+        },
+        {
+          "hu": "elefánt",
+          "en": "elephant"
+        },
+        {
+          "hu": "éjszaka",
+          "en": "night",
+          "note": "éj = night (short form)"
+        },
+        {
+          "hu": "fotel",
+          "en": "armchair"
+        },
+        {
+          "hu": "gitár",
+          "en": "guitar"
+        },
+        {
+          "hu": "gyufa",
+          "en": "match (for lighting a fire)",
+          "note": "gy is a soft “dy” sound"
+        },
+        {
+          "hu": "ház",
+          "en": "house"
+        },
+        {
+          "hu": "internet",
+          "en": "internet"
+        },
+        {
+          "hu": "íróasztal",
+          "en": "desk",
+          "note": "ír (write) + asztal (table) → writing table"
+        },
+        {
+          "hu": "joghurt",
+          "en": "yogurt",
+          "note": "j sounds like English “y”"
+        },
+        {
+          "hu": "kávé",
+          "en": "coffee"
+        },
+        {
+          "hu": "lámpa",
+          "en": "lamp"
+        },
+        {
+          "hu": "lyuk",
+          "en": "hole",
+          "note": "ly sounds exactly like j (English “y”)"
+        },
+        {
+          "hu": "mobiltelefon",
+          "en": "mobile phone"
+        },
+        {
+          "hu": "név",
+          "en": "name"
+        },
+        {
+          "hu": "nyolc",
+          "en": "eight (8)",
+          "note": "ny like “ny” in canyon"
+        },
+        {
+          "hu": "olaj",
+          "en": "oil"
+        },
+        {
+          "hu": "óra",
+          "en": "clock, watch; hour; lesson",
+          "note": "magyaróra = Hungarian class"
+        },
+        {
+          "hu": "öt",
+          "en": "five (5)"
+        },
+        {
+          "hu": "ő",
+          "en": "he / she",
+          "note": "Hungarian has one word for both"
+        },
+        {
+          "hu": "paprika",
+          "en": "pepper (vegetable); paprika"
+        },
+        {
+          "hu": "rádió",
+          "en": "radio"
+        },
+        {
+          "hu": "saláta",
+          "en": "salad; lettuce"
+        },
+        {
+          "hu": "szalámi",
+          "en": "salami"
+        },
+        {
+          "hu": "telefon",
+          "en": "telephone"
+        },
+        {
+          "hu": "tyúk",
+          "en": "hen",
+          "note": "ty is a soft “ty” sound"
+        },
+        {
+          "hu": "uborka",
+          "en": "cucumber"
+        },
+        {
+          "hu": "újság",
+          "en": "newspaper",
+          "note": "Mi újság? = What’s new?"
+        },
+        {
+          "hu": "üveg",
+          "en": "glass (material); bottle, jar"
+        },
+        {
+          "hu": "űrhajós",
+          "en": "astronaut",
+          "note": "űr (space) + hajó (ship) + -s (person)"
+        },
+        {
+          "hu": "váza",
+          "en": "vase"
+        },
+        {
+          "hu": "whisky",
+          "en": "whisky",
+          "note": "w only appears in foreign words"
+        },
+        {
+          "hu": "xilofon",
+          "en": "xylophone"
+        },
+        {
+          "hu": "zebra",
+          "en": "zebra"
+        },
+        {
+          "hu": "zsiráf",
+          "en": "giraffe",
+          "note": "zs like “s” in measure"
+        }
+      ]
+    },
+    {
+      "name": "Betűk és hangok · Letters and sounds",
+      "items": [
+        {
+          "hu": "mássalhangzó",
+          "en": "consonant"
+        },
+        {
+          "hu": "magánhangzó",
+          "en": "vowel"
+        },
+        {
+          "hu": "betű",
+          "en": "letter (of the alphabet)"
+        },
+        {
+          "hu": "hang",
+          "en": "sound; voice"
+        },
+        {
+          "hu": "kétjegyű mássalhangzó",
+          "en": "consonant written with two letters (digraph)",
+          "note": "cs, dz, gy, ly, ny, sz, ty, zs — each one counts as a single letter"
+        },
+        {
+          "hu": "háromjegyű mássalhangzó",
+          "en": "consonant written with three letters (trigraph)",
+          "note": "There is only one: dzs"
+        },
+        {
+          "hu": "cs",
+          "en": "sounds like English “ch” (church)",
+          "note": "Csilla, Csaba",
+          "kind": "rule"
+        },
+        {
+          "hu": "s",
+          "en": "sounds like English “sh” (shoe)",
+          "note": "Careful: Hungarian s is NOT English s",
+          "kind": "rule"
+        },
+        {
+          "hu": "sz",
+          "en": "sounds like English “s” (see)",
+          "note": "Szilvia",
+          "kind": "rule"
+        },
+        {
+          "hu": "zs",
+          "en": "sounds like “s” in measure",
+          "note": "Zsuzsanna, Zsófia",
+          "kind": "rule"
+        },
+        {
+          "hu": "gy",
+          "en": "soft “dy”, like “d” in British “dew”",
+          "note": "György → nickname Gyuri",
+          "kind": "rule"
+        },
+        {
+          "hu": "ny",
+          "en": "sounds like “ny” in canyon",
+          "note": "nyár, nyugat",
+          "kind": "rule"
+        },
+        {
+          "hu": "ty",
+          "en": "soft “ty”, like “t” in British “tube”",
+          "note": "tyúk, kutya",
+          "kind": "rule"
+        },
+        {
+          "hu": "ly",
+          "en": "sounds the same as j (English “y”)",
+          "note": "lyuk, király",
+          "kind": "rule"
+        },
+        {
+          "hu": "dz",
+          "en": "voiced “ds”, as in “kids”",
+          "note": "bodza",
+          "kind": "rule"
+        },
+        {
+          "hu": "dzs",
+          "en": "sounds like English “j” in jam",
+          "note": "dzsem, dzsessz, dzsungel",
+          "kind": "rule"
+        },
+        {
+          "hu": "c",
+          "en": "sounds like “ts” in cats",
+          "note": "citrom",
+          "kind": "rule"
+        },
+        {
+          "hu": "j",
+          "en": "sounds like English “y” (yes)",
+          "note": "joghurt",
+          "kind": "rule"
+        },
+        {
+          "hu": "q, w, x, y",
+          "en": "letters used only in foreign words and names",
+          "note": "IQ, whisky, xilofon",
+          "kind": "rule"
+        },
+        {
+          "hu": "ipszilon",
+          "en": "the letter Y"
+        }
+      ]
+    },
+    {
+      "name": "Új szavak · New words from class",
+      "items": [
+        {
+          "hu": "edz",
+          "en": "to train, to work out"
+        },
+        {
+          "hu": "edző",
+          "en": "coach, trainer"
+        },
+        {
+          "hu": "edzés",
+          "en": "training, workout"
+        },
+        {
+          "hu": "bodza",
+          "en": "elderflower"
+        },
+        {
+          "hu": "dzsessz",
+          "en": "jazz"
+        },
+        {
+          "hu": "dzsem",
+          "en": "jam"
+        },
+        {
+          "hu": "dzsungel",
+          "en": "jungle"
+        },
+        {
+          "hu": "nyugat",
+          "en": "west"
+        },
+        {
+          "hu": "nyár",
+          "en": "summer"
+        },
+        {
+          "hu": "király",
+          "en": "king; also “cool!” (slang)"
+        },
+        {
+          "hu": "kutya",
+          "en": "dog"
+        },
+        {
+          "hu": "Gyuri",
+          "en": "nickname for György (George)"
+        }
+      ]
+    },
+    {
+      "name": "Ékezetek · Accents change meaning",
+      "items": [
+        {
+          "hu": "ékezet",
+          "en": "accent mark"
+        },
+        {
+          "hu": "agy",
+          "en": "brain",
+          "note": "vs. ágy = bed"
+        },
+        {
+          "hu": "örült",
+          "en": "he / she was happy",
+          "note": "vs. őrült = crazy"
+        },
+        {
+          "hu": "őrült",
+          "en": "crazy, insane",
+          "note": "vs. örült = was happy"
+        },
+        {
+          "hu": "Eger",
+          "en": "Eger (a city in northern Hungary)",
+          "note": "vs. egér = mouse"
+        },
+        {
+          "hu": "egér",
+          "en": "mouse",
+          "note": "vs. Eger (city)"
+        },
+        {
+          "hu": "hat",
+          "en": "six (6)",
+          "note": "vs. hát = back / well"
+        },
+        {
+          "hu": "hát",
+          "en": "back (of the body); also “well…”",
+          "note": "vs. hat = six"
+        },
+        {
+          "hu": "tör",
+          "en": "to break",
+          "note": "vs. tőr = dagger"
+        },
+        {
+          "hu": "tőr",
+          "en": "dagger",
+          "note": "vs. tör = to break"
+        },
+        {
+          "hu": "fel",
+          "en": "up",
+          "note": "vs. fél = half / to be afraid"
+        },
+        {
+          "hu": "fél",
+          "en": "half; also “to be afraid”",
+          "note": "vs. fel = up"
+        }
+      ]
+    },
+    {
+      "name": "A tankönyvből · From the textbook",
+      "items": [
+        {
+          "hu": "bevezető",
+          "en": "introduction (intro chapter)"
+        },
+        {
+          "hu": "a magyar nyelv",
+          "en": "the Hungarian language",
+          "note": "nyelv = language; also tongue"
+        },
+        {
+          "hu": "szó",
+          "en": "word",
+          "note": "plural: szavak"
+        },
+        {
+          "hu": "nemzetközi",
+          "en": "international"
+        },
+        {
+          "hu": "Hallgassa meg a szavakat!",
+          "en": "Listen to the words!",
+          "kind": "phrase"
+        },
+        {
+          "hu": "Írja őket a képek alá!",
+          "en": "Write them under the pictures!",
+          "kind": "phrase"
+        },
+        {
+          "hu": "Hallgassa meg, és ismételje el az összes szót!",
+          "en": "Listen and repeat all the words!",
+          "kind": "phrase"
+        },
+        {
+          "hu": "ír",
+          "en": "to write"
+        },
+        {
+          "hu": "kép",
+          "en": "picture",
+          "note": "plural: képek"
+        },
+        {
+          "hu": "alá",
+          "en": "(to) under, below"
+        },
+        {
+          "hu": "ismétel",
+          "en": "to repeat"
+        },
+        {
+          "hu": "összes",
+          "en": "all"
+        },
+        {
+          "hu": "házi feladat",
+          "en": "homework",
+          "note": "házi (home-) + feladat (task)"
+        }
+      ]
+    }
+  ]
+}

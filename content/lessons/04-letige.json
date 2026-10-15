@@ -1,0 +1,109 @@
+{
+  "id": "l04-letige",
+  "order": 4,
+  "title": "A létige: van",
+  "titleEn": "The verb “to be”",
+  "level": "A1",
+  "summary": "Saying who and what you are: vagyok, vagy, van, and why “van” disappears in sentences like “András diák.” Plus age and nationality.",
+  "grammar": ["van"],
+  "exercises": ["x04-van", "x04-questions"],
+  "readings": ["r04-bemutatkozas"],
+  "homework": ["Textbook grammar section 2–3: exercise 1 (Vagyok, vagy, —?)"],
+  "vocab": [
+    {
+      "name": "A létige · Forms of “to be”",
+      "items": [
+        { "hu": "létige", "en": "the verb “to be”", "note": "lét (existence) + ige (verb)" },
+        { "hu": "lenni", "en": "to be (infinitive)" },
+        { "hu": "van", "en": "is (base form of “to be”)" },
+        { "hu": "én vagyok", "en": "I am", "kind": "phrase" },
+        { "hu": "te vagy", "en": "you are (informal, one person)", "kind": "phrase" },
+        { "hu": "Ön van", "en": "you are (formal, one person)", "note": "Left out with a noun or adjective: Ön tanár.", "kind": "phrase" },
+        { "hu": "ő van", "en": "he / she is", "note": "Left out with a noun or adjective: András diák.", "kind": "phrase" },
+        { "hu": "mi vagyunk", "en": "we are", "kind": "phrase" },
+        { "hu": "ti vagytok", "en": "you are (informal, several people)", "kind": "phrase" },
+        { "hu": "Önök vannak", "en": "you are (formal, several people)", "note": "Also left out with a noun or adjective", "kind": "phrase" },
+        { "hu": "ők vannak", "en": "they are", "note": "Also left out with a noun or adjective", "kind": "phrase" },
+        { "hu": "András diák. (no van!)", "en": "With he / she / they + a noun or adjective, van is left out", "note": "Never “András van diák.” The same goes for Ön and Önök.", "kind": "rule" }
+      ]
+    },
+    {
+      "name": "Kérdések és válaszok · Questions and answers",
+      "items": [
+        { "hu": "Ki vagy?", "en": "Who are you? (informal)", "kind": "phrase" },
+        { "hu": "Ki Ön?", "en": "Who are you? (formal)", "kind": "phrase" },
+        { "hu": "Ki ő?", "en": "Who is he / she?", "kind": "phrase" },
+        { "hu": "Éva vagyok.", "en": "I’m Éva.", "kind": "phrase" },
+        { "hu": "Ön Sarah.", "en": "You are Sarah. (formal)", "kind": "phrase" },
+        { "hu": "Ő András.", "en": "He is András.", "kind": "phrase" },
+        { "hu": "Mi vagy?", "en": "What do you do? (literally: what are you?)", "kind": "phrase" },
+        { "hu": "Mi Ön?", "en": "What do you do? (formal)", "kind": "phrase" },
+        { "hu": "Mérnök vagyok.", "en": "I’m an engineer.", "kind": "phrase" },
+        { "hu": "Ön tanár.", "en": "You are a teacher. (formal)", "kind": "phrase" },
+        { "hu": "András diák.", "en": "András is a student.", "kind": "phrase" },
+        { "hu": "Mi ez?", "en": "What is this?", "kind": "phrase" },
+        { "hu": "Ez egy város.", "en": "This is a city.", "kind": "phrase" },
+        { "hu": "Hány éves vagy?", "en": "How old are you? (informal)", "kind": "phrase" },
+        { "hu": "Hány éves Ön?", "en": "How old are you? (formal)", "kind": "phrase" },
+        { "hu": "Húsz éves vagyok.", "en": "I’m twenty years old.", "kind": "phrase" },
+        { "hu": "András huszonöt éves.", "en": "András is twenty-five.", "kind": "phrase" },
+        { "hu": "Milyen nemzetiségű vagy?", "en": "What nationality are you? (informal)", "kind": "phrase" },
+        { "hu": "Milyen nemzetiségű Ön?", "en": "What nationality are you? (formal)", "kind": "phrase" },
+        { "hu": "Német vagyok.", "en": "I’m German.", "kind": "phrase" },
+        { "hu": "Milyen Magyarország?", "en": "What is Hungary like?", "kind": "phrase" },
+        { "hu": "Magyarország kicsi.", "en": "Hungary is small.", "kind": "phrase" },
+        { "hu": "Ön is mérnök?", "en": "Are you an engineer too? (formal)", "kind": "phrase" },
+        { "hu": "Nem, lengyel vagyok.", "en": "No, I’m Polish.", "kind": "phrase" }
+      ]
+    },
+    {
+      "name": "Szavak · Words",
+      "items": [
+        { "hu": "ki", "en": "who" },
+        { "hu": "mi", "en": "what; also “we”" },
+        { "hu": "ez", "en": "this" },
+        { "hu": "az", "en": "that; also “the” before a vowel" },
+        { "hu": "mérnök", "en": "engineer" },
+        { "hu": "tanár", "en": "teacher" },
+        { "hu": "tanárnő", "en": "(female) teacher", "note": "-nő = woman" },
+        { "hu": "diák", "en": "student" },
+        { "hu": "város", "en": "city, town" },
+        { "hu": "hány", "en": "how many" },
+        { "hu": "év", "en": "year" },
+        { "hu": "éves", "en": "… years old" },
+        { "hu": "húsz", "en": "twenty (20)" },
+        { "hu": "negyven", "en": "forty (40)" },
+        { "hu": "negyvenegy", "en": "forty-one (41)", "note": "negyven + egy" },
+        { "hu": "huszonöt", "en": "twenty-five (25)", "note": "huszon- (twenty-) + öt" },
+        { "hu": "milyen", "en": "what kind of; what … like" },
+        { "hu": "nemzetiség", "en": "nationality" },
+        { "hu": "nemzetiségű", "en": "of … nationality" },
+        { "hu": "magyar", "en": "Hungarian" },
+        { "hu": "német", "en": "German" },
+        { "hu": "orosz", "en": "Russian" },
+        { "hu": "lengyel", "en": "Polish" },
+        { "hu": "angol", "en": "English" },
+        { "hu": "román", "en": "Romanian" },
+        { "hu": "kicsi", "en": "small, little" },
+        { "hu": "nagy", "en": "big, large" },
+        { "hu": "ország", "en": "country" },
+        { "hu": "Magyarország", "en": "Hungary", "note": "magyar + ország" },
+        { "hu": "is", "en": "also, too", "note": "Comes AFTER the word it refers to: Ön is = you too" },
+        { "hu": "szegedi", "en": "from Szeged", "note": "-i after a place name = from that place" },
+        { "hu": "budapesti", "en": "from Budapest" }
+      ]
+    },
+    {
+      "name": "A tankönyvből · From the textbook",
+      "items": [
+        { "hu": "forma", "en": "form" },
+        { "hu": "funkció", "en": "function, use" },
+        { "hu": "helyhatározó", "en": "word or ending that says where (place)" },
+        { "hu": "melyik", "en": "which" },
+        { "hu": "kontinens", "en": "continent" },
+        { "hu": "sziget", "en": "island" },
+        { "hu": "világ", "en": "world" }
+      ]
+    }
+  ]
+}
