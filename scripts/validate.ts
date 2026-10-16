@@ -7,10 +7,12 @@ import { join } from "node:path";
 import { z } from "zod";
 import {
   ConfigSchema,
+  DictionarySchema,
   ExerciseSetSchema,
   GrammarSchema,
   LessonSchema,
   ReadingSchema,
+  StorySchema,
 } from "../src/content/schema";
 
 const root = join(import.meta.dirname, "..", "content");
@@ -44,6 +46,8 @@ const lessons = load("lessons", LessonSchema);
 const grammar = load("grammar", GrammarSchema);
 const exercises = load("exercises", ExerciseSetSchema);
 const readings = load("readings", ReadingSchema);
+const dictionary = load("dictionary", DictionarySchema);
+const stories = load("stories", StorySchema);
 
 function uniqueIds(list: { file: string; data: { id: string } }[], what: string) {
   const seen = new Map<string, string>();
@@ -57,6 +61,23 @@ const lessonIds = uniqueIds(lessons, "lesson");
 const grammarIds = uniqueIds(grammar, "grammar");
 const exerciseIds = uniqueIds(exercises, "exercise");
 const readingIds = uniqueIds(readings, "reading");
+uniqueIds(dictionary, "dictionary");
+const storyIds = uniqueIds(stories, "story");
+for (const { file, data } of stories) {
+  if (!data.nodes[data.start]) problems.push(`${file}: start node "${data.start}" does not exist`);
+  for (const [nid, n] of Object.entries(data.nodes)) {
+    if (!n.end && !n.choices.length) problems.push(`${file} → ${nid}: needs choices or an "end"`);
+    n.choices.forEach((c) => data.nodes[c.to] || problems.push(`${file} → ${nid}: choice goes to missing node "${c.to}"`));
+  }
+}
+for (const { file, data } of dictionary) {
+  const words = new Set<string>();
+  for (const g of data.groups)
+    for (const v of g.items) {
+      if (words.has(v.hu)) problems.push(`${file}: "${v.hu}" appears twice in this category`);
+      words.add(v.hu);
+    }
+}
 
 const orders = new Map<number, string>();
 for (const { file, data } of lessons) {
@@ -65,6 +86,7 @@ for (const { file, data } of lessons) {
   data.grammar.forEach((g) => grammarIds.has(g) || problems.push(`${file}: unknown grammar topic "${g}"`));
   data.exercises.forEach((x) => exerciseIds.has(x) || problems.push(`${file}: unknown exercise set "${x}"`));
   data.readings.forEach((r) => readingIds.has(r) || problems.push(`${file}: unknown reading "${r}"`));
+  data.stories.forEach((r) => storyIds.has(r) || problems.push(`${file}: unknown story "${r}"`));
   const words = new Set<string>();
   for (const g of data.vocab)
     for (const v of g.items) {
@@ -82,10 +104,18 @@ for (const { file, data } of exercises) {
     const where = `${file} → items.${i}`;
     if ((it.type === "choice" || it.type === "listen") && !it.options.includes(it.answer))
       problems.push(`${where}: answer "${it.answer}" is not one of the options`);
+    if (it.type === "order") {
+      const answers = Array.isArray(it.answer) ? it.answer : [it.answer];
+      const norm = (x: string) => x.toLowerCase().replace(/[.?!,]/g, "").split(/\s+/).filter(Boolean).sort().join(" ");
+      const tiles = norm(it.tiles.join(" "));
+      answers.forEach((a) => norm(a) === tiles || problems.push(`${where}: answer "${a}" doesn't use exactly the tiles`));
+    }
     if (it.type === "sort")
       it.items.forEach((s) => it.buckets.includes(s.bucket) || problems.push(`${where}: bucket "${s.bucket}" not in buckets`));
   });
 }
+
+for (const { file, data } of stories) lessonIds.has(data.lesson) || problems.push(`${file}: unknown lesson "${data.lesson}"`);
 
 for (const { file, data } of readings) {
   lessonIds.has(data.lesson) || problems.push(`${file}: unknown lesson "${data.lesson}"`);
@@ -99,5 +129,5 @@ if (problems.length) {
   process.exit(1);
 }
 console.log(
-  `✓ Content OK: ${lessons.length} lessons, ${grammar.length} grammar topics, ${exercises.length} drill sets, ${readings.length} readings`
+  `✓ Content OK: ${lessons.length} lessons, ${grammar.length} grammar topics, ${exercises.length} drill sets, ${readings.length} readings, ${dictionary.length} dictionary categories, ${stories.length} stories`
 );
