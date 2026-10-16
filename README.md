@@ -122,11 +122,24 @@ Paste the printed hash into `content/config.json` as `teacherCodeHash`. Teachers
 
 The code is a convenience lock, not real security: anyone determined can read the site's code. That's fine for unlocking lessons.
 
+## Accounts, sync and transfer codes
+
+The site includes a small backend (`netlify/functions/api.mts`, logic in `netlify/shared/api.ts`) that runs on Netlify for free and stores data in **Netlify Blobs**. Nothing to set up: deploying from GitHub turns it on.
+
+- **Accounts:** username + password (no email). Passwords are hashed with PBKDF2. After signing in, progress, notes and photos sync automatically between devices. Merging never loses work: newest flashcard review wins, best scores win, XP and streaks never go down, deleted notes stay deleted.
+- **Transfer codes:** without an account, *Settings → Move to another device* makes an 8-character code (and a QR code / link) valid once for 30 minutes. Entering it on the other device merges everything in.
+- Endpoints: `/api/signup`, `/api/login`, `/api/logout`, `/api/account` (DELETE), `/api/sync`, `/api/photo`, `/api/transfer`, `/api/health`.
+- Sync and transfer need the online site. The double-click offline file still works, just without them.
+
+**Why progress can "disappear":** browsers keep data per web address. A different address (a renamed Netlify site, a deploy preview, the Netlify Drop test site, or the offline file) has its own separate progress. Signing in fixes this for good.
+
 ## Where data is stored
 
-Progress (XP, streaks, card schedules, scores) is in the browser's localStorage. Notes and photos are in IndexedDB. Both stay on the device; Settings and Notes have download/restore buttons for backups.
+Progress (XP, streaks, card schedules, scores) is in the browser's localStorage and notes/photos in IndexedDB, so the app works offline. With an account, a copy is kept online and merged on every device (`src/lib/cloud.ts`, `src/lib/merge.ts`). Settings and Notes also have download/restore buttons for manual backups.
 
-All progress code lives in `src/lib/store.ts` and notes in `src/lib/notesDb.ts`, so adding sync later (e.g. Supabase accounts) only means swapping those two modules.
+## Hungarian pronunciation
+
+Audio uses the device's own text-to-speech. If no Hungarian voice is installed, the app stays silent instead of reading Hungarian with an English voice, and *Settings → Hungarian voice* shows how to add one on Windows, Mac, iPhone and Android. On Windows, Microsoft Edge has the most natural Hungarian voices built in.
 
 ## About the content
 
