@@ -19,7 +19,7 @@
         ["**-i**", "from a place", "Szeged → szeged**i**"]
       ]
     },
-    { "type": "text", "text": "They stack: *lassú → lassabb → lass**abban*** (more slowly)." },
+    { "type": "text", "text": "They stack: lassú → lassabb → lass**abban** (more slowly)." },
     { "type": "tip", "text": "Notice that *lassú* drops its long ú before an ending. Small changes like this are common; just learn the forms as you meet them." }
   ]
 }

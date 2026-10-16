@@ -1,0 +1,25 @@
+{
+  "id": "x08-questions",
+  "lesson": "l08-szorend",
+  "title": "Kérdőszavak",
+  "titleEn": "Question words",
+  "intro": "Pick the question word that fits the answer.",
+  "items": [
+    { "type": "choice", "prompt": "— ___ ő? — A férjem.", "options": ["Ki", "Mi", "Hol"], "answer": "Ki" },
+    { "type": "choice", "prompt": "— ___ éves vagy? — Ötvenkettő.", "options": ["Hány", "Milyen", "Melyik"], "answer": "Hány" },
+    { "type": "choice", "prompt": "— ___ nyelven beszélsz? — Oroszul és kínaiul.", "options": ["Milyen", "Hány", "Ki"], "answer": "Milyen" },
+    { "type": "choice", "prompt": "— ___ városban élsz? — Amszterdamban.", "options": ["Melyik", "Ki", "Miért"], "answer": "Melyik" },
+    { "type": "choice", "prompt": "— ___ éltek? — Argentínában.", "options": ["Hol", "Mi", "Hány"], "answer": "Hol" },
+    { "type": "choice", "prompt": "— ___ a hotel telefonszáma? — 06 72 443 265.", "options": ["Mi", "Ki", "Hol"], "answer": "Mi" },
+    { "type": "choice", "prompt": "— ___ tanultok svédül? — Mert Stockholmban élünk.", "options": ["Miért", "Milyen", "Hol"], "answer": "Miért" },
+    { "type": "choice", "prompt": "— ___ ember él Norvégiában? — Körülbelül ötmillió.", "options": ["Hány", "Melyik", "Ki"], "answer": "Hány" },
+    { "type": "match", "prompt": "Match the question word to its meaning.", "pairs": [
+      { "left": "Melyik?", "right": "Which?" },
+      { "left": "Milyen?", "right": "What kind of?" },
+      { "left": "Hány?", "right": "How many?" },
+      { "left": "Miért?", "right": "Why?" }
+    ] },
+    { "type": "type", "prompt": "Write: “Where is Vienna?”", "answer": "Hol van Bécs?" },
+    { "type": "type", "prompt": "Write: “Who speaks Turkish?”", "answer": ["Ki tud törökül?", "Ki beszél törökül?"] }
+  ]
+}

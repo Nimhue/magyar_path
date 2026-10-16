@@ -1,0 +1,116 @@
+{
+  "id": "l05-bemutatkozas",
+  "order": 5,
+  "title": "Bemutatkozás",
+  "titleEn": "Introducing yourself",
+  "level": "A1",
+  "summary": "Informal and formal introductions, checking someone's name, Hungarian name order, and saying where you live and what languages you speak and learn.",
+  "place": {
+    "name": "Szentendre",
+    "fact": "A painters' town on the Danube, 20 km north of Budapest, famous for its colourful streets and the Marzipan Museum.",
+    "lon": 19.07,
+    "lat": 47.67
+  },
+  "grammar": [
+    "names",
+    "intonation"
+  ],
+  "exercises": [
+    "x05-intro",
+    "x05-verbs"
+  ],
+  "readings": [
+    "r05-kave"
+  ],
+  "homework": [],
+  "stories": [
+    "s05-buli"
+  ],
+  "vocab": [
+    {
+      "name": "Bemutatkozás · Introductions",
+      "items": [
+        {"hu": "tegező bemutatkozás", "en": "informal introduction (using te)", "ro": "prezentare informală (cu „tu”)", "kind": "phrase"},
+        {"hu": "önöző bemutatkozás", "en": "formal introduction (using Ön)", "ro": "prezentare formală (cu „dumneavoastră”)", "kind": "phrase"},
+        {"hu": "Szia! Tamara vagyok.", "en": "Hi! I'm Tamara.", "ro": "Salut! Sunt Tamara.", "kind": "phrase"},
+        {"hu": "Jó napot kívánok! John Peters vagyok.", "en": "Good day! I'm John Peters.", "ro": "Bună ziua! Sunt John Peters.", "kind": "phrase"},
+        {"hu": "Elnézést, te vagy Kis Balázs?", "en": "Excuse me, are you Balázs Kis? (informal)", "ro": "Scuză-mă, tu ești Balázs Kis?", "kind": "phrase"},
+        {"hu": "Elnézést, Ön Kis Balázs?", "en": "Excuse me, are you Balázs Kis? (formal)", "ro": "Scuzați-mă, dumneavoastră sunteți Balázs Kis?", "kind": "phrase"},
+        {"hu": "Igen, én vagyok.", "en": "Yes, that's me.", "ro": "Da, eu sunt.", "kind": "phrase"},
+        {"hu": "Nem, én Nagy Kornél vagyok.", "en": "No, I'm Kornél Nagy.", "ro": "Nu, eu sunt Kornél Nagy.", "kind": "phrase"},
+        {"hu": "Jaj, elnézést!", "en": "Oh, sorry!", "ro": "Vai, scuze!", "kind": "phrase"},
+        {"hu": "Semmi baj.", "en": "No problem. / Never mind.", "ro": "Nicio problemă.", "note": "baj = trouble (Romanian “bai” comes from it!)", "kind": "phrase"},
+        {"hu": "Én is nagyon örülök.", "en": "Nice to meet you too.", "ro": "Și eu mă bucur foarte mult.", "kind": "phrase"},
+        {"hu": "Mutassa be a csoportot!", "en": "Introduce the group! (formal instruction)", "ro": "Prezentați grupul!", "kind": "phrase"},
+        {"hu": "Ő Yves, ő Nathalie.", "en": "This is Yves, this is Nathalie.", "ro": "El e Yves, ea e Nathalie.", "note": "ő also means “this person here” when you introduce someone", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Részletes bemutatkozás · Telling more about yourself",
+      "items": [
+        {"hu": "Portugál vagyok.", "en": "I'm Portuguese.", "ro": "Sunt portughez(ă).", "kind": "phrase"},
+        {"hu": "Portugáliában élek.", "en": "I live in Portugal.", "ro": "Locuiesc în Portugalia.", "kind": "phrase"},
+        {"hu": "Szegedi vagyok, de Budapesten élek.", "en": "I'm from Szeged, but I live in Budapest.", "ro": "Sunt din Szeged, dar locuiesc în Budapesta.", "kind": "phrase"},
+        {"hu": "Ötvennégy éves vagyok.", "en": "I'm fifty-four.", "ro": "Am cincizeci și patru de ani.", "kind": "phrase"},
+        {"hu": "Spanyolul és portugálul beszélek.", "en": "I speak Spanish and Portuguese.", "ro": "Vorbesc spaniolă și portugheză.", "kind": "phrase"},
+        {"hu": "Most magyarul tanulok.", "en": "Now I'm learning Hungarian.", "ro": "Acum învăț maghiara.", "kind": "phrase"},
+        {"hu": "Diák vagyok.", "en": "I'm a student.", "ro": "Sunt student(ă).", "kind": "phrase"},
+        {"hu": "él", "en": "to live", "ro": "a trăi, a locui", "note": "élek = I live"},
+        {"hu": "élek", "en": "I live", "ro": "locuiesc / trăiesc"},
+        {"hu": "beszélek", "en": "I speak", "ro": "vorbesc"},
+        {"hu": "tanul", "en": "to learn, to study", "ro": "a învăța", "note": "tanulok = I learn"},
+        {"hu": "tanulok", "en": "I learn, I study", "ro": "învăț"},
+        {"hu": "most", "en": "now", "ro": "acum"},
+        {"hu": "de", "en": "but", "ro": "dar"},
+        {"hu": "portói", "en": "from Porto", "ro": "din Porto"},
+        {"hu": "Lisszabon", "en": "Lisbon", "ro": "Lisabona"},
+        {"hu": "ötvennégy", "en": "fifty-four (54)", "ro": "cincizeci și patru"},
+        {"hu": "huszonhárom", "en": "twenty-three (23)", "ro": "douăzeci și trei"},
+        {"hu": "harminchat", "en": "thirty-six (36)", "ro": "treizeci și șase"},
+        {"hu": "huszonnégy", "en": "twenty-four (24)", "ro": "douăzeci și patru"},
+        {"hu": "angoltanár", "en": "English teacher", "ro": "profesor de engleză"},
+        {"hu": "pszichológus", "en": "psychologist", "ro": "psiholog"},
+        {"hu": "részletes", "en": "detailed", "ro": "detaliat"},
+        {"hu": "szöveg", "en": "text", "ro": "text", "note": "plural: szövegek"}
+      ]
+    },
+    {
+      "name": "Nevek · Names",
+      "items": [
+        {"hu": "családnév", "en": "family name, surname", "ro": "nume de familie", "note": "comes FIRST in Hungarian: Kis Balázs"},
+        {"hu": "keresztnév", "en": "first name", "ro": "prenume", "note": "comes second: Kis Balázs"},
+        {"hu": "-né", "en": "Mrs (wife of …), added to a family name", "ro": "doamna … (soția lui …)", "note": "Kovácsné = Mrs Kovács"},
+        {"hu": "Kovácsné Radnai Beáta", "en": "Beáta Radnai, Mrs Kovács", "ro": "Beáta Radnai, doamna Kovács", "note": "husband's family name + -né, then her own name", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Kiejtés · Pronunciation",
+      "items": [
+        {"hu": "kiejtés", "en": "pronunciation", "ro": "pronunție"},
+        {"hu": "intonáció", "en": "intonation", "ro": "intonație"},
+        {"hu": "hangsúly", "en": "stress, emphasis", "ro": "accent (tonic)"},
+        {"hu": "szóhangsúly", "en": "word stress", "ro": "accentul cuvântului"},
+        {"hu": "mondathangsúly", "en": "sentence stress", "ro": "accentul propoziției"},
+        {"hu": "eldöntendő kérdés", "en": "yes/no question", "ro": "întrebare de tip da/nu"}
+      ]
+    },
+    {
+      "name": "A tankönyvből · From the textbook",
+      "items": [
+        {"hu": "Hallgasson meg egy bemutatkozást!", "en": "Listen to an introduction!", "ro": "Ascultați o prezentare!", "kind": "phrase"},
+        {"hu": "Figyelje meg a van ige ragozását!", "en": "Notice the conjugation of the verb van!", "ro": "Observați conjugarea verbului „van”!", "kind": "phrase"},
+        {"hu": "Majd beszélgessenek a minták alapján!", "en": "Then talk together, using the examples!", "ro": "Apoi discutați pe baza modelelor!", "kind": "phrase"},
+        {"hu": "Melyik szó illik az igéhez?", "en": "Which word goes with the verb?", "ro": "Ce cuvânt se potrivește cu verbul?", "kind": "phrase"},
+        {"hu": "ige", "en": "verb", "ro": "verb"},
+        {"hu": "ragozás", "en": "conjugation", "ro": "conjugare"},
+        {"hu": "párbeszéd", "en": "dialogue", "ro": "dialog"},
+        {"hu": "minta", "en": "example, pattern", "ro": "model, exemplu"},
+        {"hu": "alapján", "en": "based on", "ro": "pe baza"},
+        {"hu": "beszélget", "en": "to chat, to talk together", "ro": "a conversa"},
+        {"hu": "csoport", "en": "group", "ro": "grup"},
+        {"hu": "feladat", "en": "task, exercise", "ro": "sarcină, exercițiu"},
+        {"hu": "illik", "en": "to fit, to go with", "ro": "a se potrivi"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "travel",
+  "order": 2,
+  "title": "Utazás",
+  "titleEn": "Travel",
+  "color": "teal",
+  "mark": "U",
+  "intro": "Getting around: trains, planes, hotels and directions.",
+  "groups": [
+    {
+      "name": "Közlekedés · Transport",
+      "items": [
+        {"hu": "autó", "en": "car", "ro": "mașină"},
+        {"hu": "busz", "en": "bus", "ro": "autobuz"},
+        {"hu": "villamos", "en": "tram", "ro": "tramvai"},
+        {"hu": "metró", "en": "metro", "ro": "metrou"},
+        {"hu": "troli", "en": "trolleybus", "ro": "troleibuz"},
+        {"hu": "vonat", "en": "train", "ro": "tren"},
+        {"hu": "repülő", "en": "plane", "ro": "avion"},
+        {"hu": "hajó", "en": "ship, boat", "ro": "vapor"},
+        {"hu": "bicikli", "en": "bicycle", "ro": "bicicletă"},
+        {"hu": "taxi", "en": "taxi", "ro": "taxi"},
+        {"hu": "gyalog", "en": "on foot", "ro": "pe jos"},
+        {"hu": "jegy", "en": "ticket", "ro": "bilet"},
+        {"hu": "bérlet", "en": "travel pass", "ro": "abonament"},
+        {"hu": "megálló", "en": "stop (bus, tram)", "ro": "stație"}
+      ]
+    },
+    {
+      "name": "Pályaudvar és reptér · Station and airport",
+      "items": [
+        {"hu": "pályaudvar", "en": "railway station", "ro": "gară", "note": "Keleti, Nyugati, Déli pályaudvar in Budapest"},
+        {"hu": "állomás", "en": "station", "ro": "stație, gară"},
+        {"hu": "reptér", "en": "airport", "ro": "aeroport", "note": "also: repülőtér"},
+        {"hu": "vágány", "en": "platform, track", "ro": "linie (de cale ferată)"},
+        {"hu": "indulás", "en": "departure", "ro": "plecare"},
+        {"hu": "érkezés", "en": "arrival", "ro": "sosire"},
+        {"hu": "késés", "en": "delay", "ro": "întârziere"},
+        {"hu": "bőrönd", "en": "suitcase", "ro": "valiză"},
+        {"hu": "útlevél", "en": "passport", "ro": "pașaport"},
+        {"hu": "személyi igazolvány", "en": "ID card", "ro": "carte de identitate", "note": "casual: személyi"},
+        {"hu": "határ", "en": "border", "ro": "graniță, hotar", "note": "Romanian hotar comes from it!"},
+        {"hu": "Egy jegyet kérek Szegedre.", "en": "One ticket to Szeged, please.", "ro": "Un bilet până la Szeged, vă rog.", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Szállás · Accommodation",
+      "items": [
+        {"hu": "szálloda", "en": "hotel", "ro": "hotel", "note": "also: hotel"},
+        {"hu": "szoba", "en": "room", "ro": "cameră"},
+        {"hu": "kulcs", "en": "key", "ro": "cheie"},
+        {"hu": "foglalás", "en": "booking", "ro": "rezervare"},
+        {"hu": "recepció", "en": "reception", "ro": "recepție"},
+        {"hu": "reggelivel", "en": "with breakfast", "ro": "cu mic dejun"},
+        {"hu": "Van szabad szobájuk?", "en": "Do you have a free room?", "ro": "Aveți o cameră liberă?", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Merre? · Directions",
+      "items": [
+        {"hu": "balra", "en": "to the left", "ro": "la stânga"},
+        {"hu": "jobbra", "en": "to the right", "ro": "la dreapta"},
+        {"hu": "egyenesen", "en": "straight on", "ro": "drept înainte"},
+        {"hu": "itt", "en": "here", "ro": "aici"},
+        {"hu": "ott", "en": "there", "ro": "acolo"},
+        {"hu": "messze", "en": "far", "ro": "departe"},
+        {"hu": "közel", "en": "near", "ro": "aproape"},
+        {"hu": "térkép", "en": "map", "ro": "hartă"},
+        {"hu": "Hol van a pályaudvar?", "en": "Where is the station?", "ro": "Unde e gara?", "kind": "phrase"},
+        {"hu": "Elnézést, eltévedtem.", "en": "Excuse me, I'm lost.", "ro": "Scuzați-mă, m-am rătăcit.", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Úti szavak · Trip words",
+      "items": [
+        {"hu": "utazás", "en": "travel, trip", "ro": "călătorie"},
+        {"hu": "nyaralás", "en": "holiday (summer)", "ro": "vacanță"},
+        {"hu": "kirándulás", "en": "excursion, hike", "ro": "excursie"},
+        {"hu": "turista", "en": "tourist", "ro": "turist"},
+        {"hu": "látnivaló", "en": "sight, attraction", "ro": "obiectiv turistic"},
+        {"hu": "Jó utat!", "en": "Have a good trip!", "ro": "Drum bun!", "kind": "phrase"}
+      ]
+    }
+  ]
+}

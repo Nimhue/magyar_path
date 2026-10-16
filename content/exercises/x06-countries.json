@@ -1,0 +1,37 @@
+{
+  "id": "x06-countries",
+  "lesson": "l06-orszagok",
+  "title": "Országok és fővárosok",
+  "titleEn": "Countries and capitals",
+  "intro": "Ha a főváros Berlin, akkor az ország Németország.",
+  "items": [
+    { "type": "match", "prompt": "Match the capital to the country.", "pairs": [
+      { "left": "Bécs", "right": "Ausztria" },
+      { "left": "Varsó", "right": "Lengyelország" },
+      { "left": "Prága", "right": "Csehország" },
+      { "left": "Bukarest", "right": "Románia" }
+    ] },
+    { "type": "match", "prompt": "Match the capital to the country.", "pairs": [
+      { "left": "Róma", "right": "Olaszország" },
+      { "left": "Párizs", "right": "Franciaország" },
+      { "left": "Brüsszel", "right": "Belgium" },
+      { "left": "Szófia", "right": "Bulgária" }
+    ] },
+    { "type": "choice", "prompt": "Unscramble: SZÁG – FINN – OR", "options": ["Finnország", "Oroszország", "Svédország"], "answer": "Finnország" },
+    { "type": "choice", "prompt": "Unscramble: GÁ – POR – LI – A – TU", "options": ["Portugália", "Bulgária", "Ausztrália"], "answer": "Portugália" },
+    { "type": "choice", "prompt": "Ankara is the capital of…", "options": ["Törökország", "Görögország", "Ciprus"], "answer": "Törökország" },
+    { "type": "choice", "prompt": "Someone from Austria is…", "options": ["osztrák", "ausztriai", "ausztrál"], "answer": "osztrák", "explain": "ausztrál = Australian!" },
+    { "type": "choice", "prompt": "What language do Brazilians speak?", "options": ["portugálul", "brazilul", "spanyolul"], "answer": "portugálul" },
+    { "type": "choice", "prompt": "Which is NOT spoken officially in Switzerland?", "options": ["holland", "német", "francia", "olasz"], "answer": "holland" },
+    { "type": "match", "prompt": "Country → nationality", "pairs": [
+      { "left": "Spanyolország", "right": "spanyol" },
+      { "left": "Svédország", "right": "svéd" },
+      { "left": "Dánia", "right": "dán" },
+      { "left": "Kína", "right": "kínai" }
+    ] },
+    { "type": "choice", "prompt": "— Ha a főváros Bern, akkor az ország Svájc. — You agree:", "options": ["Szerintem is.", "Szerintem nem.", "Én sem."], "answer": "Szerintem is." },
+    { "type": "choice", "prompt": "You're not sure. You say:", "options": ["Lehet.", "Szerintem is.", "Semmi baj."], "answer": "Lehet." },
+    { "type": "type", "prompt": "Write the Hungarian for “Vienna”.", "answer": "Bécs" },
+    { "type": "type", "prompt": "Write the Hungarian for “Romania”.", "answer": "Románia" }
+  ]
+}

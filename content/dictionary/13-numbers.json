@@ -1,0 +1,88 @@
+{
+  "id": "numbers",
+  "order": 13,
+  "title": "Számok és idő",
+  "titleEn": "Numbers and time",
+  "color": "blue",
+  "mark": "1",
+  "groups": [
+    {
+      "name": "Számok · Numbers",
+      "items": [
+        {"hu": "nulla", "en": "zero", "ro": "zero"},
+        {"hu": "egy", "en": "one", "ro": "unu"},
+        {"hu": "kettő", "en": "two", "ro": "doi", "note": "két before a noun: két kávé"},
+        {"hu": "három", "en": "three", "ro": "trei"},
+        {"hu": "négy", "en": "four", "ro": "patru"},
+        {"hu": "öt", "en": "five", "ro": "cinci"},
+        {"hu": "hat", "en": "six", "ro": "șase"},
+        {"hu": "hét", "en": "seven", "ro": "șapte", "note": "also: week!"},
+        {"hu": "nyolc", "en": "eight", "ro": "opt"},
+        {"hu": "kilenc", "en": "nine", "ro": "nouă"},
+        {"hu": "tíz", "en": "ten", "ro": "zece"},
+        {"hu": "tizenegy", "en": "eleven", "ro": "unsprezece", "note": "tíz → tizen- + egy"},
+        {"hu": "húsz", "en": "twenty", "ro": "douăzeci"},
+        {"hu": "huszonegy", "en": "twenty-one", "ro": "douăzeci și unu", "note": "húsz → huszon- + egy"},
+        {"hu": "harminc", "en": "thirty", "ro": "treizeci"},
+        {"hu": "negyven", "en": "forty", "ro": "patruzeci"},
+        {"hu": "ötven", "en": "fifty", "ro": "cincizeci"},
+        {"hu": "hatvan", "en": "sixty", "ro": "șaizeci"},
+        {"hu": "hetven", "en": "seventy", "ro": "șaptezeci"},
+        {"hu": "nyolcvan", "en": "eighty", "ro": "optzeci"},
+        {"hu": "kilencven", "en": "ninety", "ro": "nouăzeci"},
+        {"hu": "száz", "en": "hundred", "ro": "sută"},
+        {"hu": "ezer", "en": "thousand", "ro": "mie"}
+      ]
+    },
+    {
+      "name": "A hét napjai · Days of the week",
+      "items": [
+        {"hu": "hétfő", "en": "Monday", "ro": "luni", "note": "hét (week) + fő (head): the week's head"},
+        {"hu": "kedd", "en": "Tuesday", "ro": "marți"},
+        {"hu": "szerda", "en": "Wednesday", "ro": "miercuri"},
+        {"hu": "csütörtök", "en": "Thursday", "ro": "joi"},
+        {"hu": "péntek", "en": "Friday", "ro": "vineri"},
+        {"hu": "szombat", "en": "Saturday", "ro": "sâmbătă"},
+        {"hu": "vasárnap", "en": "Sunday", "ro": "duminică", "note": "vásár (market) + nap (day)"},
+        {"hu": "hétvége", "en": "weekend", "ro": "weekend"}
+      ]
+    },
+    {
+      "name": "Hónapok · Months",
+      "items": [
+        {"hu": "január", "en": "January", "ro": "ianuarie"},
+        {"hu": "február", "en": "February", "ro": "februarie"},
+        {"hu": "március", "en": "March", "ro": "martie"},
+        {"hu": "április", "en": "April", "ro": "aprilie"},
+        {"hu": "május", "en": "May", "ro": "mai"},
+        {"hu": "június", "en": "June", "ro": "iunie"},
+        {"hu": "július", "en": "July", "ro": "iulie"},
+        {"hu": "augusztus", "en": "August", "ro": "august"},
+        {"hu": "szeptember", "en": "September", "ro": "septembrie"},
+        {"hu": "október", "en": "October", "ro": "octombrie"},
+        {"hu": "november", "en": "November", "ro": "noiembrie"},
+        {"hu": "december", "en": "December", "ro": "decembrie"}
+      ]
+    },
+    {
+      "name": "Idő · Time",
+      "items": [
+        {"hu": "Hány óra van?", "en": "What time is it?", "ro": "Cât e ceasul?", "kind": "phrase"},
+        {"hu": "óra", "en": "hour; clock", "ro": "oră; ceas"},
+        {"hu": "perc", "en": "minute", "ro": "minut"},
+        {"hu": "másodperc", "en": "second", "ro": "secundă"},
+        {"hu": "ma", "en": "today", "ro": "azi"},
+        {"hu": "holnap", "en": "tomorrow", "ro": "mâine"},
+        {"hu": "tegnap", "en": "yesterday", "ro": "ieri"},
+        {"hu": "reggel", "en": "morning", "ro": "dimineața"},
+        {"hu": "délben", "en": "at noon", "ro": "la prânz"},
+        {"hu": "délután", "en": "afternoon", "ro": "după-amiază"},
+        {"hu": "este", "en": "evening", "ro": "seara"},
+        {"hu": "éjjel", "en": "at night", "ro": "noaptea"},
+        {"hu": "most", "en": "now", "ro": "acum"},
+        {"hu": "mindig", "en": "always", "ro": "mereu"},
+        {"hu": "soha", "en": "never", "ro": "niciodată"}
+      ]
+    }
+  ]
+}

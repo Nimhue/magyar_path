@@ -1,0 +1,32 @@
+{
+  "id": "languages",
+  "order": 12,
+  "title": "Milyen nyelven? -ul/-ül",
+  "titleEn": "Which language? The -ul/-ül ending",
+  "level": "A1",
+  "lesson": "l06-orszagok",
+  "summary": "Add -ul (back words) or -ül (front words) to a nationality to say “in that language”.",
+  "sections": [
+    { "type": "text", "text": "With the verbs **beszél** (speak), **tud** (know) and **tanul** (learn), the language takes **-ul / -ül**: *magyarul beszélek* = I speak Hungarian." },
+    {
+      "type": "table",
+      "head": ["Back and mixed: -ul", "Front: -ül"],
+      "rows": [
+        ["angolul, magyarul, románul", "németül, finnül, svédül"],
+        ["oroszul, spanyolul, olaszul", "lengyelül, törökül, csehül"],
+        ["kínaiul, japánul, portugálul", "görögül, észtül, héberül"]
+      ]
+    },
+    { "type": "tip", "tone": "warn", "text": "francia → franci**á**ul (the final a becomes á). Mixed words like *kínai* follow the back vowel: kínai**ul**." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Jól beszélsz magyarul?", "en": "Do you speak Hungarian well?" },
+        { "hu": "Nem tudok spanyolul.", "en": "I don't speak Spanish." },
+        { "hu": "Miért tanulsz dánul?", "en": "Why are you learning Danish?" },
+        { "hu": "Román vagyok. Románul beszélek.", "en": "I'm Romanian. I speak Romanian." }
+      ]
+    },
+    { "type": "widget", "widget": "harmony" }
+  ]
+}

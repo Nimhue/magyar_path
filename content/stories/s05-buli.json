@@ -1,0 +1,153 @@
+{
+  "id": "s05-buli",
+  "lesson": "l05-bemutatkozas",
+  "title": "A buliban",
+  "titleEn": "At the party",
+  "intro": "You play Ioana, from Cluj, at a friend's party. You think you recognise someone. Is it Balázs?",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "text": "Egy férfi áll az ablaknál. Szerinted ő Kis Balázs, a barátod kollégája.",
+      "textEn": "A man is standing by the window. You think he's Balázs Kis, your friend's colleague.",
+      "choices": [
+        {
+          "text": "Elnézést! Te vagy Kis Balázs?",
+          "textEn": "Excuse me! Are you Balázs Kis? (informal)",
+          "to": "b"
+        },
+        {
+          "text": "Elnézést! Ön van Kis Balázs?",
+          "textEn": "(wrong form)",
+          "to": "a-oops",
+          "note": "Formal is Ön Kis Balázs? with no van. At a party with young people, te is fine."
+        }
+      ]
+    },
+    "a-oops": {
+      "text": "He looks confused. Try again.",
+      "textEn": "",
+      "choices": [
+        {
+          "text": "Elnézést! Te vagy Kis Balázs?",
+          "textEn": "Excuse me! Are you Balázs Kis?",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Férfi",
+      "text": "Nem, én Nagy Kornél vagyok.",
+      "textEn": "No, I'm Kornél Nagy.",
+      "choices": [
+        {
+          "text": "Jaj, elnézést!",
+          "textEn": "Oh, sorry!",
+          "to": "c"
+        },
+        {
+          "text": "Igen, én vagyok.",
+          "textEn": "Yes, that's me.",
+          "to": "b-oops",
+          "note": "He said he's NOT Balázs. Apologise!"
+        }
+      ]
+    },
+    "b-oops": {
+      "speaker": "Kornél",
+      "text": "Te vagy? Ki vagy te?",
+      "textEn": "It's you? Who are you?",
+      "choices": [
+        {
+          "text": "Jaj, elnézést!",
+          "textEn": "Oh, sorry!",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Kornél",
+      "text": "Semmi baj. És te ki vagy?",
+      "textEn": "No problem. And who are you?",
+      "choices": [
+        {
+          "text": "Ioana vagyok. Nagyon örülök.",
+          "textEn": "I'm Ioana. Nice to meet you.",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Kornél",
+      "text": "Én is nagyon örülök. Budapesti vagy?",
+      "textEn": "Nice to meet you too. Are you from Budapest?",
+      "choices": [
+        {
+          "text": "Nem, kolozsvári vagyok, de Budapesten élek.",
+          "textEn": "No, I'm from Cluj, but I live in Budapest.",
+          "to": "e"
+        },
+        {
+          "text": "Nem, Kolozsváron vagyok.",
+          "textEn": "No, I am in Cluj.",
+          "to": "d-oops",
+          "note": "You're at the party, so you're not in Cluj! From Cluj = kolozsvári."
+        }
+      ]
+    },
+    "d-oops": {
+      "speaker": "Kornél",
+      "text": "Most Kolozsváron vagy? De itt vagy a buliban!",
+      "textEn": "You're in Cluj now? But you're here at the party!",
+      "choices": [
+        {
+          "text": "Bocsánat! Kolozsvári vagyok, de Budapesten élek.",
+          "textEn": "Sorry! I'm from Cluj, but I live in Budapest.",
+          "to": "e"
+        }
+      ]
+    },
+    "e": {
+      "speaker": "Kornél",
+      "text": "Szuper! És magyarul is beszélsz! Milyen nyelven beszélsz még?",
+      "textEn": "Great! And you speak Hungarian too! What other languages do you speak?",
+      "choices": [
+        {
+          "text": "Románul és angolul beszélek. Most magyarul tanulok.",
+          "textEn": "I speak Romanian and English. Now I'm learning Hungarian.",
+          "to": "end-great"
+        },
+        {
+          "text": "Román és angol.",
+          "textEn": "Romanian and English.",
+          "to": "end-ok",
+          "note": "Understandable! For “in a language” add -ul: románul, angolul."
+        }
+      ]
+    },
+    "end-great": {
+      "text": "Kornél introduces you to everyone. Great conversation!",
+      "textEn": "",
+      "end": "great"
+    },
+    "end-ok": {
+      "text": "Kornél smiles: “Románul és angolul!” You're learning fast.",
+      "textEn": "",
+      "end": "ok"
+    }
+  },
+  "glossary": {
+    "férfi": "man",
+    "áll": "stands",
+    "ablaknál": "by the window",
+    "szerinted": "you think",
+    "barátod": "your friend",
+    "kollégája": "his/her colleague",
+    "kolozsvári": "from Cluj",
+    "kolozsváron": "in Cluj",
+    "itt": "here",
+    "buliban": "at the party",
+    "még": "else, also",
+    "buli": "party",
+    "szuper": "great"
+  }
+}

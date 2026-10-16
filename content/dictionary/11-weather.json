@@ -1,0 +1,35 @@
+{
+  "id": "weather",
+  "order": 11,
+  "title": "Időjárás",
+  "titleEn": "Weather",
+  "color": "teal",
+  "mark": "I",
+  "groups": [
+    {
+      "name": "Milyen idő van? · What's the weather like?",
+      "items": [
+        {"hu": "idő", "en": "weather; time", "ro": "vreme; timp"},
+        {"hu": "időjárás", "en": "weather (forecast)", "ro": "vremea"},
+        {"hu": "Milyen idő van?", "en": "What's the weather like?", "ro": "Cum e vremea?", "kind": "phrase"},
+        {"hu": "Süt a nap.", "en": "The sun is shining.", "ro": "E soare.", "kind": "phrase"},
+        {"hu": "Esik az eső.", "en": "It's raining.", "ro": "Plouă.", "kind": "phrase"},
+        {"hu": "Esik a hó.", "en": "It's snowing.", "ro": "Ninge.", "kind": "phrase"},
+        {"hu": "Fúj a szél.", "en": "The wind is blowing.", "ro": "Bate vântul.", "kind": "phrase"},
+        {"hu": "Felhős.", "en": "It's cloudy.", "ro": "E înnorat.", "kind": "phrase"},
+        {"hu": "nap", "en": "sun", "ro": "soare"},
+        {"hu": "eső", "en": "rain", "ro": "ploaie"},
+        {"hu": "hó", "en": "snow", "ro": "zăpadă"},
+        {"hu": "szél", "en": "wind", "ro": "vânt"},
+        {"hu": "felhő", "en": "cloud", "ro": "nor"},
+        {"hu": "vihar", "en": "storm", "ro": "furtună"},
+        {"hu": "villám", "en": "lightning", "ro": "fulger"},
+        {"hu": "köd", "en": "fog", "ro": "ceață"},
+        {"hu": "esernyő", "en": "umbrella", "ro": "umbrelă"},
+        {"hu": "meleg", "en": "warm", "ro": "cald"},
+        {"hu": "hideg", "en": "cold", "ro": "frig"},
+        {"hu": "fok", "en": "degree", "ro": "grad", "note": "Húsz fok van. = It's 20 degrees."}
+      ]
+    }
+  ]
+}

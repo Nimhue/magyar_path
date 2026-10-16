@@ -1,0 +1,34 @@
+{
+  "id": "r05-kave",
+  "lesson": "l05-bemutatkozas",
+  "title": "Három ember, egy kávézó",
+  "titleEn": "Three people, one café",
+  "intro": "Three people introduce themselves at a language café in Budapest.",
+  "paragraphs": [
+    "Szia! Ioana vagyok. Román vagyok, kolozsvári, de Budapesten élek. Huszonnyolc éves vagyok. Románul, angolul és egy kicsit franciául beszélek. Most magyarul tanulok. Programozó vagyok.",
+    "Jó napot kívánok! Kovácsné Tóth Ilona vagyok. Magyar vagyok, debreceni. Ötvenöt éves vagyok, és tanárnő vagyok. Magyarul és németül beszélek. Most olaszul tanulok.",
+    "Szia! Lukas vagyok. Osztrák vagyok, bécsi, de most Szegeden élek. Harmincegy éves vagyok. Németül és angolul beszélek. Diák vagyok, és magyarul tanulok."
+  ],
+  "glossary": {
+    "ioana": "Ioana (a Romanian name)",
+    "kolozsvári": "from Cluj (Kolozsvár)",
+    "huszonnyolc": "twenty-eight (28)",
+    "programozó": "programmer",
+    "kovácsné": "Mrs Kovács",
+    "tóth": "Tóth (a family name)",
+    "ilona": "Ilona (a name)",
+    "debreceni": "from Debrecen",
+    "ötvenöt": "fifty-five (55)",
+    "és": "and",
+    "lukas": "Lukas (a name)",
+    "bécsi": "from Vienna",
+    "harmincegy": "thirty-one (31)",
+    "kávézó": "café"
+  },
+  "questions": [
+    { "q": "Ki román?", "qEn": "Who is Romanian?", "options": ["Ioana", "Ilona", "Lukas"], "answer": "Ioana" },
+    { "q": "Hol él Lukas?", "qEn": "Where does Lukas live?", "options": ["Szegeden", "Bécsben", "Budapesten"], "answer": "Szegeden" },
+    { "q": "Mit tanul Ilona?", "qEn": "What is Ilona learning?", "options": ["olaszul", "magyarul", "németül"], "answer": "olaszul" },
+    { "q": "Ki formális?", "qEn": "Who introduces herself formally?", "options": ["Ilona", "Ioana", "Lukas"], "answer": "Ilona", "explain": "She says Jó napot kívánok and uses her married name." }
+  ]
+}

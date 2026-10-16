@@ -1,0 +1,158 @@
+{
+  "id": "l07-igek",
+  "order": 7,
+  "title": "Szabályos igék",
+  "titleEn": "Regular verbs, “my” and “your”",
+  "level": "A1",
+  "summary": "Conjugating regular verbs (él, tud, beszél, tanul, örül, kíván) in all persons, saying how well you speak a language, and the endings -m / -d for “my” and “your”.",
+  "place": {
+    "name": "Eger",
+    "fact": "Baroque town of hot springs and Bikavér (“Bull's Blood”) wine. In 1552 its castle held off a huge Ottoman army, a story every Hungarian child knows.",
+    "lon": 20.38,
+    "lat": 47.9
+  },
+  "grammar": [
+    "regular-verbs",
+    "possessive"
+  ],
+  "exercises": [
+    "x07-conjugation",
+    "x07-possessive"
+  ],
+  "readings": [
+    "r07-csalad"
+  ],
+  "stories": [
+    "s07-nyelvcsere"
+  ],
+  "homework": [],
+  "vocab": [
+    {
+      "name": "Igék · Verbs",
+      "items": [
+        {"hu": "szabályos ige", "en": "regular verb", "ro": "verb regulat", "note": "Most Hungarian verbs are regular"},
+        {"hu": "tudok", "en": "I know / I can", "ro": "știu / pot"},
+        {"hu": "tudsz", "en": "you know / you can", "ro": "știi / poți"},
+        {"hu": "tudunk", "en": "we know / we can", "ro": "știm / putem"},
+        {"hu": "tudtok", "en": "you (all) know", "ro": "știți"},
+        {"hu": "tudnak", "en": "they know", "ro": "știu (ei)"},
+        {"hu": "beszélsz", "en": "you speak", "ro": "vorbești"},
+        {"hu": "beszélünk", "en": "we speak", "ro": "vorbim"},
+        {"hu": "beszéltek", "en": "you (all) speak", "ro": "vorbiți"},
+        {"hu": "beszélnek", "en": "they speak", "ro": "vorbesc (ei)"},
+        {"hu": "tanulsz", "en": "you learn", "ro": "înveți"},
+        {"hu": "tanulunk", "en": "we learn", "ro": "învățăm"},
+        {"hu": "tanultok", "en": "you (all) learn", "ro": "învățați"},
+        {"hu": "tanulnak", "en": "they learn", "ro": "învață (ei)"},
+        {"hu": "élsz", "en": "you live", "ro": "locuiești"},
+        {"hu": "élünk", "en": "we live", "ro": "locuim"},
+        {"hu": "éltek", "en": "you (all) live", "ro": "locuiți"},
+        {"hu": "élnek", "en": "they live", "ro": "locuiesc (ei)"},
+        {"hu": "örülök", "en": "I'm glad", "ro": "mă bucur"},
+        {"hu": "örülsz", "en": "you're glad", "ro": "te bucuri"},
+        {"hu": "örülünk", "en": "we're glad", "ro": "ne bucurăm"},
+        {"hu": "örültök", "en": "you (all) are glad", "ro": "vă bucurați"},
+        {"hu": "örülnek", "en": "they're glad", "ro": "se bucură"},
+        {"hu": "kívánunk", "en": "we wish", "ro": "dorim, urăm"},
+        {"hu": "kívánnak", "en": "they wish", "ro": "doresc, urează"},
+        {"hu": "beszélgetünk", "en": "we chat", "ro": "conversăm"}
+      ]
+    },
+    {
+      "name": "Milyen jól? · How well?",
+      "items": [
+        {"hu": "nagyon jól", "en": "very well", "ro": "foarte bine"},
+        {"hu": "jól", "en": "well", "ro": "bine"},
+        {"hu": "elég jól", "en": "quite well", "ro": "destul de bine"},
+        {"hu": "egy kicsit", "en": "a little", "ro": "puțin"},
+        {"hu": "nem", "en": "not (at all)", "ro": "deloc, nu"},
+        {"hu": "Tudsz japánul?", "en": "Do you speak Japanese? (informal)", "ro": "Știi japoneză?", "kind": "phrase"},
+        {"hu": "Beszél japánul?", "en": "Do you speak Japanese? (formal)", "ro": "Vorbiți japoneză?", "kind": "phrase"},
+        {"hu": "Igen, egy kicsit tudok.", "en": "Yes, I can a little.", "ro": "Da, știu puțin.", "kind": "phrase"},
+        {"hu": "Igen, elég jól beszélek.", "en": "Yes, I speak it quite well.", "ro": "Da, vorbesc destul de bine.", "kind": "phrase"},
+        {"hu": "Sajnos nem. És te?", "en": "Unfortunately not. And you?", "ro": "Din păcate nu. Și tu?", "kind": "phrase"},
+        {"hu": "Én is.", "en": "Me too.", "ro": "Și eu.", "note": "answers a positive sentence", "kind": "phrase"},
+        {"hu": "Én sajnos nem.", "en": "Unfortunately I don't.", "ro": "Eu, din păcate, nu.", "kind": "phrase"},
+        {"hu": "Én sem.", "en": "Me neither.", "ro": "Nici eu.", "note": "answers a negative sentence", "kind": "phrase"},
+        {"hu": "Én igen.", "en": "I do. (after a negative)", "ro": "Eu da.", "kind": "phrase"},
+        {"hu": "még nem", "en": "not yet", "ro": "încă nu"},
+        {"hu": "olyan jól", "en": "that well, so well", "ro": "atât de bine"},
+        {"hu": "néha", "en": "sometimes", "ro": "uneori"},
+        {"hu": "otthon", "en": "at home", "ro": "acasă"}
+      ]
+    },
+    {
+      "name": "Család és barátok · Family and friends",
+      "items": [
+        {"hu": "férj", "en": "husband", "ro": "soț"},
+        {"hu": "a férjem", "en": "my husband", "ro": "soțul meu"},
+        {"hu": "feleség", "en": "wife", "ro": "soție"},
+        {"hu": "a feleségem", "en": "my wife", "ro": "soția mea"},
+        {"hu": "barát", "en": "friend; boyfriend", "ro": "prieten"},
+        {"hu": "a barátom", "en": "my friend / my boyfriend", "ro": "prietenul meu"},
+        {"hu": "barátnő", "en": "female friend; girlfriend", "ro": "prietenă"},
+        {"hu": "a barátnőm", "en": "my girlfriend / my (female) friend", "ro": "prietena mea"},
+        {"hu": "anyuka", "en": "mum", "ro": "mămică"},
+        {"hu": "az anyukám", "en": "my mum", "ro": "mama mea", "note": "a → á: anyuka → anyukám"},
+        {"hu": "apuka", "en": "dad", "ro": "tăticu'"},
+        {"hu": "az apukám", "en": "my dad", "ro": "tatăl meu"},
+        {"hu": "édesanya", "en": "mother (warm, polite)", "ro": "mamă (afectuos)"},
+        {"hu": "az édesanyád", "en": "your mother", "ro": "mama ta"},
+        {"hu": "család", "en": "family", "ro": "familie"},
+        {"hu": "a családomban", "en": "in my family", "ro": "în familia mea"},
+        {"hu": "üzletember", "en": "businessman", "ro": "om de afaceri"},
+        {"hu": "titkárnő", "en": "(female) secretary", "ro": "secretară"},
+        {"hu": "masszőr", "en": "masseur", "ro": "maseur"},
+        {"hu": "ember", "en": "person, human", "ro": "om"}
+      ]
+    },
+    {
+      "name": "Az enyém, a tiéd · My and your (-m, -d)",
+      "items": [
+        {"hu": "a nevem", "en": "my name", "ro": "numele meu", "note": "irregular: név → nevem"},
+        {"hu": "a neved", "en": "your name", "ro": "numele tău"},
+        {"hu": "a címem", "en": "my address", "ro": "adresa mea"},
+        {"hu": "a címed", "en": "your address", "ro": "adresa ta"},
+        {"hu": "cím", "en": "address; title", "ro": "adresă; titlu"},
+        {"hu": "telefonszám", "en": "phone number", "ro": "număr de telefon"},
+        {"hu": "a telefonszámom", "en": "my phone number", "ro": "numărul meu de telefon"},
+        {"hu": "házszám", "en": "house number", "ro": "număr de casă"},
+        {"hu": "anyanyelv", "en": "mother tongue", "ro": "limbă maternă", "note": "anya (mother) + nyelv (language)"},
+        {"hu": "az anyanyelvem", "en": "my mother tongue", "ro": "limba mea maternă"},
+        {"hu": "a házam", "en": "my house", "ro": "casa mea", "note": "ház takes -am, not -om"},
+        {"hu": "a számom", "en": "my number", "ro": "numărul meu"},
+        {"hu": "a mobilom", "en": "my mobile", "ro": "mobilul meu"},
+        {"hu": "a városom", "en": "my city", "ro": "orașul meu"},
+        {"hu": "az országom", "en": "my country", "ro": "țara mea"},
+        {"hu": "az iskolám", "en": "my school", "ro": "școala mea"},
+        {"hu": "a hotelem", "en": "my hotel", "ro": "hotelul meu"},
+        {"hu": "a koncertem", "en": "my concert", "ro": "concertul meu"},
+        {"hu": "Mi a telefonszámod?", "en": "What's your phone number?", "ro": "Care e numărul tău de telefon?", "kind": "phrase"},
+        {"hu": "Mi a pontos címed?", "en": "What's your exact address?", "ro": "Care e adresa ta exactă?", "kind": "phrase"},
+        {"hu": "pontos", "en": "exact; punctual", "ro": "exact; punctual"},
+        {"hu": "Az én barátom is cseh.", "en": "My boyfriend is Czech too.", "ro": "Și prietenul meu e ceh.", "note": "az én … = MY (stressed)", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Miért tanulsz magyarul? · Why are you learning Hungarian?",
+      "items": [
+        {"hu": "Miért tanulsz magyarul?", "en": "Why are you learning Hungarian?", "ro": "De ce înveți maghiara?", "kind": "phrase"},
+        {"hu": "Mert a barátom magyar.", "en": "Because my boyfriend is Hungarian.", "ro": "Pentru că prietenul meu e maghiar.", "kind": "phrase"},
+        {"hu": "Szerintem nagyon érdekes a magyar nyelv.", "en": "I think Hungarian is very interesting.", "ro": "Cred că limba maghiară e foarte interesantă.", "kind": "phrase"},
+        {"hu": "Nagyon tetszik a magyar nyelv.", "en": "I really like the Hungarian language.", "ro": "Îmi place foarte mult limba maghiară.", "kind": "phrase"},
+        {"hu": "Van a családomban magyar.", "en": "There's a Hungarian in my family.", "ro": "Am un maghiar în familie.", "kind": "phrase"},
+        {"hu": "Szerintem a magyar nyelv nagyon hasznos.", "en": "I think Hungarian is very useful.", "ro": "Cred că maghiara e foarte utilă.", "kind": "phrase"},
+        {"hu": "miért", "en": "why", "ro": "de ce"},
+        {"hu": "mert", "en": "because", "ro": "pentru că"},
+        {"hu": "érdekes", "en": "interesting", "ro": "interesant"},
+        {"hu": "tetszik", "en": "to be liked (I like it = tetszik)", "ro": "a plăcea"},
+        {"hu": "fontos", "en": "important", "ro": "important"},
+        {"hu": "ugye?", "en": "right? isn't it?", "ro": "nu-i așa?", "note": "Magyar vagy, ugye? = You're Hungarian, right?"},
+        {"hu": "Igaz vagy hamis?", "en": "True or false?", "ro": "Adevărat sau fals?", "kind": "phrase"},
+        {"hu": "igaz", "en": "true", "ro": "adevărat"},
+        {"hu": "hamis", "en": "false", "ro": "fals"},
+        {"hu": "mesél", "en": "to tell (a story)", "ro": "a povesti"}
+      ]
+    }
+  ]
+}

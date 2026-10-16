@@ -1,0 +1,43 @@
+{
+  "id": "hobbies",
+  "order": 16,
+  "title": "Szabadidő",
+  "titleEn": "Free time",
+  "color": "green",
+  "mark": "Sz",
+  "groups": [
+    {
+      "name": "Hobbik · Hobbies",
+      "items": [
+        {"hu": "szabadidő", "en": "free time", "ro": "timp liber"},
+        {"hu": "hobbi", "en": "hobby", "ro": "hobby"},
+        {"hu": "olvas", "en": "to read", "ro": "a citi"},
+        {"hu": "zenét hallgat", "en": "to listen to music", "ro": "a asculta muzică"},
+        {"hu": "filmet néz", "en": "to watch a film", "ro": "a se uita la un film"},
+        {"hu": "főz", "en": "to cook", "ro": "a găti"},
+        {"hu": "rajzol", "en": "to draw", "ro": "a desena"},
+        {"hu": "fest", "en": "to paint", "ro": "a picta"},
+        {"hu": "kirándul", "en": "to go hiking", "ro": "a face drumeții"},
+        {"hu": "sétál", "en": "to walk, to stroll", "ro": "a se plimba"},
+        {"hu": "táncol", "en": "to dance", "ro": "a dansa"},
+        {"hu": "énekel", "en": "to sing", "ro": "a cânta"},
+        {"hu": "játszik", "en": "to play", "ro": "a se juca"},
+        {"hu": "fotóz", "en": "to take photos", "ro": "a fotografia"}
+      ]
+    },
+    {
+      "name": "Sport · Sports",
+      "items": [
+        {"hu": "sport", "en": "sport", "ro": "sport"},
+        {"hu": "foci", "en": "football (casual)", "ro": "fotbal", "note": "formal: labdarúgás"},
+        {"hu": "kosárlabda", "en": "basketball", "ro": "baschet"},
+        {"hu": "úszás", "en": "swimming", "ro": "înot"},
+        {"hu": "futás", "en": "running", "ro": "alergare"},
+        {"hu": "jóga", "en": "yoga", "ro": "yoga"},
+        {"hu": "edzőterem", "en": "gym", "ro": "sală de sport"},
+        {"hu": "vízilabda", "en": "water polo", "ro": "polo pe apă", "note": "Hungary's most successful Olympic team sport"},
+        {"hu": "kézilabda", "en": "handball", "ro": "handbal"}
+      ]
+    }
+  ]
+}

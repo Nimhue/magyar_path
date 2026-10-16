@@ -1,0 +1,46 @@
+{
+  "id": "cute",
+  "order": 4,
+  "title": "Cuki szavak",
+  "titleEn": "Cute words",
+  "color": "pink",
+  "mark": "C",
+  "intro": "Pet names, little words and the endings Hungarians use to make anything sound sweet.",
+  "groups": [
+    {
+      "name": "Becenevek · Terms of endearment",
+      "items": [
+        {"hu": "drágám", "en": "my dear, darling", "ro": "dragul meu / draga mea"},
+        {"hu": "szívem", "en": "my heart, sweetheart", "ro": "inima mea"},
+        {"hu": "édesem", "en": "my sweet", "ro": "dulceața mea"},
+        {"hu": "kincsem", "en": "my treasure", "ro": "comoara mea"},
+        {"hu": "cicám", "en": "my kitten", "ro": "pisicuța mea"},
+        {"hu": "mackóm", "en": "my teddy bear", "ro": "ursulețul meu"},
+        {"hu": "tündérem", "en": "my fairy", "ro": "zâna mea"},
+        {"hu": "nyuszi", "en": "bunny", "ro": "iepuraș"},
+        {"hu": "szerelmem", "en": "my love", "ro": "iubirea mea"},
+        {"hu": "életem", "en": "my life", "ro": "viața mea"}
+      ]
+    },
+    {
+      "name": "Kicsinyítők · Diminutives",
+      "items": [
+        {"hu": "-ka / -ke", "en": "little … (diminutive ending)", "ro": "-uț, -ică", "note": "anya → anyuka, kéz → kezecske", "kind": "rule"},
+        {"hu": "-i", "en": "short, sweet form of names and words", "ro": "formă alintată", "note": "csoki, fagyi, süti, Kati, Zsuzsi", "kind": "rule"},
+        {"hu": "-cska / -cske", "en": "tiny little …", "ro": "-ișor", "note": "kutyuska, házikó", "kind": "rule"},
+        {"hu": "cica", "en": "kitty", "ro": "pisicuță", "note": "macska = cat"},
+        {"hu": "kutyus", "en": "doggy", "ro": "cățeluș"},
+        {"hu": "kiscica", "en": "little kitten", "ro": "pisoiaș"},
+        {"hu": "baba", "en": "baby; also doll", "ro": "bebeluș; păpușă"},
+        {"hu": "süti", "en": "cookie, cake (cute form)", "ro": "prăjiturică"},
+        {"hu": "csoki", "en": "chocolate (cute form)", "ro": "ciocolățică"},
+        {"hu": "fagyi", "en": "ice cream (cute form)", "ro": "înghețată"},
+        {"hu": "pocak", "en": "little belly", "ro": "burtică"},
+        {"hu": "puszi", "en": "kiss (on the cheek)", "ro": "pupic", "note": "Puszi! at the end of a message = Love!"},
+        {"hu": "pici", "en": "tiny, little", "ro": "mititel"},
+        {"hu": "cuki", "en": "cute", "ro": "drăguț"},
+        {"hu": "aranyos", "en": "sweet, lovely", "ro": "drăguț, scump", "note": "literally: golden"}
+      ]
+    }
+  ]
+}

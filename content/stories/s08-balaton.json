@@ -1,0 +1,158 @@
+{
+  "id": "s08-balaton",
+  "lesson": "l08-szorend",
+  "title": "Nyaralás a Balatonnál",
+  "titleEn": "Holiday at Lake Balaton",
+  "intro": "A local journalist on the beach in Siófok is asking tourists questions. Answer with the new information right before the verb.",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Újságíró",
+      "text": "Jó napot! Honnan jön? Melyik országból?",
+      "textEn": "Hello! Where are you from? Which country?",
+      "choices": [
+        {
+          "text": "Romániából. Román vagyok.",
+          "textEn": "From Romania. I'm Romanian.",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Újságíró",
+      "text": "És hol él?",
+      "textEn": "And where do you live?",
+      "choices": [
+        {
+          "text": "Budapesten élek.",
+          "textEn": "I live in Budapest.",
+          "to": "c"
+        },
+        {
+          "text": "Élek Budapesten.",
+          "textEn": "(odd word order)",
+          "to": "b-oops",
+          "note": "The new information (Budapesten) goes before the verb."
+        }
+      ]
+    },
+    "b-oops": {
+      "speaker": "Újságíró",
+      "text": "Aha, Budapesten él.",
+      "textEn": "Ah, you live in Budapest.",
+      "choices": [
+        {
+          "text": "Igen, Budapesten élek.",
+          "textEn": "Yes, I live in Budapest.",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Újságíró",
+      "text": "Ki beszél jobban magyarul a családban, Ön vagy a párja?",
+      "textEn": "Who speaks Hungarian better in the family, you or your partner?",
+      "choices": [
+        {
+          "text": "Én beszélek jobban.",
+          "textEn": "I speak it better. (I do)",
+          "to": "d"
+        },
+        {
+          "text": "A párom beszél jobban.",
+          "textEn": "My partner speaks it better.",
+          "to": "d"
+        },
+        {
+          "text": "Beszélek jobban én.",
+          "textEn": "(odd word order)",
+          "to": "c-oops",
+          "note": "He asked WHO, so the person goes in focus: Én beszélek jobban."
+        }
+      ]
+    },
+    "c-oops": {
+      "speaker": "Újságíró",
+      "text": "Ön beszél jobban?",
+      "textEn": "You speak it better?",
+      "choices": [
+        {
+          "text": "Igen, én beszélek jobban.",
+          "textEn": "Yes, I do.",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Újságíró",
+      "text": "És miért van itt, Siófokon?",
+      "textEn": "And why are you here in Siófok?",
+      "choices": [
+        {
+          "text": "Mert a Balaton gyönyörű!",
+          "textEn": "Because Lake Balaton is beautiful!",
+          "to": "e"
+        },
+        {
+          "text": "Mert itt nyaralunk.",
+          "textEn": "Because we're on holiday here.",
+          "to": "e"
+        }
+      ]
+    },
+    "e": {
+      "speaker": "Újságíró",
+      "text": "Utolsó kérdés: hány éves?",
+      "textEn": "Last question: how old are you?",
+      "choices": [
+        {
+          "text": "Harminc éves vagyok.",
+          "textEn": "I'm thirty.",
+          "to": "end-great"
+        },
+        {
+          "text": "Ez titok!",
+          "textEn": "That's a secret!",
+          "to": "end-great"
+        },
+        {
+          "text": "Harminc éves van.",
+          "textEn": "(wrong form)",
+          "to": "end-ok",
+          "note": "For yourself: vagyok."
+        }
+      ]
+    },
+    "end-great": {
+      "text": "The journalist thanks you. You might be in tomorrow's newspaper!",
+      "textEn": "",
+      "end": "great"
+    },
+    "end-ok": {
+      "text": "The journalist smiles and writes it down… with vagyok.",
+      "textEn": "",
+      "end": "ok"
+    }
+  },
+  "glossary": {
+    "újságíró": "journalist",
+    "honnan": "from where",
+    "jön": "comes",
+    "országból": "from (a) country",
+    "romániából": "from Romania",
+    "jobban": "better",
+    "a családban": "in the family",
+    "itt": "here",
+    "siófokon": "in Siófok",
+    "balaton": "Lake Balaton",
+    "gyönyörű": "beautiful",
+    "nyaralunk": "we're on holiday",
+    "utolsó": "last",
+    "titok": "secret",
+    "harminc": "thirty",
+    "nyaralás": "holiday",
+    "balatonnál": "at Lake Balaton",
+    "párja": "your partner (formal)",
+    "párom": "my partner"
+  }
+}

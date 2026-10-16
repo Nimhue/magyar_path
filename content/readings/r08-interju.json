@@ -1,0 +1,45 @@
+{
+  "id": "r08-interju",
+  "lesson": "l08-szorend",
+  "title": "Rövid interjú",
+  "titleEn": "A short interview",
+  "intro": "A student newspaper interviews a new exchange student. Notice how each answer puts the new information before the verb.",
+  "paragraphs": [
+    "Riporter: Hogy hívnak?",
+    "Kenji: Kenji vagyok.",
+    "Riporter: Melyik országból jössz?",
+    "Kenji: Japánból. Oszakai vagyok.",
+    "Riporter: Hol élsz most?",
+    "Kenji: Most Pécsen élek.",
+    "Riporter: Milyen nyelven beszélsz?",
+    "Kenji: Japánul és angolul beszélek. Magyarul még csak egy kicsit tudok.",
+    "Riporter: Miért tanulsz magyarul?",
+    "Kenji: Mert szerintem a magyar nyelv nagyon érdekes. És a barátnőm magyar!",
+    "Riporter: Ki beszél jobban magyarul, te vagy a barátnőd?",
+    "Kenji: Természetesen ő beszél jobban!"
+  ],
+  "glossary": {
+    "riporter": "reporter",
+    "kenji": "Kenji (a Japanese name)",
+    "hogy hívnak": "what's your name? (literally: how do they call you)",
+    "hogy": "how",
+    "hívnak": "they call (you)",
+    "országból": "from (which) country",
+    "jössz": "you come",
+    "japánból": "from Japan",
+    "oszakai": "from Osaka",
+    "pécsen": "in Pécs",
+    "még": "still, yet",
+    "csak": "only",
+    "jobban": "better",
+    "természetesen": "of course, naturally",
+    "interjú": "interview",
+    "rövid": "short"
+  },
+  "questions": [
+    { "q": "Hol él most Kenji?", "qEn": "Where does Kenji live now?", "options": ["Pécsen", "Oszakában", "Budapesten"], "answer": "Pécsen" },
+    { "q": "Miért tanul magyarul?", "qEn": "Why is he learning Hungarian?", "options": ["Mert érdekes, és a barátnője magyar.", "Mert Pécsen tanár.", "Mert Japánban él."], "answer": "Mert érdekes, és a barátnője magyar." },
+    { "q": "In “Most Pécsen élek”, which word is the focus?", "options": ["Pécsen", "Most", "élek"], "answer": "Pécsen", "explain": "It's the new information, right before the verb." },
+    { "q": "Ki beszél jobban magyarul?", "qEn": "Who speaks Hungarian better?", "options": ["a barátnője", "Kenji"], "answer": "a barátnője" }
+  ]
+}

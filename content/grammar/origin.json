@@ -1,0 +1,31 @@
+{
+  "id": "origin",
+  "order": 11,
+  "title": "Honnan? -i",
+  "titleEn": "Where from? The -i ending",
+  "level": "A1",
+  "lesson": "l06-orszagok",
+  "summary": "Add -i to a place name to say someone or something is from there: Szeged → szegedi.",
+  "sections": [
+    { "type": "text", "text": "**-i** turns a place into an adjective meaning “from there”. It never changes with vowel harmony, and the word is written with a **small letter**." },
+    {
+      "type": "table",
+      "head": ["Place", "From there"],
+      "rows": [
+        ["Európa, Amerika, Ázsia, Afrika", "európai, amerikai, ázsiai, afrikai"],
+        ["Svájc, Kanada, Egyiptom, Libanon", "svájci, kanadai, egyiptomi, libanoni"],
+        ["Basel, London, Szeged, Tokió, Bukarest", "baseli, londoni, szegedi, tokiói, bukaresti"]
+      ]
+    },
+    { "type": "tip", "tone": "warn", "text": "Exception: Ausztrália → **ausztrál**. And many countries have their own nationality word instead: Németország → **német**, Franciaország → **francia**, Magyarország → **magyar**." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Szegedi vagyok, de Budapesten élek.", "en": "I'm from Szeged, but I live in Budapest." },
+        { "hu": "Berlinben élek. — És berlini is vagy?", "en": "I live in Berlin. — And are you from Berlin too?" },
+        { "hu": "Nem, müncheni vagyok.", "en": "No, I'm from Munich." },
+        { "hu": "Máltai vagy?", "en": "Are you Maltese?" }
+      ]
+    }
+  ]
+}

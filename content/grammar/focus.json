@@ -1,0 +1,37 @@
+{
+  "id": "focus",
+  "order": 16,
+  "title": "Szórend: a fókusz",
+  "titleEn": "Word order: the focus position",
+  "level": "A1",
+  "lesson": "l08-szorend",
+  "summary": "The most important word goes directly in front of the verb. Everything else is fairly free.",
+  "sections": [
+    { "type": "text", "text": "Hungarian word order isn't about subject–verb–object. It's about **what matters most**. That word goes in the **focus position: right before the verb**." },
+    { "type": "text", "text": "Three things always sit in focus: **new information**, a **question word**, and the negative word **nem**." },
+    {
+      "type": "table",
+      "head": ["", "Focus", "Verb", "Rest"],
+      "rows": [
+        ["Question", "**Hol**", "él", "Petra?"],
+        ["Answer", "**Varsóban**", "él.", "(Petra)"],
+        ["Question", "**Ki**", "tud", "törökül?"],
+        ["Answer", "**Hakan**", "tud", "törökül."],
+        ["Negative", "**Nem**", "beszélek", "oroszul."]
+      ]
+    },
+    { "type": "heading", "text": "Same words, different meaning" },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Petra japánul beszél.", "en": "Petra speaks JAPANESE (and not Chinese)." },
+        { "hu": "Petra jól beszél japánul.", "en": "Petra speaks Japanese WELL." },
+        { "hu": "Petra beszél jól japánul.", "en": "PETRA speaks Japanese well (not Éva)." },
+        { "hu": "Én vagyok Kis Kornél.", "en": "I am Kornél Kis. (It's ME you're looking for.)" },
+        { "hu": "Kis Kornél vagyok.", "en": "I'm Kornél Kis. (normal introduction)" }
+      ]
+    },
+    { "type": "tip", "text": "Yes/no questions use statement order: *Petra jól beszél japánul?* Only the melody rises." },
+    { "type": "tip", "tone": "warn", "text": "In a neutral statement, the part that answers the (unspoken) question is the focus: — Milyen nyelven beszéltek otthon? — **Németül** beszélünk otthon. Saying *Beszélünk németül otthon* sounds odd." }
+  ]
+}

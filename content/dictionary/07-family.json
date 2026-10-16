@@ -1,0 +1,59 @@
+{
+  "id": "family",
+  "order": 7,
+  "title": "Család",
+  "titleEn": "Family",
+  "color": "purple",
+  "mark": "Cs",
+  "intro": "Parents, siblings, in-laws and pets: everyone at the Sunday lunch.",
+  "groups": [
+    {
+      "name": "Közeli család · Close family",
+      "items": [
+        {"hu": "család", "en": "family", "ro": "familie"},
+        {"hu": "szülők", "en": "parents", "ro": "părinți"},
+        {"hu": "anya", "en": "mother", "ro": "mamă", "note": "anyuka, anyu = mum"},
+        {"hu": "apa", "en": "father", "ro": "tată", "note": "apuka, apu = dad"},
+        {"hu": "gyerek", "en": "child", "ro": "copil"},
+        {"hu": "fiú", "en": "son; boy", "ro": "fiu; băiat"},
+        {"hu": "lány", "en": "daughter; girl", "ro": "fiică; fată"},
+        {"hu": "testvér", "en": "sibling", "ro": "frate / soră"},
+        {"hu": "báty", "en": "older brother", "ro": "frate mai mare"},
+        {"hu": "öcs", "en": "younger brother", "ro": "frate mai mic"},
+        {"hu": "nővér", "en": "older sister", "ro": "soră mai mare", "note": "also: nurse"},
+        {"hu": "húg", "en": "younger sister", "ro": "soră mai mică"},
+        {"hu": "férj", "en": "husband", "ro": "soț"},
+        {"hu": "feleség", "en": "wife", "ro": "soție"},
+        {"hu": "pár", "en": "partner, couple", "ro": "partener; pereche"},
+        {"hu": "barát / barátnő", "en": "boyfriend / girlfriend", "ro": "prieten / prietenă"}
+      ]
+    },
+    {
+      "name": "Tágabb család · Extended family",
+      "items": [
+        {"hu": "nagyszülők", "en": "grandparents", "ro": "bunici"},
+        {"hu": "nagymama", "en": "grandmother", "ro": "bunică", "note": "casual: mama, nagyi"},
+        {"hu": "nagypapa", "en": "grandfather", "ro": "bunic", "note": "casual: papa, nagyapa"},
+        {"hu": "unoka", "en": "grandchild", "ro": "nepot (de bunic)"},
+        {"hu": "nagybácsi", "en": "uncle", "ro": "unchi"},
+        {"hu": "nagynéni", "en": "aunt", "ro": "mătușă"},
+        {"hu": "unokatestvér", "en": "cousin", "ro": "văr / verișoară"},
+        {"hu": "anyós", "en": "mother-in-law", "ro": "soacră"},
+        {"hu": "após", "en": "father-in-law", "ro": "socru"},
+        {"hu": "sógor", "en": "brother-in-law", "ro": "cumnat"},
+        {"hu": "sógornő", "en": "sister-in-law", "ro": "cumnată"}
+      ]
+    },
+    {
+      "name": "Háziállatok · Pets",
+      "items": [
+        {"hu": "háziállat", "en": "pet", "ro": "animal de companie"},
+        {"hu": "kutya", "en": "dog", "ro": "câine"},
+        {"hu": "macska", "en": "cat", "ro": "pisică"},
+        {"hu": "hörcsög", "en": "hamster", "ro": "hamster"},
+        {"hu": "papagáj", "en": "parrot", "ro": "papagal"},
+        {"hu": "aranyhal", "en": "goldfish", "ro": "peștișor auriu"}
+      ]
+    }
+  ]
+}

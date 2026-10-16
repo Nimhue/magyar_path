@@ -1,0 +1,28 @@
+{
+  "id": "intonation",
+  "order": 9,
+  "title": "Hangsúly és intonáció",
+  "titleEn": "Stress and intonation",
+  "level": "A1",
+  "lesson": "l05-bemutatkozas",
+  "summary": "Stress is always on the first syllable. Yes/no questions rise on the second-to-last syllable and then drop.",
+  "sections": [
+    { "type": "heading", "text": "Word stress" },
+    { "type": "text", "text": "Every Hungarian word is stressed on its **first syllable**, however long it is: **va**gyok, **é**lek, **be**szélek, **ta**nulok, **kí**vánok, **ö**rülök." },
+    { "type": "tip", "tone": "warn", "text": "Long vowels (á, é, ó…) are **not** the same as stress. In be**szé**lek the é is long, but the stress is still on **be**." },
+    { "type": "heading", "text": "Sentence stress" },
+    { "type": "text", "text": "In a sentence, the **important word** carries the main stress, and the verb after it is said lightly: **Ma**gyar vagyok. · **Ma**gyarul beszélek. · **Lisz**szabonban élek. · **Ta**nár vagyok." },
+    { "type": "heading", "text": "Yes/no questions" },
+    { "type": "text", "text": "A question without a question word is said with the same words as a statement. Only the melody changes: the voice **rises on the second-to-last syllable** and drops on the last one." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Budapesten él.", "en": "He lives in Budapest. (flat, falling)" },
+        { "hu": "Budapesten él?", "en": "Does he live in Budapest? (rise on -ten, drop on él)" },
+        { "hu": "Mérnök vagy?", "en": "Are you an engineer? (rise on va-, drop on -gy)" },
+        { "hu": "Beszélsz magyarul?", "en": "Do you speak Hungarian? (rise on -ya-, drop on -rul)" }
+      ]
+    },
+    { "type": "tip", "text": "If the question has only one or two syllables, the rise and fall squeeze into the last syllable: *Igen?* *Tényleg?*" }
+  ]
+}

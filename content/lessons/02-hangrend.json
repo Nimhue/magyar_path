@@ -6,62 +6,78 @@
   "date": "2026-09-28",
   "level": "A1",
   "summary": "Back and front vowels, how words are grouped by vowel harmony, and when to say a or az for “the”.",
-  "grammar": ["vowel-harmony", "article"],
-  "exercises": ["x02-harmony", "x02-article"],
-  "readings": ["r02-bolt"],
-  "homework": ["Textbook p. 15: exercise 5b (a vagy az?)"],
+  "place": {
+    "name": "Gödöllő",
+    "fact": "Home of the Grassalkovich Palace, the favourite retreat of Empress Elisabeth, known to Hungarians as Sisi.",
+    "lon": 19.36,
+    "lat": 47.6
+  },
+  "grammar": [
+    "vowel-harmony",
+    "article"
+  ],
+  "exercises": [
+    "x02-harmony",
+    "x02-article"
+  ],
+  "readings": [
+    "r02-bolt"
+  ],
+  "homework": [
+    "Textbook p. 15: exercise 5b (a vagy az?)"
+  ],
   "vocab": [
     {
       "name": "Hangrend · Vowel harmony",
       "items": [
-        { "hu": "hangrend", "en": "vowel harmony", "note": "Endings change their vowel to match the word" },
-        { "hu": "mély", "en": "deep; (grammar) back vowel" },
-        { "hu": "magas", "en": "high, tall; (grammar) front vowel" },
-        { "hu": "vegyes", "en": "mixed" },
-        { "hu": "mély magánhangzók", "en": "back vowels: a, á, o, ó, u, ú", "note": "Memory word: AUTÓ", "kind": "rule" },
-        { "hu": "magas magánhangzók", "en": "front vowels: e, é, i, í, ö, ő, ü, ű", "note": "Memory word: TENISZÜTŐ", "kind": "rule" },
-        { "hu": "mély hangrendű szó", "en": "back-vowel word (only a á o ó u ú)", "note": "tyúk, autó, ágy, saláta, joghurt", "kind": "rule" },
-        { "hu": "magas hangrendű szó", "en": "front-vowel word (only e é i í ö ő ü ű)", "note": "üveg, öt, dzsip, internet", "kind": "rule" },
-        { "hu": "vegyes hangrendű szó", "en": "mixed word (back vowels + e, é, i or í)", "note": "elefánt, zsiráf, zebra, éjszaka — these usually take back-vowel endings", "kind": "rule" },
-        { "hu": "e, é, i, í", "en": "front vowels said with spread lips (unrounded)", "kind": "rule" },
-        { "hu": "ö, ő, ü, ű", "en": "front vowels said with rounded lips", "note": "Like German ö and ü", "kind": "rule" },
-        { "hu": "memoriter", "en": "something to memorize" },
-        { "hu": "tenisz", "en": "tennis" },
-        { "hu": "ütő", "en": "racket, bat" },
-        { "hu": "teniszütő", "en": "tennis racket" },
-        { "hu": "csak", "en": "only" },
-        { "hu": "és", "en": "and" },
-        { "hu": "stb.", "en": "etc.", "note": "short for s a többi = and the rest" }
+        {"hu": "hangrend", "en": "vowel harmony", "ro": "armonie vocalică", "note": "Endings change their vowel to match the word"},
+        {"hu": "mély", "en": "deep; (grammar) back vowel", "ro": "adânc; (gramatică) vocală posterioară"},
+        {"hu": "magas", "en": "high, tall; (grammar) front vowel", "ro": "înalt; (gramatică) vocală anterioară"},
+        {"hu": "vegyes", "en": "mixed", "ro": "mixt"},
+        {"hu": "mély magánhangzók", "en": "back vowels: a, á, o, ó, u, ú", "ro": "vocale posterioare: a, á, o, ó, u, ú", "note": "Memory word: AUTÓ", "kind": "rule"},
+        {"hu": "magas magánhangzók", "en": "front vowels: e, é, i, í, ö, ő, ü, ű", "ro": "vocale anterioare: e, é, i, í, ö, ő, ü, ű", "note": "Memory word: TENISZÜTŐ", "kind": "rule"},
+        {"hu": "mély hangrendű szó", "en": "back-vowel word (only a á o ó u ú)", "ro": "cuvânt cu vocale posterioare", "note": "tyúk, autó, ágy, saláta, joghurt", "kind": "rule"},
+        {"hu": "magas hangrendű szó", "en": "front-vowel word (only e é i í ö ő ü ű)", "ro": "cuvânt cu vocale anterioare", "note": "üveg, öt, dzsip, internet", "kind": "rule"},
+        {"hu": "vegyes hangrendű szó", "en": "mixed word (back vowels + e, é, i or í)", "ro": "cuvânt mixt (posterioare + e, é, i, í)", "note": "elefánt, zsiráf, zebra, éjszaka — these usually take back-vowel endings", "kind": "rule"},
+        {"hu": "e, é, i, í", "en": "front vowels said with spread lips (unrounded)", "ro": "vocale anterioare nerotunjite", "kind": "rule"},
+        {"hu": "ö, ő, ü, ű", "en": "front vowels said with rounded lips", "ro": "vocale anterioare rotunjite", "note": "Like German ö and ü", "kind": "rule"},
+        {"hu": "memoriter", "en": "something to memorize", "ro": "ceva de memorat"},
+        {"hu": "tenisz", "en": "tennis", "ro": "tenis"},
+        {"hu": "ütő", "en": "racket, bat", "ro": "rachetă, bâtă"},
+        {"hu": "teniszütő", "en": "tennis racket", "ro": "rachetă de tenis"},
+        {"hu": "csak", "en": "only", "ro": "doar"},
+        {"hu": "és", "en": "and", "ro": "și"},
+        {"hu": "stb.", "en": "etc.", "ro": "etc.", "note": "short for s a többi = and the rest"}
       ]
     },
     {
       "name": "A névelő · The article",
       "items": [
-        { "hu": "névelő", "en": "article (a, az, egy)" },
-        { "hu": "határozott névelő", "en": "definite article (“the”)" },
-        { "hu": "a + mássalhangzó", "en": "“the” before a consonant is a", "note": "a gitár, a kávé, a whisky", "kind": "rule" },
-        { "hu": "az + magánhangzó", "en": "“the” before a vowel is az", "note": "az autó, az óra, az íróasztal", "kind": "rule" },
-        { "hu": "egy", "en": "a / an; also the number one", "note": "Ez egy autó. = This is a car." },
-        { "hu": "a gitár", "en": "the guitar", "kind": "phrase" },
-        { "hu": "az autó", "en": "the car", "kind": "phrase" },
-        { "hu": "az éjszaka", "en": "the night", "kind": "phrase" },
-        { "hu": "az elefánt", "en": "the elephant", "kind": "phrase" },
-        { "hu": "az újság", "en": "the newspaper", "kind": "phrase" },
-        { "hu": "az olaj", "en": "the oil", "kind": "phrase" },
-        { "hu": "a dzsip", "en": "the jeep", "note": "dzs is a consonant, so: a", "kind": "phrase" },
-        { "hu": "a whisky", "en": "the whisky", "note": "w is a consonant, so: a", "kind": "phrase" }
+        {"hu": "névelő", "en": "article (a, az, egy)", "ro": "articol"},
+        {"hu": "határozott névelő", "en": "definite article (“the”)", "ro": "articol hotărât"},
+        {"hu": "a + mássalhangzó", "en": "“the” before a consonant is a", "ro": "„a” înainte de consoană", "note": "a gitár, a kávé, a whisky", "kind": "rule"},
+        {"hu": "az + magánhangzó", "en": "“the” before a vowel is az", "ro": "„az” înainte de vocală", "note": "az autó, az óra, az íróasztal", "kind": "rule"},
+        {"hu": "egy", "en": "a / an; also the number one", "ro": "un / o; și numărul unu", "note": "Ez egy autó. = This is a car."},
+        {"hu": "a gitár", "en": "the guitar", "ro": "chitara", "kind": "phrase"},
+        {"hu": "az autó", "en": "the car", "ro": "mașina", "kind": "phrase"},
+        {"hu": "az éjszaka", "en": "the night", "ro": "noaptea", "kind": "phrase"},
+        {"hu": "az elefánt", "en": "the elephant", "ro": "elefantul", "kind": "phrase"},
+        {"hu": "az újság", "en": "the newspaper", "ro": "ziarul", "kind": "phrase"},
+        {"hu": "az olaj", "en": "the oil", "ro": "uleiul", "kind": "phrase"},
+        {"hu": "a dzsip", "en": "the jeep", "ro": "jeep-ul", "note": "dzs is a consonant, so: a", "kind": "phrase"},
+        {"hu": "a whisky", "en": "the whisky", "ro": "whisky-ul", "note": "w is a consonant, so: a", "kind": "phrase"}
       ]
     },
     {
       "name": "A tankönyvből · From the textbook",
       "items": [
-        { "hu": "Figyelje meg!", "en": "Observe! / Notice!", "kind": "phrase" },
-        { "hu": "Figyelje meg a szabályt!", "en": "Observe the rule!", "kind": "phrase" },
-        { "hu": "figyel", "en": "to pay attention, to watch" },
-        { "hu": "szabály", "en": "rule" },
-        { "hu": "Egészítse ki!", "en": "Complete it! / Fill it in!", "kind": "phrase" },
-        { "hu": "A vagy az?", "en": "A or az?", "kind": "phrase" },
-        { "hu": "vagy", "en": "or; also “you are” (te vagy)" }
+        {"hu": "Figyelje meg!", "en": "Observe! / Notice!", "ro": "Observați!", "kind": "phrase"},
+        {"hu": "Figyelje meg a szabályt!", "en": "Observe the rule!", "ro": "Observați regula!", "kind": "phrase"},
+        {"hu": "figyel", "en": "to pay attention, to watch", "ro": "a fi atent, a urmări"},
+        {"hu": "szabály", "en": "rule", "ro": "regulă"},
+        {"hu": "Egészítse ki!", "en": "Complete it! / Fill it in!", "ro": "Completați!", "kind": "phrase"},
+        {"hu": "A vagy az?", "en": "A or az?", "ro": "A sau az?", "kind": "phrase"},
+        {"hu": "vagy", "en": "or; also “you are” (te vagy)", "ro": "sau; și „ești” (te vagy)"}
       ]
     }
   ]

@@ -1,0 +1,36 @@
+{
+  "id": "location",
+  "order": 10,
+  "title": "Hol? -ban/-ben, -n",
+  "titleEn": "Where? “in” with -ban/-ben and -n",
+  "level": "A1",
+  "lesson": "l06-orszagok",
+  "summary": "Countries, continents and most foreign cities take -ban/-ben. Hungary, most Hungarian towns and islands take -n.",
+  "sections": [
+    { "type": "text", "text": "To say *in* a place, Hungarian adds an ending. Which one depends on the place, and its vowel depends on **vowel harmony**." },
+    {
+      "type": "table",
+      "head": ["Ending", "Used with", "Examples"],
+      "rows": [
+        ["**-ban**", "back and mixed words", "Prágában, Svájcban, Párizsban, Spanyolországban, az USA-ban"],
+        ["**-ben**", "front words", "Berlinben, Bécsben, Zürichben, Debrecenben, Pekingben"],
+        ["**-n / -on / -en / -ön**", "Hungary, most Hungarian towns, islands, “the world”", "Magyarországon, Budapesten, Szegeden, Siófokon, Cipruson, a világon"]
+      ]
+    },
+    { "type": "tip", "tone": "warn", "text": "A word ending in **a** or **e** lengthens it before the ending: Prág**a** → Prág**á**ban, Afrik**a** → Afrik**á**ban, Velenc**e** → Velenc**é**ben, Lipcs**e** → Lipcs**é**ben, Chil**e** → Chil**é**ben." },
+    { "type": "heading", "text": "Which -n?" },
+    { "type": "text", "text": "After a vowel just **-n**: Máltá**n**, Korziká**n**. After a consonant a linking vowel: **-on** (back), **-en** (front), **-ön** (front with ö/ő/ü/ű in the last syllable): Siófok**on**, Budapest**en**, Tököl**ön**." },
+    { "type": "tip", "text": "Some Hungarian towns take -ban/-ben anyway, e.g. Debrecen**ben**, Egerben. You learn them one by one. Foreign towns almost always take -ban/-ben." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Németországban élek.", "en": "I live in Germany." },
+        { "hu": "Szegeden élsz?", "en": "Do you live in Szeged?" },
+        { "hu": "Vera Magyarországon él.", "en": "Vera lives in Hungary." },
+        { "hu": "Most Helsinkiben vagyok.", "en": "I'm in Helsinki now." }
+      ]
+    },
+    { "type": "text", "text": "Try it: type a place and choose whether it's a Hungarian town." },
+    { "type": "widget", "widget": "location" }
+  ]
+}

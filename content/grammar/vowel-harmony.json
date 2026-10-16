@@ -7,39 +7,104 @@
   "lesson": "l02-hangrend",
   "summary": "Every word is a back-vowel, front-vowel or mixed word. Endings change their vowel to match.",
   "sections": [
-    { "type": "text", "text": "Hungarian vowels come in two families. Which family a word's vowels belong to decides which version of an ending it takes. This is **hangrend** (vowel harmony), and it shows up in almost every grammar point from now on." },
+    {
+      "type": "text",
+      "text": "Hungarian vowels come in two families. Which family a word's vowels belong to decides which version of an ending it takes. This is **hangrend** (vowel harmony), and it shows up in almost every grammar point from now on."
+    },
     {
       "type": "table",
       "caption": "The two vowel families",
-      "head": ["", "Back (mély)", "Front (magas)"],
+      "head": [
+        "",
+        "Back (mély)",
+        "Front (magas)"
+      ],
       "rows": [
-        ["Lips spread", "á", "e, é, i, í"],
-        ["Lips rounded", "a, o, ó, u, ú", "ö, ő, ü, ű"],
-        ["Memory word", "**AUTÓ**", "**TENISZÜTŐ**"]
+        [
+          "Lips spread",
+          "á",
+          "e, é, i, í"
+        ],
+        [
+          "Lips rounded",
+          "a, o, ó, u, ú",
+          "ö, ő, ü, ű"
+        ],
+        [
+          "Memory word",
+          "**AUTÓ**",
+          "**TENISZÜTŐ**"
+        ]
       ]
     },
-    { "type": "heading", "text": "Three kinds of words" },
+    {
+      "type": "heading",
+      "text": "Three kinds of words"
+    },
     {
       "type": "table",
-      "head": ["Type", "Vowels", "Examples"],
+      "head": [
+        "Type",
+        "Vowels",
+        "Examples"
+      ],
       "rows": [
-        ["**Mély** hangrendű (back)", "only a á o ó u ú", "tyúk, autó, ágy, saláta, joghurt"],
-        ["**Magas** hangrendű (front)", "only e é i í ö ő ü ű", "üveg, öt, dzsip, internet"],
-        ["**Vegyes** hangrendű (mixed)", "back vowels + e, é, i, í", "elefánt, zsiráf, zebra, éjszaka"]
+        [
+          "**Mély** hangrendű (back)",
+          "only a á o ó u ú",
+          "tyúk, autó, ágy, saláta, joghurt"
+        ],
+        [
+          "**Magas** hangrendű (front)",
+          "only e é i í ö ő ü ű",
+          "üveg, öt, dzsip, internet"
+        ],
+        [
+          "**Vegyes** hangrendű (mixed)",
+          "back vowels + e, é, i, í",
+          "elefánt, zsiráf, zebra, éjszaka"
+        ]
       ]
     },
-    { "type": "tip", "text": "Mixed words almost always behave like **back** words, because e, é, i and í are “neutral”: the back vowel wins." },
-    { "type": "heading", "text": "Why it matters: endings come in pairs" },
-    { "type": "text", "text": "Many endings have a back version and a front version. You already met one: **-an / -en** (like English “-ly”): *lassú → lassan* (slowly). Soon you will meet **-ban / -ben** (“in”):" },
+    {
+      "type": "tip",
+      "text": "Mixed words usually take **back** endings: *zsiráfban, kávéban, papírban*. Watch out when the **last vowel is a short e**: many of these take front endings instead: *hotelben, Bukarestben, fotelben*."
+    },
+    {
+      "type": "heading",
+      "text": "Why it matters: endings come in pairs"
+    },
+    {
+      "type": "text",
+      "text": "Many endings have a back version and a front version. You already met one: **-an / -en** (like English “-ly”): *lassú → lassan* (slowly). Soon you will meet **-ban / -ben** (“in”):"
+    },
     {
       "type": "examples",
       "items": [
-        { "hu": "ház → házban", "en": "house → in the house", "note": "back word, -ban" },
-        { "hu": "kert → kertben", "en": "garden → in the garden", "note": "front word, -ben" },
-        { "hu": "zsiráf → zsiráfban", "en": "mixed word → takes -ban", "note": "a wins over i" }
+        {
+          "hu": "ház → házban",
+          "en": "house → in the house",
+          "note": "back word, -ban"
+        },
+        {
+          "hu": "kert → kertben",
+          "en": "garden → in the garden",
+          "note": "front word, -ben"
+        },
+        {
+          "hu": "zsiráf → zsiráfban",
+          "en": "mixed word → takes -ban",
+          "note": "a wins over i"
+        }
       ]
     },
-    { "type": "text", "text": "Try it: type any Hungarian word and see which family it belongs to." },
-    { "type": "widget", "widget": "harmony" }
+    {
+      "type": "text",
+      "text": "Try it: type any Hungarian word and see which family it belongs to."
+    },
+    {
+      "type": "widget",
+      "widget": "harmony"
+    }
   ]
 }

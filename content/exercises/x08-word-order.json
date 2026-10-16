@@ -1,0 +1,21 @@
+{
+  "id": "x08-word-order",
+  "lesson": "l08-szorend",
+  "title": "Szórend",
+  "titleEn": "Word order",
+  "intro": "Put the important word (in CAPITALS) right before the verb.",
+  "items": [
+    { "type": "order", "prompt": "Where does Petra live?", "tiles": ["Petra?", "Hol", "él"], "answer": ["Hol él Petra?"] },
+    { "type": "order", "prompt": "Petra lives in WARSAW.", "tiles": ["él.", "Petra", "Varsóban"], "answer": "Petra Varsóban él." },
+    { "type": "order", "prompt": "Who speaks Turkish?", "tiles": ["tud", "törökül?", "Ki"], "answer": "Ki tud törökül?" },
+    { "type": "order", "prompt": "HAKAN speaks Turkish.", "tiles": ["törökül.", "tud", "Hakan"], "answer": "Hakan tud törökül." },
+    { "type": "order", "prompt": "I don't speak Russian.", "tiles": ["oroszul.", "beszélek", "Nem"], "answer": "Nem beszélek oroszul." },
+    { "type": "order", "prompt": "IT'S ME who is Kornél Kis.", "tiles": ["Kis Kornél.", "vagyok", "Én"], "answer": "Én vagyok Kis Kornél." },
+    { "type": "order", "prompt": "Now I'm learning TURKISH.", "tiles": ["tanulok.", "törökül", "Most"], "answer": "Most törökül tanulok." },
+    { "type": "order", "prompt": "My husband speaks English WELL.", "tiles": ["angolul.", "jól", "tud", "A férjem"], "answer": "A férjem jól tud angolul." },
+    { "type": "order", "prompt": "What language do you speak at home? (you all)", "tiles": ["otthon?", "beszéltek", "Milyen nyelven"], "answer": ["Milyen nyelven beszéltek otthon?"] },
+    { "type": "choice", "prompt": "Which sentence means “PETRA speaks Japanese well (not Éva)”?", "options": ["Petra beszél jól japánul.", "Petra jól beszél japánul.", "Petra japánul beszél."], "answer": "Petra beszél jól japánul." },
+    { "type": "choice", "prompt": "— Melyik városban élsz? — Best answer:", "options": ["Budapesten élek.", "Élek Budapesten.", "Élek."], "answer": "Budapesten élek." },
+    { "type": "choice", "prompt": "What always goes into the focus position?", "options": ["question words, new information, nem", "the subject", "the verb"], "answer": "question words, new information, nem" }
+  ]
+}

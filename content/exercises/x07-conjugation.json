@@ -1,0 +1,36 @@
+{
+  "id": "x07-conjugation",
+  "lesson": "l07-igek",
+  "title": "Igeragozás",
+  "titleEn": "Conjugating regular verbs",
+  "intro": "Back verbs: -ok, -sz, —, -unk, -tok, -nak. Front verbs: -ek, -sz, —, -ünk, -tek, -nek. With ö/ő/ü/ű: -ök … -tök.",
+  "items": [
+    { "type": "match", "prompt": "Match the person to “tanul”.", "pairs": [
+      { "left": "én", "right": "tanulok" },
+      { "left": "te", "right": "tanulsz" },
+      { "left": "mi", "right": "tanulunk" },
+      { "left": "ti", "right": "tanultok" }
+    ] },
+    { "type": "choice", "prompt": "Önök, ők ___ (beszél)", "options": ["beszélnek", "beszélnak", "beszéltek"], "answer": "beszélnek" },
+    { "type": "choice", "prompt": "ti ___ (örül)", "options": ["örültök", "örültek", "örültok"], "answer": "örültök", "explain": "ö in the last syllable → -tök." },
+    { "type": "choice", "prompt": "mi ___ (él)", "options": ["élünk", "élunk", "élnek"], "answer": "élünk" },
+    { "type": "choice", "prompt": "én ___ (kíván)", "options": ["kívánok", "kívánek", "kívánsz"], "answer": "kívánok" },
+    { "type": "choice", "prompt": "Informal, one person: ___ kínaiul?", "options": ["Tudsz", "Tud", "Tudtok"], "answer": "Tudsz" },
+    { "type": "choice", "prompt": "Formal, several people: Franciaországban ___?", "options": ["élnek", "éltek", "él"], "answer": "élnek", "explain": "Önök = they-form." },
+    { "type": "sort", "prompt": "Who? Sort the verb forms.", "buckets": ["én", "te", "mi", "ti"], "items": [
+      { "text": "kívánok", "bucket": "én" },
+      { "text": "örülök", "bucket": "én" },
+      { "text": "tanulsz", "bucket": "te" },
+      { "text": "örülsz", "bucket": "te" },
+      { "text": "kívánunk", "bucket": "mi" },
+      { "text": "örülünk", "bucket": "mi" },
+      { "text": "beszéltek", "bucket": "ti" },
+      { "text": "tudtok", "bucket": "ti" }
+    ] },
+    { "type": "choice", "prompt": "— Nem tudok japánul. — Me neither:", "options": ["Én sem.", "Én is.", "Én igen."], "answer": "Én sem.", "explain": "After a negative: Én sem (me neither) / Én igen (I do)." },
+    { "type": "choice", "prompt": "— Tudok angolul. — Me too:", "options": ["Én is.", "Én sem.", "Én nem."], "answer": "Én is." },
+    { "type": "choice", "prompt": "Put in order, best to worst: nagyon jól, egy kicsit, elég jól", "options": ["nagyon jól → elég jól → egy kicsit", "elég jól → nagyon jól → egy kicsit", "egy kicsit → elég jól → nagyon jól"], "answer": "nagyon jól → elég jól → egy kicsit" },
+    { "type": "type", "prompt": "Write: “We speak Hungarian at home.”", "answer": ["Otthon magyarul beszélünk.", "Magyarul beszélünk otthon."] },
+    { "type": "type", "prompt": "ti + tanul = ?", "answer": "tanultok" }
+  ]
+}

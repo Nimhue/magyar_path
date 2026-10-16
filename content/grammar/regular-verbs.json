@@ -1,0 +1,39 @@
+{
+  "id": "regular-verbs",
+  "order": 13,
+  "title": "Szabályos igék",
+  "titleEn": "Regular verbs",
+  "level": "A1",
+  "lesson": "l07-igek",
+  "summary": "Most Hungarian verbs are regular. The dictionary form is the ő-form, and you add an ending for each person, chosen by vowel harmony.",
+  "sections": [
+    { "type": "text", "text": "The dictionary form of a verb (*tanul, beszél, örül*) is the **ő-form**: he/she learns, speaks, is glad. For the other persons you add an ending. There are three sets, chosen by the vowels of the verb." },
+    {
+      "type": "table",
+      "head": ["", "Back: tanul", "Front: beszél", "Front with ö/ő/ü/ű: örül"],
+      "rows": [
+        ["én", "tanul**ok**", "beszél**ek**", "örül**ök**"],
+        ["te", "tanul**sz**", "beszél**sz**", "örül**sz**"],
+        ["Ön, ő", "tanul", "beszél", "örül"],
+        ["mi", "tanul**unk**", "beszél**ünk**", "örül**ünk**"],
+        ["ti", "tanul**tok**", "beszél**tek**", "örül**tök**"],
+        ["Önök, ők", "tanul**nak**", "beszél**nek**", "örül**nek**"]
+      ]
+    },
+    { "type": "tip", "text": "Same pattern: **tud** (tudok, tudsz, tud, tudunk, tudtok, tudnak), **él** (élek, élsz, él, élünk, éltek, élnek), **kíván** (kívánok… kívánnak)." },
+    { "type": "heading", "text": "Pronouns are usually left out" },
+    { "type": "text", "text": "The ending already says who: *Japánul tanulok.* *Párizsban élünk.* Say the pronoun only for **contrast**: **Én** tanulok japánul, nem Éva." },
+    { "type": "tip", "text": "With two singular people, both forms are fine: Péter és Jan Brüsszelben **él**. = Péter és Jan Brüsszelben **élnek**." },
+    { "type": "heading", "text": "Formal you = third person" },
+    {
+      "type": "table",
+      "head": ["", "Informal", "Formal"],
+      "rows": [
+        ["one person", "Tudsz kínaiul?", "Tud kínaiul?"],
+        ["several", "Prágában éltek?", "Prágában élnek?"]
+      ]
+    },
+    { "type": "text", "text": "Try it: pick a verb and a person." },
+    { "type": "widget", "widget": "conjugate" }
+  ]
+}

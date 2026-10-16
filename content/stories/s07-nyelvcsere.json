@@ -1,0 +1,36 @@
+{
+  "id": "s07-nyelvcsere",
+  "lesson": "l07-igek",
+  "title": "Nyelvcsere",
+  "titleEn": "Language exchange",
+  "intro": "You join a language exchange evening. Everyone chats in Hungarian. Get your verb endings right!",
+  "start": "a",
+  "nodes": {
+    "a": { "speaker": "Tímea", "text": "Sziasztok! Ti is magyarul tanultok?", "textEn": "Hi all! Are you learning Hungarian too?", "choices": [
+      { "text": "Igen, mi is magyarul tanulunk.", "textEn": "Yes, we're learning Hungarian too.", "to": "b" },
+      { "text": "Igen, mi is magyarul tanultok.", "textEn": "(wrong ending)", "to": "a-oops", "note": "mi → -unk: tanulunk. -tok is for ti." }
+    ] },
+    "a-oops": { "speaker": "Tímea", "text": "Mi tanulunk, ti tanultok!", "textEn": "We learn (tanulunk), you all learn (tanultok)!", "choices": [ { "text": "Igen, mi is tanulunk.", "textEn": "Yes, we're learning too.", "to": "b" } ] },
+    "b": { "speaker": "Tímea", "text": "És miért tanulsz magyarul?", "textEn": "And why are you learning Hungarian?", "choices": [
+      { "text": "Mert a barátom magyar.", "textEn": "Because my boyfriend is Hungarian.", "to": "c" },
+      { "text": "Mert Budapesten élek.", "textEn": "Because I live in Budapest.", "to": "c" },
+      { "text": "Mert szerintem nagyon érdekes.", "textEn": "Because I think it's very interesting.", "to": "c" }
+    ] },
+    "c": { "speaker": "Tímea", "text": "Szuper! És otthon milyen nyelven beszéltek?", "textEn": "Great! And what language do you speak at home?", "choices": [
+      { "text": "Otthon angolul és néha egy kicsit magyarul beszélünk.", "textEn": "At home we speak English and sometimes a little Hungarian.", "to": "d" },
+      { "text": "Otthon angolul beszéltek.", "textEn": "(wrong ending)", "to": "c-oops", "note": "About your own household: mi → beszélünk." }
+    ] },
+    "c-oops": { "speaker": "Tímea", "text": "Ti beszéltek? Vagy mi beszélünk?", "textEn": "You (all) speak? Or we speak?", "choices": [ { "text": "Bocsánat! Otthon angolul beszélünk.", "textEn": "Sorry! At home we speak English.", "to": "d" } ] },
+    "d": { "speaker": "Tímea", "text": "Te tudsz németül? A barátom osztrák, és ő nem tud magyarul.", "textEn": "Do you speak German? My boyfriend is Austrian, and he doesn't speak Hungarian.", "choices": [
+      { "text": "Sajnos nem tudok németül.", "textEn": "Unfortunately I don't speak German.", "to": "e" },
+      { "text": "Igen, egy kicsit tudok.", "textEn": "Yes, I know a little.", "to": "e" }
+    ] },
+    "e": { "speaker": "Tímea", "text": "Én sem tudok jól németül. Otthon angolul beszélünk.", "textEn": "I don't speak German well either. At home we speak English.", "choices": [
+      { "text": "Mi is!", "textEn": "Us too!", "to": "end-great" },
+      { "text": "Mi sem!", "textEn": "Us neither!", "to": "end-ok", "note": "Her last sentence was positive (we speak English), so: Mi is!" }
+    ] },
+    "end-great": { "text": "Tímea laughs: “Akkor angolul is beszélhetünk!” (Then we can speak English too!)", "textEn": "", "end": "great" },
+    "end-ok": { "text": "Almost! After a positive sentence it's is, after a negative it's sem.", "textEn": "", "end": "ok" }
+  },
+  "glossary": { "tímea": "Tímea (a name)", "barátom": "my boyfriend", "osztrák": "Austrian", "akkor": "then", "beszélhetünk": "we can speak", "nyelvcsere": "language exchange", "szuper": "great" }
+}

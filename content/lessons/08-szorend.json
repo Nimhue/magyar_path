@@ -1,0 +1,92 @@
+{
+  "id": "l08-szorend",
+  "order": 8,
+  "title": "Kérdőszavak és szórend",
+  "titleEn": "Question words and word order",
+  "level": "A1",
+  "summary": "Ki? Mi? Hol? Hány? Melyik? Milyen? Miért? — and the focus rule: the most important word goes right before the verb.",
+  "place": {
+    "name": "Balaton",
+    "fact": "Central Europe's largest lake, 77 km long. Hungarians call it “the Hungarian sea” and spend their summers on its shores.",
+    "lon": 17.9,
+    "lat": 46.9
+  },
+  "grammar": [
+    "question-words",
+    "focus"
+  ],
+  "exercises": [
+    "x08-questions",
+    "x08-word-order"
+  ],
+  "readings": [
+    "r08-interju"
+  ],
+  "stories": [
+    "s08-balaton"
+  ],
+  "homework": [],
+  "vocab": [
+    {
+      "name": "Kérdőszavak · Question words",
+      "items": [
+        {"hu": "kérdőszó", "en": "question word", "ro": "cuvânt interogativ"},
+        {"hu": "Ki?", "en": "Who?", "ro": "Cine?"},
+        {"hu": "Mi?", "en": "What?", "ro": "Ce?"},
+        {"hu": "Hol?", "en": "Where?", "ro": "Unde?"},
+        {"hu": "Hány?", "en": "How many?", "ro": "Câți? Câte?"},
+        {"hu": "Hány éves?", "en": "How old?", "ro": "Câți ani are?"},
+        {"hu": "Melyik?", "en": "Which?", "ro": "Care?"},
+        {"hu": "Milyen?", "en": "What kind of? What … like?", "ro": "Ce fel de? Cum?"},
+        {"hu": "Miért?", "en": "Why?", "ro": "De ce?"},
+        {"hu": "Melyik városban élsz?", "en": "Which city do you live in?", "ro": "În ce oraș locuiești?", "kind": "phrase"},
+        {"hu": "Hány ember él Kínában?", "en": "How many people live in China?", "ro": "Câți oameni trăiesc în China?", "kind": "phrase"},
+        {"hu": "Ki tud törökül?", "en": "Who speaks Turkish?", "ro": "Cine știe turcă?", "kind": "phrase"},
+        {"hu": "Hol éltek?", "en": "Where do you (all) live?", "ro": "Unde locuiți?", "kind": "phrase"},
+        {"hu": "Hol van Bécs?", "en": "Where is Vienna?", "ro": "Unde e Viena?", "kind": "phrase"},
+        {"hu": "Ausztriában.", "en": "In Austria.", "ro": "În Austria.", "kind": "phrase"},
+        {"hu": "körülbelül", "en": "about, approximately", "ro": "aproximativ"},
+        {"hu": "millió", "en": "million", "ro": "milion"},
+        {"hu": "ötmillió", "en": "five million", "ro": "cinci milioane"},
+        {"hu": "ötvenkettő", "en": "fifty-two (52)", "ro": "cincizeci și doi"}
+      ]
+    },
+    {
+      "name": "Szórend · Word order",
+      "items": [
+        {"hu": "szórend", "en": "word order", "ro": "ordinea cuvintelor"},
+        {"hu": "fókusz", "en": "focus (the stressed, important part)", "ro": "focus, element accentuat"},
+        {"hu": "fókuszpozíció", "en": "focus position: right before the verb", "ro": "poziția de focus: imediat înaintea verbului", "kind": "rule"},
+        {"hu": "Kérdőszó + ige", "en": "A question word always comes right before the verb", "ro": "Cuvântul interogativ stă mereu înaintea verbului", "note": "Hol élsz? Milyen nyelven beszélsz?", "kind": "rule"},
+        {"hu": "Új információ + ige", "en": "In the answer, the new information comes right before the verb", "ro": "În răspuns, informația nouă stă înaintea verbului", "note": "— Hol él Petra? — Petra Varsóban él.", "kind": "rule"},
+        {"hu": "Tagadószó + ige", "en": "“nem” also sits right before the verb", "ro": "„nem” stă și el înaintea verbului", "note": "Nem beszélek oroszul.", "kind": "rule"},
+        {"hu": "új információ", "en": "new information", "ro": "informație nouă"},
+        {"hu": "tagadószó", "en": "negative word (nem, sem…)", "ro": "cuvânt de negație"},
+        {"hu": "kijelentő mondat", "en": "statement", "ro": "propoziție enunțiativă"},
+        {"hu": "kiegészítendő kérdés", "en": "question with a question word", "ro": "întrebare parțială (cu cuvânt interogativ)"},
+        {"hu": "Petra japánul beszél.", "en": "Petra speaks JAPANESE (not Chinese).", "ro": "Petra vorbește JAPONEZĂ (nu chineză).", "kind": "phrase"},
+        {"hu": "Petra beszél jól japánul.", "en": "PETRA speaks Japanese well (not Éva).", "ro": "PETRA vorbește bine japoneză (nu Éva).", "kind": "phrase"},
+        {"hu": "Én vagyok Kis Kornél.", "en": "I am Kornél Kis. (it's ME)", "ro": "EU sunt Kornél Kis.", "kind": "phrase"},
+        {"hu": "Kis Kornél vagyok.", "en": "I'm Kornél Kis. (neutral)", "ro": "Sunt Kornél Kis.", "kind": "phrase"},
+        {"hu": "A férjem jól tud angolul.", "en": "My husband speaks English well.", "ro": "Soțul meu știe bine engleză.", "kind": "phrase"},
+        {"hu": "Te is tudsz japánul?", "en": "Can you speak Japanese too?", "ro": "Și tu știi japoneză?", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "A tankönyvből · From the textbook",
+      "items": [
+        {"hu": "Alkosson kérdéseket és válaszokat!", "en": "Make questions and answers!", "ro": "Formulați întrebări și răspunsuri!", "kind": "phrase"},
+        {"hu": "Tegye a szavakat helyes sorrendbe!", "en": "Put the words in the right order!", "ro": "Puneți cuvintele în ordinea corectă!", "kind": "phrase"},
+        {"hu": "A fontos információt aláhúztuk.", "en": "We underlined the important information.", "ro": "Am subliniat informația importantă.", "kind": "phrase"},
+        {"hu": "válasz", "en": "answer", "ro": "răspuns"},
+        {"hu": "helyes", "en": "correct", "ro": "corect"},
+        {"hu": "sorrend", "en": "order, sequence", "ro": "ordine"},
+        {"hu": "végződés", "en": "ending (of a word)", "ro": "terminație"},
+        {"hu": "személy", "en": "person (grammar)", "ro": "persoană"},
+        {"hu": "Melyik alakot hallja?", "en": "Which form do you hear?", "ro": "Ce formă auziți?", "kind": "phrase"},
+        {"hu": "alak", "en": "form, shape", "ro": "formă"},
+        {"hu": "Csoportosítsa az igéket!", "en": "Group the verbs!", "ro": "Grupați verbele!", "kind": "phrase"}
+      ]
+    }
+  ]
+}

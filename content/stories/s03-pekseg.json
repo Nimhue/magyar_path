@@ -1,0 +1,34 @@
+{
+  "id": "s03-pekseg",
+  "lesson": "l03-oran",
+  "title": "A pékségben",
+  "titleEn": "At the bakery",
+  "intro": "It's 8 in the morning. You walk into a small bakery in Budapest. Choose what to say.",
+  "start": "a",
+  "nodes": {
+    "a": { "speaker": "Eladó", "text": "Jó reggelt kívánok!", "textEn": "Good morning! (formal)", "choices": [
+      { "text": "Jó reggelt kívánok!", "textEn": "Good morning! (formal)", "to": "b" },
+      { "text": "Sziasztok!", "textEn": "Hi all! (informal, plural)", "to": "a-oops", "note": "Too casual for a stranger in a shop, and it's plural." },
+      { "text": "Jó éjszakát!", "textEn": "Good night!", "to": "a-oops2" }
+    ] },
+    "a-oops": { "speaker": "Eladó", "text": "Öö… szia?", "textEn": "Uh… hi?", "choices": [ { "text": "Bocsánat! Jó reggelt kívánok!", "textEn": "Sorry! Good morning!", "to": "b" } ] },
+    "a-oops2": { "speaker": "Eladó", "text": "Jó éjszakát? De most reggel van!", "textEn": "Good night? But it's morning now!", "choices": [ { "text": "Bocsánat! Jó reggelt kívánok!", "textEn": "Sorry! Good morning!", "to": "b" } ] },
+    "b": { "speaker": "Eladó", "text": "Tessék?", "textEn": "What would you like? (literally: please?)", "note": "", "choices": [
+      { "text": "Egy kenyeret kérek.", "textEn": "A loaf of bread, please.", "to": "c" },
+      { "text": "Nem értem. Lassabban, legyen szíves!", "textEn": "I don't understand. More slowly, please!", "to": "b-slow" }
+    ] },
+    "b-slow": { "speaker": "Eladó", "text": "Mit… kér?", "textEn": "What… would you like?", "choices": [ { "text": "Egy kenyeret kérek.", "textEn": "A loaf of bread, please.", "to": "c" } ] },
+    "c": { "speaker": "Eladó", "text": "Tessék, a kenyér. Még valamit?", "textEn": "Here you are, the bread. Anything else?", "choices": [
+      { "text": "Köszönöm, mást nem.", "textEn": "Thank you, nothing else.", "to": "d" },
+      { "text": "Szívesen.", "textEn": "You're welcome.", "to": "c-oops", "note": "Szívesen answers a thank-you. Here you're the one who should say köszönöm." }
+    ] },
+    "c-oops": { "speaker": "Eladó", "text": "(nevet) Szívesen? Én mondom, hogy szívesen!", "textEn": "(laughs) You're welcome? I'm the one who says that!", "choices": [ { "text": "Jaj! Köszönöm, mást nem.", "textEn": "Oops! Thank you, nothing else.", "to": "d" } ] },
+    "d": { "speaker": "Eladó", "text": "Köszönöm. Viszontlátásra!", "textEn": "Thank you. Goodbye!", "choices": [
+      { "text": "Viszontlátásra!", "textEn": "Goodbye! (formal)", "to": "end-great" },
+      { "text": "Szia!", "textEn": "Bye! (informal)", "to": "end-ok" }
+    ] },
+    "end-great": { "text": "Tökéletes! You greeted, ordered and said goodbye politely.", "textEn": "Perfect!", "end": "great" },
+    "end-ok": { "text": "You got your bread! Next time say Viszontlátásra to a shop assistant.", "textEn": "Not bad!", "end": "ok" }
+  },
+  "glossary": { "eladó": "shop assistant", "kenyeret": "bread (as object)", "kérek": "I'd like, please", "kér": "would like", "mást": "anything else", "nevet": "laughs", "mondom": "I say", "pékség": "bakery", "reggel": "morning", "van": "is" }
+}

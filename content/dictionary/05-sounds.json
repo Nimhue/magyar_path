@@ -1,0 +1,61 @@
+{
+  "id": "sounds",
+  "order": 5,
+  "title": "Hangutánzó szavak",
+  "titleEn": "Onomatopoeia",
+  "color": "yellow",
+  "mark": "H",
+  "intro": "How Hungarian animals talk and how things go bang.",
+  "groups": [
+    {
+      "name": "Állathangok · Animal sounds",
+      "items": [
+        {"hu": "vau-vau", "en": "woof (dog)", "ro": "ham-ham"},
+        {"hu": "miau", "en": "meow (cat)", "ro": "miau"},
+        {"hu": "kukurikú", "en": "cock-a-doodle-doo", "ro": "cucurigu"},
+        {"hu": "kotkodács", "en": "cluck (hen)", "ro": "cotcodac"},
+        {"hu": "hápp-hápp", "en": "quack (duck)", "ro": "mac-mac"},
+        {"hu": "mú", "en": "moo (cow)", "ro": "muu"},
+        {"hu": "bee", "en": "baa (sheep)", "ro": "bee"},
+        {"hu": "röf-röf", "en": "oink (pig)", "ro": "groh-groh"},
+        {"hu": "nyihaha", "en": "neigh (horse)", "ro": "ihaha"},
+        {"hu": "brekeke", "en": "ribbit (frog)", "ro": "oac-oac"},
+        {"hu": "csip-csirip", "en": "tweet (bird)", "ro": "cip-cirip"},
+        {"hu": "zümm", "en": "buzz (bee)", "ro": "bâzz"},
+        {"hu": "huhu", "en": "hoot (owl)", "ro": "hu-hu"}
+      ]
+    },
+    {
+      "name": "Zajok · Noises",
+      "items": [
+        {"hu": "bumm", "en": "boom", "ro": "bum"},
+        {"hu": "puff", "en": "thud, plop", "ro": "buf"},
+        {"hu": "zsupsz", "en": "whoosh, splash (sudden fall)", "ro": "pleosc"},
+        {"hu": "csatt", "en": "snap, smack", "ro": "pac"},
+        {"hu": "kopp-kopp", "en": "knock knock", "ro": "cioc-cioc"},
+        {"hu": "tik-tak", "en": "tick-tock", "ro": "tic-tac"},
+        {"hu": "csörr", "en": "ring (phone, alarm)", "ro": "țârr"},
+        {"hu": "pitty-putty", "en": "drip drop", "ro": "pic-pic"},
+        {"hu": "hapci", "en": "achoo (sneeze)", "ro": "hapciu", "note": "answer: Egészségedre!"},
+        {"hu": "nyam-nyam", "en": "yum yum", "ro": "nam-nam"},
+        {"hu": "cupp", "en": "smooch", "ro": "țoc"},
+        {"hu": "hű", "en": "wow", "ro": "uau"},
+        {"hu": "jaj", "en": "ouch, oh dear", "ro": "vai"},
+        {"hu": "psszt", "en": "shh, psst", "ro": "sst"}
+      ]
+    },
+    {
+      "name": "Hangutánzó igék · Sound verbs",
+      "items": [
+        {"hu": "ugat", "en": "to bark", "ro": "a lătra"},
+        {"hu": "nyávog", "en": "to meow", "ro": "a mieuna"},
+        {"hu": "kukorékol", "en": "to crow", "ro": "a cânta (cocoșul)"},
+        {"hu": "zümmög", "en": "to buzz", "ro": "a bâzâi"},
+        {"hu": "csipog", "en": "to cheep, to beep", "ro": "a ciripi; a piui"},
+        {"hu": "csörög", "en": "to ring, to rattle", "ro": "a suna; a zornăi"},
+        {"hu": "kopog", "en": "to knock", "ro": "a bate (la ușă)"},
+        {"hu": "suttog", "en": "to whisper", "ro": "a șopti"}
+      ]
+    }
+  ]
+}

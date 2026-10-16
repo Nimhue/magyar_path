@@ -1,0 +1,34 @@
+{
+  "id": "r06-capitals",
+  "lesson": "l06-orszagok",
+  "title": "Képeslapok",
+  "titleEn": "Postcards",
+  "intro": "Four friends write short postcards from four cities.",
+  "paragraphs": [
+    "Szia, Anna! Most Bécsben vagyok. Bécs Ausztria fővárosa. Itt mindenki németül beszél, de én csak egy kicsit tudok németül. Puszi, Réka",
+    "Szia, Réka! Én Prágában vagyok. A csehek nagyon kedvesek. Csehül nem tudok, de angolul beszélek. Puszi, Anna",
+    "Sziasztok! Bukarestben vagyok, Romániában. Tudtok románul? Én igen, mert az anyukám román! Puszi, Dani",
+    "Sziasztok! Én itthon vagyok, Magyarországon, Siófokon. A Balaton gyönyörű. Puszi, Gergő"
+  ],
+  "glossary": {
+    "anna": "Anna (a name)",
+    "réka": "Réka (a name)",
+    "dani": "Dani (short for Dániel)",
+    "gergő": "Gergő (a name)",
+    "fővárosa": "its capital",
+    "itt": "here",
+    "itthon": "at home (here in my country)",
+    "csak": "only",
+    "puszi": "kiss, love (end of a friendly message)",
+    "a csehek": "the Czechs",
+    "kedvesek": "kind, nice (plural)",
+    "gyönyörű": "beautiful",
+    "képeslapok": "postcards"
+  },
+  "questions": [
+    { "q": "Hol van Réka?", "qEn": "Where is Réka?", "options": ["Bécsben", "Prágában", "Siófokon"], "answer": "Bécsben" },
+    { "q": "Miért tud Dani románul?", "qEn": "Why does Dani speak Romanian?", "options": ["Mert az anyukája román.", "Mert Bukarestben él.", "Mert diák."], "answer": "Mert az anyukája román.", "explain": "anyukája = his mum" },
+    { "q": "Milyen nyelven beszél Anna Prágában?", "qEn": "What language does Anna speak in Prague?", "options": ["angolul", "csehül", "németül"], "answer": "angolul" },
+    { "q": "Gergő külföldön van?", "qEn": "Is Gergő abroad?", "options": ["Nem, Magyarországon van.", "Igen, Romániában."], "answer": "Nem, Magyarországon van." }
+  ]
+}

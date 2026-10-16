@@ -1,0 +1,153 @@
+{
+  "id": "s06-repuloter",
+  "lesson": "l06-orszagok",
+  "title": "A reptéren",
+  "titleEn": "At the airport",
+  "intro": "You play someone from Bucharest who lives in Budapest. You're waiting for a flight, and the person next to you starts chatting.",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Utas",
+      "text": "Jó napot! Ön is Bécsbe megy?",
+      "textEn": "Hello! Are you going to Vienna too?",
+      "choices": [
+        {
+          "text": "Nem, Bukarestbe megyek.",
+          "textEn": "No, I'm going to Bucharest.",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Utas",
+      "text": "Bukarest! Az Románia fővárosa, ugye?",
+      "textEn": "Bucharest! That's the capital of Romania, right?",
+      "choices": [
+        {
+          "text": "Igen. Bukaresti vagyok.",
+          "textEn": "Yes. I'm from Bucharest.",
+          "to": "c"
+        },
+        {
+          "text": "Igen. Bukarestben vagyok.",
+          "textEn": "Yes. I'm in Bucharest.",
+          "to": "b-oops",
+          "note": "You're at Budapest airport! From Bucharest = bukaresti (-i)."
+        }
+      ]
+    },
+    "b-oops": {
+      "speaker": "Utas",
+      "text": "Most? De most Budapesten van!",
+      "textEn": "Now? But you're in Budapest now!",
+      "choices": [
+        {
+          "text": "Bocsánat! Bukaresti vagyok.",
+          "textEn": "Sorry! I'm from Bucharest.",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Utas",
+      "text": "Érdekes! És hol él?",
+      "textEn": "Interesting! And where do you live?",
+      "choices": [
+        {
+          "text": "Budapesten élek.",
+          "textEn": "I live in Budapest.",
+          "to": "d"
+        },
+        {
+          "text": "Budapestben élek.",
+          "textEn": "(wrong ending)",
+          "to": "c-oops",
+          "note": "Budapest takes -en, like most Hungarian towns: Budapesten."
+        }
+      ]
+    },
+    "c-oops": {
+      "speaker": "Utas",
+      "text": "Budapesten, ugye?",
+      "textEn": "In Budapest, right?",
+      "choices": [
+        {
+          "text": "Igen, Budapesten élek.",
+          "textEn": "Yes, I live in Budapest.",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Utas",
+      "text": "Én osztrák vagyok, Grazban élek. Milyen nyelven beszél?",
+      "textEn": "I'm Austrian, I live in Graz. What languages do you speak?",
+      "choices": [
+        {
+          "text": "Románul, angolul és egy kicsit magyarul.",
+          "textEn": "Romanian, English and a little Hungarian.",
+          "to": "e"
+        },
+        {
+          "text": "Románban, angolban…",
+          "textEn": "(wrong ending)",
+          "to": "d-oops",
+          "note": "Languages take -ul/-ül, not -ban."
+        }
+      ]
+    },
+    "d-oops": {
+      "speaker": "Utas",
+      "text": "Románul? Angolul?",
+      "textEn": "Romanian? English?",
+      "choices": [
+        {
+          "text": "Igen: románul, angolul és egy kicsit magyarul.",
+          "textEn": "Yes: Romanian, English and a little Hungarian.",
+          "to": "e"
+        }
+      ]
+    },
+    "e": {
+      "speaker": "Utas",
+      "text": "Nagyon jól beszél magyarul! Én is tanulok, de még nem tudok olyan jól.",
+      "textEn": "You speak Hungarian very well! I'm learning too, but I'm not that good yet.",
+      "choices": [
+        {
+          "text": "Köszönöm! Szerintem a magyar nyelv nagyon érdekes.",
+          "textEn": "Thank you! I think Hungarian is very interesting.",
+          "to": "end-great"
+        },
+        {
+          "text": "Én sem.",
+          "textEn": "Me neither.",
+          "to": "end-ok",
+          "note": "Modest! But you just had a whole conversation in Hungarian."
+        }
+      ]
+    },
+    "end-great": {
+      "text": "Your flight is called. Jó utat! (Have a good trip!)",
+      "textEn": "",
+      "end": "great"
+    },
+    "end-ok": {
+      "text": "The traveller laughs: “Dehogynem!” (Of course you do!) Jó utat!",
+      "textEn": "",
+      "end": "ok"
+    }
+  },
+  "glossary": {
+    "utas": "traveller, passenger",
+    "bécsbe": "to Vienna",
+    "megy": "goes",
+    "bukarestbe": "to Bucharest",
+    "megyek": "I'm going",
+    "az": "that",
+    "fővárosa": "its capital",
+    "ugye": "right?",
+    "grazban": "in Graz",
+    "reptéren": "at the airport",
+    "dehogynem": "of course (you do)!"
+  }
+}
