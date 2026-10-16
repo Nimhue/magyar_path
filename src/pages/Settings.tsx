@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { allCards, config, lessons } from "../content";
 import { Icon, PageHead } from "../components/ui";
 import { href } from "../lib/router";
-import { canSpeak, hasHungarianVoice, onVoices, speak } from "../lib/speech";
+import { canSpeak, hungarianVoices, isEdge, onVoices, platform, speak } from "../lib/speech";
 import { exportProgress, importProgress, resetProgress, update, useProgress } from "../lib/store";
 import { PALETTES } from "../lib/themes";
+import { AccountPanel } from "./Devices";
 import { download } from "./Notes";
 
 async function sha256(text: string) {
@@ -18,15 +19,17 @@ export function SettingsPage() {
   const [codeMsg, setCodeMsg] = useState<string | null>(null);
   const [resetting, setResetting] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
-  const [voice, setVoice] = useState(hasHungarianVoice());
-  useEffect(() => {
-    const off = onVoices(() => setVoice(hasHungarianVoice()));
-    return () => void off();
-  }, []);
 
   return (
     <div className="stack-lg">
       <PageHead title="Beállítások" sub="Settings" back={href("")} />
+
+      <AccountPanel />
+      <a className="cta" href={href("devices")}>
+        <span className="cta-kicker">Phone → laptop</span>
+        <span className="cta-title">Move to another device with a code</span>
+        <Icon name="back" />
+      </a>
 
       <section className="panel stack">
         <h2 className="section-title">You</h2>
@@ -112,27 +115,11 @@ export function SettingsPage() {
           </span>
         </label>
         <a className="linkish" href={href("me")}>
-          <Icon name="trophy" size={16} /> Trophies and Bodza's wardrobe
+          <Icon name="trophy" size={16} /> Trophies, study buddy and wardrobe
         </a>
       </section>
 
-      <section className="panel stack">
-        <h2 className="section-title">Pronunciation</h2>
-        {!canSpeak() ? (
-          <p className="muted">This browser can't speak text aloud.</p>
-        ) : voice ? (
-          <p>A Hungarian voice is installed on this device.</p>
-        ) : (
-          <p className="warn-text">
-            No Hungarian voice found. Audio will use a default voice and sound wrong. On iPhone: Settings → Accessibility → Spoken Content →
-            Voices → Hungarian. On Android: install Hungarian in Google text-to-speech. Listening questions are skipped in quizzes until a
-            voice is available.
-          </p>
-        )}
-        <button className="btn small" onClick={() => speak("Jó napot kívánok! Örülök, hogy itt vagy.")} disabled={!canSpeak()}>
-          <Icon name="speaker" size={16} /> Test voice
-        </button>
-      </section>
+      <VoicePanel />
 
       <section className="panel stack">
         <h2 className="section-title">Teacher mode</h2>
@@ -226,5 +213,96 @@ export function SettingsPage() {
         )}
       </section>
     </div>
+  );
+}
+
+const HOW: Record<string, { title: string; steps: string[] }> = {
+  windows: {
+    title: "On Windows",
+    steps: [
+      "Easiest: open this site in Microsoft Edge. It comes with natural-sounding Hungarian voices (Noémi and Tamás).",
+      "Or install one for every browser: Settings → Time & language → Speech → Manage voices → Add voices → Magyar (Hungarian). Then restart the browser.",
+      "Chrome and Opera don't always show Windows voices. If it still sounds English there, use Edge for listening practice.",
+    ],
+  },
+  mac: {
+    title: "On a Mac",
+    steps: ["System Settings → Accessibility → Spoken Content → System voice → Manage Voices… → Hungarian (Tünde) → download.", "Restart the browser."],
+  },
+  ios: {
+    title: "On iPhone or iPad",
+    steps: ["Settings → Accessibility → Spoken Content → Voices → Hungarian → download Tünde (pick the Enhanced one if offered).", "Close and reopen the browser."],
+  },
+  android: {
+    title: "On Android",
+    steps: [
+      "Settings → System → Languages → Text-to-speech output → Speech Services by Google (gear icon) → Install voice data → Magyar (Hungarian).",
+      "Reopen Chrome.",
+    ],
+  },
+  linux: { title: "On Linux", steps: ["Install a Hungarian voice for speech-dispatcher (e.g. espeak-ng), or use Chrome with Google voices."] },
+  other: { title: "On this device", steps: ["Look for text-to-speech settings and add a Hungarian (Magyar) voice, then reopen the browser."] },
+};
+
+function VoicePanel() {
+  const p = useProgress();
+  const [list, setList] = useState(hungarianVoices());
+  useEffect(() => {
+    const off = onVoices(() => setList(hungarianVoices()));
+    return () => void off();
+  }, []);
+  const how = HOW[platform()];
+  return (
+    <section className="panel stack">
+      <h2 className="section-title">Hungarian voice</h2>
+      {!canSpeak() ? (
+        <p className="muted">This browser can't speak text aloud.</p>
+      ) : list.length ? (
+        <>
+          <p>
+            {list.length} Hungarian voice{list.length > 1 ? "s" : ""} found on this device.
+            {platform() === "windows" && !isEdge() && !list.some((v) => /natural|online/i.test(v.name))
+              ? " For the most natural sound, try Microsoft Edge."
+              : ""}
+          </p>
+          <label className="field">
+            <span>Voice</span>
+            <select
+              id="set-voice"
+              value={p.settings.voice}
+              onChange={(e) => {
+                update((d) => void (d.settings.voice = e.target.value));
+                setTimeout(() => speak("Szia! Jó napot kívánok!"), 50);
+              }}
+            >
+              <option value="">Automatic (best available)</option>
+              {list.map((v) => (
+                <option key={v.name} value={v.name}>
+                  {v.name}
+                </option>
+              ))}
+            </select>
+          </label>
+        </>
+      ) : (
+        <div className="stack">
+          <p className="warn-text">
+            This device has no Hungarian voice, so the app stays quiet rather than reading Hungarian with an English accent. Listening
+            questions are skipped until you add one.
+          </p>
+          <div className="voice-how">
+            <strong>{how.title}</strong>
+            <ol>
+              {how.steps.map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      )}
+      <button className="btn small" onClick={() => speak("Jó napot kívánok! Örülök, hogy itt vagy.")} disabled={!list.length}>
+        <Icon name="speaker" size={16} /> Test voice
+      </button>
+    </section>
   );
 }

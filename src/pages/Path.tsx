@@ -1,7 +1,9 @@
 import { allCards, cardsByLesson, config, lessons } from "../content";
 import { JourneyMap } from "../components/JourneyMap";
 import { QuestCard } from "./Practice";
-import { MascotSays } from "../components/Mascot";
+import { useState } from "react";
+import { cloudAvailable, useCloud } from "../lib/cloud";
+import { MascotSays, mascotName } from "../components/Mascot";
 import { Icon, Ring } from "../components/ui";
 import { currentLesson, isUnlocked, lessonStatus, unlockedLessons } from "../lib/progress";
 import { href } from "../lib/router";
@@ -53,7 +55,7 @@ export function PathPage() {
             {p.daily.xp >= DAILY_GOAL
               ? "Daily goal reached. Ügyes vagy!"
               : p.xp === 0
-                ? "I'm Bodza. Let's learn Hungarian, one lesson at a time."
+                ? `I'm ${mascotName(p.settings.mascot)}. Let's learn Hungarian, one lesson at a time.`
                 : `${DAILY_GOAL - p.daily.xp} XP to today's goal.`}
           </span>
         </MascotSays>
@@ -120,6 +122,8 @@ export function PathPage() {
           </a>
         )}
       </section>
+
+      <SaveBanner />
 
       <QuestCard />
 
@@ -189,5 +193,46 @@ export function PathPage() {
         </ol>
       </section>
     </div>
+  );
+}
+
+function SaveBanner() {
+  const p = useProgress();
+  const cloud = useCloud();
+  const [hidden, setHidden] = useState(() => {
+    try {
+      return localStorage.getItem("magyar-path:hide-save") === "1";
+    } catch {
+      return false;
+    }
+  });
+  if (hidden || cloud.session || !cloudAvailable() || p.xp < 20) return null;
+  return (
+    <aside className="save-banner">
+      <Icon name="heart" size={20} />
+      <div>
+        <strong>Keep your streak safe</strong>
+        <span>Progress lives only in this browser. A free account (no email) saves it and syncs your phone and laptop.</span>
+      </div>
+      <div className="row gap">
+        <a className="btn primary small" href={href("devices")}>
+          Create account
+        </a>
+        <button
+          className="icon-btn"
+          aria-label="Hide this"
+          onClick={() => {
+            setHidden(true);
+            try {
+              localStorage.setItem("magyar-path:hide-save", "1");
+            } catch {
+              /* ignore */
+            }
+          }}
+        >
+          <Icon name="x" size={18} />
+        </button>
+      </div>
+    </aside>
   );
 }

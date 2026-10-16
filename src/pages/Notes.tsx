@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Empty, Fmt, Icon, PageHead } from "../components/ui";
+import { useCloud } from "../lib/cloud";
 import {
   addImage,
   deleteFolder,
@@ -43,9 +44,10 @@ export function NotesPage() {
       setReady(true);
     }
   }, []);
+  const cloud = useCloud();
   useEffect(() => {
     reload();
-  }, [reload]);
+  }, [reload, cloud.last]);
 
   const children = (pid: string | null) => folders.filter((f) => f.parentId === pid);
   const descendants = (id: string): string[] => [id, ...children(id).flatMap((c) => descendants(c.id))];

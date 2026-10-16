@@ -109,7 +109,7 @@ export interface Outfit {
 }
 
 export const OUTFITS: Outfit[] = [
-  { id: "none", name: "Just Bodza", unlock: "Always", available: () => true },
+  { id: "none", name: "No outfit", unlock: "Always", available: () => true },
   { id: "scarf", name: "Red-white-green scarf", unlock: "Level 2", available: (p) => levelFor(p.xp).level >= 2 },
   { id: "glasses", name: "Sunglasses", unlock: "Level 4", available: (p) => levelFor(p.xp).level >= 4 },
   { id: "kalap", name: "Shepherd's hat", unlock: "Level 6", available: (p) => levelFor(p.xp).level >= 6 },

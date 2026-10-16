@@ -12,6 +12,8 @@ export interface CardState {
   ease: number;
   due: number; // epoch ms
   lapses: number;
+  /** when it was last reviewed (epoch ms), used to merge devices */
+  at?: number;
 }
 
 /** Things that count toward daily quests and trophies. */
@@ -24,8 +26,12 @@ export interface Settings {
   name: string;
   showRo: boolean;
   sound: boolean;
-  /** Bodza's outfit: "auto" picks the best unlocked one */
+  /** mascot's outfit: "auto" picks the best unlocked one */
   outfit: string;
+  /** which mascot cheers you on */
+  mascot: string;
+  /** preferred Hungarian voice name, "" = automatic */
+  voice: string;
 }
 
 export interface Progress {
@@ -50,6 +56,8 @@ export interface Progress {
   trophies: Record<string, string>;
   teacher: boolean;
   settings: Settings;
+  /** last local change (epoch ms) */
+  updatedAt: number;
 }
 
 const KEY = "magyar-path:v1";
@@ -82,7 +90,8 @@ function fresh(): Progress {
     flags: {},
     trophies: {},
     teacher: false,
-    settings: { theme: "system", palette: "paprika", direction: "hu", name: "", showRo: true, sound: true, outfit: "auto" },
+    settings: { theme: "system", palette: "barack", direction: "hu", name: "", showRo: true, sound: true, outfit: "auto", mascot: "cirmi", voice: "" },
+    updatedAt: 0,
   };
 }
 
@@ -118,10 +127,27 @@ export function getState() {
   return state;
 }
 
+const changeListeners = new Set<() => void>();
+/** Called after every local change (used to schedule a cloud sync). */
+export function onLocalChange(fn: () => void) {
+  changeListeners.add(fn);
+  return () => changeListeners.delete(fn);
+}
+
 export function update(fn: (draft: Progress) => void) {
   const next = structuredClone(state);
   if (next.daily.date !== today()) next.daily = freshDaily();
   fn(next);
+  next.updatedAt = Date.now();
+  state = next;
+  persist();
+  listeners.forEach((l) => l());
+  changeListeners.forEach((l) => l());
+}
+
+/** Replace the whole state (after merging with another device) without counting as a local change. */
+export function replaceState(next: Progress) {
+  if (next.daily.date !== today()) next.daily = freshDaily();
   state = next;
   persist();
   listeners.forEach((l) => l());

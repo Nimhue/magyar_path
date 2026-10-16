@@ -9,6 +9,8 @@ import { href, useRoute } from "./lib/router";
 import { sfx } from "./lib/sound";
 import { getState, levelFor, liveStreak, update, useProgress } from "./lib/store";
 import { applyTheme, watchSystemTheme } from "./lib/themes";
+import { useCloud } from "./lib/cloud";
+import { setMissingVoiceHandler } from "./lib/speech";
 import { PathPage } from "./pages/Path";
 import { LessonPage } from "./pages/Lesson";
 import { VocabPage } from "./pages/Vocab";
@@ -23,6 +25,7 @@ import { PracticePage } from "./pages/Practice";
 import { GamesPage } from "./pages/Games";
 import { StoryPage } from "./pages/Story";
 import { TrophiesPage } from "./pages/Trophies";
+import { DevicesPage } from "./pages/Devices";
 
 const NAV = [
   { id: "", label: "Path", icon: "home", match: ["", "lesson"] },
@@ -76,12 +79,31 @@ function useRewards() {
     }
     const lvl = levelFor(p.xp).level;
     if (lvl > lastLevel.current) {
-      toast(`Level ${lvl}!`, "Szintlépés! Check Bodza's wardrobe for new outfits.", "info");
+      toast(`Level ${lvl}!`, "Szintlépés! Check the wardrobe for new outfits.", "info");
       sfx("win");
     }
     lastLevel.current = lvl;
   }, [p]);
 }
+
+function SyncDot() {
+  const c = useCloud();
+  if (!c.session) return null;
+  return (
+    <a
+      href={href("devices")}
+      className={"sync-dot " + c.state}
+      title={c.state === "error" ? c.message : c.state === "offline" ? "Offline" : c.state === "syncing" ? "Syncing…" : "Synced"}
+      aria-label={`Sync status: ${c.state}`}
+    >
+      <Icon name="repeat" size={16} />
+    </a>
+  );
+}
+
+setMissingVoiceHandler(() =>
+  toast("No Hungarian voice on this device", "Settings → Hungarian voice shows how to add one in a minute.", "info")
+);
 
 export function App() {
   const route = useRoute();
@@ -134,6 +156,12 @@ export function App() {
     case "me":
       page = <TrophiesPage />;
       break;
+    case "devices":
+      page = <DevicesPage />;
+      break;
+    case "transfer":
+      page = <DevicesPage code={route[1]} />;
+      break;
     default:
       page = <PathPage />;
   }
@@ -159,6 +187,7 @@ export function App() {
             </span>
           </a>
           {p.teacher && <span className="stat-pill teacher">Teacher</span>}
+          <SyncDot />
           <a className="icon-btn" href={href("settings")} aria-label="Settings">
             <Icon name="gear" />
           </a>

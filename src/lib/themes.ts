@@ -18,6 +18,62 @@ export interface Palette {
 
 export const PALETTES: Palette[] = [
   {
+    id: "barack",
+    name: "Barack",
+    nameEn: "Peach and sage",
+    swatch: ["#E9765B", "#F8E3D6", "#5E8D6A"],
+    light: {
+      "--bg": "#FCEFE6", "--surface": "#FFF8F3", "--surface-2": "#F8E3D6", "--line": "#EFD3C2", "--ink": "#3B2A24", "--muted": "#85685C",
+      "--brand": "#E26B50", "--brand-soft": "#FBDCD2", "--action": "#5E8D6A", "--on-action": "#FFFFFF", "--accent2": "#C9852A", "--accent2-soft": "#F8E6C8",
+    },
+    dark: {
+      "--bg": "#1E1613", "--surface": "#2A1F1B", "--surface-2": "#352823", "--line": "#46352E", "--ink": "#F6E7DE", "--muted": "#BFA497",
+      "--brand": "#FF9C82", "--brand-soft": "#45291F", "--action": "#8FC79C", "--on-action": "#10241A", "--accent2": "#F0BE6C", "--accent2-soft": "#3E2D18",
+    },
+  },
+  {
+    id: "vintage",
+    name: "Képeslap",
+    nameEn: "Vintage postcard",
+    swatch: ["#C2593F", "#F3E9D8", "#3F7D7A"],
+    light: {
+      "--bg": "#F3E9D8", "--surface": "#FBF5EA", "--surface-2": "#EADDC7", "--line": "#DCCBB0", "--ink": "#2F2A26", "--muted": "#776B5D",
+      "--brand": "#C2593F", "--brand-soft": "#F2D9CC", "--action": "#3F7D7A", "--on-action": "#FFFFFF", "--accent2": "#B3862C", "--accent2-soft": "#F1E3C2",
+    },
+    dark: {
+      "--bg": "#1C1915", "--surface": "#26221D", "--surface-2": "#312C25", "--line": "#423B32", "--ink": "#EFE6D6", "--muted": "#B3A793",
+      "--brand": "#E8876C", "--brand-soft": "#3F2A22", "--action": "#6FB5B0", "--on-action": "#0E2321", "--accent2": "#E2BB62", "--accent2-soft": "#3A3018",
+    },
+  },
+  {
+    id: "rozsa",
+    name: "Rózsa",
+    nameEn: "Rose and lilac",
+    swatch: ["#E0607E", "#FCEEF0", "#9A6FC0"],
+    light: {
+      "--bg": "#FCEEF0", "--surface": "#FFF8F9", "--surface-2": "#F7E0E5", "--line": "#EDCAD2", "--ink": "#3A2430", "--muted": "#85627A",
+      "--brand": "#D9557A", "--brand-soft": "#FBDCE4", "--action": "#8E62B8", "--on-action": "#FFFFFF", "--accent2": "#E07A4C", "--accent2-soft": "#FCE3D6",
+    },
+    dark: {
+      "--bg": "#1F1519", "--surface": "#2B1E24", "--surface-2": "#36262E", "--line": "#47323C", "--ink": "#F8E6EC", "--muted": "#C4A2B2",
+      "--brand": "#FF8FAA", "--brand-soft": "#47222F", "--action": "#C4A1E8", "--on-action": "#1F1030", "--accent2": "#FFAE85", "--accent2-soft": "#40261C",
+    },
+  },
+  {
+    id: "mez",
+    name: "Méz",
+    nameEn: "Honey and olive",
+    swatch: ["#E3962E", "#FBF3DF", "#7C8F3C"],
+    light: {
+      "--bg": "#FBF3DF", "--surface": "#FFFBF0", "--surface-2": "#F5E8C6", "--line": "#EAD8AB", "--ink": "#33291A", "--muted": "#7D6B4A",
+      "--brand": "#D08420", "--brand-soft": "#F9E3BF", "--action": "#6E8233", "--on-action": "#FFFFFF", "--accent2": "#C9603F", "--accent2-soft": "#F7DCCF",
+    },
+    dark: {
+      "--bg": "#1D180F", "--surface": "#282116", "--surface-2": "#33291C", "--line": "#443826", "--ink": "#F5EBD2", "--muted": "#BBA97F",
+      "--brand": "#F5B65A", "--brand-soft": "#3E2F17", "--action": "#B7C76A", "--on-action": "#1A1F08", "--accent2": "#F0907A", "--accent2-soft": "#3E241C",
+    },
+  },
+  {
     id: "paprika",
     name: "Paprika",
     nameEn: "Red, white and green",

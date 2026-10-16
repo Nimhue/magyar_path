@@ -15,7 +15,7 @@ export function blank(): CardState {
 }
 
 export function schedule(prev: CardState | undefined, rating: Rating, now = Date.now()): CardState {
-  const s = { ...(prev ?? blank()), seen: true };
+  const s = { ...(prev ?? blank()), seen: true, at: now };
   if (rating === "again") {
     s.reps = 0;
     s.interval = 0;

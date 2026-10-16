@@ -1,4 +1,4 @@
-import { Puli } from "../components/Mascot";
+import { MASCOTS, Puli } from "../components/Mascot";
 import { Icon, PageHead } from "../components/ui";
 import { OUTFITS, TROPHIES, currentOutfit } from "../lib/game";
 import { href } from "../lib/router";
@@ -35,7 +35,7 @@ export function TrophiesPage() {
   const outfit = currentOutfit(p);
   return (
     <div className="stack-lg">
-      <PageHead title="Eredmények" sub="Your progress, trophies and Bodza's wardrobe" back={href("")} />
+      <PageHead title="Eredmények" sub="Your progress, trophies, study buddy and wardrobe" back={href("")} />
       <section className="panel me-head">
         <Puli mood="happy" size={96} />
         <div className="me-stats">
@@ -95,7 +95,28 @@ export function TrophiesPage() {
       </section>
 
       <section>
-        <h2 className="section-title">Bodza ruhatára · Bodza's wardrobe</h2>
+        <h2 className="section-title">Tanulótárs · Your study buddy</h2>
+        <div className="wardrobe buddies" role="radiogroup" aria-label="Study buddy">
+          {MASCOTS.map((m) => (
+            <button
+              key={m.id}
+              role="radio"
+              aria-checked={p.settings.mascot === m.id}
+              className={"outfit" + (p.settings.mascot === m.id ? " sel" : "")}
+              onClick={() => update((d) => void (d.settings.mascot = m.id))}
+            >
+              <Puli mood="happy" size={72} kind={m.id} />
+              <strong>{m.name}</strong>
+              <span className="muted small-print">
+                {m.what} · <span lang="hu">{m.hu}</span>
+              </span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="section-title">Ruhatár · Wardrobe</h2>
         <div className="wardrobe">
           <button
             className={"outfit" + (p.settings.outfit === "auto" ? " sel" : "")}
