@@ -1,6 +1,6 @@
 # Magyar Path
 
-A Hungarian study app built lesson by lesson: flashcards with spaced repetition, grammar reference, quizzes, drills, short readings and notes with photos. Lessons unlock in order; a teacher code unlocks everything.
+A Hungarian study app built lesson by lesson: flashcards with spaced repetition (English + Romanian meanings), a themed dictionary, grammar reference with interactive tools, quizzes, drills, six mini-games, boss challenges, choose-your-path stories, short readings and notes with photos. Lessons unlock in order along a journey around Hungary; a teacher code unlocks everything.
 
 ## Deploy to Netlify
 
@@ -20,7 +20,10 @@ From then on, every `git push` redeploys the site.
 npm install
 npm run dev        # http://localhost:5173
 npm run build      # checks all content, then builds to dist/
+npm run build:offline   # one self-contained HTML file in dist-offline/, opens by double-click
 ```
+
+Opening `dist/index.html` straight from your disk shows a blank page: browsers block a built app's scripts on `file://`. Use the site on Netlify, `npm run preview`, or the offline single file.
 
 ## Adding a new lesson
 
@@ -29,17 +32,19 @@ All learning content lives in `/content` as JSON. You never need to touch the co
 ```
 content/
   config.json        pass marks, cards per session, teacher code
-  lessons/           one file per lesson (vocab, homework, links)
+  lessons/           one file per lesson (vocab, homework, map stop, links)
   grammar/           one file per grammar topic
-  exercises/         drill sets (multiple choice, typing, sorting, matching, listening)
+  exercises/         drill sets (choice, typing, sorting, matching, listening, word order)
   readings/          short texts with comprehension questions
+  stories/           choose-your-path conversations
+  dictionary/        themed word collections (food, travel, holidays…), always open
 ```
 
 1. Copy an existing lesson file, e.g. `content/lessons/03-orana.json` → `05-something.json`.
 2. Give it a new `id` and the next `order` number. Lessons unlock in `order`.
-3. Fill in `vocab` groups. Each item is `{ "hu": "...", "en": "...", "note": "optional" }`.
+3. Fill in `vocab` groups. Each item is `{ "hu": "...", "en": "...", "ro": "...", "note": "optional" }`. `ro` (Romanian) is optional but shown to learners who turn it on.
    - Add `"kind": "phrase"` for sentences, `"kind": "rule"` for grammar facts (rules show as flashcards but are kept out of quizzes).
-4. List the grammar topics, drill sets and readings it uses by their ids.
+4. List the grammar topics, drill sets, readings and stories it uses by their ids. Add a `place` (`name`, `fact`, `lon`, `lat`) to put the lesson on the journey map.
 5. Run `npm run validate`. It tells you exactly what's wrong if anything is (a missing id, an answer that isn't among the options, a duplicate word…).
 6. Commit and push. Netlify rebuilds.
 
@@ -75,14 +80,35 @@ Quizzes are generated automatically from each lesson's vocabulary, so a new less
 | `listen` | `say` (spoken aloud), `options[]`, `answer`          |
 | `sort`   | `prompt`, `buckets[]`, `items[{text, bucket}]`       |
 | `match`  | `prompt`, `pairs[{left, right}]`                     |
+| `order`  | `prompt` (meaning), `tiles[]`, `answer` (correct sentence) |
 
 ### Grammar section types
 
-`heading`, `text`, `tip` (tone `info` or `warn`), `table`, `examples`, `pairs` (minimal pairs with audio) and `widget` (`harmony`, `article`, `van`). In any text, `**bold**` and `*italic*` work.
+`heading`, `text`, `tip` (tone `info` or `warn`), `table`, `examples`, `pairs` (minimal pairs with audio) and `widget` (`harmony`, `article`, `van`, `conjugate`, `possessive`, `location`). In any text, `**bold**` and `*italic*` work.
+
+### Stories
+
+A story is a set of `nodes`, starting at `start`. Each node has the Hungarian `text`, its English `textEn`, an optional `speaker`, and `choices` (`text`, `to` the next node, optional `note` explaining a mistake). Final nodes have `"end": "great" | "ok" | "oops"`. The validator checks every `to` points somewhere.
+
+### Dictionary categories
+
+`content/dictionary/NN-name.json`: `id`, `order`, `title`, `titleEn`, `color` (red, paprika, yellow, green, teal, blue, purple, pink, gray), `mark` (1–3 letters for the tile) and `groups` of items, same shape as lesson vocab. Dictionary words never lock and get their own flashcards, quiz and memory game.
+
+### Tidy formatting
+
+`python3 scripts/format-content.py` rewrites lesson and dictionary files with one word per line. Pass a JSON file of `{"hu": "ro"}` pairs to fill in missing Romanian meanings in bulk.
+
+## Games and rewards
+
+- **Mini-games:** memory pairs, word rain, sentence builder, petals (hangman), vowel harmony sort, listening bingo. They use words from unlocked lessons plus dictionary words you've learned.
+- **Boss challenge** per lesson: 15 mixed questions, 3 hearts; winning puts a crown on the path.
+- **Combos:** 5 in a row doubles XP, 10 in a row triples it.
+- **Daily quests** (3 a day), **24 trophies**, **levels**, **streaks**, a weekly XP chart, and **Bodza's wardrobe**: outfits unlock with levels, streaks and seasons.
+- **Themes:** Paprika, Balaton, Tokaj, Levendula, Matyó and Éjjel, each in light and dark (Settings).
 
 ## How a lesson is completed
 
-A lesson counts as done when the learner has **seen every flashcard**, scored **80%+ on the quiz** and passed **every drill set (70%+)**. That unlocks the next lesson. Readings are a bonus. Grammar and Notes are always open. Change the pass marks in `content/config.json`.
+A lesson counts as done when the learner has **seen every flashcard**, scored **80%+ on the quiz** and passed **every drill set (70%+)**. That unlocks the next lesson. Readings, stories and the boss are bonuses. Grammar and Notes are always open. Change the pass marks in `content/config.json`.
 
 ## Teacher code
 

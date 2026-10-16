@@ -8,7 +8,8 @@
     "validate": "tsx scripts/validate.ts",
     "build": "npm run validate && tsc --noEmit && vite build",
     "preview": "vite preview",
-    "teacher-hash": "tsx scripts/teacher-hash.ts"
+    "teacher-hash": "tsx scripts/teacher-hash.ts",
+    "build:offline": "npm run validate && vite build --config vite.offline.config.ts"
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "5.2.8",
@@ -24,6 +25,7 @@
     "tsx": "4.19.4",
     "typescript": "5.8.3",
     "vite": "6.3.5",
+    "vite-plugin-singlefile": "^2.2.0",
     "zod": "3.24.4"
   }
 }
