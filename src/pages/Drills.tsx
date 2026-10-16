@@ -3,12 +3,14 @@ import { config, exerciseSets, lessonById } from "../content";
 import type { ExerciseItem, ExerciseSet } from "../content/schema";
 import { LessonPicker } from "../components/LessonPicker";
 import { MascotSays } from "../components/Mascot";
-import { ChoiceQ, ListenQ, MatchQ, SortQ, TypeQ } from "../components/Questions";
-import { Fmt, Icon, PageHead } from "../components/ui";
+import { ChoiceQ, ListenQ, MatchQ, OrderQ, SortQ, TypeQ } from "../components/Questions";
+import { ComboBadge, Fmt, Icon, PageHead } from "../components/ui";
 import { confetti } from "../lib/celebrate";
 import { isUnlocked } from "../lib/progress";
 import { href } from "../lib/router";
-import { addXp, getState, update, useProgress } from "../lib/store";
+import { sfx } from "../lib/sound";
+import { addXp, bump, getState, update, useProgress } from "../lib/store";
+import { useCombo } from "./Quiz";
 import { Locked } from "./Vocab";
 
 export function DrillsPage({ args }: { args: string[] }) {
@@ -48,7 +50,7 @@ export function DrillsPage({ args }: { args: string[] }) {
   }
   return (
     <div className="stack-lg">
-      <PageHead title="Gyakorlás" sub="Grammar drills · short exercises for each grammar point" />
+      <PageHead title="Nyelvtani gyakorlatok" sub="Grammar drills · short exercises for each grammar point" back={href("practice")} />
       <LessonPicker
         hrefFor={(id) => href(`drills/${id}`)}
         detail={(id) => {
@@ -68,6 +70,7 @@ function DrillWrapper({ set }: { set: ExerciseSet }) {
 function DrillRun({ set, onRestart }: { set: ExerciseSet; onRestart: () => void }) {
   const [i, setI] = useState(0);
   const [score, setScore] = useState(0);
+  const { combo, hit } = useCombo();
   const total = set.items.length;
   const done = i >= total;
   const pct = Math.round((score / total) * 100);
@@ -78,15 +81,17 @@ function DrillRun({ set, onRestart }: { set: ExerciseSet; onRestart: () => void 
     const prev = getState().drills[set.id];
     update((d) => void (d.drills[set.id] = { best: Math.max(prev?.best ?? 0, pct), done: !!prev?.done || passed }));
     if (passed && !prev?.done) addXp(15);
-    if (passed) confetti();
+    if (passed) {
+      bump("drill");
+      confetti();
+      sfx("win");
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
 
   const next = (ok: boolean) => {
-    if (ok) {
-      setScore((s) => s + 1);
-      addXp(3);
-    }
+    hit(ok, 3);
+    if (ok) setScore((s) => s + 1);
     setI((n) => n + 1);
   };
 
@@ -133,6 +138,7 @@ function DrillRun({ set, onRestart }: { set: ExerciseSet; onRestart: () => void 
           {i + 1}/{total}
         </span>
       </div>
+      <ComboBadge combo={combo} />
       {i === 0 && set.intro && (
         <p className="intro-line">
           <Fmt text={set.intro} />
@@ -143,7 +149,7 @@ function DrillRun({ set, onRestart }: { set: ExerciseSet; onRestart: () => void 
   );
 }
 
-function ItemView({ item, onNext }: { item: ExerciseItem; onNext: (ok: boolean) => void }) {
+export function ItemView({ item, onNext }: { item: ExerciseItem; onNext: (ok: boolean) => void }) {
   switch (item.type) {
     case "choice":
       return (
@@ -182,6 +188,10 @@ function ItemView({ item, onNext }: { item: ExerciseItem; onNext: (ok: boolean) 
     case "match":
       return (
         <MatchQ prompt={<span className="prompt-text">{item.prompt}</span>} pairs={item.pairs} explain={item.explain} onNext={(ok) => onNext(ok)} />
+      );
+    case "order":
+      return (
+        <OrderQ prompt={<span className="prompt-text">{item.prompt}</span>} tiles={item.tiles} answer={item.answer} explain={item.explain} onNext={onNext} />
       );
   }
 }

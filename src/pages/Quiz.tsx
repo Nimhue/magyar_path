@@ -1,27 +1,46 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { cardById, cardsByLesson, config, lessonById, type Card } from "../content";
+import {
+  allDictCards,
+  cardById,
+  cardsByDict,
+  cardsByLesson,
+  config,
+  dictCatById,
+  exerciseSets,
+  lessonById,
+  type Card,
+} from "../content";
+import type { ExerciseItem } from "../content/schema";
 import { LessonPicker } from "../components/LessonPicker";
 import { MascotSays } from "../components/Mascot";
 import { ChoiceQ, ListenQ, MatchQ, TypeQ } from "../components/Questions";
-import { Empty, Icon, PageHead, SpeakButton } from "../components/ui";
+import { ComboBadge, Empty, Icon, Meaning, PageHead, SpeakButton, comboMultiplier } from "../components/ui";
 import { sample, shuffle } from "../lib/answer";
 import { confetti } from "../lib/celebrate";
 import { isUnlocked, unlockedLessons } from "../lib/progress";
 import { href } from "../lib/router";
+import { sfx } from "../lib/sound";
 import { hasHungarianVoice } from "../lib/speech";
-import { addXp, getState, update, useProgress } from "../lib/store";
+import { addXp, bump, getState, recordCombo, update, useProgress, type Progress } from "../lib/store";
+import { ItemView } from "./Drills";
 import { Locked } from "./Vocab";
 
-type Question =
+export type Question =
   | { kind: "hu-en"; card: Card; options: string[] }
   | { kind: "en-hu"; card: Card; options: string[] }
   | { kind: "listen"; card: Card; options: string[] }
   | { kind: "type"; card: Card }
   | { kind: "match"; cards: Card[] };
 
-const quizzable = (c: Card) => c.kind !== "rule";
+export const quizzable = (c: Card) => c.kind !== "rule";
 
-function distractors(card: Card, pool: Card[], field: "hu" | "en", n = 3): string[] {
+/** Cards the learner may practise: unlocked lessons plus the whole dictionary. */
+export function practicePool(p: Progress, withDict = false) {
+  const lessonsPool = unlockedLessons(p).flatMap((l) => cardsByLesson[l.id]).filter(quizzable);
+  return withDict ? [...lessonsPool, ...allDictCards.filter(quizzable)] : lessonsPool;
+}
+
+export function distractors(card: Card, pool: Card[], field: "hu" | "en", n = 3): string[] {
   const same = pool.filter((c) => c.id !== card.id && c[field] !== card[field] && c.kind === card.kind);
   const other = pool.filter((c) => c.id !== card.id && c[field] !== card[field] && c.kind !== card.kind);
   const picks = [...new Set([...shuffle(same), ...shuffle(other)].map((c) => c[field]))].slice(0, n);
@@ -56,48 +75,64 @@ export function buildQuiz(cards: Card[], pool: Card[], size = 12): Question[] {
   return others;
 }
 
+/** Tracks answers in a row and pays out XP with a multiplier. */
+export function useCombo() {
+  const [combo, setCombo] = useState(0);
+  const hit = (correct: boolean, baseXp: number) => {
+    if (correct) {
+      const next = combo + 1;
+      setCombo(next);
+      recordCombo(next);
+      bump("correct");
+      if (next === 5 || next === 10) sfx("combo");
+      addXp(baseXp * comboMultiplier(next));
+    } else setCombo(0);
+  };
+  return { combo, hit };
+}
+
 export function QuizPage({ args }: { args: string[] }) {
   const p = useProgress();
-  const [a] = args;
+  const [a, b] = args;
   if (a === "speed") return <SpeedRound />;
   if (a === "mistakes") {
     const cards = Object.keys(p.mistakes)
       .map((id) => cardById[id])
       .filter(Boolean);
-    return <QuizRunner key="mistakes" title="Mistake notebook" cards={cards} mode="mistakes" back="quiz" />;
+    return <QuizRunner key="mistakes" title="Mistake notebook" cards={cards} mode="mistakes" back="practice" />;
+  }
+  if (a === "dict" && b && dictCatById[b])
+    return <QuizRunner key={b} title={dictCatById[b].title} cards={cardsByDict[b]} mode="dict" back={`dict/${b}`} />;
+  if (a === "boss" && b) {
+    const l = lessonById[b];
+    if (!l) return <PageHead title="Lesson not found" back={href("practice")} />;
+    if (!isUnlocked(l.id, p)) return <Locked back="practice" />;
+    return <BossWrapper lessonId={b} />;
   }
   if (a) {
     const l = lessonById[a];
     if (!l) return <PageHead title="Lesson not found" back={href("quiz")} />;
     if (!isUnlocked(l.id, p)) return <Locked back="quiz" />;
-    return <QuizRunner key={a} title={l.title} cards={cardsByLesson[a]} mode="lesson" lessonId={a} back="quiz" />;
+    return <QuizRunner key={a} title={l.title} cards={cardsByLesson[a]} mode="lesson" lessonId={a} back={`lesson/${a}`} />;
   }
-  const mistakes = Object.keys(p.mistakes).length;
   return (
     <div className="stack-lg">
-      <PageHead title="Kvíz" sub="Quizzes built from your vocabulary" />
-      <div className="cta-grid">
-        <a className="cta warn" href={href("quiz/mistakes")} aria-disabled={!mistakes}>
-          <span className="cta-kicker">Mistake notebook</span>
-          <span className="cta-title">{mistakes ? `${mistakes} word${mistakes > 1 ? "s" : ""} to fix` : "No mistakes saved"}</span>
-          <Icon name="back" />
-        </a>
-        <a className="cta speed" href={href("quiz/speed")}>
-          <span className="cta-kicker">60-second speed round</span>
-          <span className="cta-title">{p.speedBest ? `Best: ${p.speedBest} correct` : "How many can you get?"}</span>
-          <Icon name="bolt" />
-        </a>
-      </div>
-      <section>
-        <h2 className="section-title">Lesson quizzes</h2>
-        <p className="muted">Score {config.quizPassMark}% or more to complete a lesson. You can retake a quiz as often as you like.</p>
-        <LessonPicker
-          hrefFor={(id) => href(`quiz/${id}`)}
-          detail={(id) => (p.quizBest[id] === undefined ? "Not taken yet" : `Best score ${p.quizBest[id]}%`)}
-        />
-      </section>
+      <PageHead title="Kvíz" sub="Quizzes built from your vocabulary" back={href("practice")} />
+      <p className="muted">Score {config.quizPassMark}% or more to complete a lesson. Retake a quiz as often as you like.</p>
+      <LessonPicker
+        hrefFor={(id) => href(`quiz/${id}`)}
+        detail={(id) => (p.quizBest[id] === undefined ? "Not taken yet" : `Best score ${p.quizBest[id]}%`)}
+      />
     </div>
   );
+}
+
+interface RunProps {
+  title: string;
+  cards: Card[];
+  mode: "lesson" | "mistakes" | "dict";
+  lessonId?: string;
+  back: string;
 }
 
 function QuizRunner(props: RunProps) {
@@ -105,35 +140,35 @@ function QuizRunner(props: RunProps) {
   return <QuizRun key={round} {...props} onRestart={() => setRound((r) => r + 1)} />;
 }
 
-interface RunProps {
-  title: string;
-  cards: Card[];
-  mode: "lesson" | "mistakes";
-  lessonId?: string;
-  back: string;
-}
-
 function QuizRun({ title, cards, mode, lessonId, back, onRestart }: RunProps & { onRestart: () => void }) {
   const p = useProgress();
   const [questions] = useState(() => {
-    const pool = unlockedLessons(getState()).flatMap((l) => cardsByLesson[l.id]).filter(quizzable);
+    const pool = mode === "dict" ? [...cards, ...allDictCards].filter(quizzable) : practicePool(getState());
     return buildQuiz(cards, pool.length >= 8 ? pool : cards, mode === "mistakes" ? Math.min(12, cards.length) : 12);
   });
   const [i, setI] = useState(0);
   const [score, setScore] = useState(0);
   const [missed, setMissed] = useState<Card[]>([]);
+  const { combo, hit } = useCombo();
   const done = questions.length > 0 && i >= questions.length;
   const pct = questions.length ? Math.round((score / questions.length) * 100) : 0;
   const passed = pct >= config.quizPassMark;
 
   useEffect(() => {
     if (!done) return;
+    bump("quiz");
     if (mode === "lesson" && lessonId) {
       const prevBest = getState().quizBest[lessonId] ?? 0;
-      update((d) => void (d.quizBest[lessonId] = Math.max(prevBest, pct)));
+      update((d) => {
+        d.quizBest[lessonId] = Math.max(prevBest, pct);
+        if (pct === 100) d.flags.perfectQuiz = true;
+      });
       if (passed && prevBest < config.quizPassMark) addXp(25);
     }
-    if (passed) confetti();
+    if (passed) {
+      confetti();
+      sfx("win");
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [done]);
 
@@ -141,26 +176,22 @@ function QuizRun({ title, cards, mode, lessonId, back, onRestart }: RunProps & {
     return (
       <div className="stack">
         <PageHead title={title} back={href(back)} />
-        <Empty>{mode === "mistakes" ? "Your mistake notebook is empty. Nice work!" : "This lesson has no quiz words."}</Empty>
+        <Empty>{mode === "mistakes" ? "Your mistake notebook is empty. Nice work!" : "There are no quiz words here yet."}</Empty>
       </div>
     );
-
-  const q = questions[i];
 
   const answer = (correct: boolean, cardsHit: Card[], wrongCards: Card[] = []) => {
     update((d) => {
       for (const c of wrongCards) d.mistakes[c.id] = (d.mistakes[c.id] ?? 0) + 1;
-      if (correct && mode === "mistakes") for (const c of cardsHit) delete d.mistakes[c.id];
-      if (correct && mode === "lesson") for (const c of cardsHit) if (d.mistakes[c.id]) delete d.mistakes[c.id];
+      if (correct) for (const c of cardsHit) delete d.mistakes[c.id];
     });
-    if (correct) {
-      setScore((s) => s + 1);
-      addXp(5);
-    } else setMissed((m) => [...m, ...wrongCards]);
+    hit(correct, 5);
+    if (correct) setScore((s) => s + 1);
+    else setMissed((m) => [...m, ...wrongCards]);
     setI((n) => n + 1);
   };
 
-  if (done) {
+  if (done)
     return (
       <div className="stack-lg">
         <PageHead title={title} back={href(back)} />
@@ -177,40 +208,26 @@ function QuizRun({ title, cards, mode, lessonId, back, onRestart }: RunProps & {
               ? passed
                 ? "Fixed words leave your notebook. Keep going!"
                 : "Words you got right have left the notebook. The rest are waiting."
-              : passed
-                ? "You passed this quiz."
-                : `You need ${config.quizPassMark}% to complete the lesson. Review the words below and try again.`}
+              : mode === "dict"
+                ? passed
+                  ? "Great work on this category."
+                  : "Have another look at the words below and try again."
+                : passed
+                  ? "You passed this quiz."
+                  : `You need ${config.quizPassMark}% to complete the lesson. Review the words below and try again.`}
           </span>
         </MascotSays>
-        {missed.length > 0 && (
-          <section>
-            <h2 className="section-title">Review these</h2>
-            <ul className="word-list">
-              {[...new Map(missed.map((c) => [c.id, c])).values()].map((c) => (
-                <li key={c.id}>
-                  <SpeakButton text={c.hu} small />
-                  <div className="wl-main">
-                    <strong lang="hu">{c.hu}</strong>
-                    <span>{c.en}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
+        {missed.length > 0 && <ReviewList cards={missed} />}
         <div className="row gap wrap">
           <button className="btn primary" onClick={onRestart}>
             New quiz
           </button>
-          {lessonId && (
-            <a className="btn" href={href(`lesson/${lessonId}`)}>
-              Back to lesson
-            </a>
-          )}
+          <a className="btn" href={href(back)}>
+            Back
+          </a>
         </div>
       </div>
     );
-  }
 
   return (
     <div className="stack session">
@@ -225,13 +242,38 @@ function QuizRun({ title, cards, mode, lessonId, back, onRestart }: RunProps & {
           {i + 1}/{questions.length}
         </span>
       </div>
-      <QuestionView key={i} q={q} onAnswer={answer} />
+      <ComboBadge combo={combo} />
+      <QuestionView key={i} q={questions[i]} onAnswer={answer} />
       {p.teacher && <p className="muted small-print">Teacher mode is on: all lessons are unlocked.</p>}
     </div>
   );
 }
 
-function QuestionView({ q, onAnswer }: { q: Question; onAnswer: (ok: boolean, hit: Card[], wrong?: Card[]) => void }) {
+export function ReviewList({ cards }: { cards: Card[] }) {
+  return (
+    <section>
+      <h2 className="section-title">Review these</h2>
+      <ul className="word-list">
+        {[...new Map(cards.map((c) => [c.id, c])).values()].map((c) => (
+          <li key={c.id}>
+            <SpeakButton text={c.hu} small />
+            <div className="wl-main">
+              <strong lang="hu">{c.hu}</strong>
+              <Meaning en={c.en} ro={c.ro} />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+function explainFor(card: Card) {
+  const ro = getState().settings.showRo && card.ro ? `Romanian: *${card.ro}*` : "";
+  return [card.note, ro].filter(Boolean).join(" · ") || undefined;
+}
+
+export function QuestionView({ q, onAnswer }: { q: Question; onAnswer: (ok: boolean, hit: Card[], wrong?: Card[]) => void }) {
   switch (q.kind) {
     case "hu-en":
       return (
@@ -244,7 +286,7 @@ function QuestionView({ q, onAnswer }: { q: Question; onAnswer: (ok: boolean, hi
           sub="What does this mean?"
           options={q.options}
           answer={q.card.en}
-          explain={q.card.note}
+          explain={explainFor(q.card)}
           onNext={(ok) => onAnswer(ok, [q.card], ok ? [] : [q.card])}
         />
       );
@@ -255,7 +297,7 @@ function QuestionView({ q, onAnswer }: { q: Question; onAnswer: (ok: boolean, hi
           sub="Choose the Hungarian"
           options={q.options}
           answer={q.card.hu}
-          explain={q.card.note}
+          explain={explainFor(q.card)}
           optionLang="hu"
           speakAfter={q.card.hu}
           onNext={(ok) => onAnswer(ok, [q.card], ok ? [] : [q.card])}
@@ -277,7 +319,7 @@ function QuestionView({ q, onAnswer }: { q: Question; onAnswer: (ok: boolean, hi
           prompt={<span className="prompt-word">{q.card.en}</span>}
           sub="Write it in Hungarian"
           answer={q.card.hu}
-          explain={q.card.note}
+          explain={explainFor(q.card)}
           onNext={(ok) => onAnswer(ok, [q.card], ok ? [] : [q.card])}
         />
       );
@@ -298,9 +340,133 @@ function QuestionView({ q, onAnswer }: { q: Question; onAnswer: (ok: boolean, hi
   }
 }
 
+/* ---------- Boss challenge: mixed questions, 3 hearts ---------- */
+
+type BossItem = { kind: "card"; q: Question } | { kind: "drill"; item: ExerciseItem };
+
+function BossWrapper({ lessonId }: { lessonId: string }) {
+  const [round, setRound] = useState(0);
+  const [started, setStarted] = useState(false);
+  const l = lessonById[lessonId];
+  const rec = useProgress().boss[lessonId];
+  if (!started)
+    return (
+      <div className="stack-lg">
+        <PageHead title={`Boss: ${l.title}`} sub="15 mixed questions · 3 hearts" back={href(`lesson/${lessonId}`)} />
+        <div className="boss-intro">
+          <div className="hearts big">
+            {[0, 1, 2].map((i) => (
+              <Icon key={i} name="heart" size={34} />
+            ))}
+          </div>
+          <p>
+            Words, grammar and drills from lesson {l.order}, all mixed. Every mistake costs a heart. Lose all three and the boss wins.
+            Beat it to earn a <strong>crown</strong> on your path and 50 XP.
+          </p>
+          {rec?.won && <p className="ok-text">You've beaten this boss{rec.bestHearts === 3 ? " without losing a heart" : ""}.</p>}
+        </div>
+        <button className="btn primary block big" onClick={() => setStarted(true)}>
+          Fight!
+        </button>
+      </div>
+    );
+  return <BossRun key={round} lessonId={lessonId} onRestart={() => setRound((r) => r + 1)} />;
+}
+
+function BossRun({ lessonId, onRestart }: { lessonId: string; onRestart: () => void }) {
+  const l = lessonById[lessonId];
+  const [items] = useState<BossItem[]>(() => {
+    const pool = practicePool(getState());
+    const cardQs = buildQuiz(cardsByLesson[lessonId], pool, 9).map((q) => ({ kind: "card" as const, q }));
+    const drillItems = l.exercises.flatMap((id) => exerciseSets[id]?.items ?? []);
+    const drills = sample(drillItems, 15 - cardQs.length).map((item) => ({ kind: "drill" as const, item }));
+    return shuffle([...cardQs, ...drills]);
+  });
+  const [i, setI] = useState(0);
+  const [hearts, setHearts] = useState(3);
+  const [shake, setShake] = useState(false);
+  const { combo, hit } = useCombo();
+  const lost = hearts <= 0;
+  const won = !lost && i >= items.length;
+
+  useEffect(() => {
+    if (!won && !lost) return;
+    const prev = getState().boss[lessonId];
+    update((d) => void (d.boss[lessonId] = { won: !!prev?.won || won, bestHearts: Math.max(prev?.bestHearts ?? 0, won ? hearts : 0) }));
+    if (won) {
+      if (!prev?.won) addXp(50);
+      confetti();
+      sfx("win");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [won, lost]);
+
+  const next = (ok: boolean) => {
+    hit(ok, 4);
+    if (!ok) {
+      setHearts((h) => h - 1);
+      setShake(true);
+      setTimeout(() => setShake(false), 400);
+    }
+    setI((n) => n + 1);
+  };
+
+  if (won || lost)
+    return (
+      <div className="stack-lg">
+        <PageHead title={`Boss: ${l.title}`} back={href(`lesson/${lessonId}`)} />
+        <MascotSays mood={won ? "party" : "sad"}>
+          <strong>{won ? "Győzelem! Victory!" : "A főnök nyert. The boss won."}</strong>
+          <span>
+            {won
+              ? `You beat the boss with ${hearts} heart${hearts === 1 ? "" : "s"} left. A crown now sits on lesson ${l.order}.`
+              : `You got through ${i} of ${items.length} questions. Review the lesson and try again.`}
+          </span>
+        </MascotSays>
+        <div className="row gap wrap">
+          <button className="btn primary" onClick={onRestart}>
+            {won ? "Fight again" : "Try again"}
+          </button>
+          <a className="btn" href={href(`lesson/${lessonId}`)}>
+            Back to lesson
+          </a>
+        </div>
+      </div>
+    );
+
+  const it = items[i];
+  return (
+    <div className="stack session">
+      <div className="session-top">
+        <a className="icon-btn" href={href(`lesson/${lessonId}`)} aria-label="Leave boss challenge">
+          <Icon name="x" />
+        </a>
+        <div className="bar boss-bar">
+          <i style={{ width: `${(i / items.length) * 100}%` }} />
+        </div>
+        <span className={"hearts" + (shake ? " shake" : "")} aria-label={`${hearts} hearts left`}>
+          {[0, 1, 2].map((k) => (
+            <span key={k} className={k < hearts ? "heart" : "heart lost"}>
+              <Icon name="heart" size={20} />
+            </span>
+          ))}
+        </span>
+      </div>
+      <ComboBadge combo={combo} />
+      {it.kind === "card" ? (
+        <QuestionView key={i} q={it.q} onAnswer={(ok) => next(ok)} />
+      ) : (
+        <ItemView key={i} item={it.item} onNext={next} />
+      )}
+    </div>
+  );
+}
+
+/* ---------- 60-second speed round ---------- */
+
 function SpeedRound() {
   const p = useProgress();
-  const pool = useMemo(() => unlockedLessons(getState()).flatMap((l) => cardsByLesson[l.id]).filter(quizzable), []);
+  const pool = useMemo(() => practicePool(getState()), []);
   const [phase, setPhase] = useState<"ready" | "play" | "end">("ready");
   const [left, setLeft] = useState(60);
   const [score, setScore] = useState(0);
@@ -309,6 +475,7 @@ function SpeedRound() {
   const [flash, setFlash] = useState<string | null>(null);
   const options = useMemo(() => distractors(card, pool, "en"), [card, pool]);
   const prevBest = useRef(p.speedBest);
+  const { combo, hit } = useCombo();
 
   useEffect(() => {
     if (phase !== "play") return;
@@ -319,7 +486,11 @@ function SpeedRound() {
   useEffect(() => {
     if (phase === "play" && left <= 0) {
       setPhase("end");
-      if (score > 0) addXp(score * 2);
+      bump("game");
+      update((d) => {
+        const g = d.games.speed ?? { plays: 0, best: 0 };
+        d.games.speed = { plays: g.plays + 1, best: Math.max(g.best, score) };
+      });
       if (score > getState().speedBest) {
         update((d) => void (d.speedBest = score));
         if (score >= 5) confetti();
@@ -330,20 +501,27 @@ function SpeedRound() {
   const pick = (o: string) => {
     const ok = o === card.en;
     setFlash(ok ? "ok" : "no");
+    sfx(ok ? "good" : "bad");
+    hit(ok, 2);
     setTries((t) => t + 1);
     if (ok) setScore((s) => s + 1);
-    setTimeout(() => {
-      setFlash(null);
-      let next = sample(pool, 1)[0];
-      if (next.id === card.id) next = sample(pool, 1)[0];
-      setCard(next);
-    }, ok ? 180 : 600);
+    setTimeout(
+      () => {
+        setFlash(null);
+        let next = sample(pool, 1)[0];
+        if (next.id === card.id) next = sample(pool, 1)[0];
+        setCard(next);
+      },
+      ok ? 180 : 600
+    );
   };
+
+  if (!pool.length) return <Empty>Unlock a lesson to play.</Empty>;
 
   if (phase === "ready")
     return (
       <div className="stack-lg">
-        <PageHead title="Speed round" sub="60 seconds · words from every lesson you've unlocked" back={href("quiz")} />
+        <PageHead title="Speed round" sub="60 seconds · words from every lesson you've unlocked" back={href("practice")} />
         <MascotSays mood="happy">
           <strong>Kész vagy? Ready?</strong>
           <span>Pick the English meaning as fast as you can. {p.speedBest ? `Your best is ${p.speedBest}.` : ""}</span>
@@ -357,7 +535,7 @@ function SpeedRound() {
   if (phase === "end")
     return (
       <div className="stack-lg">
-        <PageHead title="Speed round" back={href("quiz")} />
+        <PageHead title="Speed round" back={href("practice")} />
         <div className="score-card">
           <div className="score-big ok">{score}</div>
           <p>
@@ -377,7 +555,7 @@ function SpeedRound() {
           >
             Play again
           </button>
-          <a className="btn" href={href("quiz")}>
+          <a className="btn" href={href("practice")}>
             Done
           </a>
         </div>
@@ -393,6 +571,7 @@ function SpeedRound() {
         </div>
         <span className="tabnum strong">{score}</span>
       </div>
+      <ComboBadge combo={combo} />
       <div className={"speed-card" + (flash ? " " + flash : "")}>
         <span className="prompt-word" lang="hu">
           {card.hu}

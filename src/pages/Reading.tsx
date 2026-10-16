@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { dictionary, lessonById, lessons, normalizeWord, readings } from "../content";
+import { lessonById, lessons, lookupWord, normalizeWord, readings, stories } from "../content";
 import type { Reading } from "../content/schema";
 import { MascotSays } from "../components/Mascot";
 import { Icon, PageHead, SpeakButton } from "../components/ui";
@@ -7,7 +7,7 @@ import { confetti } from "../lib/celebrate";
 import { isUnlocked } from "../lib/progress";
 import { href } from "../lib/router";
 import { speak } from "../lib/speech";
-import { addXp, getState, update, useProgress } from "../lib/store";
+import { addXp, bump, getState, update, useProgress } from "../lib/store";
 import { Locked } from "./Vocab";
 
 export function ReadingPage({ id }: { id?: string }) {
@@ -20,10 +20,10 @@ export function ReadingPage({ id }: { id?: string }) {
   }
   return (
     <div className="stack-lg">
-      <PageHead title="Olvasás" sub="Short texts that use only what you've learned · tap any word" />
+      <PageHead title="Olvasás" sub="Reading and stories · tap any word to see what it means" />
       {lessons.map((l) => {
         const open = isUnlocked(l.id, p);
-        if (!l.readings.length) return null;
+        if (!l.readings.length && !l.stories.length) return null;
         return (
           <section key={l.id}>
             <h2 className="section-title">
@@ -60,6 +60,37 @@ export function ReadingPage({ id }: { id?: string }) {
                   </li>
                 );
               })}
+              {l.stories.map((sid) => {
+                const st = stories[sid];
+                const res = p.stories[sid];
+                return (
+                  <li key={sid}>
+                    {open ? (
+                      <a className={"step story-step" + (res ? " done" : "")} href={href(`story/${sid}`)}>
+                        <span className="step-icon">{res === "great" ? <Icon name="star" /> : <Icon name="game" />}</span>
+                        <span className="step-text">
+                          <strong>{st.title}</strong>
+                          <span className="muted">
+                            Story · {st.titleEn}
+                            {res ? ` · ${res === "great" ? "perfect ending" : "finished"}` : ""}
+                          </span>
+                        </span>
+                        <Icon name="back" size={16} />
+                      </a>
+                    ) : (
+                      <div className="step locked">
+                        <span className="step-icon">
+                          <Icon name="lock" />
+                        </span>
+                        <span className="step-text">
+                          <strong>{st.title}</strong>
+                          <span className="muted">Story · unlocks with lesson {l.order}</span>
+                        </span>
+                      </div>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </section>
         );
@@ -69,10 +100,7 @@ export function ReadingPage({ id }: { id?: string }) {
 }
 
 function lookup(word: string, r: Reading): string | null {
-  const w = normalizeWord(word);
-  if (!w) return null;
-  const g = Object.fromEntries(Object.entries(r.glossary).map(([k, v]) => [normalizeWord(k), v]));
-  return g[w] ?? dictionary[w] ?? null;
+  return lookupWord(word, r.glossary, getState().settings.showRo);
 }
 
 function Reader({ r }: { r: Reading }) {
@@ -87,7 +115,10 @@ function Reader({ r }: { r: Reading }) {
     const prev = getState().readings[r.id];
     const score = r.questions.length ? Math.round((correct / r.questions.length) * 100) : 100;
     update((d) => void (d.readings[r.id] = { done: true, score: Math.max(prev?.score ?? 0, score) }));
-    if (!prev?.done) addXp(20);
+    if (!prev?.done) {
+      addXp(20);
+      bump("story");
+    }
     if (correct === r.questions.length) confetti();
   };
 

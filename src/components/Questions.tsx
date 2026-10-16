@@ -5,6 +5,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { check, shuffle, type Verdict } from "../lib/answer";
 import { canSpeak, hasHungarianVoice, speak } from "../lib/speech";
+import { sfx } from "../lib/sound";
 import { AccentKeys } from "./AccentKeys";
 import { MascotSays, cheer, cheerMeaning, console_ } from "./Mascot";
 import { Fmt, Icon, SpeakButton } from "./ui";
@@ -24,7 +25,11 @@ export function Feedback({
 }) {
   const [line] = useState(() => (correct ? cheer() : console_()));
   const btn = useRef<HTMLButtonElement>(null);
-  useEffect(() => btn.current?.focus(), []);
+  useEffect(() => {
+    btn.current?.focus();
+    sfx(correct ? "good" : "bad");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <div className={"feedback " + (correct ? "good" : "bad")} role="status">
       <MascotSays mood={correct ? "happy" : "sad"}>
@@ -375,6 +380,91 @@ export function SortQ({
                   <strong lang="hu">{w.text}</strong> → {w.bucket}
                 </span>
               ))}
+            </span>
+          )}
+          {explain && (
+            <span>
+              <Fmt text={explain} />
+            </span>
+          )}
+        </Feedback>
+      )}
+    </div>
+  );
+}
+
+/** Tap word tiles into the right order to build a sentence. */
+export function OrderQ({
+  prompt,
+  tiles,
+  answer,
+  explain,
+  onNext,
+}: {
+  prompt: ReactNode;
+  tiles: string[];
+  answer: string | string[];
+  explain?: string;
+  onNext: (correct: boolean) => void;
+}) {
+  const pool = useMemo(() => {
+    let s = shuffle(tiles.map((t, i) => ({ t, i })));
+    // avoid showing the tiles already in the right order
+    if (s.length > 1 && s.every((x, k) => x.i === k)) s = [...s.slice(1), s[0]];
+    return s;
+  }, [tiles]);
+  const [placed, setPlaced] = useState<number[]>([]);
+  const [verdict, setVerdict] = useState<Verdict | null>(null);
+  const built = placed.map((i) => tiles[i]).join(" ");
+  const answers = Array.isArray(answer) ? answer : [answer];
+  return (
+    <div className="q">
+      <div className="q-prompt">{prompt}</div>
+      <div className="q-sub muted">Tap the words in the right order.</div>
+      <div className={"order-line" + (verdict ? " " + verdict : "")} aria-label="Your sentence">
+        {placed.length === 0 && <span className="muted">Your sentence appears here</span>}
+        {placed.map((i, k) => (
+          <button
+            key={i}
+            className="tile placed"
+            lang="hu"
+            disabled={verdict !== null}
+            onClick={() => setPlaced(placed.filter((_, j) => j !== k))}
+          >
+            {tiles[i]}
+          </button>
+        ))}
+      </div>
+      <div className="tile-pool">
+        {pool.map(({ t, i }) => (
+          <button
+            key={i}
+            className="tile"
+            lang="hu"
+            disabled={placed.includes(i) || verdict !== null}
+            onClick={() => {
+              sfx("tap");
+              setPlaced([...placed, i]);
+            }}
+          >
+            {t}
+          </button>
+        ))}
+      </div>
+      {verdict === null ? (
+        <button className="btn primary block" disabled={placed.length !== tiles.length} onClick={() => setVerdict(check(built, answer))}>
+          Check
+        </button>
+      ) : (
+        <Feedback
+          correct={verdict === "correct"}
+          title={verdict === "accent" ? "Majdnem! Check the accents." : undefined}
+          onNext={() => onNext(verdict === "correct")}
+          speakText={answers[0]}
+        >
+          {verdict !== "correct" && (
+            <span>
+              Correct: <strong lang="hu">{answers[0]}</strong>
             </span>
           )}
           {explain && (

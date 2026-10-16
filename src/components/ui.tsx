@@ -1,4 +1,5 @@
-import { Fragment, type ReactNode } from "react";
+import { Fragment, useEffect, useState, type ReactNode } from "react";
+import { useProgress } from "../lib/store";
 import { canSpeak, speak } from "../lib/speech";
 
 /** Renders **bold** and *italic* inside content strings. */
@@ -82,6 +83,26 @@ const paths: Record<string, ReactNode> = {
   edit: <path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z" />,
   download: <path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16" />,
   upload: <path d="M12 21V9m0 0-5 5m5-5 5 5M4 3h16" />,
+  trophy: <path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4" />,
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+    </>
+  ),
+  game: <path d="M6 9h4M8 7v4M15 10h.01M18 8h.01M7 4h10a5 5 0 0 1 5 5v4a4 4 0 0 1-7 2.6L14 15h-4l-1 .6A4 4 0 0 1 2 13V9a5 5 0 0 1 5-5z" />,
+  heart: <path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6c-2.3 4.6-9.3 9-9.3 9z" />,
+  map: <path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2zM9 4v14M15 6v14" />,
+  palette: (
+    <>
+      <path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.3 0-1.1.9-2 2-2h2.4A4.6 4.6 0 0 0 22 9.8C22 6 17.5 3 12 3z" />
+      <circle cx="7.5" cy="11" r="1" />
+      <circle cx="10" cy="7" r="1" />
+      <circle cx="15" cy="7" r="1" />
+    </>
+  ),
+  crown: <path d="M3 18h18M4 18 3 7l5 4 4-7 4 7 5-4-1 11" />,
+  sword: <path d="M14.5 17.5 21 11V3h-8l-6.5 6.5M13 19l-6-6M16 16l-4 4M8 16l-4 4" />,
 };
 
 export function Icon({ name, size = 20, title }: { name: keyof typeof paths | string; size?: number; title?: string }) {
@@ -134,7 +155,7 @@ export function Ring({ value, size = 44, stroke = 5, children }: { value: number
           cy={size / 2}
           r={r}
           fill="none"
-          stroke="var(--green)"
+          stroke="var(--action)"
           strokeWidth={stroke}
           strokeLinecap="round"
           strokeDasharray={c}
@@ -165,4 +186,74 @@ export function PageHead({ title, sub, back }: { title: string; sub?: string; ba
 
 export function Empty({ children }: { children: ReactNode }) {
   return <div className="empty">{children}</div>;
+}
+
+/** English meaning, with the Romanian one underneath when the learner wants it. */
+export function Meaning({ en, ro, inline }: { en: string; ro?: string; inline?: boolean }) {
+  const p = useProgress();
+  const showRo = p.settings.showRo && ro;
+  if (inline)
+    return (
+      <span className="meaning">
+        {en}
+        {showRo && <span className="ro" lang="ro"> · {ro}</span>}
+      </span>
+    );
+  return (
+    <span className="meaning stacked">
+      <span>{en}</span>
+      {showRo && (
+        <span className="ro" lang="ro">
+          <abbr title="Romanian">RO</abbr> {ro}
+        </span>
+      )}
+    </span>
+  );
+}
+
+/** "×3 combo" badge shown during quizzes and games. */
+export function ComboBadge({ combo }: { combo: number }) {
+  if (combo < 3) return null;
+  const mult = comboMultiplier(combo);
+  return (
+    <span className={"combo" + (combo >= 10 ? " hot" : "")} aria-live="polite" key={combo}>
+      <Icon name="flame" size={14} /> {combo} in a row · ×{mult}
+    </span>
+  );
+}
+
+export const comboMultiplier = (combo: number) => (combo >= 10 ? 3 : combo >= 5 ? 2 : 1);
+
+/* ---------- toasts ---------- */
+type ToastMsg = { id: number; title: string; body?: string; kind?: "trophy" | "quest" | "info" };
+let toastId = 0;
+const toastListeners = new Set<(t: ToastMsg) => void>();
+export function toast(title: string, body?: string, kind: ToastMsg["kind"] = "info") {
+  const t = { id: ++toastId, title, body, kind };
+  toastListeners.forEach((l) => l(t));
+}
+
+export function Toaster() {
+  const [list, setList] = useState<ToastMsg[]>([]);
+  useEffect(() => {
+    const on = (t: ToastMsg) => {
+      setList((l) => [...l, t].slice(-2));
+      setTimeout(() => setList((l) => l.filter((x) => x.id !== t.id)), 4200);
+    };
+    toastListeners.add(on);
+    return () => void toastListeners.delete(on);
+  }, []);
+  return (
+    <div className="toasts" aria-live="polite">
+      {list.map((t) => (
+        <div key={t.id} className={"toast " + (t.kind ?? "info")}>
+          <Icon name={t.kind === "trophy" ? "trophy" : t.kind === "quest" ? "check" : "star"} size={20} />
+          <div>
+            <strong>{t.title}</strong>
+            {t.body && <span>{t.body}</span>}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }

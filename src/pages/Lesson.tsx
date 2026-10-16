@@ -1,4 +1,4 @@
-import { config, exerciseSets, grammarById, lessonById, lessons, readings } from "../content";
+import { config, exerciseSets, grammarById, lessonById, lessons, readings, stories } from "../content";
 import { Icon, PageHead, Ring } from "../components/ui";
 import { isUnlocked, lessonStatus } from "../lib/progress";
 import { href } from "../lib/router";
@@ -86,6 +86,45 @@ export function LessonPage({ id }: { id?: string }) {
                 <span className="step-text">
                   <strong>{s.title}</strong>
                   <span className="muted">{s.detail}</span>
+                </span>
+                <Icon name="back" size={16} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {l.place && (
+        <section className="panel place-card">
+          <span className="cta-kicker">
+            <Icon name="map" size={14} /> Stop {l.order} · {l.place.name}
+          </span>
+          <p>{l.place.fact}</p>
+        </section>
+      )}
+
+      <section>
+        <h2 className="section-title">Bonus challenges</h2>
+        <ul className="steps">
+          <li>
+            <a className={"step boss-step" + (p.boss[l.id]?.won ? " done" : "")} href={href(`quiz/boss/${l.id}`)}>
+              <span className="step-icon">{p.boss[l.id]?.won ? <Icon name="crown" /> : <Icon name="sword" />}</span>
+              <span className="step-text">
+                <strong>Boss challenge</strong>
+                <span className="muted">
+                  {p.boss[l.id]?.won ? `Beaten · best ${p.boss[l.id].bestHearts}/3 hearts` : "15 mixed questions, 3 hearts, win a crown"}
+                </span>
+              </span>
+              <Icon name="back" size={16} />
+            </a>
+          </li>
+          {l.stories.map((sid) => (
+            <li key={sid}>
+              <a className={"step" + (p.stories[sid] ? " done" : "")} href={href(`story/${sid}`)}>
+                <span className="step-icon">{p.stories[sid] ? <Icon name="check" /> : <Icon name="game" />}</span>
+                <span className="step-text">
+                  <strong>{stories[sid].title}</strong>
+                  <span className="muted">Story · {stories[sid].titleEn}</span>
                 </span>
                 <Icon name="back" size={16} />
               </a>

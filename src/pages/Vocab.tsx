@@ -2,12 +2,13 @@ import { useEffect, useMemo, useState } from "react";
 import { cardsByLesson, config, lessonById, type Card } from "../content";
 import { LessonPicker } from "../components/LessonPicker";
 import { MascotSays, cheer } from "../components/Mascot";
-import { Empty, Icon, PageHead, SpeakButton } from "../components/ui";
+import { Empty, Icon, Meaning, PageHead, SpeakButton } from "../components/ui";
 import { shuffle } from "../lib/answer";
 import { isUnlocked, unlockedLessons } from "../lib/progress";
 import { href } from "../lib/router";
 import { dueCards, newCards, nextLabel, schedule, type Rating } from "../lib/srs";
-import { addXp, getState, update, useProgress } from "../lib/store";
+import { addXp, bump, getState, update, useProgress } from "../lib/store";
+import { sfx } from "../lib/sound";
 import { speak } from "../lib/speech";
 
 export function VocabPage({ args }: { args: string[] }) {
@@ -150,7 +151,7 @@ function LessonDeck({ lessonId }: { lessonId: string }) {
                 <SpeakButton text={c.hu} small />
                 <div className="wl-main">
                   <strong lang="hu">{c.hu}</strong>
-                  <span>{c.en}</span>
+                  <Meaning en={c.en} ro={c.ro} />
                   {c.note && <em>{c.note}</em>}
                 </div>
                 {p.cards[c.id]?.seen && <Icon name="check" size={16} title="Seen" />}
@@ -184,7 +185,7 @@ function ReviewSession() {
 }
 
 /** One flashcard session. Rating a card schedules its next review. */
-function Session({ title, cards, onExit, exitLabel }: { title: string; cards: Card[]; onExit: () => void; exitLabel: string }) {
+export function Session({ title, cards, onExit, exitLabel }: { title: string; cards: Card[]; onExit: () => void; exitLabel: string }) {
   const p = useProgress();
   const [queue, setQueue] = useState(cards);
   const [flipped, setFlipped] = useState(false);
@@ -200,6 +201,9 @@ function Session({ title, cards, onExit, exitLabel }: { title: string; cards: Ca
     const prev = getState().cards[card.id];
     update((d) => void (d.cards[card.id] = schedule(prev, r)));
     addXp(r === "again" ? 1 : 2);
+    bump("card");
+    if (r !== "again" && !prev?.reps && card.lessonId.startsWith("dict:")) bump("dict");
+    sfx(r === "again" ? "tap" : "good");
     setReviewed((n) => n + 1);
     setFlipped(false);
     if (r === "again") {
@@ -262,7 +266,14 @@ function Session({ title, cards, onExit, exitLabel }: { title: string; cards: Ca
       </div>
 
       <div className="flip-stage">
-        <button className={"flip-card" + (flipped ? " flipped" : "")} onClick={() => setFlipped((f) => !f)} aria-label="Flip card">
+        <button
+          className={"flip-card" + (flipped ? " flipped" : "")}
+          onClick={() => {
+            sfx("flip");
+            setFlipped((f) => !f);
+          }}
+          aria-label="Flip card"
+        >
           <div className="face front">
             <span className="face-label">{card.group.split(" · ")[1] ?? card.group}</span>
             <span className="face-word" lang={dir === "hu" ? "hu" : "en"}>
@@ -273,8 +284,15 @@ function Session({ title, cards, onExit, exitLabel }: { title: string; cards: Ca
           </div>
           <div className="face back">
             <span className="face-label">{dir === "hu" ? "English" : "Magyar"}</span>
-            <span className="face-small">{dir === "hu" ? card.hu : card.en}</span>
+            <span className="face-small" lang={dir === "hu" ? "hu" : "en"}>
+              {dir === "hu" ? card.hu : card.en}
+            </span>
             <span className="face-word">{dir === "hu" ? card.en : card.hu}</span>
+            {p.settings.showRo && card.ro && (
+              <span className="face-ro" lang="ro">
+                <abbr title="Romanian">RO</abbr> {card.ro}
+              </span>
+            )}
             {card.note && <span className="face-note">{card.note}</span>}
           </div>
         </button>

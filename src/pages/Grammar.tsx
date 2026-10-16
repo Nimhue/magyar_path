@@ -158,13 +158,25 @@ function Section({ s }: { s: GrammarSection }) {
         </ul>
       );
     case "widget":
-      return s.widget === "harmony" ? <HarmonyWidget /> : s.widget === "article" ? <ArticleWidget /> : <VanWidget />;
+      switch (s.widget) {
+        case "harmony":
+          return <HarmonyWidget />;
+        case "article":
+          return <ArticleWidget />;
+        case "conjugate":
+          return <ConjugateWidget />;
+        case "possessive":
+          return <PossessiveWidget />;
+        case "location":
+          return <LocationWidget />;
+        default:
+          return <VanWidget />;
+      }
   }
 }
 
 const BACK = "aáoóuú";
 const FRONT = "eéiíöőüű";
-const FRONT_ROUND = "öőüű";
 
 export function classify(word: string) {
   const w = word.toLowerCase();
@@ -173,8 +185,9 @@ export function classify(word: string) {
   const hasFront = vowels.some((v) => FRONT.includes(v));
   const type = !vowels.length ? null : hasBack && hasFront ? "vegyes" : hasBack ? "mély" : "magas";
   const last = vowels[vowels.length - 1];
-  const hasRound = vowels.some((v) => FRONT_ROUND.includes(v));
-  const back = type === "mély" || (type === "vegyes" && (!hasRound || BACK.includes(last)));
+  // Mixed words: a back vowel or a "neutral" é/i/í at the end keeps them back (zsiráfban, kávéban, papírban);
+  // a final short e or ö/ő/ü/ű makes them front (hotelben, Bukarestben).
+  const back = type === "mély" || (type === "vegyes" && (BACK.includes(last) || "éií".includes(last)));
   return { type, back };
 }
 
@@ -297,6 +310,150 @@ function VanWidget() {
         )}
       </p>
       {per.pl && <p className="muted small-print">With plural people the word takes the plural ending -k (you'll learn this soon).</p>}
+    </div>
+  );
+}
+
+const ROUNDED = "öőüű";
+const lastVowel = (w: string) => [...w.toLowerCase()].reverse().find((c) => BACK.includes(c) || FRONT.includes(c)) ?? "";
+const lengthen = (w: string) => (w.endsWith("a") ? w.slice(0, -1) + "á" : w.endsWith("e") ? w.slice(0, -1) + "é" : w);
+const endsInVowel = (w: string) => /[aáeéiíoóöőuúüű]$/i.test(w);
+
+export function conjugate(verb: string) {
+  const v = verb.trim().toLowerCase();
+  const { back } = classify(v);
+  const rounded = !back && ROUNDED.includes(lastVowel(v));
+  const sibilant = /(s|sz|z)$/.test(v);
+  const te = sibilant ? v + (back ? "ol" : rounded ? "öl" : "el") : v + "sz";
+  return [
+    ["én", v + (back ? "ok" : rounded ? "ök" : "ek")],
+    ["te", te],
+    ["Ön, ő", v],
+    ["mi", v + (back ? "unk" : "ünk")],
+    ["ti", v + (back ? "tok" : rounded ? "tök" : "tek")],
+    ["Önök, ők", v + (back ? "nak" : "nek")],
+  ] as const;
+}
+
+function ConjugateWidget() {
+  const verbs = ["tanul", "beszél", "örül", "tud", "él", "kíván"];
+  const [v, setV] = useState("tanul");
+  const table = v.trim() ? conjugate(v) : [];
+  const sib = /(s|sz|z)$/.test(v.trim());
+  return (
+    <div className="widget">
+      <label className="widget-label" htmlFor="conj-input">
+        Verb conjugator
+      </label>
+      <div className="chips wrap">
+        {verbs.map((x) => (
+          <button key={x} className={"chip btnchip" + (v === x ? " sel" : "")} onClick={() => setV(x)}>
+            {x}
+          </button>
+        ))}
+      </div>
+      <input id="conj-input" className="type-input" value={v} onChange={(e) => setV(e.target.value)} lang="hu" autoComplete="off" />
+      {table.length > 0 && (
+        <div className="conj-table">
+          {table.map(([who, form]) => (
+            <div key={who} className="conj-row">
+              <span className="muted">{who}</span>
+              <strong lang="hu">{form}</strong>
+              <SpeakButton text={form} small />
+            </div>
+          ))}
+        </div>
+      )}
+      <p className="muted small-print">
+        {sib
+          ? "Verbs ending in -s, -sz or -z take -ol/-el/-öl for te (olvas → olvasol). You'll meet them soon."
+          : "Works for regular verbs. Verbs ending in two consonants or -ít add a linking vowel for ti and ők (tanít → tanítotok)."}
+      </p>
+    </div>
+  );
+}
+
+const POSS_EXCEPTIONS: Record<string, [string, string]> = {
+  ház: ["házam", "házad"],
+  név: ["nevem", "neved"],
+  hónap: ["hónapom", "hónapod"],
+  toll: ["tollam", "tollad"],
+  fal: ["falam", "falad"],
+};
+
+export function possess(noun: string): [string, string] {
+  const n = noun.trim().toLowerCase();
+  if (POSS_EXCEPTIONS[n]) return POSS_EXCEPTIONS[n];
+  if (endsInVowel(n)) return [lengthen(n) + "m", lengthen(n) + "d"];
+  const { back } = classify(n);
+  const lv = lastVowel(n);
+  if (back) return [n + "om", n + "od"];
+  if (ROUNDED.includes(lv)) return [n + "öm", n + "öd"];
+  return [n + "em", n + "ed"];
+}
+
+function PossessiveWidget() {
+  const [w, setW] = useState("feleség");
+  const t = w.trim();
+  const [my, your] = t ? possess(t) : ["", ""];
+  const art = (x: string) => (/^[aáeéiíoóöőuúüű]/i.test(x) ? "az" : "a");
+  return (
+    <div className="widget">
+      <label className="widget-label" htmlFor="poss-input">
+        My and your
+      </label>
+      <input id="poss-input" className="type-input" value={w} onChange={(e) => setW(e.target.value)} lang="hu" autoComplete="off" />
+      {t && (
+        <div className="widget-out">
+          <span className="badge back">my</span>
+          <strong lang="hu">
+            {art(my)} {my}
+          </strong>
+          <span className="badge mixed">your</span>
+          <strong lang="hu">
+            {art(your)} {your}
+          </strong>
+        </div>
+      )}
+      <p className="muted small-print">Some short words are exceptions (ház → házam, név → nevem). Compound words follow their last part.</p>
+    </div>
+  );
+}
+
+export function locative(place: string, hungarian: boolean) {
+  const w = place.trim();
+  if (!w) return "";
+  const { back } = classify(w);
+  const lv = lastVowel(w);
+  if (hungarian) {
+    if (endsInVowel(w)) return lengthen(w) + "n";
+    return w + (back ? "on" : ROUNDED.includes(lv) ? "ön" : "en");
+  }
+  return lengthen(w) + (back ? "ban" : "ben");
+}
+
+function LocationWidget() {
+  const [w, setW] = useState("Prága");
+  const [hu, setHu] = useState(false);
+  const out = locative(w, hu);
+  return (
+    <div className="widget">
+      <label className="widget-label" htmlFor="loc-input">
+        Where? Place + ending
+      </label>
+      <input id="loc-input" className="type-input" value={w} onChange={(e) => setW(e.target.value)} lang="hu" autoComplete="off" />
+      <label className="toggle">
+        <input id="loc-hu" type="checkbox" checked={hu} onChange={(e) => setHu(e.target.checked)} />
+        <span>Hungary, a Hungarian town or an island (takes -n)</span>
+      </label>
+      {out && (
+        <div className="widget-out sentence">
+          <SpeakButton text={out} small />
+          <strong lang="hu">{out}</strong>
+          <span className="muted">= in {w.trim()}</span>
+        </div>
+      )}
+      <p className="muted small-print">Try: Svájc, Berlin, Velence, Magyarország, Szeged, Siófok, Málta.</p>
     </div>
   );
 }

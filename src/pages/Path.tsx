@@ -1,4 +1,6 @@
 import { allCards, cardsByLesson, config, lessons } from "../content";
+import { JourneyMap } from "../components/JourneyMap";
+import { QuestCard } from "./Practice";
 import { MascotSays } from "../components/Mascot";
 import { Icon, Ring } from "../components/ui";
 import { currentLesson, isUnlocked, lessonStatus, unlockedLessons } from "../lib/progress";
@@ -16,6 +18,8 @@ export function nextStep(l: Lesson, p: Progress): { label: string; to: string } 
   if ((st.quizBest ?? 0) < config.quizPassMark) return { label: "Take the lesson quiz", to: `quiz/${l.id}` };
   if (st.drillsDone < st.drillsTotal) return { label: "Finish the grammar drills", to: `drills/${l.id}` };
   if (st.readingsDone < st.readingsTotal) return { label: "Bonus: read a short text", to: `read/${l.readings[0]}` };
+  if (l.stories.some((s) => !p.stories[s])) return { label: "Bonus: play the story", to: `story/${l.stories.find((s) => !p.stories[s])}` };
+  if (!p.boss[l.id]?.won) return { label: "Bonus: beat the boss", to: `quiz/boss/${l.id}` };
   return { label: "Review the lesson", to: `lesson/${l.id}` };
 }
 
@@ -117,6 +121,10 @@ export function PathPage() {
         )}
       </section>
 
+      <QuestCard />
+
+      <JourneyMap />
+
       <section>
         <h2 className="section-title">Your path</h2>
         <ol className="path">
@@ -131,8 +139,18 @@ export function PathPage() {
                 </div>
                 <div className="path-card">
                   <div className="path-meta">
-                    <span>{fmtDate(l.date)}</span>
-                    <span className="lvl">{l.level}</span>
+                    <span>
+                      {fmtDate(l.date)}
+                      {l.place ? ` · ${l.place.name}` : ""}
+                    </span>
+                    <span className="lvl">
+                      {p.boss[l.id]?.won && (
+                        <span className="crown" title="Boss beaten">
+                          <Icon name="crown" size={14} />
+                        </span>
+                      )}
+                      {l.level}
+                    </span>
                   </div>
                   <strong className="path-title">{l.title}</strong>
                   <span className="muted">{l.titleEn}</span>

@@ -4,6 +4,7 @@ import { Icon, PageHead } from "../components/ui";
 import { href } from "../lib/router";
 import { canSpeak, hasHungarianVoice, onVoices, speak } from "../lib/speech";
 import { exportProgress, importProgress, resetProgress, update, useProgress } from "../lib/store";
+import { PALETTES } from "../lib/themes";
 import { download } from "./Notes";
 
 async function sha256(text: string) {
@@ -59,6 +60,60 @@ export function SettingsPage() {
             </button>
           </div>
         </div>
+      </section>
+
+      <section className="panel stack">
+        <h2 className="section-title">Colour theme</h2>
+        <div className="palette-grid" role="radiogroup" aria-label="Colour theme">
+          {PALETTES.map((pal) => (
+            <button
+              key={pal.id}
+              role="radio"
+              aria-checked={p.settings.palette === pal.id}
+              className={"palette" + (p.settings.palette === pal.id ? " sel" : "")}
+              onClick={() => update((d) => void (d.settings.palette = pal.id))}
+            >
+              <span className="swatches-row" aria-hidden="true">
+                {pal.swatch.map((c) => (
+                  <i key={c} style={{ background: c }} />
+                ))}
+              </span>
+              <strong lang="hu">{pal.name}</strong>
+              <span className="muted small-print">{pal.nameEn}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="panel stack">
+        <h2 className="section-title">Learning</h2>
+        <label className="toggle">
+          <input
+            id="set-ro"
+            type="checkbox"
+            checked={p.settings.showRo}
+            onChange={(e) => update((d) => void (d.settings.showRo = e.target.checked))}
+          />
+          <span>
+            <strong>Show Romanian meanings</strong>
+            <span className="muted small-print">Under the English on flashcards, word lists and feedback</span>
+          </span>
+        </label>
+        <label className="toggle">
+          <input
+            id="set-sound"
+            type="checkbox"
+            checked={p.settings.sound}
+            onChange={(e) => update((d) => void (d.settings.sound = e.target.checked))}
+          />
+          <span>
+            <strong>Sound effects</strong>
+            <span className="muted small-print">Little chimes for right and wrong answers</span>
+          </span>
+        </label>
+        <a className="linkish" href={href("me")}>
+          <Icon name="trophy" size={16} /> Trophies and Bodza's wardrobe
+        </a>
       </section>
 
       <section className="panel stack">
