@@ -13,6 +13,11 @@ import {
   LessonSchema,
   ReadingSchema,
   StorySchema,
+  DiscoverSchema,
+  ProverbsSchema,
+  TwistersSchema,
+  SongsSchema,
+  RecipesSchema,
 } from "../src/content/schema";
 
 const root = join(import.meta.dirname, "..", "content");
@@ -48,6 +53,19 @@ const exercises = load("exercises", ExerciseSetSchema);
 const readings = load("readings", ReadingSchema);
 const dictionary = load("dictionary", DictionarySchema);
 const stories = load("stories", StorySchema);
+const discover = load("discover", DiscoverSchema);
+function one<T extends z.ZodTypeAny>(file: string, schema: T) {
+  try {
+    const res = schema.safeParse(JSON.parse(readFileSync(join(root, "culture", file), "utf8")));
+    if (!res.success) res.error.issues.forEach((i) => problems.push(`culture/${file} → ${i.path.join(".")}: ${i.message}`));
+  } catch (e) {
+    problems.push(`culture/${file}: ${(e as Error).message}`);
+  }
+}
+one("proverbs.json", ProverbsSchema);
+one("tongue-twisters.json", TwistersSchema);
+one("songs.json", SongsSchema);
+one("recipes.json", RecipesSchema);
 
 function uniqueIds(list: { file: string; data: { id: string } }[], what: string) {
   const seen = new Map<string, string>();
@@ -63,6 +81,11 @@ const exerciseIds = uniqueIds(exercises, "exercise");
 const readingIds = uniqueIds(readings, "reading");
 uniqueIds(dictionary, "dictionary");
 const storyIds = uniqueIds(stories, "story");
+uniqueIds(discover, "discover place");
+for (const { file, data } of discover)
+  data.questions.forEach((q, i) => q.options.includes(q.answer) || problems.push(`${file} → questions.${i}: answer not in options`));
+for (const { file, data } of stories)
+  if (!data.lesson && !data.pack) problems.push(`${file}: needs a "lesson" or a "pack"`);
 for (const { file, data } of stories) {
   if (!data.nodes[data.start]) problems.push(`${file}: start node "${data.start}" does not exist`);
   for (const [nid, n] of Object.entries(data.nodes)) {
@@ -115,7 +138,7 @@ for (const { file, data } of exercises) {
   });
 }
 
-for (const { file, data } of stories) lessonIds.has(data.lesson) || problems.push(`${file}: unknown lesson "${data.lesson}"`);
+for (const { file, data } of stories) !data.lesson || lessonIds.has(data.lesson) || problems.push(`${file}: unknown lesson "${data.lesson}"`);
 
 for (const { file, data } of readings) {
   lessonIds.has(data.lesson) || problems.push(`${file}: unknown lesson "${data.lesson}"`);
@@ -129,5 +152,5 @@ if (problems.length) {
   process.exit(1);
 }
 console.log(
-  `✓ Content OK: ${lessons.length} lessons, ${grammar.length} grammar topics, ${exercises.length} drill sets, ${readings.length} readings, ${dictionary.length} dictionary categories, ${stories.length} stories`
+  `✓ Content OK: ${lessons.length} lessons, ${grammar.length} grammar topics, ${exercises.length} drill sets, ${readings.length} readings, ${dictionary.length} dictionary categories, ${stories.length} stories, ${discover.length} Discover places`
 );
