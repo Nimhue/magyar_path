@@ -1,0 +1,133 @@
+{
+  "id": "koszeg",
+  "name": "Kőszeg",
+  "lon": 16.54,
+  "lat": 47.39,
+  "category": "history",
+  "title": "Tizenegy órakor szólnak a harangok",
+  "titleEn": "The bells ring at eleven",
+  "titleRo": "Clopotele bat la ora unsprezece",
+  "story": [
+    {
+      "hu": "Kőszeg kicsi, szép város az osztrák határ mellett.",
+      "en": "Kőszeg is a small, pretty town by the Austrian border.",
+      "ro": "Kőszeg este un oraș mic și frumos lângă granița cu Austria."
+    },
+    {
+      "hu": "1532-ben egy óriási török sereg jön, Bécs felé megy.",
+      "en": "In 1532 a gigantic Ottoman army comes, marching towards Vienna.",
+      "ro": "În 1532 vine o armată otomană uriașă, în drum spre Viena."
+    },
+    {
+      "hu": "Kőszegen csak néhány száz védő van, a vezetőjük Jurisics Miklós.",
+      "en": "Kőszeg has only a few hundred defenders, led by Miklós Jurisics.",
+      "ro": "La Kőszeg sunt doar câteva sute de apărători, conduși de Miklós Jurisics."
+    },
+    {
+      "hu": "A kis vár három hétig harcol.",
+      "en": "The small castle fights for three weeks.",
+      "ro": "Mica cetate luptă trei săptămâni."
+    },
+    {
+      "hu": "A végén a török sereg délelőtt tizenegy órakor elmegy.",
+      "en": "In the end the Ottoman army leaves at eleven in the morning.",
+      "ro": "La sfârșit, armata otomană pleacă la ora unsprezece dimineața."
+    },
+    {
+      "hu": "Bécs megmenekül, mert Kőszeg időt nyer.",
+      "en": "Vienna is saved because Kőszeg gains time.",
+      "ro": "Viena e salvată pentru că Kőszeg câștigă timp."
+    },
+    {
+      "hu": "Kőszegen azóta minden nap tizenegy órakor szólnak a harangok.",
+      "en": "Since then, Kőszeg's bells ring at eleven o'clock every day.",
+      "ro": "De atunci, clopotele din Kőszeg bat zilnic la ora unsprezece."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A kőszegi Hősök tornya a győzelemre emlékezik.",
+      "en": "The Heroes' Tower on the main square remembers the defenders of 1532.",
+      "ro": "Turnul Eroilor din piața principală amintește de apărătorii din 1532."
+    },
+    {
+      "hu": "Kőszeget az ország ékszerdobozának is hívják.",
+      "en": "Kőszeg is nicknamed \"the jewel box of Hungary\" for its tiny old town.",
+      "ro": "Kőszeg e poreclit „cutia de bijuterii a Ungariei” pentru centrul său vechi minuscul."
+    },
+    {
+      "hu": "Kőszeg mellett van az Írottkő, a Dunántúl legmagasabb pontja.",
+      "en": "Írottkő hill near Kőszeg is the highest point of Transdanubia (884 m).",
+      "ro": "Dealul Írottkő de lângă Kőszeg e cel mai înalt punct din Transdanubia (884 m)."
+    }
+  ],
+  "words": [
+    {
+      "hu": "határ",
+      "en": "border",
+      "ro": "graniță"
+    },
+    {
+      "hu": "védő",
+      "en": "defender",
+      "ro": "apărător"
+    },
+    {
+      "hu": "hét",
+      "en": "week; seven",
+      "ro": "săptămână; șapte"
+    },
+    {
+      "hu": "óra",
+      "en": "hour; o'clock; clock",
+      "ro": "oră; ceas"
+    },
+    {
+      "hu": "harang",
+      "en": "bell",
+      "ro": "clopot"
+    },
+    {
+      "hu": "megmenekül",
+      "en": "to be saved, to escape",
+      "ro": "a scăpa, a fi salvat"
+    },
+    {
+      "hu": "nap",
+      "en": "day; sun",
+      "ro": "zi; soare"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hány órakor szólnak a harangok?",
+      "qEn": "At what time do the bells ring?",
+      "options": [
+        "tizenegy órakor",
+        "hét órakor",
+        "éjfélkor"
+      ],
+      "answer": "tizenegy órakor"
+    },
+    {
+      "q": "Ki Jurisics Miklós?",
+      "qEn": "Who is Miklós Jurisics?",
+      "options": [
+        "a védők vezetője",
+        "egy török császár",
+        "egy zenész"
+      ],
+      "answer": "a védők vezetője"
+    },
+    {
+      "q": "Melyik város menekül meg?",
+      "qEn": "Which city is saved?",
+      "options": [
+        "Bécs",
+        "Debrecen",
+        "Szeged"
+      ],
+      "answer": "Bécs"
+    }
+  ]
+}

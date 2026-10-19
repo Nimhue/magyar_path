@@ -1,0 +1,133 @@
+{
+  "id": "tatabanya",
+  "name": "Tatabánya",
+  "lon": 18.4,
+  "lat": 47.57,
+  "category": "legend",
+  "title": "A turulmadár",
+  "titleEn": "The Turul bird",
+  "titleRo": "Pasărea Turul",
+  "story": [
+    {
+      "hu": "A turul egy nagy, legendás madár.",
+      "en": "The Turul is a large, legendary bird.",
+      "ro": "Turul este o pasăre mare, legendară."
+    },
+    {
+      "hu": "A régi magyarok szent madara.",
+      "en": "It is the sacred bird of the ancient Hungarians.",
+      "ro": "Este pasărea sfântă a vechilor maghiari."
+    },
+    {
+      "hu": "A legenda szerint Emese, egy fiatal asszony, álmot lát.",
+      "en": "According to the legend, Emese, a young woman, has a dream.",
+      "ro": "Potrivit legendei, Emese, o femeie tânără, are un vis."
+    },
+    {
+      "hu": "Álmában egy turul jön hozzá.",
+      "en": "In her dream a Turul comes to her.",
+      "ro": "În visul ei, un Turul vine la ea."
+    },
+    {
+      "hu": "Az álom jelentése: a fia nagy vezér lesz.",
+      "en": "The dream means that her son will be a great leader.",
+      "ro": "Visul înseamnă că fiul ei va fi un mare conducător."
+    },
+    {
+      "hu": "A fiú neve Álmos. A név az „álom” szóból jön.",
+      "en": "The boy is called Álmos. The name comes from the word álom (dream).",
+      "ro": "Băiatul se numește Álmos. Numele vine de la cuvântul álom (vis)."
+    },
+    {
+      "hu": "Tatabányán, a hegyen ma is áll egy óriási turulszobor.",
+      "en": "In Tatabánya a giant Turul statue still stands on the hill.",
+      "ro": "La Tatabánya, pe deal se înalță și azi o statuie uriașă a păsării Turul."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A tatabányai turul az egyik legnagyobb madárszobor Európában.",
+      "en": "The Turul above Tatabánya, with wings about 15 metres wide, is one of the largest bird statues in Europe.",
+      "ro": "Turulul de deasupra orașului Tatabánya, cu aripi de circa 15 metri, este una dintre cele mai mari statui de păsări din Europa."
+    },
+    {
+      "hu": "Budapesten, a Budai Várban is van turul.",
+      "en": "Another Turul statue guards Buda Castle in Budapest.",
+      "ro": "O altă statuie Turul păzește Castelul Buda din Budapesta."
+    },
+    {
+      "hu": "Árpád Álmos fia.",
+      "en": "Árpád, the leader who brought the Hungarians to the Carpathian Basin around 895, was Álmos's son.",
+      "ro": "Árpád, conducătorul care i-a adus pe maghiari în Bazinul Carpatic în jurul anului 895, era fiul lui Álmos."
+    }
+  ],
+  "words": [
+    {
+      "hu": "madár",
+      "en": "bird",
+      "ro": "pasăre"
+    },
+    {
+      "hu": "szent",
+      "en": "holy, sacred",
+      "ro": "sfânt"
+    },
+    {
+      "hu": "álom",
+      "en": "dream",
+      "ro": "vis"
+    },
+    {
+      "hu": "fiú",
+      "en": "boy; son",
+      "ro": "băiat; fiu"
+    },
+    {
+      "hu": "vezér",
+      "en": "leader, chieftain",
+      "ro": "conducător, căpetenie"
+    },
+    {
+      "hu": "szobor",
+      "en": "statue",
+      "ro": "statuie"
+    },
+    {
+      "hu": "hegy",
+      "en": "hill, mountain",
+      "ro": "deal, munte"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mi a turul?",
+      "qEn": "What is the Turul?",
+      "options": [
+        "egy madár",
+        "egy hal",
+        "egy ló"
+      ],
+      "answer": "egy madár"
+    },
+    {
+      "q": "Ki lát álmot?",
+      "qEn": "Who has a dream?",
+      "options": [
+        "Emese",
+        "Álmos",
+        "Árpád"
+      ],
+      "answer": "Emese"
+    },
+    {
+      "q": "Honnan jön az „Álmos” név?",
+      "qEn": "Where does the name Álmos come from?",
+      "options": [
+        "az álom szóból",
+        "a hegy szóból",
+        "a madár szóból"
+      ],
+      "answer": "az álom szóból"
+    }
+  ]
+}

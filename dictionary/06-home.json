@@ -1,0 +1,58 @@
+{
+  "id": "home",
+  "order": 6,
+  "title": "Otthon",
+  "titleEn": "Home",
+  "color": "green",
+  "mark": "O",
+  "intro": "Rooms, furniture and things around the house.",
+  "groups": [
+    {
+      "name": "Szobák · Rooms",
+      "items": [
+        {"hu": "lakás", "en": "flat, apartment", "ro": "apartament"},
+        {"hu": "ház", "en": "house", "ro": "casă"},
+        {"hu": "szoba", "en": "room", "ro": "cameră"},
+        {"hu": "nappali", "en": "living room", "ro": "sufragerie"},
+        {"hu": "hálószoba", "en": "bedroom", "ro": "dormitor"},
+        {"hu": "konyha", "en": "kitchen", "ro": "bucătărie"},
+        {"hu": "fürdőszoba", "en": "bathroom", "ro": "baie"},
+        {"hu": "vécé", "en": "toilet", "ro": "toaletă", "note": "also: WC"},
+        {"hu": "erkély", "en": "balcony", "ro": "balcon"},
+        {"hu": "előszoba", "en": "hallway", "ro": "hol"},
+        {"hu": "kert", "en": "garden", "ro": "grădină"},
+        {"hu": "lépcsőház", "en": "stairwell", "ro": "casa scării"}
+      ]
+    },
+    {
+      "name": "Bútorok · Furniture",
+      "items": [
+        {"hu": "asztal", "en": "table", "ro": "masă"},
+        {"hu": "szék", "en": "chair", "ro": "scaun"},
+        {"hu": "ágy", "en": "bed", "ro": "pat"},
+        {"hu": "kanapé", "en": "sofa", "ro": "canapea"},
+        {"hu": "szekrény", "en": "cupboard, wardrobe", "ro": "dulap"},
+        {"hu": "polc", "en": "shelf", "ro": "raft"},
+        {"hu": "ajtó", "en": "door", "ro": "ușă"},
+        {"hu": "ablak", "en": "window", "ro": "fereastră"},
+        {"hu": "tükör", "en": "mirror", "ro": "oglindă"},
+        {"hu": "lámpa", "en": "lamp", "ro": "lampă"}
+      ]
+    },
+    {
+      "name": "A konyhában · In the kitchen",
+      "items": [
+        {"hu": "hűtő", "en": "fridge", "ro": "frigider"},
+        {"hu": "tűzhely", "en": "stove", "ro": "aragaz"},
+        {"hu": "sütő", "en": "oven", "ro": "cuptor"},
+        {"hu": "mosogatógép", "en": "dishwasher", "ro": "mașină de spălat vase"},
+        {"hu": "tányér", "en": "plate", "ro": "farfurie"},
+        {"hu": "pohár", "en": "glass", "ro": "pahar"},
+        {"hu": "bögre", "en": "mug", "ro": "cană"},
+        {"hu": "kanál", "en": "spoon", "ro": "lingură"},
+        {"hu": "villa", "en": "fork", "ro": "furculiță"},
+        {"hu": "kés", "en": "knife", "ro": "cuțit"}
+      ]
+    }
+  ]
+}

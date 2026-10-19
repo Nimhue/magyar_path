@@ -1,0 +1,46 @@
+{
+  "id": "body",
+  "order": 8,
+  "title": "Test",
+  "titleEn": "Body and health",
+  "color": "pink",
+  "mark": "T",
+  "groups": [
+    {
+      "name": "A test · The body",
+      "items": [
+        {"hu": "fej", "en": "head", "ro": "cap"},
+        {"hu": "haj", "en": "hair", "ro": "păr"},
+        {"hu": "arc", "en": "face", "ro": "față"},
+        {"hu": "szem", "en": "eye", "ro": "ochi"},
+        {"hu": "fül", "en": "ear", "ro": "ureche"},
+        {"hu": "orr", "en": "nose", "ro": "nas"},
+        {"hu": "száj", "en": "mouth", "ro": "gură"},
+        {"hu": "fog", "en": "tooth", "ro": "dinte"},
+        {"hu": "nyak", "en": "neck", "ro": "gât"},
+        {"hu": "váll", "en": "shoulder", "ro": "umăr"},
+        {"hu": "kar", "en": "arm", "ro": "braț"},
+        {"hu": "kéz", "en": "hand", "ro": "mână"},
+        {"hu": "ujj", "en": "finger", "ro": "deget"},
+        {"hu": "has", "en": "belly", "ro": "burtă"},
+        {"hu": "hát", "en": "back", "ro": "spate"},
+        {"hu": "láb", "en": "leg; foot", "ro": "picior"},
+        {"hu": "térd", "en": "knee", "ro": "genunchi"},
+        {"hu": "szív", "en": "heart", "ro": "inimă"}
+      ]
+    },
+    {
+      "name": "Az orvosnál · At the doctor's",
+      "items": [
+        {"hu": "orvos", "en": "doctor", "ro": "medic"},
+        {"hu": "gyógyszertár", "en": "pharmacy", "ro": "farmacie", "note": "also: patika"},
+        {"hu": "gyógyszer", "en": "medicine", "ro": "medicament"},
+        {"hu": "beteg", "en": "ill; patient", "ro": "bolnav; pacient"},
+        {"hu": "fáj", "en": "to hurt", "ro": "a durea", "note": "Fáj a fejem. = My head hurts."},
+        {"hu": "láz", "en": "fever", "ro": "febră"},
+        {"hu": "megfázás", "en": "a cold", "ro": "răceală"},
+        {"hu": "Jobbulást!", "en": "Get well soon!", "ro": "Însănătoșire grabnică!", "kind": "phrase"}
+      ]
+    }
+  ]
+}

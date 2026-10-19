@@ -1,0 +1,128 @@
+{
+  "id": "debrecen",
+  "name": "Debrecen",
+  "lon": 21.63,
+  "lat": 47.53,
+  "category": "food",
+  "title": "Debreceni kolbász és virágkarnevál",
+  "titleEn": "Debrecen sausage and the flower carnival",
+  "titleRo": "Cârnații de Debrețin și carnavalul florilor",
+  "story": [
+    {
+      "hu": "Debrecen Magyarország második legnagyobb városa.",
+      "en": "Debrecen is Hungary's second largest city.",
+      "ro": "Debrețin este al doilea oraș ca mărime din Ungaria."
+    },
+    {
+      "hu": "A belvárosban áll a nagy, sárga Nagytemplom.",
+      "en": "The big yellow Great Church stands in the city centre.",
+      "ro": "În centru se află Biserica Mare, mare și galbenă."
+    },
+    {
+      "hu": "A városról egy finom kolbász kapja a nevét: a debreceni.",
+      "en": "A tasty sausage is named after the city: the debreceni.",
+      "ro": "Un cârnat gustos poartă numele orașului: debreceni."
+    },
+    {
+      "hu": "A debreceni páros kolbász: két kicsi kolbász együtt, mustárral és kenyérrel.",
+      "en": "Debreceni comes in pairs: two small sausages together, with mustard and bread.",
+      "ro": "Debreceni vine în pereche: doi cârnăciori împreună, cu muștar și pâine."
+    },
+    {
+      "hu": "Augusztus 20-án nagy virágkarnevál van.",
+      "en": "On 20 August there's a big flower carnival.",
+      "ro": "Pe 20 august are loc un mare carnaval al florilor."
+    },
+    {
+      "hu": "Óriási kocsik mennek az utcán, és minden kocsi virágból van!",
+      "en": "Giant floats roll down the street, and every float is made of flowers!",
+      "ro": "Care uriașe trec pe stradă, și fiecare car e făcut din flori!"
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A debreceni virágkarnevál 1966 óta minden évben van.",
+      "en": "The Debrecen Flower Carnival has been held every year since 1966; a single float can use hundreds of thousands of flowers.",
+      "ro": "Carnavalul Florilor din Debrețin se ține anual din 1966; un singur car poate folosi sute de mii de flori."
+    },
+    {
+      "hu": "A debreceni kolbászt külföldön is ismerik.",
+      "en": "\"Debreziner\" sausages are known in Austria and Germany too.",
+      "ro": "Cârnații „Debreziner” sunt cunoscuți și în Austria și Germania."
+    },
+    {
+      "hu": "Debrecen mellett van Hortobágy.",
+      "en": "The Hortobágy puszta is just west of Debrecen.",
+      "ro": "Pusta Hortobágy se află chiar la vest de Debrețin."
+    }
+  ],
+  "words": [
+    {
+      "hu": "második",
+      "en": "second",
+      "ro": "al doilea"
+    },
+    {
+      "hu": "templom",
+      "en": "church",
+      "ro": "biserică"
+    },
+    {
+      "hu": "kolbász",
+      "en": "sausage",
+      "ro": "cârnat"
+    },
+    {
+      "hu": "pár, páros",
+      "en": "pair, paired",
+      "ro": "pereche"
+    },
+    {
+      "hu": "mustár",
+      "en": "mustard",
+      "ro": "muștar"
+    },
+    {
+      "hu": "kenyér",
+      "en": "bread",
+      "ro": "pâine"
+    },
+    {
+      "hu": "kocsi",
+      "en": "car, cart, float",
+      "ro": "mașină, căruță, car alegoric"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen színű a Nagytemplom?",
+      "qEn": "What colour is the Great Church?",
+      "options": [
+        "sárga",
+        "kék",
+        "fekete"
+      ],
+      "answer": "sárga"
+    },
+    {
+      "q": "Mivel esszük a debrecenit?",
+      "qEn": "What do we eat debreceni with?",
+      "options": [
+        "mustárral és kenyérrel",
+        "cukorral",
+        "tejjel"
+      ],
+      "answer": "mustárral és kenyérrel"
+    },
+    {
+      "q": "Miből vannak a kocsik a karneválon?",
+      "qEn": "What are the carnival floats made of?",
+      "options": [
+        "virágból",
+        "kőből",
+        "kolbászból"
+      ],
+      "answer": "virágból"
+    }
+  ]
+}

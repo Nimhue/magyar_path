@@ -1,0 +1,38 @@
+{
+  "id": "r03-magyarora",
+  "lesson": "l03-oran",
+  "title": "A magyarórán",
+  "titleEn": "In Hungarian class",
+  "intro": "A conversation between a student and his teacher. Listen to it line by line.",
+  "paragraphs": [
+    "Tanárnő: Jó reggelt kívánok!",
+    "Tom: Jó reggelt kívánok! Bocsánat, kérdezhetek valamit?",
+    "Tanárnő: Tessék!",
+    "Tom: Mit jelent az, hogy „csillag”?",
+    "Tanárnő: A csillag angolul „star”.",
+    "Tom: Köszönöm! És hogy mondják magyarul azt, hogy „garden”?",
+    "Tanárnő: Kert.",
+    "Tom: Tessék? Lassabban, legyen szíves!",
+    "Tanárnő: K-e-r-t. Kert. Világos minden?",
+    "Tom: Igen, köszönöm!",
+    "Tanárnő: Szívesen. Viszontlátásra!",
+    "Tom: Viszontlátásra!"
+  ],
+  "glossary": {
+    "tanárnő": "(female) teacher",
+    "tom": "Tom (a name)",
+    "kérdezhetek": "may I ask (kérdez + -het + -ek)",
+    "az": "that",
+    "azt": "that (as the object)",
+    "mondják": "they say",
+    "a": "the",
+    "és": "and",
+    "garden": "English word",
+    "star": "English word"
+  },
+  "questions": [
+    { "q": "Mit jelent az, hogy „csillag”?", "qEn": "What does “csillag” mean?", "options": ["star", "garden", "flower"], "answer": "star" },
+    { "q": "Why does Tom say “Tessék?”", "options": ["He didn't hear or catch the word.", "He is handing something over.", "He is saying goodbye."], "answer": "He didn't hear or catch the word." },
+    { "q": "Is the conversation formal or informal?", "options": ["Formal", "Informal"], "answer": "Formal", "explain": "They use “Jó reggelt kívánok” and “Viszontlátásra”." }
+  ]
+}

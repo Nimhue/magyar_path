@@ -1,0 +1,40 @@
+{
+  "id": "feelings",
+  "order": 12,
+  "title": "Érzések",
+  "titleEn": "Feelings",
+  "color": "purple",
+  "mark": "É",
+  "groups": [
+    {
+      "name": "Hogy vagy? · How are you?",
+      "items": [
+        {"hu": "Hogy vagy?", "en": "How are you? (informal)", "ro": "Ce faci?", "kind": "phrase"},
+        {"hu": "Hogy van?", "en": "How are you? (formal)", "ro": "Ce mai faceți?", "kind": "phrase"},
+        {"hu": "Jól vagyok, köszönöm.", "en": "I'm fine, thanks.", "ro": "Sunt bine, mulțumesc.", "kind": "phrase"},
+        {"hu": "Megvagyok.", "en": "I'm OK. / Getting by.", "ro": "Mă descurc.", "kind": "phrase"},
+        {"hu": "Nem vagyok jól.", "en": "I'm not well.", "ro": "Nu mă simt bine.", "kind": "phrase"},
+        {"hu": "És te?", "en": "And you?", "ro": "Și tu?", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Érzések · Feelings",
+      "items": [
+        {"hu": "boldog", "en": "happy", "ro": "fericit"},
+        {"hu": "vidám", "en": "cheerful", "ro": "vesel"},
+        {"hu": "szomorú", "en": "sad", "ro": "trist"},
+        {"hu": "fáradt", "en": "tired", "ro": "obosit"},
+        {"hu": "álmos", "en": "sleepy", "ro": "somnoros"},
+        {"hu": "ideges", "en": "nervous, annoyed", "ro": "nervos"},
+        {"hu": "dühös", "en": "angry", "ro": "furios"},
+        {"hu": "izgatott", "en": "excited", "ro": "entuziasmat"},
+        {"hu": "nyugodt", "en": "calm", "ro": "calm"},
+        {"hu": "unatkozik", "en": "to be bored", "ro": "a se plictisi"},
+        {"hu": "fél", "en": "to be afraid", "ro": "a se teme"},
+        {"hu": "szerelmes", "en": "in love", "ro": "îndrăgostit"},
+        {"hu": "büszke", "en": "proud", "ro": "mândru"},
+        {"hu": "meglepett", "en": "surprised", "ro": "surprins"}
+      ]
+    }
+  ]
+}

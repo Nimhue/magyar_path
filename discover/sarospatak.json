@@ -1,0 +1,128 @@
+{
+  "id": "sarospatak",
+  "name": "Sárospatak",
+  "lon": 21.57,
+  "lat": 48.32,
+  "category": "language",
+  "title": "Képeskönyv a diákoknak",
+  "titleEn": "A picture book for students",
+  "titleRo": "O carte cu imagini pentru elevi",
+  "story": [
+    {
+      "hu": "Sárospatakon van egy nagyon régi iskola, a Református Kollégium.",
+      "en": "Sárospatak has a very old school, the Reformed College.",
+      "ro": "La Sárospatak există o școală foarte veche, Colegiul Reformat."
+    },
+    {
+      "hu": "1650-ben ide jön tanítani egy cseh tudós: Comenius.",
+      "en": "In 1650 a Czech scholar comes here to teach: Comenius.",
+      "ro": "În 1650 vine aici să predea un învățat ceh: Comenius."
+    },
+    {
+      "hu": "Comenius azt gondolja: a gyerekek képekből könnyebben tanulnak.",
+      "en": "Comenius thinks children learn more easily from pictures.",
+      "ro": "Comenius crede că copiii învață mai ușor din imagini."
+    },
+    {
+      "hu": "Itt írja meg az Orbis Pictust, a világ egyik első képes tankönyvét.",
+      "en": "Here he writes the Orbis Pictus, one of the world's first illustrated textbooks.",
+      "ro": "Aici scrie Orbis Pictus, unul dintre primele manuale ilustrate din lume."
+    },
+    {
+      "hu": "Minden oldalon van egy kép, és a szavak a képen számokkal vannak.",
+      "en": "Every page has a picture, with the words numbered on it.",
+      "ro": "Pe fiecare pagină e o imagine, iar cuvintele sunt numerotate pe ea."
+    },
+    {
+      "hu": "Pont, mint egy szókártya! Mint a te flashcardjaid.",
+      "en": "Just like a flashcard! Like your flashcards.",
+      "ro": "Exact ca un cartonaș! Ca flashcard-urile tale."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A magyar finnugor nyelv.",
+      "en": "Hungarian is a Finno-Ugric language, distantly related to Finnish and Estonian, not to its neighbours.",
+      "ro": "Maghiara este o limbă fino-ugrică, rudă îndepărtată cu finlandeza și estona, nu cu limbile vecine."
+    },
+    {
+      "hu": "A „kéz” szó finnül „käsi”, a „víz” „vesi”.",
+      "en": "Some old words still match: kéz / käsi (hand), víz / vesi (water), hal / kala (fish).",
+      "ro": "Câteva cuvinte vechi încă se potrivesc: kéz / käsi (mână), víz / vesi (apă), hal / kala (pește)."
+    },
+    {
+      "hu": "A magyar szavak nagyon hosszúak lehetnek.",
+      "en": "Suffixes stack up, so words can get very long: megszentségteleníthetetlenségeskedéseitekért is a famous joke-length example.",
+      "ro": "Sufixele se adună, așa că un cuvânt poate deveni foarte lung: megszentségteleníthetetlenségeskedéseitekért e un exemplu celebru, aproape glumă."
+    }
+  ],
+  "words": [
+    {
+      "hu": "iskola",
+      "en": "school",
+      "ro": "școală"
+    },
+    {
+      "hu": "diák",
+      "en": "student, pupil",
+      "ro": "elev, student"
+    },
+    {
+      "hu": "kép",
+      "en": "picture",
+      "ro": "imagine, poză"
+    },
+    {
+      "hu": "könnyű",
+      "en": "easy; light",
+      "ro": "ușor"
+    },
+    {
+      "hu": "tankönyv",
+      "en": "textbook",
+      "ro": "manual"
+    },
+    {
+      "hu": "szó, szavak",
+      "en": "word, words",
+      "ro": "cuvânt, cuvinte"
+    },
+    {
+      "hu": "szám",
+      "en": "number",
+      "ro": "număr"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Ki jön tanítani Sárospatakra?",
+      "qEn": "Who comes to teach in Sárospatak?",
+      "options": [
+        "Comenius",
+        "Beethoven",
+        "Kodály"
+      ],
+      "answer": "Comenius"
+    },
+    {
+      "q": "Miből tanulnak könnyebben a gyerekek?",
+      "qEn": "What do children learn from more easily?",
+      "options": [
+        "képekből",
+        "kövekből",
+        "dalokból"
+      ],
+      "answer": "képekből"
+    },
+    {
+      "q": "Melyik nyelv rokona a magyarnak?",
+      "qEn": "Which language is related to Hungarian?",
+      "options": [
+        "a finn",
+        "a német",
+        "a román"
+      ],
+      "answer": "a finn"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "sc-posta",
+  "pack": "survival",
+  "title": "A postán",
+  "titleEn": "At the post office",
+  "intro": "You want to send a birthday card to your family in Romania. You take a number and wait for your turn.",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Postás",
+      "text": "Jó napot! Mit szeretne?",
+      "textEn": "Good afternoon! What would you like?",
+      "textRo": "Bună ziua! Ce doriți?",
+      "choices": [
+        {
+          "text": "Jó napot! Ezt a levelet szeretném feladni Romániába.",
+          "textEn": "Hello! I'd like to send this letter to Romania.",
+          "textRo": "Bună ziua! Aș dori să trimit scrisoarea asta în România.",
+          "to": "b"
+        },
+        {
+          "text": "Jó napot! Romániában levél.",
+          "textEn": "Hello! In Romania letter.",
+          "textRo": "Bună ziua! În România scrisoare.",
+          "to": "a2",
+          "note": "Direction \"to\" a country: Romániába (-ba/-be). Romániában means \"in Romania\"."
+        }
+      ]
+    },
+    "a2": {
+      "speaker": "Postás",
+      "text": "Romániába szeretné feladni?",
+      "textEn": "Would you like to send it to Romania?",
+      "textRo": "Doriți să o trimiteți în România?",
+      "choices": [
+        {
+          "text": "Igen, Romániába, kérem.",
+          "textEn": "Yes, to Romania, please.",
+          "textRo": "Da, în România, vă rog.",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Postás",
+      "text": "Elsőbbségi vagy normál? Az elsőbbségi gyorsabb.",
+      "textEn": "Priority or standard? Priority is faster.",
+      "textRo": "Prioritar sau normal? Prioritarul e mai rapid.",
+      "choices": [
+        {
+          "text": "Elsőbbségi, kérem. Mikor érkezik meg?",
+          "textEn": "Priority, please. When will it arrive?",
+          "textRo": "Prioritar, vă rog. Când ajunge?",
+          "to": "c"
+        },
+        {
+          "text": "Normál, kérem. Nem sietek.",
+          "textEn": "Standard, please. I'm not in a hurry.",
+          "textRo": "Normal, vă rog. Nu mă grăbesc.",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Postás",
+      "text": "Pár napon belül. Rá kell írni a feladót is.",
+      "textEn": "Within a few days. You also have to write the sender on it.",
+      "textRo": "În câteva zile. Trebuie să scrieți și expeditorul.",
+      "choices": [
+        {
+          "text": "Persze. Kérhetek egy tollat?",
+          "textEn": "Sure. May I have a pen?",
+          "textRo": "Sigur. Pot să cer un pix?",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Postás",
+      "text": "Tessék. … Köszönöm. A bélyeg itt van rajta.",
+      "textEn": "Here you are. … Thank you. The stamp is on it here.",
+      "textRo": "Poftiți. … Mulțumesc. Timbrul e pus aici.",
+      "choices": [
+        {
+          "text": "Köszönöm szépen! Szép napot!",
+          "textEn": "Thank you very much! Have a nice day!",
+          "textRo": "Mulțumesc frumos! O zi bună!",
+          "to": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "Postás",
+      "text": "Önnek is!",
+      "textEn": "You too!",
+      "textRo": "Și dumneavoastră!",
+      "choices": [],
+      "end": "great"
+    }
+  },
+  "glossary": {
+    "postás": "postal worker",
+    "posta": "post office",
+    "levél, levelet": "letter",
+    "felad": "to post, send",
+    "elsőbbségi": "priority",
+    "gyorsabb": "faster",
+    "megérkezik": "to arrive",
+    "belül": "within",
+    "feladó": "sender",
+    "toll": "pen",
+    "bélyeg": "stamp"
+  }
+}

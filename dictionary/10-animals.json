@@ -1,0 +1,69 @@
+{
+  "id": "animals",
+  "order": 10,
+  "title": "Állatok",
+  "titleEn": "Animals",
+  "color": "green",
+  "mark": "Á",
+  "groups": [
+    {
+      "name": "A farmon · On the farm",
+      "items": [
+        {"hu": "tehén", "en": "cow", "ro": "vacă"},
+        {"hu": "ló", "en": "horse", "ro": "cal"},
+        {"hu": "disznó", "en": "pig", "ro": "porc", "note": "also: malac = piglet"},
+        {"hu": "juh", "en": "sheep", "ro": "oaie", "note": "also: bárány = lamb"},
+        {"hu": "kecske", "en": "goat", "ro": "capră"},
+        {"hu": "tyúk", "en": "hen", "ro": "găină"},
+        {"hu": "kakas", "en": "rooster", "ro": "cocoș"},
+        {"hu": "kacsa", "en": "duck", "ro": "rață"},
+        {"hu": "liba", "en": "goose", "ro": "gâscă"},
+        {"hu": "nyúl", "en": "rabbit, hare", "ro": "iepure"}
+      ]
+    },
+    {
+      "name": "Vadállatok · Wild animals",
+      "items": [
+        {"hu": "medve", "en": "bear", "ro": "urs"},
+        {"hu": "farkas", "en": "wolf", "ro": "lup"},
+        {"hu": "róka", "en": "fox", "ro": "vulpe"},
+        {"hu": "őz", "en": "roe deer", "ro": "căprioară"},
+        {"hu": "szarvas", "en": "deer, stag", "ro": "cerb"},
+        {"hu": "mókus", "en": "squirrel", "ro": "veveriță"},
+        {"hu": "sün", "en": "hedgehog", "ro": "arici"},
+        {"hu": "bagoly", "en": "owl", "ro": "bufniță"},
+        {"hu": "sas", "en": "eagle", "ro": "vultur, acvilă"},
+        {"hu": "oroszlán", "en": "lion", "ro": "leu"},
+        {"hu": "tigris", "en": "tiger", "ro": "tigru"},
+        {"hu": "majom", "en": "monkey", "ro": "maimuță"},
+        {"hu": "elefánt", "en": "elephant", "ro": "elefant"},
+        {"hu": "zsiráf", "en": "giraffe", "ro": "girafă"},
+        {"hu": "zebra", "en": "zebra", "ro": "zebră"}
+      ]
+    },
+    {
+      "name": "Kis állatok · Small creatures",
+      "items": [
+        {"hu": "madár", "en": "bird", "ro": "pasăre"},
+        {"hu": "hal", "en": "fish", "ro": "pește"},
+        {"hu": "béka", "en": "frog", "ro": "broască"},
+        {"hu": "kígyó", "en": "snake", "ro": "șarpe"},
+        {"hu": "pillangó", "en": "butterfly", "ro": "fluture", "note": "also: lepke"},
+        {"hu": "méh", "en": "bee", "ro": "albină"},
+        {"hu": "hangya", "en": "ant", "ro": "furnică"},
+        {"hu": "katica", "en": "ladybird", "ro": "buburuză", "note": "also a girl's name (Kati)"},
+        {"hu": "csiga", "en": "snail", "ro": "melc"}
+      ]
+    },
+    {
+      "name": "Magyar kutyák · Hungarian dog breeds",
+      "items": [
+        {"hu": "puli", "en": "puli (corded sheepdog)", "ro": "puli", "note": "Bodza, one of this app's study buddies, is a puli!"},
+        {"hu": "vizsla", "en": "vizsla (golden pointer)", "ro": "vizsla"},
+        {"hu": "komondor", "en": "komondor (big white corded dog)", "ro": "komondor"},
+        {"hu": "kuvasz", "en": "kuvasz (white guard dog)", "ro": "kuvasz"},
+        {"hu": "pumi", "en": "pumi (curly herding dog)", "ro": "pumi"}
+      ]
+    }
+  ]
+}

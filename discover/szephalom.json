@@ -1,0 +1,128 @@
+{
+  "id": "szephalom",
+  "name": "Széphalom",
+  "lon": 21.64,
+  "lat": 48.4,
+  "category": "language",
+  "title": "Új szavak születnek",
+  "titleEn": "New words are born",
+  "titleRo": "Se nasc cuvinte noi",
+  "story": [
+    {
+      "hu": "Széphalom kis hely Sátoraljaújhely mellett. Itt él Kazinczy Ferenc.",
+      "en": "Széphalom is a small place near Sátoraljaújhely. Ferenc Kazinczy lives here.",
+      "ro": "Széphalom este un loc mic lângă Sátoraljaújhely. Aici trăiește Ferenc Kazinczy."
+    },
+    {
+      "hu": "Kazinczy író, és nagyon szereti a magyar nyelvet.",
+      "en": "Kazinczy is a writer, and he loves the Hungarian language.",
+      "ro": "Kazinczy este scriitor și iubește foarte mult limba maghiară."
+    },
+    {
+      "hu": "Az 1800-as években sok dologra nincs magyar szó. Az emberek német vagy latin szavakat használnak.",
+      "en": "In the 1800s there's no Hungarian word for many things. People use German or Latin words.",
+      "ro": "În anii 1800 multe lucruri nu au un cuvânt maghiar. Oamenii folosesc cuvinte germane sau latinești."
+    },
+    {
+      "hu": "Kazinczy és barátai új szavakat csinálnak régi magyar szavakból.",
+      "en": "Kazinczy and his friends make new words from old Hungarian words.",
+      "ro": "Kazinczy și prietenii lui fac cuvinte noi din cuvinte maghiare vechi."
+    },
+    {
+      "hu": "Ez a nyelvújítás.",
+      "en": "This is the language reform (nyelvújítás).",
+      "ro": "Aceasta este reforma limbii (nyelvújítás)."
+    },
+    {
+      "hu": "Például a „fagy” szóból lesz a fagylalt (ice cream), a „zeng” szóból a zongora.",
+      "en": "For example, from fagy (frost) comes fagylalt (ice cream), and from zeng (to resound) comes zongora (piano).",
+      "ro": "De exemplu, din fagy (ger) vine fagylalt (înghețată), iar din zeng (a răsuna) vine zongora (pian)."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Széphalmon van a Magyar Nyelv Múzeuma.",
+      "en": "Széphalom is home to the Museum of the Hungarian Language.",
+      "ro": "La Széphalom se află Muzeul Limbii Maghiare."
+    },
+    {
+      "hu": "A nyelvújítás több ezer új szót hozott.",
+      "en": "The language reform created thousands of new words, many still used every day.",
+      "ro": "Reforma limbii a creat mii de cuvinte noi, multe folosite și azi zilnic."
+    },
+    {
+      "hu": "A magyar nyelv napja november 13.",
+      "en": "13 November is the Day of the Hungarian Language.",
+      "ro": "13 noiembrie este Ziua Limbii Maghiare."
+    }
+  ],
+  "words": [
+    {
+      "hu": "nyelv",
+      "en": "language; tongue",
+      "ro": "limbă"
+    },
+    {
+      "hu": "író",
+      "en": "writer",
+      "ro": "scriitor"
+    },
+    {
+      "hu": "új",
+      "en": "new",
+      "ro": "nou"
+    },
+    {
+      "hu": "régi",
+      "en": "old",
+      "ro": "vechi"
+    },
+    {
+      "hu": "használ",
+      "en": "to use",
+      "ro": "a folosi"
+    },
+    {
+      "hu": "fagylalt",
+      "en": "ice cream",
+      "ro": "înghețată"
+    },
+    {
+      "hu": "múzeum",
+      "en": "museum",
+      "ro": "muzeu"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Ki él Széphalmon?",
+      "qEn": "Who lives in Széphalom?",
+      "options": [
+        "Kazinczy Ferenc",
+        "Dobó István",
+        "Comenius"
+      ],
+      "answer": "Kazinczy Ferenc"
+    },
+    {
+      "q": "Mi a nyelvújítás?",
+      "qEn": "What is the language reform?",
+      "options": [
+        "új magyar szavak készítése",
+        "egy étel",
+        "egy fesztivál"
+      ],
+      "answer": "új magyar szavak készítése"
+    },
+    {
+      "q": "Melyik szóból lesz a „fagylalt”?",
+      "qEn": "Which word does fagylalt come from?",
+      "options": [
+        "fagy",
+        "fa",
+        "fal"
+      ],
+      "answer": "fagy"
+    }
+  ]
+}

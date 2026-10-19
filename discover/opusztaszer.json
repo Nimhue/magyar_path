@@ -1,0 +1,133 @@
+{
+  "id": "opusztaszer",
+  "name": "Ópusztaszer",
+  "lon": 20.08,
+  "lat": 46.48,
+  "category": "legend",
+  "title": "A csodaszarvas",
+  "titleEn": "The Wondrous Stag",
+  "titleRo": "Cerbul fermecat",
+  "story": [
+    {
+      "hu": "Hunor és Magor testvérek, két fiatal vadász.",
+      "en": "Hunor and Magor are brothers, two young hunters.",
+      "ro": "Hunor și Magor sunt frați, doi tineri vânători."
+    },
+    {
+      "hu": "Egy nap egy gyönyörű szarvast látnak.",
+      "en": "One day they see a beautiful stag.",
+      "ro": "Într-o zi văd un cerb minunat."
+    },
+    {
+      "hu": "A szarvas szőre fehér, és csillog, mint a nap.",
+      "en": "Its coat is white and shines like the sun.",
+      "ro": "Blana lui e albă și strălucește ca soarele."
+    },
+    {
+      "hu": "A testvérek egész nap követik.",
+      "en": "The brothers follow it all day.",
+      "ro": "Frații îl urmăresc toată ziua."
+    },
+    {
+      "hu": "Este a szarvas eltűnik, de ők egy szép, gazdag földet találnak.",
+      "en": "In the evening the stag disappears, but they find a beautiful, rich land.",
+      "ro": "Seara cerbul dispare, dar ei găsesc un pământ frumos și bogat."
+    },
+    {
+      "hu": "Ott maradnak, és ott találnak feleséget is.",
+      "en": "They stay there, and there they also find wives.",
+      "ro": "Rămân acolo și tot acolo își găsesc soții."
+    },
+    {
+      "hu": "Hunortól jönnek a hunok, Magortól a magyarok.",
+      "en": "From Hunor come the Huns, from Magor the Hungarians.",
+      "ro": "Din Hunor se trag hunii, din Magor maghiarii."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Ópusztaszeren van a Feszty-körkép.",
+      "en": "Ópusztaszer houses the Feszty Panorama, a huge circular painting (about 120 m long) of the Hungarians arriving in 895.",
+      "ro": "La Ópusztaszer se află Panorama Feszty, o pictură circulară uriașă (circa 120 m lungime) despre sosirea maghiarilor în 895."
+    },
+    {
+      "hu": "A hagyomány szerint itt gyűlnek össze a hét vezér emberei.",
+      "en": "By tradition, this is where the seven Hungarian chieftains held their first assembly.",
+      "ro": "Potrivit tradiției, aici s-au adunat pentru prima dată cele șapte căpetenii maghiare."
+    },
+    {
+      "hu": "A csodaszarvas legendája régi krónikákban van.",
+      "en": "The legend of the Wondrous Stag is told in medieval chronicles.",
+      "ro": "Legenda cerbului fermecat apare în cronici medievale."
+    }
+  ],
+  "words": [
+    {
+      "hu": "testvér",
+      "en": "sibling, brother, sister",
+      "ro": "frate, soră"
+    },
+    {
+      "hu": "vadász",
+      "en": "hunter",
+      "ro": "vânător"
+    },
+    {
+      "hu": "szarvas",
+      "en": "deer, stag",
+      "ro": "cerb"
+    },
+    {
+      "hu": "fehér",
+      "en": "white",
+      "ro": "alb"
+    },
+    {
+      "hu": "követ",
+      "en": "to follow",
+      "ro": "a urmări"
+    },
+    {
+      "hu": "föld",
+      "en": "land; earth",
+      "ro": "pământ"
+    },
+    {
+      "hu": "gazdag",
+      "en": "rich",
+      "ro": "bogat"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Kik Hunor és Magor?",
+      "qEn": "Who are Hunor and Magor?",
+      "options": [
+        "testvérek",
+        "szomszédok",
+        "királyok"
+      ],
+      "answer": "testvérek"
+    },
+    {
+      "q": "Milyen a szarvas?",
+      "qEn": "What is the stag like?",
+      "options": [
+        "fehér és csillog",
+        "fekete és kicsi",
+        "piros és lassú"
+      ],
+      "answer": "fehér és csillog"
+    },
+    {
+      "q": "Kitől jönnek a magyarok?",
+      "qEn": "Who do the Hungarians come from?",
+      "options": [
+        "Magortól",
+        "Hunortól",
+        "a szarvastól"
+      ],
+      "answer": "Magortól"
+    }
+  ]
+}

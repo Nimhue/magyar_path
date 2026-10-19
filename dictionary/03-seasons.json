@@ -1,0 +1,128 @@
+{
+  "id": "seasons",
+  "order": 3,
+  "title": "Évszakok és ünnepek",
+  "titleEn": "Seasons and holidays",
+  "color": "red",
+  "mark": "Ü",
+  "intro": "The year in Hungarian: seasons, festive days and the words that come with them.",
+  "groups": [
+    {
+      "name": "Évszakok · Seasons",
+      "items": [
+        {"hu": "évszak", "en": "season", "ro": "anotimp"},
+        {"hu": "tavasz", "en": "spring", "ro": "primăvară"},
+        {"hu": "nyár", "en": "summer", "ro": "vară"},
+        {"hu": "ősz", "en": "autumn", "ro": "toamnă"},
+        {"hu": "tél", "en": "winter", "ro": "iarnă"},
+        {"hu": "tavasszal", "en": "in spring", "ro": "primăvara"},
+        {"hu": "nyáron", "en": "in summer", "ro": "vara"},
+        {"hu": "ősszel", "en": "in autumn", "ro": "toamna"},
+        {"hu": "télen", "en": "in winter", "ro": "iarna"}
+      ]
+    },
+    {
+      "name": "Tél · Winter",
+      "items": [
+        {"hu": "hó", "en": "snow", "ro": "zăpadă"},
+        {"hu": "hóember", "en": "snowman", "ro": "om de zăpadă"},
+        {"hu": "jég", "en": "ice", "ro": "gheață"},
+        {"hu": "korcsolya", "en": "ice skates", "ro": "patine"},
+        {"hu": "szánkó", "en": "sledge", "ro": "sanie"},
+        {"hu": "sál", "en": "scarf", "ro": "fular, eșarfă"},
+        {"hu": "sapka", "en": "hat", "ro": "căciulă"},
+        {"hu": "kesztyű", "en": "gloves", "ro": "mănuși"},
+        {"hu": "forralt bor", "en": "mulled wine", "ro": "vin fiert"},
+        {"hu": "hideg", "en": "cold", "ro": "frig"}
+      ]
+    },
+    {
+      "name": "Nyár · Summer",
+      "items": [
+        {"hu": "strand", "en": "outdoor pool, beach", "ro": "ștrand", "note": "a Hungarian summer institution"},
+        {"hu": "napozik", "en": "to sunbathe", "ro": "a face plajă"},
+        {"hu": "úszik", "en": "to swim", "ro": "a înota"},
+        {"hu": "fagyi", "en": "ice cream", "ro": "înghețată"},
+        {"hu": "napszemüveg", "en": "sunglasses", "ro": "ochelari de soare"},
+        {"hu": "naptej", "en": "sun cream", "ro": "cremă de soare"},
+        {"hu": "meleg", "en": "warm, hot", "ro": "cald"},
+        {"hu": "kánikula", "en": "heatwave", "ro": "caniculă"}
+      ]
+    },
+    {
+      "name": "Karácsony · Christmas",
+      "items": [
+        {"hu": "karácsony", "en": "Christmas", "ro": "Crăciun"},
+        {"hu": "Boldog karácsonyt!", "en": "Merry Christmas!", "ro": "Crăciun fericit!", "kind": "phrase"},
+        {"hu": "Kellemes ünnepeket!", "en": "Happy holidays!", "ro": "Sărbători fericite!", "kind": "phrase"},
+        {"hu": "karácsonyfa", "en": "Christmas tree", "ro": "brad de Crăciun"},
+        {"hu": "ajándék", "en": "present, gift", "ro": "cadou"},
+        {"hu": "Jézuska", "en": "Baby Jesus (brings presents in Hungary)", "ro": "Pruncul Isus", "note": "Hungarian children get presents from Jézuska on 24 Dec"},
+        {"hu": "Mikulás", "en": "Saint Nicholas (6 December)", "ro": "Moș Nicolae", "note": "children put out boots on 5 Dec"},
+        {"hu": "csizma", "en": "boots", "ro": "cizme"},
+        {"hu": "szaloncukor", "en": "chocolate-wrapped Christmas sweet", "ro": "bomboane de pom", "note": "hung on the Christmas tree"},
+        {"hu": "bejgli", "en": "walnut or poppy-seed roll", "ro": "cozonac (bejgli)", "note": "diós = walnut, mákos = poppy seed"},
+        {"hu": "Szenteste", "en": "Christmas Eve", "ro": "Ajunul Crăciunului"},
+        {"hu": "szilveszter", "en": "New Year's Eve", "ro": "Revelion"},
+        {"hu": "Boldog új évet!", "en": "Happy New Year!", "ro": "La mulți ani! / An nou fericit!", "note": "BÚÉK is the short form", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Húsvét · Easter",
+      "items": [
+        {"hu": "húsvét", "en": "Easter", "ro": "Paște"},
+        {"hu": "Kellemes húsvéti ünnepeket!", "en": "Happy Easter!", "ro": "Paște fericit!", "kind": "phrase"},
+        {"hu": "tojás", "en": "egg", "ro": "ou"},
+        {"hu": "húsvéti tojás", "en": "Easter egg", "ro": "ou de Paște"},
+        {"hu": "nyuszi", "en": "bunny", "ro": "iepuraș", "note": "Easter bunny = húsvéti nyuszi"},
+        {"hu": "locsolkodás", "en": "Easter Monday sprinkling", "ro": "stropitul de Paște", "note": "boys sprinkle girls with perfume and recite a poem"},
+        {"hu": "sonka", "en": "ham", "ro": "șuncă"},
+        {"hu": "barka", "en": "pussy willow", "ro": "mâțișori"}
+      ]
+    },
+    {
+      "name": "Halloween és ősz · Halloween and autumn",
+      "items": [
+        {"hu": "tök", "en": "pumpkin", "ro": "dovleac"},
+        {"hu": "töklámpás", "en": "jack-o'-lantern", "ro": "felinar din dovleac"},
+        {"hu": "szellem", "en": "ghost", "ro": "fantomă"},
+        {"hu": "boszorkány", "en": "witch", "ro": "vrăjitoare"},
+        {"hu": "denevér", "en": "bat", "ro": "liliac"},
+        {"hu": "pók", "en": "spider", "ro": "păianjen"},
+        {"hu": "csontváz", "en": "skeleton", "ro": "schelet"},
+        {"hu": "ijesztő", "en": "scary", "ro": "înfricoșător"},
+        {"hu": "jelmez", "en": "costume", "ro": "costum"},
+        {"hu": "Mindenszentek", "en": "All Saints' Day (1 Nov)", "ro": "Ziua Tuturor Sfinților", "note": "Hungarians visit graves and light candles"},
+        {"hu": "gesztenye", "en": "chestnut", "ro": "castană", "note": "sült gesztenye = roasted chestnuts"},
+        {"hu": "falevél", "en": "leaf (of a tree)", "ro": "frunză"}
+      ]
+    },
+    {
+      "name": "Valentin-nap · Valentine's Day",
+      "items": [
+        {"hu": "Valentin-nap", "en": "Valentine's Day", "ro": "Ziua Îndrăgostiților"},
+        {"hu": "szerelem", "en": "love (romantic)", "ro": "dragoste"},
+        {"hu": "szív", "en": "heart", "ro": "inimă"},
+        {"hu": "Szeretlek.", "en": "I love you.", "ro": "Te iubesc.", "kind": "phrase"},
+        {"hu": "csók", "en": "kiss", "ro": "sărut"},
+        {"hu": "virág", "en": "flower", "ro": "floare"},
+        {"hu": "rózsa", "en": "rose", "ro": "trandafir"},
+        {"hu": "randi", "en": "date (romantic)", "ro": "întâlnire (romantică)"}
+      ]
+    },
+    {
+      "name": "Magyar ünnepek · Hungarian holidays",
+      "items": [
+        {"hu": "ünnep", "en": "holiday, celebration", "ro": "sărbătoare"},
+        {"hu": "születésnap", "en": "birthday", "ro": "zi de naștere"},
+        {"hu": "Boldog születésnapot!", "en": "Happy birthday!", "ro": "La mulți ani!", "kind": "phrase"},
+        {"hu": "névnap", "en": "name day", "ro": "ziua numelui", "note": "celebrated as much as birthdays in Hungary"},
+        {"hu": "Boldog névnapot!", "en": "Happy name day!", "ro": "La mulți ani de ziua numelui!", "kind": "phrase"},
+        {"hu": "március 15.", "en": "15 March, 1848 revolution", "ro": "15 martie, revoluția de la 1848", "note": "people wear a red-white-green cockade (kokárda)"},
+        {"hu": "augusztus 20.", "en": "20 August, St Stephen's Day", "ro": "20 august, ziua Sfântului Ștefan", "note": "fireworks over the Danube"},
+        {"hu": "október 23.", "en": "23 October, 1956 revolution", "ro": "23 octombrie, revoluția din 1956"},
+        {"hu": "farsang", "en": "carnival season", "ro": "carnaval", "note": "Busójárás in Mohács chases winter away with masks"}
+      ]
+    }
+  ]
+}

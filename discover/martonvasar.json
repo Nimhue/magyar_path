@@ -1,0 +1,128 @@
+{
+  "id": "martonvasar",
+  "name": "Martonvásár",
+  "lon": 18.79,
+  "lat": 47.32,
+  "category": "music",
+  "title": "Beethoven a parkban",
+  "titleEn": "Beethoven in the park",
+  "titleRo": "Beethoven în parc",
+  "story": [
+    {
+      "hu": "Martonvásár kicsi város Budapest és a Velencei-tó között.",
+      "en": "Martonvásár is a small town between Budapest and Lake Velence.",
+      "ro": "Martonvásár este un orășel între Budapesta și lacul Velence."
+    },
+    {
+      "hu": "Itt van egy szép, fehér kastély és egy nagy park, egy szigettel a tavon.",
+      "en": "There's a beautiful white mansion here and a big park, with an island on the lake.",
+      "ro": "Aici este un conac alb, frumos, și un parc mare, cu o insulă pe lac."
+    },
+    {
+      "hu": "A kastély régen a Brunszvik családé.",
+      "en": "The mansion once belongs to the Brunszvik family.",
+      "ro": "Conacul aparține cândva familiei Brunszvik."
+    },
+    {
+      "hu": "A család barátja egy híres német zeneszerző: Ludwig van Beethoven.",
+      "en": "A friend of the family is a famous German composer: Ludwig van Beethoven.",
+      "ro": "Un prieten al familiei este un compozitor german celebru: Ludwig van Beethoven."
+    },
+    {
+      "hu": "Beethoven meglátogatja őket, és zongorát tanít a lányoknak.",
+      "en": "Beethoven visits them and teaches the daughters piano.",
+      "ro": "Beethoven îi vizitează și le predă fiicelor pian."
+    },
+    {
+      "hu": "Ma nyáron a szigeten esti koncertek vannak, és Beethoven zenéje szól.",
+      "en": "Today, on summer evenings, concerts are held on the island and Beethoven's music plays.",
+      "ro": "Astăzi, vara, pe insulă au loc concerte seara și se aude muzica lui Beethoven."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A kastélyban Beethoven Múzeum van.",
+      "en": "The mansion has a small Beethoven Museum.",
+      "ro": "Conacul găzduiește un mic Muzeu Beethoven."
+    },
+    {
+      "hu": "Brunszvik Teréz alapította az első magyar óvodát.",
+      "en": "Teréz Brunszvik, from the same family, founded the first kindergarten in Hungary (Budapest, 1828).",
+      "ro": "Teréz Brunszvik, din aceeași familie, a înființat prima grădiniță din Ungaria (Budapesta, 1828)."
+    },
+    {
+      "hu": "A magyar „óvoda” szó jelentése: ahol vigyáznak a gyerekekre.",
+      "en": "The Hungarian word óvoda (kindergarten) comes from óv, \"to protect\".",
+      "ro": "Cuvântul maghiar óvoda (grădiniță) vine de la óv, „a ocroti”."
+    }
+  ],
+  "words": [
+    {
+      "hu": "kastély",
+      "en": "mansion, manor house",
+      "ro": "conac, castel"
+    },
+    {
+      "hu": "park",
+      "en": "park",
+      "ro": "parc"
+    },
+    {
+      "hu": "sziget",
+      "en": "island",
+      "ro": "insulă"
+    },
+    {
+      "hu": "barát",
+      "en": "friend",
+      "ro": "prieten"
+    },
+    {
+      "hu": "meglátogat",
+      "en": "to visit (someone)",
+      "ro": "a vizita"
+    },
+    {
+      "hu": "zongora",
+      "en": "piano",
+      "ro": "pian"
+    },
+    {
+      "hu": "koncert",
+      "en": "concert",
+      "ro": "concert"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Ki a család barátja?",
+      "qEn": "Who is the family's friend?",
+      "options": [
+        "Beethoven",
+        "Kodály",
+        "Liszt"
+      ],
+      "answer": "Beethoven"
+    },
+    {
+      "q": "Mit tanít Beethoven a lányoknak?",
+      "qEn": "What does Beethoven teach the daughters?",
+      "options": [
+        "zongorát",
+        "főzni",
+        "lovagolni"
+      ],
+      "answer": "zongorát"
+    },
+    {
+      "q": "Hol vannak nyáron a koncertek?",
+      "qEn": "Where are the summer concerts?",
+      "options": [
+        "a szigeten",
+        "a metróban",
+        "a templomban"
+      ],
+      "answer": "a szigeten"
+    }
+  ]
+}

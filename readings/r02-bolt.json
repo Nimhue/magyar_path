@@ -1,0 +1,30 @@
+{
+  "id": "r02-bolt",
+  "lesson": "l02-hangrend",
+  "title": "Kati listája",
+  "titleEn": "Kati's shopping list",
+  "intro": "Notice when the text uses a, az and egy.",
+  "paragraphs": [
+    "Kati a boltban van. Ez a lista: egy citrom, egy uborka, egy saláta, egy joghurt, egy csokoládé és egy üveg olaj.",
+    "Az uborka és a saláta zöld. A citrom sárga. A joghurt fehér.",
+    "A csokoládé nagyon finom!"
+  ],
+  "glossary": {
+    "kati": "Kati (a name)",
+    "a": "the (before a consonant)",
+    "az": "the (before a vowel)",
+    "boltban": "in the shop (bolt = shop)",
+    "van": "is (here: is located)",
+    "ez": "this",
+    "lista": "list",
+    "zöld": "green",
+    "sárga": "yellow",
+    "fehér": "white",
+    "üveg": "a bottle (of)"
+  },
+  "questions": [
+    { "q": "Hol van Kati?", "qEn": "Where is Kati?", "options": ["A boltban.", "A kertben.", "Az utcán."], "answer": "A boltban." },
+    { "q": "Mi zöld?", "qEn": "What is green?", "options": ["Az uborka és a saláta.", "A citrom.", "A joghurt."], "answer": "Az uborka és a saláta." },
+    { "q": "Milyen a csokoládé?", "qEn": "What is the chocolate like?", "options": ["Nagyon finom.", "Sárga.", "Fehér."], "answer": "Nagyon finom." }
+  ]
+}

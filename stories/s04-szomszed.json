@@ -1,0 +1,32 @@
+{
+  "id": "s04-szomszed",
+  "lesson": "l04-letige",
+  "title": "Az új szomszéd",
+  "titleEn": "The new neighbour",
+  "intro": "You meet someone in the stairwell of your building. Use vagyok, vagy and the van rule.",
+  "start": "a",
+  "nodes": {
+    "a": { "speaker": "Szomszéd", "text": "Szia! Új vagy itt?", "textEn": "Hi! Are you new here?", "choices": [
+      { "text": "Igen. Szia! Ana vagyok.", "textEn": "Yes. Hi! I'm Ana.", "to": "b" },
+      { "text": "Igen. Szia! Ana van.", "textEn": "(wrong form)", "to": "a-oops", "note": "For yourself, use vagyok: Ana vagyok." }
+    ] },
+    "a-oops": { "speaker": "Szomszéd", "text": "Ana van? Ki Ana?", "textEn": "Ana is? Who is Ana?", "choices": [ { "text": "Bocsánat: Ana vagyok!", "textEn": "Sorry: I'm Ana!", "to": "b" } ] },
+    "b": { "speaker": "Szomszéd", "text": "Nagyon örülök! Péter vagyok. Milyen nemzetiségű vagy?", "textEn": "Nice to meet you! I'm Péter. What nationality are you?", "choices": [
+      { "text": "Román vagyok.", "textEn": "I'm Romanian.", "to": "c" },
+      { "text": "Románia.", "textEn": "Romania.", "to": "b-oops", "note": "He asked for your nationality (román), not the country." }
+    ] },
+    "b-oops": { "speaker": "Szomszéd", "text": "Romániai? Szóval román vagy?", "textEn": "From Romania? So you're Romanian?", "choices": [ { "text": "Igen, román vagyok.", "textEn": "Yes, I'm Romanian.", "to": "c" } ] },
+    "c": { "speaker": "Szomszéd", "text": "Szuper! Mi vagy? Diák?", "textEn": "Great! What do you do? Student?", "choices": [
+      { "text": "Nem, mérnök vagyok. És te?", "textEn": "No, I'm an engineer. And you?", "to": "d" },
+      { "text": "Nem, mérnök. És te?", "textEn": "No, an engineer. And you?", "to": "d" }
+    ] },
+    "d": { "speaker": "Szomszéd", "text": "Én tanár vagyok. A feleségem is tanár. Ő magyar, de most Bécsben van.", "textEn": "I'm a teacher. My wife is a teacher too. She's Hungarian, but she's in Vienna now.", "choices": [
+      { "text": "Ő is tanár? Érdekes!", "textEn": "She's a teacher too? Interesting!", "to": "end-great" },
+      { "text": "Ő van tanár? Érdekes!", "textEn": "(wrong form)", "to": "d-oops", "note": "With ő + a noun, van disappears: Ő tanár." }
+    ] },
+    "d-oops": { "speaker": "Szomszéd", "text": "Igen, ő tanár. (Psszt: no van here!)", "textEn": "Yes, she's a teacher.", "choices": [ { "text": "Ő is tanár. Érdekes!", "textEn": "She's a teacher too. Interesting!", "to": "end-ok" } ] },
+    "end-great": { "text": "Ügyes! You introduced yourself and used the van rule perfectly.", "textEn": "Well done!", "end": "great" },
+    "end-ok": { "text": "Nice chat! Remember: ő tanár, ő magyar, with no van.", "textEn": "Good!", "end": "ok" }
+  },
+  "glossary": { "szomszéd": "neighbour", "új": "new", "itt": "here", "szóval": "so, in other words", "romániai": "from Romania", "szuper": "great", "feleségem": "my wife", "bécsben": "in Vienna", "psszt": "psst" }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "sc-jegy",
+  "pack": "survival",
+  "title": "Jegyet veszek",
+  "titleEn": "Buying a ticket",
+  "intro": "You're at a BKV ticket office at Deák tér and need a ticket to get across town.",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Pénztáros",
+      "text": "Jó napot! Tessék!",
+      "textEn": "Good afternoon! Go ahead!",
+      "textRo": "Bună ziua! Poftiți!",
+      "choices": [
+        {
+          "text": "Jó napot! Egy vonaljegyet kérek.",
+          "textEn": "Good afternoon! One single ticket, please.",
+          "textRo": "Bună ziua! Un bilet simplu, vă rog.",
+          "to": "b"
+        },
+        {
+          "text": "Szia! Jegy!",
+          "textEn": "Hi! Ticket!",
+          "textRo": "Salut! Bilet!",
+          "to": "a2",
+          "note": "With strangers at a counter use \"Jó napot!\" and add \"kérek\" (I'd like)."
+        }
+      ]
+    },
+    "a2": {
+      "speaker": "Pénztáros",
+      "text": "Jó napot. Milyen jegyet kér?",
+      "textEn": "Good afternoon. What kind of ticket would you like?",
+      "textRo": "Bună ziua. Ce fel de bilet doriți?",
+      "choices": [
+        {
+          "text": "Egy vonaljegyet kérek.",
+          "textEn": "A single ticket, please.",
+          "textRo": "Un bilet simplu, vă rog.",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Pénztáros",
+      "text": "Egy vonaljegy 450 forint. Mást is?",
+      "textEn": "One single ticket is 450 forints. Anything else?",
+      "textRo": "Un bilet simplu costă 450 de forinți. Altceva?",
+      "choices": [
+        {
+          "text": "Nem, köszönöm. Kártyával fizethetek?",
+          "textEn": "No, thank you. Can I pay by card?",
+          "textRo": "Nu, mulțumesc. Pot plăti cu cardul?",
+          "to": "c"
+        },
+        {
+          "text": "Mennyi? Nem értem.",
+          "textEn": "How much? I don't understand.",
+          "textRo": "Cât? Nu înțeleg.",
+          "to": "b2"
+        }
+      ]
+    },
+    "b2": {
+      "speaker": "Pénztáros",
+      "text": "Négyszázötven. Négy-száz-öt-ven forint.",
+      "textEn": "Four hundred and fifty. Four-hundred-fif-ty forints.",
+      "textRo": "Patru sute cincizeci. Pa-tru-su-te-cinci-zeci de forinți.",
+      "choices": [
+        {
+          "text": "Ó, köszönöm! Kártyával fizetek.",
+          "textEn": "Oh, thanks! I'll pay by card.",
+          "textRo": "A, mulțumesc! Plătesc cu cardul.",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Pénztáros",
+      "text": "Persze. Tessék, itt a jegy. Ne felejtse el kilyukasztani!",
+      "textEn": "Of course. Here's the ticket. Don't forget to validate it!",
+      "textRo": "Desigur. Poftiți biletul. Nu uitați să-l validați!",
+      "choices": [
+        {
+          "text": "Hol van a lyukasztó?",
+          "textEn": "Where is the validator?",
+          "textRo": "Unde e compostorul?",
+          "to": "d"
+        },
+        {
+          "text": "Köszönöm, viszontlátásra!",
+          "textEn": "Thank you, goodbye!",
+          "textRo": "Mulțumesc, la revedere!",
+          "to": "oops",
+          "note": "Careful: an unvalidated ticket means a fine (bírság)! Ask where to validate it."
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Pénztáros",
+      "text": "A metró lejáratánál, a lépcső előtt.",
+      "textEn": "At the metro entrance, before the stairs.",
+      "textRo": "La intrarea în metrou, înainte de scări.",
+      "choices": [
+        {
+          "text": "Köszönöm szépen! Viszontlátásra!",
+          "textEn": "Thank you very much! Goodbye!",
+          "textRo": "Mulțumesc frumos! La revedere!",
+          "to": "end"
+        }
+      ]
+    },
+    "oops": {
+      "speaker": "Ellenőr",
+      "text": "Jó napot, jegyellenőrzés! Ez a jegy nincs kilyukasztva.",
+      "textEn": "Hello, ticket inspection! This ticket isn't validated.",
+      "textRo": "Bună ziua, control! Biletul nu e validat.",
+      "choices": [],
+      "end": "oops"
+    },
+    "end": {
+      "text": "Kilyukasztod a jegyet, és felszállsz a metróra. Szép munka!",
+      "textEn": "You validate the ticket and get on the metro. Nice work!",
+      "textRo": "Validezi biletul și urci în metrou. Bravo!",
+      "choices": [],
+      "end": "great"
+    }
+  },
+  "glossary": {
+    "vonaljegy": "single ticket (one ride)",
+    "pénztáros": "cashier",
+    "kilyukaszt": "to punch, validate",
+    "lyukasztó": "ticket validator",
+    "lejárat": "way down, entrance (to the metro)",
+    "lépcső": "stairs",
+    "ellenőr": "inspector",
+    "fizethetek": "can I pay",
+    "kártyával": "by card",
+    "felejtse": "forget (formal)"
+  }
+}

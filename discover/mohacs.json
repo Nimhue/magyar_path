@@ -1,0 +1,128 @@
+{
+  "id": "mohacs",
+  "name": "Mohács",
+  "lon": 18.68,
+  "lat": 45.99,
+  "category": "tradition",
+  "title": "Busójárás",
+  "titleEn": "Busójárás: chasing away winter",
+  "titleRo": "Busójárás: alungarea iernii",
+  "story": [
+    {
+      "hu": "Február végén Mohácson nagy ünnep van: a busójárás.",
+      "en": "At the end of February, Mohács holds a big festival: the busójárás.",
+      "ro": "La sfârșitul lui februarie, la Mohács e o mare sărbătoare: busójárás."
+    },
+    {
+      "hu": "A busók ijesztő maszkokat viselnek. A maszk fából van, szarva is van.",
+      "en": "The busós wear scary masks. The masks are wooden and have horns.",
+      "ro": "Busó-ii poartă măști înfricoșătoare. Masca e din lemn și are coarne."
+    },
+    {
+      "hu": "Nagy szőrös bundát hordanak, kolompolnak és kiabálnak.",
+      "en": "They wear big shaggy sheepskin coats, ring cowbells and shout.",
+      "ro": "Poartă cojoace mari și flocoase, sună din tălăngi și strigă."
+    },
+    {
+      "hu": "Miért? El akarják kergetni a telet!",
+      "en": "Why? They want to chase away the winter!",
+      "ro": "De ce? Vor să alunge iarna!"
+    },
+    {
+      "hu": "Egy legenda szerint a busók régen a törököket ijesztették el.",
+      "en": "One legend says the busós once scared away the Turks.",
+      "ro": "O legendă spune că busó-ii i-au speriat odată pe turci."
+    },
+    {
+      "hu": "Az ünnep végén nagy tüzet raknak, és elégetik a telet jelentő koporsót.",
+      "en": "At the end they light a big bonfire and burn a coffin that stands for winter.",
+      "ro": "La final aprind un foc mare și ard un sicriu care reprezintă iarna."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A busójárás 2009 óta az UNESCO szellemi kulturális örökségének része.",
+      "en": "Busójárás has been on UNESCO's Intangible Cultural Heritage list since 2009.",
+      "ro": "Busójárás figurează din 2009 pe lista UNESCO a patrimoniului cultural imaterial."
+    },
+    {
+      "hu": "A busójárás a mohácsi sokácok hagyománya.",
+      "en": "It's a tradition of the Šokci, a South Slavic community living in Mohács.",
+      "ro": "Este o tradiție a șokților, o comunitate slavă de sud care trăiește la Mohács."
+    },
+    {
+      "hu": "Mohácsnál volt 1526-ban a nagy csata.",
+      "en": "The famous Battle of Mohács (1526) was fought nearby; Hungarians still say \"Több is veszett Mohácsnál\" (more was lost at Mohács) to mean \"it's not the end of the world\".",
+      "ro": "Celebra bătălie de la Mohács (1526) s-a dat în apropiere; maghiarii spun și azi „Több is veszett Mohácsnál” (s-a pierdut mai mult la Mohács), adică „nu e capăt de lume”."
+    }
+  ],
+  "words": [
+    {
+      "hu": "ünnep",
+      "en": "festival, holiday",
+      "ro": "sărbătoare"
+    },
+    {
+      "hu": "maszk",
+      "en": "mask",
+      "ro": "mască"
+    },
+    {
+      "hu": "ijesztő",
+      "en": "scary",
+      "ro": "înfricoșător"
+    },
+    {
+      "hu": "szarv",
+      "en": "horn (of an animal)",
+      "ro": "corn (de animal)"
+    },
+    {
+      "hu": "tél",
+      "en": "winter",
+      "ro": "iarnă"
+    },
+    {
+      "hu": "elkerget",
+      "en": "to chase away",
+      "ro": "a alunga"
+    },
+    {
+      "hu": "tavasz",
+      "en": "spring",
+      "ro": "primăvară"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mikor van a busójárás?",
+      "qEn": "When is busójárás?",
+      "options": [
+        "február végén",
+        "augusztusban",
+        "karácsonykor"
+      ],
+      "answer": "február végén"
+    },
+    {
+      "q": "Miből van a maszk?",
+      "qEn": "What is the mask made of?",
+      "options": [
+        "fából",
+        "papírból",
+        "aranyból"
+      ],
+      "answer": "fából"
+    },
+    {
+      "q": "Mit akarnak elkergetni a busók?",
+      "qEn": "What do the busós want to chase away?",
+      "options": [
+        "a telet",
+        "a nyarat",
+        "a kecskéket"
+      ],
+      "answer": "a telet"
+    }
+  ]
+}

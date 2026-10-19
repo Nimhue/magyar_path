@@ -1,0 +1,133 @@
+{
+  "id": "jaszbereny",
+  "name": "Jászberény",
+  "lon": 19.91,
+  "lat": 47.5,
+  "category": "legend",
+  "title": "Lehel kürtje",
+  "titleEn": "Lehel's horn",
+  "titleRo": "Cornul lui Lehel",
+  "story": [
+    {
+      "hu": "Lehel magyar vezér, nagyon bátor harcos.",
+      "en": "Lehel is a Hungarian chieftain, a very brave warrior.",
+      "ro": "Lehel este o căpetenie maghiară, un războinic foarte curajos."
+    },
+    {
+      "hu": "Van egy különleges kürtje, ezzel hívja a katonáit.",
+      "en": "He has a special horn; he calls his soldiers with it.",
+      "ro": "Are un corn special; cu el își cheamă soldații."
+    },
+    {
+      "hu": "Egy csata után a németek elfogják.",
+      "en": "After a battle the Germans capture him.",
+      "ro": "După o bătălie, germanii îl prind."
+    },
+    {
+      "hu": "Lehel kér valamit: még egyszer meg akarja fújni a kürtjét.",
+      "en": "Lehel asks for one thing: he wants to blow his horn one more time.",
+      "ro": "Lehel cere un lucru: vrea să sune din corn încă o dată."
+    },
+    {
+      "hu": "Megkapja a kürtöt, de nem fújja meg: a német vezér fejére üt vele!",
+      "en": "He gets the horn, but doesn't blow it: he hits the German leader on the head with it!",
+      "ro": "Primește cornul, dar nu sună din el: îl lovește cu el în cap pe conducătorul german!"
+    },
+    {
+      "hu": "Azt mondja: „Előttem mész, és a másik világban a szolgám leszel.”",
+      "en": "He says: \"You go before me, and in the other world you will be my servant.\"",
+      "ro": "Spune: „Tu mergi înaintea mea, iar pe lumea cealaltă îmi vei fi slugă.”"
+    },
+    {
+      "hu": "A kürt ma Jászberényben van, egy múzeumban.",
+      "en": "Today the horn is in Jászberény, in a museum.",
+      "ro": "Astăzi cornul se află la Jászberény, într-un muzeu."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A Lehel-kürt faragott elefántcsont kürt.",
+      "en": "The \"Lehel horn\" in Jászberény's Jász Museum is a carved ivory horn about a thousand years old.",
+      "ro": "„Cornul lui Lehel” din Muzeul Jász din Jászberény este un corn de fildeș sculptat, vechi de circa o mie de ani."
+    },
+    {
+      "hu": "A csata 955-ben van, Augsburg mellett.",
+      "en": "The battle took place near Augsburg (Lechfeld) in 955.",
+      "ro": "Bătălia a avut loc lângă Augsburg (Lechfeld), în 955."
+    },
+    {
+      "hu": "Jászberény a jászok központja.",
+      "en": "Jászberény is the centre of the Jász people, who came to Hungary in the 13th century.",
+      "ro": "Jászberény este centrul jászilor, un popor venit în Ungaria în secolul al XIII-lea."
+    }
+  ],
+  "words": [
+    {
+      "hu": "bátor",
+      "en": "brave",
+      "ro": "curajos"
+    },
+    {
+      "hu": "harcos",
+      "en": "warrior",
+      "ro": "războinic"
+    },
+    {
+      "hu": "kürt",
+      "en": "horn (instrument)",
+      "ro": "corn (instrument)"
+    },
+    {
+      "hu": "csata",
+      "en": "battle",
+      "ro": "bătălie"
+    },
+    {
+      "hu": "elfog",
+      "en": "to capture, to catch",
+      "ro": "a prinde, a captura"
+    },
+    {
+      "hu": "üt",
+      "en": "to hit",
+      "ro": "a lovi"
+    },
+    {
+      "hu": "szolga",
+      "en": "servant",
+      "ro": "slugă, servitor"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mi van Lehelnek?",
+      "qEn": "What does Lehel have?",
+      "options": [
+        "egy kürtje",
+        "egy hajója",
+        "egy kutyája"
+      ],
+      "answer": "egy kürtje"
+    },
+    {
+      "q": "Mit csinál Lehel a kürttel?",
+      "qEn": "What does Lehel do with the horn?",
+      "options": [
+        "a német vezér fejére üt",
+        "eladja",
+        "elveszíti"
+      ],
+      "answer": "a német vezér fejére üt"
+    },
+    {
+      "q": "Hol van ma a kürt?",
+      "qEn": "Where is the horn today?",
+      "options": [
+        "Jászberényben",
+        "Bécsben",
+        "Budapesten"
+      ],
+      "answer": "Jászberényben"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "tata",
+  "name": "Tata",
+  "lon": 18.32,
+  "lat": 47.65,
+  "category": "history",
+  "title": "A vizek városa",
+  "titleEn": "The city of waters",
+  "titleRo": "Orașul apelor",
+  "story": [
+    {
+      "hu": "Tata kis város Budapest és Győr között.",
+      "en": "Tata is a small town between Budapest and Győr.",
+      "ro": "Tata este un orășel între Budapesta și Győr."
+    },
+    {
+      "hu": "A becenevét könnyű megjegyezni: a vizek városa.",
+      "en": "Its nickname is easy to remember: the city of waters.",
+      "ro": "Porecla ei e ușor de reținut: orașul apelor."
+    },
+    {
+      "hu": "A város közepén van egy nagy tó, az Öreg-tó.",
+      "en": "In the middle of the town there's a big lake, the Öreg-tó (Old Lake).",
+      "ro": "În mijlocul orașului este un lac mare, Öreg-tó (Lacul Bătrân)."
+    },
+    {
+      "hu": "A tó partján áll a régi tatai vár.",
+      "en": "Tata's old castle stands on the lakeshore.",
+      "ro": "Pe malul lacului se află vechea cetate din Tata."
+    },
+    {
+      "hu": "Nyáron itt van a Patara fesztivál.",
+      "en": "In summer the Patara festival takes place here.",
+      "ro": "Vara aici are loc festivalul Patara."
+    },
+    {
+      "hu": "A fesztiválon újra él a török kor: katonák, lovak, ágyúk és sok-sok ember.",
+      "en": "At the festival the Ottoman era comes alive again: soldiers, horses, cannons and lots of people.",
+      "ro": "La festival, epoca otomană prinde din nou viață: soldați, cai, tunuri și foarte mulți oameni."
+    },
+    {
+      "hu": "Ősszel pedig vadludak ezrei pihennek a tavon.",
+      "en": "And in autumn thousands of wild geese rest on the lake.",
+      "ro": "Iar toamna mii de gâște sălbatice se odihnesc pe lac."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Tata nyáron török kori fesztivált tart.",
+      "en": "The Patara festival re-creates the Ottoman era with costumed soldiers, music, markets and mock battles.",
+      "ro": "Festivalul Patara recreează epoca otomană cu soldați în costume, muzică, târguri și lupte simulate."
+    },
+    {
+      "hu": "Ősszel van a Vadlúd-sokadalom.",
+      "en": "Every autumn Tata holds the Wild Goose Festival, when tens of thousands of geese stop on its lakes.",
+      "ro": "În fiecare toamnă Tata ține Festivalul Gâștelor Sălbatice, când zeci de mii de gâște poposesc pe lacuri."
+    },
+    {
+      "hu": "Tatán sok forrás és régi vízimalom van.",
+      "en": "Tata has many natural springs, and several old watermills still stand.",
+      "ro": "Tata are multe izvoare naturale, iar câteva mori de apă vechi stau încă în picioare."
+    },
+    {
+      "hu": "A tatai várban királyok is laktak.",
+      "en": "Kings Sigismund and Matthias liked to stay at Tata Castle.",
+      "ro": "Regii Sigismund și Matia stăteau cu plăcere în cetatea din Tata."
+    }
+  ],
+  "words": [
+    {
+      "hu": "tó",
+      "en": "lake",
+      "ro": "lac"
+    },
+    {
+      "hu": "vár",
+      "en": "castle",
+      "ro": "cetate, castel"
+    },
+    {
+      "hu": "part",
+      "en": "shore, bank",
+      "ro": "mal"
+    },
+    {
+      "hu": "katona",
+      "en": "soldier",
+      "ro": "soldat"
+    },
+    {
+      "hu": "ló, lovak",
+      "en": "horse, horses",
+      "ro": "cal, cai"
+    },
+    {
+      "hu": "vadlúd",
+      "en": "wild goose",
+      "ro": "gâscă sălbatică"
+    },
+    {
+      "hu": "pihen",
+      "en": "to rest",
+      "ro": "a se odihni"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mi van Tata közepén?",
+      "qEn": "What is in the middle of Tata?",
+      "options": [
+        "egy nagy tó",
+        "egy magas hegy",
+        "egy repülőtér"
+      ],
+      "answer": "egy nagy tó"
+    },
+    {
+      "q": "Mi a Patara?",
+      "qEn": "What is Patara?",
+      "options": [
+        "egy fesztivál",
+        "egy étel",
+        "egy folyó"
+      ],
+      "answer": "egy fesztivál"
+    },
+    {
+      "q": "Mikor jönnek a vadludak?",
+      "qEn": "When do the wild geese come?",
+      "options": [
+        "ősszel",
+        "nyáron",
+        "tavasszal"
+      ],
+      "answer": "ősszel"
+    }
+  ]
+}

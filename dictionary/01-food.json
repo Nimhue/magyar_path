@@ -1,0 +1,139 @@
+{
+  "id": "food",
+  "order": 1,
+  "title": "Étel és ital",
+  "titleEn": "Food and drink",
+  "color": "paprika",
+  "mark": "É",
+  "intro": "Everything you'll meet at the market, the bakery and the dinner table.",
+  "groups": [
+    {
+      "name": "Zöldségek · Vegetables",
+      "items": [
+        {"hu": "zöldség", "en": "vegetable", "ro": "legumă"},
+        {"hu": "paradicsom", "en": "tomato", "ro": "roșie", "note": "also: paradise!"},
+        {"hu": "paprika", "en": "pepper", "ro": "ardei"},
+        {"hu": "uborka", "en": "cucumber", "ro": "castravete"},
+        {"hu": "krumpli", "en": "potato", "ro": "cartof", "note": "also: burgonya"},
+        {"hu": "hagyma", "en": "onion", "ro": "ceapă"},
+        {"hu": "fokhagyma", "en": "garlic", "ro": "usturoi", "note": "fok (tooth, clove) + hagyma"},
+        {"hu": "répa", "en": "carrot", "ro": "morcov", "note": "sárgarépa = carrot, cékla = beetroot"},
+        {"hu": "káposzta", "en": "cabbage", "ro": "varză"},
+        {"hu": "saláta", "en": "lettuce", "ro": "salată"},
+        {"hu": "gomba", "en": "mushroom", "ro": "ciupercă"},
+        {"hu": "bab", "en": "beans", "ro": "fasole"},
+        {"hu": "borsó", "en": "peas", "ro": "mazăre"},
+        {"hu": "kukorica", "en": "corn", "ro": "porumb"},
+        {"hu": "cukkini", "en": "courgette", "ro": "dovlecel"},
+        {"hu": "padlizsán", "en": "aubergine", "ro": "vânătă"},
+        {"hu": "tök", "en": "pumpkin", "ro": "dovleac", "note": "also slang: totally (tök jó = really good)"},
+        {"hu": "spenót", "en": "spinach", "ro": "spanac"},
+        {"hu": "brokkoli", "en": "broccoli", "ro": "broccoli"}
+      ]
+    },
+    {
+      "name": "Gyümölcsök · Fruit",
+      "items": [
+        {"hu": "gyümölcs", "en": "fruit", "ro": "fruct"},
+        {"hu": "alma", "en": "apple", "ro": "măr"},
+        {"hu": "körte", "en": "pear", "ro": "pară"},
+        {"hu": "szilva", "en": "plum", "ro": "prună"},
+        {"hu": "barack", "en": "apricot / peach", "ro": "caisă / piersică", "note": "sárgabarack = apricot, őszibarack = peach"},
+        {"hu": "cseresznye", "en": "cherry", "ro": "cireașă"},
+        {"hu": "meggy", "en": "sour cherry", "ro": "vișină"},
+        {"hu": "eper", "en": "strawberry", "ro": "căpșună"},
+        {"hu": "málna", "en": "raspberry", "ro": "zmeură"},
+        {"hu": "áfonya", "en": "blueberry", "ro": "afină"},
+        {"hu": "szőlő", "en": "grapes", "ro": "struguri"},
+        {"hu": "narancs", "en": "orange", "ro": "portocală"},
+        {"hu": "citrom", "en": "lemon", "ro": "lămâie"},
+        {"hu": "banán", "en": "banana", "ro": "banană"},
+        {"hu": "dinnye", "en": "melon", "ro": "pepene", "note": "görögdinnye = watermelon"},
+        {"hu": "ananász", "en": "pineapple", "ro": "ananas"},
+        {"hu": "dió", "en": "walnut", "ro": "nucă"},
+        {"hu": "mogyoró", "en": "hazelnut; peanut", "ro": "alună"}
+      ]
+    },
+    {
+      "name": "Édességek · Sweets",
+      "items": [
+        {"hu": "édesség", "en": "sweet, dessert", "ro": "dulce, desert"},
+        {"hu": "csoki", "en": "chocolate (casual)", "ro": "ciocolată"},
+        {"hu": "torta", "en": "cake (layered)", "ro": "tort"},
+        {"hu": "sütemény", "en": "cake, pastry", "ro": "prăjitură", "note": "casual: süti"},
+        {"hu": "fagyi", "en": "ice cream", "ro": "înghețată", "note": "fagylalt = ice cream (formal)"},
+        {"hu": "palacsinta", "en": "pancake, crêpe", "ro": "clătită", "note": "from Romanian plăcintă!"},
+        {"hu": "rétes", "en": "strudel", "ro": "ștrudel"},
+        {"hu": "kürtőskalács", "en": "chimney cake", "ro": "kürtőskalács", "note": "a Transylvanian speciality"},
+        {"hu": "Dobos torta", "en": "Dobos cake", "ro": "tort Dobos", "note": "layers with a caramel top"},
+        {"hu": "Rákóczi túrós", "en": "Rákóczi cottage-cheese cake", "ro": "prăjitură Rákóczi cu brânză"},
+        {"hu": "Túró Rudi", "en": "chocolate-covered curd snack", "ro": "baton de brânză cu ciocolată", "note": "a Hungarian cult snack"},
+        {"hu": "méz", "en": "honey", "ro": "miere"},
+        {"hu": "cukor", "en": "sugar", "ro": "zahăr"},
+        {"hu": "cukorka", "en": "candy", "ro": "bomboană"},
+        {"hu": "keksz", "en": "biscuit", "ro": "biscuit"}
+      ]
+    },
+    {
+      "name": "Italok · Drinks",
+      "items": [
+        {"hu": "ital", "en": "drink", "ro": "băutură"},
+        {"hu": "víz", "en": "water", "ro": "apă"},
+        {"hu": "ásványvíz", "en": "mineral water", "ro": "apă minerală", "note": "szénsavas = sparkling, szénsavmentes = still"},
+        {"hu": "kávé", "en": "coffee", "ro": "cafea"},
+        {"hu": "tea", "en": "tea", "ro": "ceai"},
+        {"hu": "tej", "en": "milk", "ro": "lapte"},
+        {"hu": "gyümölcslé", "en": "juice", "ro": "suc de fructe"},
+        {"hu": "szörp", "en": "cordial, syrup drink", "ro": "sirop"},
+        {"hu": "bor", "en": "wine", "ro": "vin", "note": "vörösbor, fehérbor"},
+        {"hu": "sör", "en": "beer", "ro": "bere"},
+        {"hu": "fröccs", "en": "wine spritzer", "ro": "șpriț", "note": "wine + soda water"},
+        {"hu": "pálinka", "en": "fruit brandy", "ro": "pălincă"},
+        {"hu": "Unicum", "en": "Unicum (herbal liqueur)", "ro": "Unicum"},
+        {"hu": "Egészségedre!", "en": "Cheers!", "ro": "Noroc!", "note": "to many people: Egészségetekre!"}
+      ]
+    },
+    {
+      "name": "Ételek · Dishes",
+      "items": [
+        {"hu": "étel", "en": "food, dish", "ro": "mâncare"},
+        {"hu": "leves", "en": "soup", "ro": "supă, ciorbă"},
+        {"hu": "gulyásleves", "en": "goulash soup", "ro": "supă gulaș"},
+        {"hu": "halászlé", "en": "fisherman's soup", "ro": "ciorbă de pește", "note": "spicy paprika fish soup"},
+        {"hu": "pörkölt", "en": "stew", "ro": "tocăniță"},
+        {"hu": "paprikás csirke", "en": "chicken paprikash", "ro": "pui cu boia"},
+        {"hu": "töltött káposzta", "en": "stuffed cabbage", "ro": "sarmale", "note": "the Hungarian sarmale!"},
+        {"hu": "lecsó", "en": "pepper and tomato stew", "ro": "zacuscă-tocăniță (lecsó)"},
+        {"hu": "lángos", "en": "fried dough with toppings", "ro": "langoș"},
+        {"hu": "pogácsa", "en": "savoury scone", "ro": "pogace"},
+        {"hu": "főzelék", "en": "thick vegetable stew", "ro": "ghiveci / mâncare de legume"},
+        {"hu": "rántott hús", "en": "breaded schnitzel", "ro": "șnițel"},
+        {"hu": "kenyér", "en": "bread", "ro": "pâine"},
+        {"hu": "zsemle", "en": "bread roll", "ro": "chiflă"},
+        {"hu": "vaj", "en": "butter", "ro": "unt"},
+        {"hu": "sajt", "en": "cheese", "ro": "brânză, cașcaval"},
+        {"hu": "túró", "en": "curd cheese", "ro": "brânză de vaci"},
+        {"hu": "tojás", "en": "egg", "ro": "ou"},
+        {"hu": "hús", "en": "meat", "ro": "carne"},
+        {"hu": "csirke", "en": "chicken", "ro": "pui"},
+        {"hu": "hal", "en": "fish", "ro": "pește"},
+        {"hu": "rizs", "en": "rice", "ro": "orez"},
+        {"hu": "tészta", "en": "pasta; dough", "ro": "paste; aluat"}
+      ]
+    },
+    {
+      "name": "Az asztalnál · At the table",
+      "items": [
+        {"hu": "reggeli", "en": "breakfast", "ro": "mic dejun"},
+        {"hu": "ebéd", "en": "lunch", "ro": "prânz"},
+        {"hu": "vacsora", "en": "dinner", "ro": "cină"},
+        {"hu": "Jó étvágyat!", "en": "Enjoy your meal!", "ro": "Poftă bună!", "kind": "phrase"},
+        {"hu": "Kérek egy kávét.", "en": "A coffee, please.", "ro": "Aș dori o cafea.", "kind": "phrase"},
+        {"hu": "A számlát, legyen szíves!", "en": "The bill, please!", "ro": "Nota, vă rog!", "kind": "phrase"},
+        {"hu": "Nagyon finom!", "en": "Very tasty!", "ro": "Foarte bun!", "kind": "phrase"},
+        {"hu": "éhes", "en": "hungry", "ro": "flămând"},
+        {"hu": "szomjas", "en": "thirsty", "ro": "însetat"}
+      ]
+    }
+  ]
+}

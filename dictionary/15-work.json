@@ -1,0 +1,56 @@
+{
+  "id": "work",
+  "order": 15,
+  "title": "Munka és iroda",
+  "titleEn": "Work and office",
+  "color": "gray",
+  "mark": "M",
+  "intro": "Useful for daily life at a Hungarian office.",
+  "groups": [
+    {
+      "name": "Az irodában · At the office",
+      "items": [
+        {"hu": "munka", "en": "work, job", "ro": "muncă, serviciu"},
+        {"hu": "dolgozik", "en": "to work", "ro": "a lucra"},
+        {"hu": "iroda", "en": "office", "ro": "birou"},
+        {"hu": "kolléga", "en": "colleague", "ro": "coleg"},
+        {"hu": "főnök", "en": "boss", "ro": "șef"},
+        {"hu": "értekezlet", "en": "meeting", "ro": "ședință", "note": "also: meeting (casual)"},
+        {"hu": "megbeszélés", "en": "discussion, meeting", "ro": "discuție"},
+        {"hu": "határidő", "en": "deadline", "ro": "termen limită"},
+        {"hu": "feladat", "en": "task", "ro": "sarcină"},
+        {"hu": "projekt", "en": "project", "ro": "proiect"},
+        {"hu": "szabadság", "en": "holiday, leave; freedom", "ro": "concediu; libertate"},
+        {"hu": "home office", "en": "working from home", "ro": "lucru de acasă", "note": "Hungarians really say this!"},
+        {"hu": "fizetés", "en": "salary", "ro": "salariu"}
+      ]
+    },
+    {
+      "name": "Számítógép · Computer",
+      "items": [
+        {"hu": "számítógép", "en": "computer", "ro": "calculator", "note": "casual: gép"},
+        {"hu": "laptop", "en": "laptop", "ro": "laptop"},
+        {"hu": "billentyűzet", "en": "keyboard", "ro": "tastatură"},
+        {"hu": "egér", "en": "mouse", "ro": "mouse", "note": "the animal too!"},
+        {"hu": "képernyő", "en": "screen", "ro": "ecran"},
+        {"hu": "jelszó", "en": "password", "ro": "parolă"},
+        {"hu": "fájl", "en": "file", "ro": "fișier"},
+        {"hu": "mappa", "en": "folder", "ro": "dosar"},
+        {"hu": "adat", "en": "data", "ro": "date"},
+        {"hu": "adatbázis", "en": "database", "ro": "bază de date"},
+        {"hu": "hiba", "en": "error, bug", "ro": "eroare"},
+        {"hu": "mentés", "en": "save, backup", "ro": "salvare"}
+      ]
+    },
+    {
+      "name": "Hasznos mondatok · Useful phrases",
+      "items": [
+        {"hu": "Mikor van a megbeszélés?", "en": "When is the meeting?", "ro": "Când e ședința?", "kind": "phrase"},
+        {"hu": "Elküldöm e-mailben.", "en": "I'll send it by email.", "ro": "Îl trimit pe e-mail.", "kind": "phrase"},
+        {"hu": "Kész van.", "en": "It's done.", "ro": "E gata.", "kind": "phrase"},
+        {"hu": "Egy pillanat!", "en": "One moment!", "ro": "O clipă!", "kind": "phrase"},
+        {"hu": "Jó munkát!", "en": "Have a good day at work!", "ro": "Spor la muncă!", "kind": "phrase"}
+      ]
+    }
+  ]
+}

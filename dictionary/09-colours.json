@@ -1,0 +1,34 @@
+{
+  "id": "colours",
+  "order": 9,
+  "title": "Színek",
+  "titleEn": "Colours",
+  "color": "blue",
+  "mark": "Sz",
+  "intro": "Hungarian has two words for red!",
+  "groups": [
+    {
+      "name": "Színek · Colours",
+      "items": [
+        {"hu": "szín", "en": "colour", "ro": "culoare"},
+        {"hu": "piros", "en": "red (bright)", "ro": "roșu", "note": "the red of the flag, apples, traffic lights"},
+        {"hu": "vörös", "en": "red (deep)", "ro": "roșu închis", "note": "red wine, red hair: vörösbor, vörös haj"},
+        {"hu": "narancssárga", "en": "orange", "ro": "portocaliu"},
+        {"hu": "sárga", "en": "yellow", "ro": "galben"},
+        {"hu": "zöld", "en": "green", "ro": "verde"},
+        {"hu": "kék", "en": "blue", "ro": "albastru"},
+        {"hu": "lila", "en": "purple", "ro": "mov"},
+        {"hu": "rózsaszín", "en": "pink", "ro": "roz", "note": "rózsa (rose) + szín (colour)"},
+        {"hu": "barna", "en": "brown", "ro": "maro"},
+        {"hu": "fekete", "en": "black", "ro": "negru"},
+        {"hu": "fehér", "en": "white", "ro": "alb"},
+        {"hu": "szürke", "en": "grey", "ro": "gri"},
+        {"hu": "arany", "en": "gold", "ro": "auriu"},
+        {"hu": "ezüst", "en": "silver", "ro": "argintiu"},
+        {"hu": "világos-", "en": "light (colour)", "ro": "deschis", "note": "világoskék = light blue"},
+        {"hu": "sötét-", "en": "dark (colour)", "ro": "închis", "note": "sötétzöld = dark green"},
+        {"hu": "piros-fehér-zöld", "en": "red-white-green (the flag)", "ro": "roșu-alb-verde"}
+      ]
+    }
+  ]
+}

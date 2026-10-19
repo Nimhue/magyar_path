@@ -1,0 +1,128 @@
+{
+  "id": "kecskemet",
+  "name": "Kecskemét",
+  "lon": 19.69,
+  "lat": 46.91,
+  "category": "music",
+  "title": "Kodály és az éneklő gyerekek",
+  "titleEn": "Kodály and the singing children",
+  "titleRo": "Kodály și copiii care cântă",
+  "story": [
+    {
+      "hu": "Kecskemét az Alföld közepén van. Itt születik 1882-ben Kodály Zoltán.",
+      "en": "Kecskemét is in the middle of the Great Plain. Zoltán Kodály is born here in 1882.",
+      "ro": "Kecskemét se află în mijlocul Câmpiei Mari. Aici se naște Zoltán Kodály, în 1882."
+    },
+    {
+      "hu": "Kodály zeneszerző. Barátjával, Bartók Bélával falura járnak.",
+      "en": "Kodály is a composer. With his friend Béla Bartók he travels to villages.",
+      "ro": "Kodály este compozitor. Cu prietenul său, Béla Bartók, merge prin sate."
+    },
+    {
+      "hu": "Az öreg parasztok régi dalokat énekelnek, ők pedig felveszik a dalokat egy fonográfra.",
+      "en": "Old peasants sing ancient songs, and they record the songs on a phonograph.",
+      "ro": "Țăranii bătrâni cântă melodii vechi, iar ei le înregistrează pe un fonograf."
+    },
+    {
+      "hu": "Kodály azt mondja: a zene mindenkié. Minden gyerek tanuljon énekelni!",
+      "en": "Kodály says: music belongs to everyone. Every child should learn to sing!",
+      "ro": "Kodály spune: muzica e a tuturor. Fiecare copil să învețe să cânte!"
+    },
+    {
+      "hu": "Kitalál egy módszert kézjelekkel: dó, ré, mi, fá, szó, lá, ti.",
+      "en": "He creates a method with hand signs: do, re, mi, fa, so, la, ti.",
+      "ro": "Inventează o metodă cu semne cu mâna: do, re, mi, fa, sol, la, si."
+    },
+    {
+      "hu": "Ma a világ sok iskolájában így tanítják a zenét.",
+      "en": "Today many schools around the world teach music this way.",
+      "ro": "Astăzi multe școli din lume predau muzica astfel."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Kecskeméten van a Kodály Intézet.",
+      "en": "The Kodály Institute in Kecskemét trains music teachers from all over the world.",
+      "ro": "Institutul Kodály din Kecskemét pregătește profesori de muzică din toată lumea."
+    },
+    {
+      "hu": "Bartók és Kodály több ezer népdalt gyűjtött.",
+      "en": "Bartók and Kodály collected thousands of folk songs, including many from Romanian villages.",
+      "ro": "Bartók și Kodály au cules mii de cântece populare, inclusiv multe din satele românești."
+    },
+    {
+      "hu": "Liszt Ferenc is magyar zeneszerző.",
+      "en": "Franz (Ferenc) Liszt, the great piano virtuoso, was also Hungarian; the Budapest music academy bears his name.",
+      "ro": "Franz (Ferenc) Liszt, marele virtuoz al pianului, era tot maghiar; academia de muzică din Budapesta îi poartă numele."
+    }
+  ],
+  "words": [
+    {
+      "hu": "zene",
+      "en": "music",
+      "ro": "muzică"
+    },
+    {
+      "hu": "zeneszerző",
+      "en": "composer",
+      "ro": "compozitor"
+    },
+    {
+      "hu": "dal",
+      "en": "song",
+      "ro": "cântec"
+    },
+    {
+      "hu": "énekel",
+      "en": "to sing",
+      "ro": "a cânta (cu vocea)"
+    },
+    {
+      "hu": "paraszt",
+      "en": "peasant, farmer",
+      "ro": "țăran"
+    },
+    {
+      "hu": "gyerek",
+      "en": "child",
+      "ro": "copil"
+    },
+    {
+      "hu": "tanít",
+      "en": "to teach",
+      "ro": "a preda"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Ki születik Kecskeméten?",
+      "qEn": "Who is born in Kecskemét?",
+      "options": [
+        "Kodály Zoltán",
+        "Mátyás király",
+        "Rubik Ernő"
+      ],
+      "answer": "Kodály Zoltán"
+    },
+    {
+      "q": "Mit gyűjtenek Bartók és Kodály?",
+      "qEn": "What do Bartók and Kodály collect?",
+      "options": [
+        "régi dalokat",
+        "köveket",
+        "bélyegeket"
+      ],
+      "answer": "régi dalokat"
+    },
+    {
+      "q": "Mivel tanít Kodály módszere?",
+      "qEn": "What does Kodály's method use?",
+      "options": [
+        "kézjelekkel",
+        "kockákkal",
+        "maszkokkal"
+      ],
+      "answer": "kézjelekkel"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "r07-csalad",
+  "lesson": "l07-igek",
+  "title": "Egy nemzetközi család",
+  "titleEn": "An international family",
+  "intro": "Márk talks about his family. Watch the verb endings: -ok/-ek/-ök, -unk/-ünk, -nak/-nek.",
+  "paragraphs": [
+    "Márk vagyok. Magyar vagyok, de Kolozsváron élek. A feleségem, Ana, román. Ő tanárnő.",
+    "Otthon románul és magyarul beszélünk. A gyerekek nagyon jól tudnak románul, és elég jól beszélnek magyarul.",
+    "Az anyukám Szegeden él. Ő nem tud románul, de most tanul! Egy kicsit már beszél. Ana nagyon örül.",
+    "Én is tanulok: spanyolul. Még nem tudok olyan jól, de szerintem a spanyol nyelv nagyon szép."
+  ],
+  "glossary": {
+    "márk": "Márk (a name)",
+    "kolozsváron": "in Cluj (Kolozsvár takes -on)",
+    "ana": "Ana (a name)",
+    "a gyerekek": "the children",
+    "már": "already",
+    "szép": "beautiful, nice",
+    "nemzetközi": "international"
+  },
+  "questions": [
+    { "q": "Hol él Márk?", "qEn": "Where does Márk live?", "options": ["Kolozsváron", "Szegeden", "Budapesten"], "answer": "Kolozsváron" },
+    { "q": "Milyen nyelven beszélnek otthon?", "qEn": "What languages do they speak at home?", "options": ["románul és magyarul", "csak magyarul", "spanyolul"], "answer": "románul és magyarul" },
+    { "q": "Ki tanul románul?", "qEn": "Who is learning Romanian?", "options": ["Márk anyukája", "Ana", "a gyerekek"], "answer": "Márk anyukája" },
+    { "q": "Igaz vagy hamis? Márk nagyon jól tud spanyolul.", "qEn": "True or false? Márk speaks Spanish very well.", "options": ["hamis", "igaz"], "answer": "hamis", "explain": "Még nem tudok olyan jól = I don't know it that well yet." }
+  ]
+}

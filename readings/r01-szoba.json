@@ -1,0 +1,31 @@
+{
+  "id": "r01-szoba",
+  "lesson": "l01-abece",
+  "title": "Kati szobája",
+  "titleEn": "Kati's room",
+  "intro": "A short description using words from the alphabet lesson. Tap any word to see what it means.",
+  "paragraphs": [
+    "Ez Kati szobája. A szobában van egy ágy, egy fotel, egy lámpa és egy íróasztal.",
+    "Az íróasztalon van egy telefon, egy rádió, egy újság és egy kávé.",
+    "A fotelben van egy gitár. Az ágyon van egy kutya. A kutya neve Bodza."
+  ],
+  "glossary": {
+    "ez": "this",
+    "kati": "Kati (a name, like Kate)",
+    "szobája": "her room",
+    "szobában": "in the room (szoba = room)",
+    "van": "there is",
+    "egy": "a, an",
+    "és": "and",
+    "íróasztalon": "on the desk",
+    "fotelben": "in the armchair",
+    "ágyon": "on the bed",
+    "neve": "its name (név = name)",
+    "bodza": "Bodza (the dog's name; literally elderflower)"
+  },
+  "questions": [
+    { "q": "Mi van az íróasztalon?", "qEn": "What is on the desk?", "options": ["Egy telefon, egy rádió, egy újság és egy kávé.", "Egy gitár.", "Egy kutya."], "answer": "Egy telefon, egy rádió, egy újság és egy kávé." },
+    { "q": "Hol van a gitár?", "qEn": "Where is the guitar?", "options": ["A fotelben.", "Az ágyon.", "Az íróasztalon."], "answer": "A fotelben." },
+    { "q": "Mi a kutya neve?", "qEn": "What is the dog's name?", "options": ["Bodza", "Kati", "Gyuri"], "answer": "Bodza" }
+  ]
+}

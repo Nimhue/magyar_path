@@ -1,0 +1,133 @@
+{
+  "id": "szentendre",
+  "name": "Szentendre",
+  "lon": 19.07,
+  "lat": 47.67,
+  "category": "tale",
+  "title": "A kiskakas gyémánt félkrajcárja",
+  "titleEn": "The little rooster's diamond half-penny",
+  "titleRo": "Jumătatea de bănuț cu diamant a cocoșelului",
+  "story": [
+    {
+      "hu": "Szentendrén van a Skanzen, egy szabadtéri falumúzeum. Régi házakban ezt a mesét mesélik.",
+      "en": "Szentendre has the Skanzen, an open-air village museum. In old houses like these, this tale is told.",
+      "ro": "La Szentendre se află Skanzenul, un muzeu al satului în aer liber. În case vechi ca acestea se spune povestea asta."
+    },
+    {
+      "hu": "Egy szegény öregasszonynak van egy kiskakasa.",
+      "en": "A poor old woman has a little rooster.",
+      "ro": "O bătrână săracă are un cocoșel."
+    },
+    {
+      "hu": "A kiskakas a szemétdombon talál egy gyémánt félkrajcárt.",
+      "en": "On the rubbish heap the rooster finds a diamond half-penny.",
+      "ro": "Pe grămada de gunoi, cocoșelul găsește o jumătate de bănuț cu diamant."
+    },
+    {
+      "hu": "A török császár elveszi tőle.",
+      "en": "The Turkish emperor takes it from him.",
+      "ro": "Împăratul turc i-l ia."
+    },
+    {
+      "hu": "A kiskakas nem fél. Mindig ezt kiabálja: „Kukurikú, török császár! Add vissza a gyémánt félkrajcáromat!”",
+      "en": "The rooster isn't afraid. He keeps shouting: \"Cock-a-doodle-doo, Turkish emperor! Give back my diamond half-penny!\"",
+      "ro": "Cocoșelul nu se teme. Strigă mereu: „Cucurigu, împărate turc! Dă-mi înapoi jumătatea de bănuț cu diamant!”"
+    },
+    {
+      "hu": "A császár kútba dobja, tűzbe dobja, de a kiskakas mindent megold.",
+      "en": "The emperor throws him into a well, into a fire, but the rooster solves everything.",
+      "ro": "Împăratul îl aruncă în fântână, în foc, dar cocoșelul se descurcă de fiecare dată."
+    },
+    {
+      "hu": "A végén a császár visszaadja a pénzt, és a kiskakas boldogan megy haza.",
+      "en": "In the end the emperor gives the money back, and the rooster goes home happily.",
+      "ro": "La final împăratul îi dă banii înapoi, iar cocoșelul pleacă fericit acasă."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Ez a mese a magyar gyerekek egyik kedvence.",
+      "en": "This is one of Hungarian children's favourite folk tales; many know the rooster's chant by heart.",
+      "ro": "E una dintre poveștile preferate ale copiilor maghiari; mulți știu pe de rost strigătul cocoșelului."
+    },
+    {
+      "hu": "A Skanzen az ország legnagyobb szabadtéri múzeuma.",
+      "en": "The Skanzen in Szentendre is Hungary's largest open-air museum, with whole villages moved there house by house.",
+      "ro": "Skanzenul din Szentendre este cel mai mare muzeu în aer liber din Ungaria, cu sate întregi mutate acolo casă cu casă."
+    },
+    {
+      "hu": "A magyar kakas azt mondja: kukurikú.",
+      "en": "A Hungarian rooster says \"kukurikú\".",
+      "ro": "Un cocoș maghiar spune „kukurikú”."
+    }
+  ],
+  "words": [
+    {
+      "hu": "kakas",
+      "en": "rooster",
+      "ro": "cocoș"
+    },
+    {
+      "hu": "öregasszony",
+      "en": "old woman",
+      "ro": "bătrână"
+    },
+    {
+      "hu": "talál",
+      "en": "to find",
+      "ro": "a găsi"
+    },
+    {
+      "hu": "császár",
+      "en": "emperor",
+      "ro": "împărat"
+    },
+    {
+      "hu": "kút",
+      "en": "well",
+      "ro": "fântână"
+    },
+    {
+      "hu": "tűz",
+      "en": "fire",
+      "ro": "foc"
+    },
+    {
+      "hu": "boldog",
+      "en": "happy",
+      "ro": "fericit"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mit talál a kiskakas?",
+      "qEn": "What does the rooster find?",
+      "options": [
+        "egy gyémánt félkrajcárt",
+        "egy aranykecskét",
+        "egy kürtöt"
+      ],
+      "answer": "egy gyémánt félkrajcárt"
+    },
+    {
+      "q": "Ki veszi el tőle?",
+      "qEn": "Who takes it from him?",
+      "options": [
+        "a török császár",
+        "a bíró",
+        "az öregasszony"
+      ],
+      "answer": "a török császár"
+    },
+    {
+      "q": "Hogy mondja a magyar kakas?",
+      "qEn": "What does a Hungarian rooster say?",
+      "options": [
+        "kukurikú",
+        "kikiriki",
+        "kotkodács"
+      ],
+      "answer": "kukurikú"
+    }
+  ]
+}

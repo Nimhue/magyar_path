@@ -1,0 +1,148 @@
+{
+  "id": "sc-patika",
+  "pack": "survival",
+  "title": "A gyógyszertárban",
+  "titleEn": "At the pharmacy",
+  "intro": "You've got a cold and a sore throat. You walk into a patika (pharmacy).",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Gyógyszerész",
+      "text": "Jó napot kívánok! Miben segíthetek?",
+      "textEn": "Good day! How can I help?",
+      "textRo": "Bună ziua! Cu ce vă pot ajuta?",
+      "choices": [
+        {
+          "text": "Jó napot! Fáj a torkom.",
+          "textEn": "Hello! My throat hurts.",
+          "textRo": "Bună ziua! Mă doare gâtul.",
+          "to": "b"
+        },
+        {
+          "text": "Jó napot! Beteg vagyok.",
+          "textEn": "Hello! I'm ill.",
+          "textRo": "Bună ziua! Sunt bolnav(ă).",
+          "to": "a2"
+        }
+      ]
+    },
+    "a2": {
+      "speaker": "Gyógyszerész",
+      "text": "Sajnálom. Mi a baj? Mi fáj?",
+      "textEn": "I'm sorry. What's wrong? What hurts?",
+      "textRo": "Îmi pare rău. Ce s-a întâmplat? Ce vă doare?",
+      "choices": [
+        {
+          "text": "A torkom fáj, és náthás vagyok.",
+          "textEn": "My throat hurts and I have a cold.",
+          "textRo": "Mă doare gâtul și sunt răcit(ă).",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Gyógyszerész",
+      "text": "Van láza is?",
+      "textEn": "Do you also have a temperature?",
+      "textRo": "Aveți și febră?",
+      "choices": [
+        {
+          "text": "Nem, nincs lázam.",
+          "textEn": "No, I don't have a temperature.",
+          "textRo": "Nu, n-am febră.",
+          "to": "c"
+        },
+        {
+          "text": "Nem, nem van lázam.",
+          "textEn": "(wrong form)",
+          "textRo": "(formă greșită)",
+          "to": "b2",
+          "note": "\"Not have\" is nincs, never \"nem van\". Nincs lázam = I don't have a fever."
+        }
+      ]
+    },
+    "b2": {
+      "speaker": "Gyógyszerész",
+      "text": "Nincs láza? Rendben.",
+      "textEn": "No fever? All right.",
+      "textRo": "N-aveți febră? Bine.",
+      "choices": [
+        {
+          "text": "Igen, nincs lázam.",
+          "textEn": "Right, I don't have a fever.",
+          "textRo": "Da, n-am febră.",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Gyógyszerész",
+      "text": "Ez a szopogató tabletta jó a torokfájásra. Naponta háromszor.",
+      "textEn": "These lozenges are good for a sore throat. Three times a day.",
+      "textRo": "Aceste pastile de supt sunt bune pentru durerea de gât. De trei ori pe zi.",
+      "choices": [
+        {
+          "text": "Mennyibe kerül?",
+          "textEn": "How much does it cost?",
+          "textRo": "Cât costă?",
+          "to": "d"
+        },
+        {
+          "text": "Kell recept?",
+          "textEn": "Do I need a prescription?",
+          "textRo": "Trebuie rețetă?",
+          "to": "c2"
+        }
+      ]
+    },
+    "c2": {
+      "speaker": "Gyógyszerész",
+      "text": "Nem, ehhez nem kell recept.",
+      "textEn": "No, you don't need a prescription for this.",
+      "textRo": "Nu, pentru asta nu trebuie rețetă.",
+      "choices": [
+        {
+          "text": "Jó. Mennyibe kerül?",
+          "textEn": "Good. How much is it?",
+          "textRo": "Bine. Cât costă?",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Gyógyszerész",
+      "text": "2100 forint. Teát is ajánlok, mézzel.",
+      "textEn": "2,100 forints. I also recommend tea with honey.",
+      "textRo": "2100 de forinți. Vă recomand și ceai cu miere.",
+      "choices": [
+        {
+          "text": "Köszönöm szépen! Viszontlátásra!",
+          "textEn": "Thank you very much! Goodbye!",
+          "textRo": "Mulțumesc frumos! La revedere!",
+          "to": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "Gyógyszerész",
+      "text": "Jobbulást!",
+      "textEn": "Get well soon!",
+      "textRo": "Însănătoșire grabnică!",
+      "choices": [],
+      "end": "great"
+    }
+  },
+  "glossary": {
+    "gyógyszerész": "pharmacist",
+    "gyógyszertár": "pharmacy (also: patika)",
+    "fáj": "hurts",
+    "torok, torkom": "throat, my throat",
+    "náthás": "having a cold",
+    "láz, lázam": "fever, my fever",
+    "szopogató tabletta": "throat lozenge",
+    "naponta": "per day",
+    "recept": "prescription; recipe",
+    "ajánl": "to recommend",
+    "jobbulást": "get well soon"
+  }
+}

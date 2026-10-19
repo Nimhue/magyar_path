@@ -1,0 +1,36 @@
+{
+  "id": "slang",
+  "order": 17,
+  "title": "Szleng és lazaság",
+  "titleEn": "Slang and casual talk",
+  "color": "red",
+  "mark": "!",
+  "intro": "What friends actually say. Use with people you'd call te.",
+  "groups": [
+    {
+      "name": "Laza szavak · Casual words",
+      "items": [
+        {"hu": "csá", "en": "hi / bye (very casual)", "ro": "salut, ceau"},
+        {"hu": "cső", "en": "hey (very casual)", "ro": "salut", "note": "literally: pipe"},
+        {"hu": "helló", "en": "hello", "ro": "salut"},
+        {"hu": "Mizu?", "en": "What's up?", "ro": "Ce faci? Ce mai e nou?", "note": "from Mi újság?", "kind": "phrase"},
+        {"hu": "király", "en": "cool!", "ro": "super!"},
+        {"hu": "szuper", "en": "super, great", "ro": "super"},
+        {"hu": "tök jó", "en": "really good", "ro": "foarte tare", "note": "tök = totally (casual)"},
+        {"hu": "durva", "en": "intense, crazy (good or bad)", "ro": "tare, nasol"},
+        {"hu": "para", "en": "stress, worry", "ro": "stres, grijă", "note": "Semmi para! = No worries!"},
+        {"hu": "Semmi gáz.", "en": "No problem.", "ro": "Nicio grijă.", "kind": "phrase"},
+        {"hu": "naná", "en": "of course!", "ro": "păi da! sigur!"},
+        {"hu": "persze", "en": "sure, of course", "ro": "sigur"},
+        {"hu": "oké", "en": "OK", "ro": "ok"},
+        {"hu": "haver", "en": "buddy, mate", "ro": "amic, frate"},
+        {"hu": "cimbora", "en": "pal, chum", "ro": "amic"},
+        {"hu": "buli", "en": "party", "ro": "petrecere"},
+        {"hu": "pia", "en": "booze", "ro": "băutură (argou)"},
+        {"hu": "kaja", "en": "food, grub", "ro": "haleală"},
+        {"hu": "szia-szia", "en": "bye-bye", "ro": "pa-pa"},
+        {"hu": "Jó éjt, puszi!", "en": "Night night, kisses!", "ro": "Noapte bună, pupici!", "kind": "phrase"}
+      ]
+    }
+  ]
+}

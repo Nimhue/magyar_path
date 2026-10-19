@@ -1,0 +1,133 @@
+{
+  "id": "holloko",
+  "name": "Hollókő",
+  "lon": 19.59,
+  "lat": 47.997,
+  "category": "legend",
+  "title": "A hollók vára",
+  "titleEn": "The ravens' castle",
+  "titleRo": "Cetatea corbilor",
+  "story": [
+    {
+      "hu": "Hollókő kicsi falu a Cserhát hegyei között.",
+      "en": "Hollókő is a small village in the Cserhát hills.",
+      "ro": "Hollókő este un sat mic printre dealurile Cserhát."
+    },
+    {
+      "hu": "A név jelentése: holló + kő, vagyis „hollók köve”.",
+      "en": "The name means raven + stone: \"the ravens' stone\".",
+      "ro": "Numele înseamnă corb + piatră: „piatra corbilor”."
+    },
+    {
+      "hu": "A legenda szerint egy rossz úr elrabol egy szép lányt, és a várába viszi.",
+      "en": "According to legend, a wicked lord kidnaps a beautiful girl and takes her to his castle.",
+      "ro": "Potrivit legendei, un stăpân rău răpește o fată frumoasă și o duce în cetatea lui."
+    },
+    {
+      "hu": "A lány dajkája boszorkány. Segíteni akar.",
+      "en": "The girl's nanny is a witch. She wants to help.",
+      "ro": "Doica fetei e vrăjitoare. Vrea să ajute."
+    },
+    {
+      "hu": "Hollókat hív, és a hollók éjszaka kőről kőre elviszik a várat.",
+      "en": "She calls ravens, and at night the ravens carry the castle away, stone by stone.",
+      "ro": "Cheamă corbi, iar noaptea corbii duc cetatea, piatră cu piatră."
+    },
+    {
+      "hu": "Egy magas sziklán újra felépítik. A lány szabad!",
+      "en": "They build it again on a high rock. The girl is free!",
+      "ro": "O reconstruiesc pe o stâncă înaltă. Fata e liberă!"
+    },
+    {
+      "hu": "Ma is ott áll a vár a falu fölött.",
+      "en": "The castle still stands there above the village today.",
+      "ro": "Cetatea stă și azi acolo, deasupra satului."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Hollókő 1987 óta a világörökség része.",
+      "en": "Hollókő's old village has been a UNESCO World Heritage site since 1987: a living village, not just a museum.",
+      "ro": "Satul vechi Hollókő face parte din Patrimoniul Mondial UNESCO din 1987: un sat viu, nu doar un muzeu."
+    },
+    {
+      "hu": "Húsvétkor népviseletben ünnepelnek.",
+      "en": "At Easter the village celebrates in folk costume, with egg painting and \"locsolás\" (sprinkling).",
+      "ro": "De Paște satul sărbătorește în port popular, cu ouă pictate și „locsolás” (stropit)."
+    },
+    {
+      "hu": "A falu lakói palócok.",
+      "en": "The locals are Palóc people, known for their own dialect and colourful costumes.",
+      "ro": "Localnicii sunt paloți, cunoscuți pentru dialectul lor și costumele colorate."
+    }
+  ],
+  "words": [
+    {
+      "hu": "falu",
+      "en": "village",
+      "ro": "sat"
+    },
+    {
+      "hu": "holló",
+      "en": "raven",
+      "ro": "corb"
+    },
+    {
+      "hu": "kő",
+      "en": "stone",
+      "ro": "piatră"
+    },
+    {
+      "hu": "elrabol",
+      "en": "to kidnap",
+      "ro": "a răpi"
+    },
+    {
+      "hu": "boszorkány",
+      "en": "witch",
+      "ro": "vrăjitoare"
+    },
+    {
+      "hu": "szikla",
+      "en": "rock, cliff",
+      "ro": "stâncă"
+    },
+    {
+      "hu": "szabad",
+      "en": "free",
+      "ro": "liber"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mit jelent a „holló” szó?",
+      "qEn": "What does holló mean?",
+      "options": [
+        "corb (raven)",
+        "hal (fish)",
+        "tó (lake)"
+      ],
+      "answer": "corb (raven)"
+    },
+    {
+      "q": "Ki a lány dajkája?",
+      "qEn": "Who is the girl's nanny?",
+      "options": [
+        "egy boszorkány",
+        "egy királylány",
+        "egy katona"
+      ],
+      "answer": "egy boszorkány"
+    },
+    {
+      "q": "Kik viszik el a várat?",
+      "qEn": "Who carry the castle away?",
+      "options": [
+        "a hollók",
+        "a katonák",
+        "a kecskék"
+      ],
+      "answer": "a hollók"
+    }
+  ]
+}

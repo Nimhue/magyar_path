@@ -1,0 +1,69 @@
+{
+  "id": "city",
+  "order": 14,
+  "title": "Város és vásárlás",
+  "titleEn": "City and shopping",
+  "color": "paprika",
+  "mark": "V",
+  "groups": [
+    {
+      "name": "A városban · In the city",
+      "items": [
+        {"hu": "utca", "en": "street", "ro": "stradă"},
+        {"hu": "tér", "en": "square", "ro": "piață (loc deschis)"},
+        {"hu": "út", "en": "road", "ro": "drum"},
+        {"hu": "híd", "en": "bridge", "ro": "pod"},
+        {"hu": "park", "en": "park", "ro": "parc"},
+        {"hu": "templom", "en": "church", "ro": "biserică"},
+        {"hu": "múzeum", "en": "museum", "ro": "muzeu"},
+        {"hu": "kórház", "en": "hospital", "ro": "spital"},
+        {"hu": "iskola", "en": "school", "ro": "școală"},
+        {"hu": "egyetem", "en": "university", "ro": "universitate"},
+        {"hu": "posta", "en": "post office", "ro": "poștă"},
+        {"hu": "bank", "en": "bank", "ro": "bancă"},
+        {"hu": "rendőrség", "en": "police station", "ro": "poliție"},
+        {"hu": "könyvtár", "en": "library", "ro": "bibliotecă"},
+        {"hu": "kávézó", "en": "café", "ro": "cafenea"},
+        {"hu": "étterem", "en": "restaurant", "ro": "restaurant"},
+        {"hu": "kocsma", "en": "pub", "ro": "cârciumă"}
+      ]
+    },
+    {
+      "name": "Vásárlás · Shopping",
+      "items": [
+        {"hu": "bolt", "en": "shop", "ro": "magazin"},
+        {"hu": "ABC", "en": "small grocery shop", "ro": "alimentară"},
+        {"hu": "piac", "en": "market", "ro": "piață"},
+        {"hu": "pékség", "en": "bakery", "ro": "brutărie"},
+        {"hu": "cukrászda", "en": "patisserie, café", "ro": "cofetărie"},
+        {"hu": "pénz", "en": "money", "ro": "bani"},
+        {"hu": "forint", "en": "forint (Hungarian currency)", "ro": "forint", "note": "Ft"},
+        {"hu": "ár", "en": "price", "ro": "preț"},
+        {"hu": "olcsó", "en": "cheap", "ro": "ieftin"},
+        {"hu": "drága", "en": "expensive; also “dear”", "ro": "scump; drag"},
+        {"hu": "kártya", "en": "card", "ro": "card"},
+        {"hu": "készpénz", "en": "cash", "ro": "numerar"},
+        {"hu": "Mennyibe kerül?", "en": "How much is it?", "ro": "Cât costă?", "kind": "phrase"},
+        {"hu": "Kártyával fizethetek?", "en": "Can I pay by card?", "ro": "Pot plăti cu cardul?", "kind": "phrase"},
+        {"hu": "Csak nézelődöm.", "en": "I'm just looking.", "ro": "Doar mă uit.", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Ruhák · Clothes",
+      "items": [
+        {"hu": "ruha", "en": "clothes; dress", "ro": "haine; rochie"},
+        {"hu": "nadrág", "en": "trousers", "ro": "pantaloni"},
+        {"hu": "farmer", "en": "jeans", "ro": "blugi"},
+        {"hu": "szoknya", "en": "skirt", "ro": "fustă"},
+        {"hu": "ing", "en": "shirt", "ro": "cămașă"},
+        {"hu": "póló", "en": "T-shirt", "ro": "tricou"},
+        {"hu": "pulóver", "en": "sweater", "ro": "pulover"},
+        {"hu": "kabát", "en": "coat", "ro": "haină, palton"},
+        {"hu": "cipő", "en": "shoes", "ro": "pantofi"},
+        {"hu": "papucs", "en": "slippers", "ro": "papuci"},
+        {"hu": "zokni", "en": "socks", "ro": "șosete"},
+        {"hu": "táska", "en": "bag", "ro": "geantă"}
+      ]
+    }
+  ]
+}

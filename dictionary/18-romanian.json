@@ -1,0 +1,67 @@
+{
+  "id": "romanian",
+  "order": 18,
+  "title": "Román–magyar szavak",
+  "titleEn": "Romanian–Hungarian look-alikes",
+  "color": "yellow",
+  "mark": "RO",
+  "intro": "Hungarian and Romanian have lived side by side for centuries and swapped many words. Some look alike; some only pretend to.",
+  "groups": [
+    {
+      "name": "Magyarból a románba · From Hungarian into Romanian",
+      "items": [
+        {"hu": "város", "en": "city", "ro": "oraș", "note": "Romanian oraș comes from város"},
+        {"hu": "gond", "en": "worry", "ro": "gând (thought)", "note": "same root, different meaning"},
+        {"hu": "kép", "en": "picture", "ro": "chip (face, image)", "note": "pe chipul lui = on his face"},
+        {"hu": "határ", "en": "border", "ro": "hotar"},
+        {"hu": "baj", "en": "trouble", "ro": "bai", "note": "Semmi baj = Nicio bai (Transylvania)"},
+        {"hu": "mester", "en": "master craftsman", "ro": "meșter"},
+        {"hu": "gazda", "en": "host, owner", "ro": "gazdă"},
+        {"hu": "lakatos", "en": "locksmith", "ro": "lăcătuș"},
+        {"hu": "vitéz", "en": "brave warrior", "ro": "viteaz"},
+        {"hu": "nem", "en": "kind, sex; nation", "ro": "neam", "note": "also means no!"},
+        {"hu": "bőség", "en": "abundance", "ro": "belșug"},
+        {"hu": "költ", "en": "to spend (money)", "ro": "a cheltui"},
+        {"hu": "tagad", "en": "to deny", "ro": "a tăgădui"},
+        {"hu": "fogad", "en": "to promise; to bet", "ro": "a făgădui"},
+        {"hu": "lakik", "en": "to live, to dwell", "ro": "a locui"},
+        {"hu": "bánt", "en": "to hurt", "ro": "a bântui (to haunt)"},
+        {"hu": "talp", "en": "sole of the foot", "ro": "talpă"},
+        {"hu": "hordó", "en": "barrel", "ro": "hârdău"}
+      ]
+    },
+    {
+      "name": "Románból a magyarba · From Romanian into Hungarian",
+      "items": [
+        {"hu": "palacsinta", "en": "pancake", "ro": "plăcintă (pie)", "note": "same word, different dish!"},
+        {"hu": "kaláka", "en": "communal work party", "ro": "clacă"},
+        {"hu": "furulya", "en": "shepherd's flute", "ro": "fluier"},
+        {"hu": "berbécs", "en": "ram", "ro": "berbec"},
+        {"hu": "csobán", "en": "shepherd", "ro": "cioban"},
+        {"hu": "málé", "en": "cornmeal cake", "ro": "mălai"},
+        {"hu": "ficsúr", "en": "dandy", "ro": "fecior (lad)"}
+      ]
+    },
+    {
+      "name": "Közös szavak · Shared words",
+      "items": [
+        {"hu": "paprika", "en": "pepper", "ro": "paprică / ardei"},
+        {"hu": "pálinka", "en": "fruit brandy", "ro": "pălincă"},
+        {"hu": "papucs", "en": "slippers", "ro": "papuci", "note": "both from Turkish"},
+        {"hu": "pohár", "en": "glass", "ro": "pahar"},
+        {"hu": "kalap", "en": "hat", "ro": "calpac (fur cap)"}
+      ]
+    },
+    {
+      "name": "Hamis barátok · False friends",
+      "items": [
+        {"hu": "bal", "en": "left", "ro": "bal (ball, dance)", "note": "balra = to the left"},
+        {"hu": "fel", "en": "up", "ro": "fel (kind, way)"},
+        {"hu": "sok", "en": "many, a lot", "ro": "soc (elder tree; shock)"},
+        {"hu": "ma", "en": "today", "ro": "mă (me)", "note": "Ma este = this evening"},
+        {"hu": "tej", "en": "milk", "ro": "tei (linden tree)"},
+        {"hu": "kar", "en": "arm", "ro": "car (cart)"}
+      ]
+    }
+  ]
+}

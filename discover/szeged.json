@@ -1,0 +1,133 @@
+{
+  "id": "szeged",
+  "name": "Szeged",
+  "lon": 20.15,
+  "lat": 46.25,
+  "category": "invention",
+  "title": "A C-vitamin és a paprika",
+  "titleEn": "Vitamin C and paprika",
+  "titleRo": "Vitamina C și ardeiul",
+  "story": [
+    {
+      "hu": "Szeged a napfény városa a Tisza partján.",
+      "en": "Szeged is the city of sunshine on the banks of the Tisza.",
+      "ro": "Szeged este orașul soarelui, pe malul Tisei."
+    },
+    {
+      "hu": "Az 1930-as években itt dolgozik egy tudós: Szent-Györgyi Albert.",
+      "en": "In the 1930s a scientist works here: Albert Szent-Györgyi.",
+      "ro": "În anii 1930 aici lucrează un om de știință: Albert Szent-Györgyi."
+    },
+    {
+      "hu": "A C-vitamint kutatja, de nehéz sokat találni belőle.",
+      "en": "He is researching vitamin C, but it's hard to get much of it.",
+      "ro": "Cercetează vitamina C, dar e greu să obții multă."
+    },
+    {
+      "hu": "Egy este a felesége paprikát tesz az asztalra.",
+      "en": "One evening his wife puts paprika peppers on the table.",
+      "ro": "Într-o seară soția lui pune ardei pe masă."
+    },
+    {
+      "hu": "Szent-Györgyi nem akarja megenni, inkább a laborba viszi.",
+      "en": "Szent-Györgyi doesn't want to eat it, so he takes it to the lab instead.",
+      "ro": "Szent-Györgyi nu vrea să-l mănânce, așa că îl duce în laborator."
+    },
+    {
+      "hu": "Kiderül, hogy a paprikában nagyon sok C-vitamin van!",
+      "en": "It turns out paprika has a huge amount of vitamin C!",
+      "ro": "Se dovedește că ardeiul are foarte multă vitamina C!"
+    },
+    {
+      "hu": "1937-ben Nobel-díjat kap.",
+      "en": "In 1937 he receives the Nobel Prize.",
+      "ro": "În 1937 primește Premiul Nobel."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Szent-Györgyi Albert 1937-ben orvosi Nobel-díjat kapott.",
+      "en": "Szent-Györgyi won the 1937 Nobel Prize in Physiology or Medicine, partly for his work on vitamin C.",
+      "ro": "Szent-Györgyi a primit în 1937 Premiul Nobel pentru Fiziologie sau Medicină, în parte pentru cercetările despre vitamina C."
+    },
+    {
+      "hu": "Szegeden híres a halászlé és a Pick szalámi.",
+      "en": "Szeged is famous for its paprika fish soup (halászlé) and Pick salami.",
+      "ro": "Szeged e faimos pentru ciorba de pește cu boia (halászlé) și salamul Pick."
+    },
+    {
+      "hu": "A szegedi Dóm téren nyáron szabadtéri színház van.",
+      "en": "Every summer the Dóm tér hosts a big open-air theatre festival.",
+      "ro": "În fiecare vară, în piața Dóm tér are loc un mare festival de teatru în aer liber."
+    }
+  ],
+  "words": [
+    {
+      "hu": "napfény",
+      "en": "sunshine",
+      "ro": "lumina soarelui"
+    },
+    {
+      "hu": "tudós",
+      "en": "scientist",
+      "ro": "om de știință"
+    },
+    {
+      "hu": "kutat",
+      "en": "to research",
+      "ro": "a cerceta"
+    },
+    {
+      "hu": "feleség",
+      "en": "wife",
+      "ro": "soție"
+    },
+    {
+      "hu": "asztal",
+      "en": "table",
+      "ro": "masă"
+    },
+    {
+      "hu": "megeszik",
+      "en": "to eat up",
+      "ro": "a mânca (tot)"
+    },
+    {
+      "hu": "díj",
+      "en": "prize, fee",
+      "ro": "premiu; taxă"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Melyik folyó partján van Szeged?",
+      "qEn": "On which river is Szeged?",
+      "options": [
+        "a Tisza",
+        "a Duna",
+        "a Rába"
+      ],
+      "answer": "a Tisza"
+    },
+    {
+      "q": "Mit kutat Szent-Györgyi?",
+      "qEn": "What is Szent-Györgyi researching?",
+      "options": [
+        "a C-vitamint",
+        "a turulmadarat",
+        "a só árát"
+      ],
+      "answer": "a C-vitamint"
+    },
+    {
+      "q": "Mi van sok a paprikában?",
+      "qEn": "What is there a lot of in paprika?",
+      "options": [
+        "C-vitamin",
+        "cukor",
+        "só"
+      ],
+      "answer": "C-vitamin"
+    }
+  ]
+}
