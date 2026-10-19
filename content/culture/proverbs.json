@@ -1,0 +1,228 @@
+{
+  "items": [
+    {
+      "kind": "proverb",
+      "hu": "Lassan járj, tovább érsz.",
+      "literal": "Walk slowly and you'll get further.",
+      "meaning": "More haste, less speed.",
+      "ro": "Graba strică treaba."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Ajándék lónak ne nézd a fogát!",
+      "literal": "Don't look at the teeth of a gift horse.",
+      "meaning": "Don't criticise a present.",
+      "ro": "Calul de dar nu se caută la dinți."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Addig üsd a vasat, amíg meleg!",
+      "literal": "Hit the iron while it's hot.",
+      "meaning": "Act while you have the chance.",
+      "ro": "Bate fierul cât e cald."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Aki mer, az nyer.",
+      "literal": "Who dares, wins.",
+      "meaning": "You have to take a risk to win.",
+      "ro": "Cine nu riscă, nu câștigă."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Sok kicsi sokra megy.",
+      "literal": "Many little things go a long way.",
+      "meaning": "Small amounts add up.",
+      "ro": "Picătură cu picătură se face un lac."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Ki korán kel, aranyat lel.",
+      "literal": "Who gets up early finds gold.",
+      "meaning": "The early bird catches the worm.",
+      "ro": "Cine se scoală de dimineață departe ajunge."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Nem esik messze az alma a fájától.",
+      "literal": "The apple doesn't fall far from its tree.",
+      "meaning": "Children are like their parents.",
+      "ro": "Așchia nu sare departe de trunchi."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Kutyából nem lesz szalonna.",
+      "literal": "A dog won't turn into bacon.",
+      "meaning": "People don't change their nature.",
+      "ro": "Lupul își schimbă părul, dar năravul ba."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Több is veszett Mohácsnál.",
+      "literal": "More was lost at Mohács.",
+      "meaning": "It's not the end of the world.",
+      "ro": "Nu e capăt de lume."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Bagoly mondja verébnek, hogy nagyfejű.",
+      "literal": "The owl tells the sparrow it has a big head.",
+      "meaning": "The pot calling the kettle black.",
+      "ro": "Râde ciob de oală spartă."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Kicsi a bors, de erős.",
+      "literal": "The peppercorn is small but strong.",
+      "meaning": "Small people can be very strong.",
+      "ro": "Mic, dar voinic."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Ahány ház, annyi szokás.",
+      "literal": "As many houses, as many customs.",
+      "meaning": "Every family does things its own way.",
+      "ro": "Câte bordeie, atâtea obiceie."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Evés közben jön meg az étvágy.",
+      "literal": "Appetite arrives while you eat.",
+      "meaning": "Once you start, you want more.",
+      "ro": "Pofta vine mâncând."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Jobb ma egy veréb, mint holnap egy túzok.",
+      "literal": "Better a sparrow today than a bustard tomorrow.",
+      "meaning": "A bird in the hand is worth two in the bush.",
+      "ro": "Mai bine o vrabie în mână decât un cioroi pe gard."
+    },
+    {
+      "kind": "proverb",
+      "hu": "A falnak is füle van.",
+      "literal": "Even the wall has ears.",
+      "meaning": "Someone may be listening.",
+      "ro": "Și pereții au urechi."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Ki mint vet, úgy arat.",
+      "literal": "As you sow, so you reap.",
+      "meaning": "Your actions have consequences.",
+      "ro": "Ce semeni, aia culegi."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Madarat tolláról, embert barátjáról.",
+      "literal": "A bird by its feathers, a person by their friend.",
+      "meaning": "You're known by the company you keep.",
+      "ro": "Spune-mi cu cine te aduni, ca să-ți spun cine ești."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Aki keres, talál.",
+      "literal": "Who searches, finds.",
+      "meaning": "Seek and you shall find.",
+      "ro": "Cine caută, găsește."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Lassú víz partot mos.",
+      "literal": "Slow water washes away the shore.",
+      "meaning": "Quiet people can surprise you.",
+      "ro": "Apele line sunt adânci."
+    },
+    {
+      "kind": "proverb",
+      "hu": "Minden kezdet nehéz.",
+      "literal": "Every beginning is hard.",
+      "meaning": "The start is always the hardest part (Hungarian too!).",
+      "ro": "Orice început e greu."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Kutya baja.",
+      "literal": "(It's) a dog's problem.",
+      "meaning": "He or she is perfectly fine.",
+      "ro": "N-are nimic, e bine-mersi."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Ég és föld.",
+      "literal": "Sky and earth.",
+      "meaning": "A huge difference.",
+      "ro": "Ca cerul și pământul."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Itt van a kutya elásva.",
+      "literal": "This is where the dog is buried.",
+      "meaning": "That's the heart of the problem.",
+      "ro": "Aici e buba."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Hosszú lére ereszti.",
+      "literal": "He lets it into a long broth.",
+      "meaning": "He talks on and on, dragging it out.",
+      "ro": "O lungește."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Eső után köpönyeg.",
+      "literal": "A raincoat after the rain.",
+      "meaning": "Too late to be useful.",
+      "ro": "După război mulți viteji se arată."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Csütörtököt mond.",
+      "literal": "It says Thursday.",
+      "meaning": "It fails, it misfires.",
+      "ro": "Dă rateuri."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Fején találja a szöget.",
+      "literal": "Hits the nail on its head.",
+      "meaning": "Gets it exactly right.",
+      "ro": "A nimerit-o."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Kenyérre lehet kenni.",
+      "literal": "You could spread him on bread.",
+      "meaning": "He's very kind and easy-going.",
+      "ro": "E bun ca pâinea caldă."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Lóg az eső lába.",
+      "literal": "The rain's leg is hanging.",
+      "meaning": "It's about to rain.",
+      "ro": "Stă să plouă."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Nem enged a negyvennyolcból.",
+      "literal": "He doesn't give up anything of '48.",
+      "meaning": "He won't budge on his principles (after the 1848 revolution).",
+      "ro": "Nu cedează nici un milimetru."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Egy hullámhosszon vagyunk.",
+      "literal": "We're on one wavelength.",
+      "meaning": "We understand each other well.",
+      "ro": "Suntem pe aceeași lungime de undă."
+    },
+    {
+      "kind": "idiom",
+      "hu": "Fabatkát sem ér.",
+      "literal": "Not worth a wooden penny.",
+      "meaning": "Completely worthless.",
+      "ro": "Nu face nici două parale."
+    }
+  ]
+}

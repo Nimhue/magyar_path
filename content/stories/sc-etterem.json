@@ -1,0 +1,166 @@
+{
+  "id": "sc-etterem",
+  "pack": "survival",
+  "title": "Az étteremben",
+  "titleEn": "At the restaurant",
+  "intro": "You're having lunch at a small étterem near your office. The waiter comes over.",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Pincér",
+      "text": "Jó napot! Hányan lesznek?",
+      "textEn": "Hello! How many of you will there be?",
+      "textRo": "Bună ziua! Câți veți fi?",
+      "choices": [
+        {
+          "text": "Egyedül vagyok.",
+          "textEn": "I'm on my own.",
+          "textRo": "Sunt singur(ă).",
+          "to": "b"
+        },
+        {
+          "text": "Egy vagyok.",
+          "textEn": "I am one.",
+          "textRo": "Sunt unu.",
+          "to": "a2",
+          "note": "Sounds funny! For \"just me\" say Egyedül vagyok or Egy főre (for one person)."
+        }
+      ]
+    },
+    "a2": {
+      "speaker": "Pincér",
+      "text": "(mosolyog) Egy főre?",
+      "textEn": "(smiles) For one person?",
+      "textRo": "(zâmbește) Pentru o persoană?",
+      "choices": [
+        {
+          "text": "Igen, egy főre.",
+          "textEn": "Yes, for one.",
+          "textRo": "Da, pentru unul.",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Pincér",
+      "text": "Tessék, itt az étlap. Mit hozhatok inni?",
+      "textEn": "Here's the menu. What can I bring you to drink?",
+      "textRo": "Poftiți meniul. Ce vă pot aduce de băut?",
+      "choices": [
+        {
+          "text": "Egy szénsavmentes ásványvizet kérek.",
+          "textEn": "A still mineral water, please.",
+          "textRo": "O apă plată, vă rog.",
+          "to": "c"
+        },
+        {
+          "text": "Egy csapvizet kérek.",
+          "textEn": "A tap water, please.",
+          "textRo": "O apă de la robinet, vă rog.",
+          "to": "c",
+          "note": "Perfectly normal in Hungary. A few places charge a little for tap water (csapvíz)."
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Pincér",
+      "text": "Választott már? A napi menü ma gulyásleves és rántott csirke.",
+      "textEn": "Have you chosen yet? Today's set menu is goulash soup and breaded chicken.",
+      "textRo": "Ați ales? Meniul zilei azi e supă gulaș și pui pane.",
+      "choices": [
+        {
+          "text": "A napi menüt kérem.",
+          "textEn": "I'll have the set menu.",
+          "textRo": "Iau meniul zilei.",
+          "to": "d"
+        },
+        {
+          "text": "Vegetáriánus vagyok. Mit ajánl?",
+          "textEn": "I'm vegetarian. What do you recommend?",
+          "textRo": "Sunt vegetarian(ă). Ce recomandați?",
+          "to": "c2"
+        }
+      ]
+    },
+    "c2": {
+      "speaker": "Pincér",
+      "text": "A rántott sajt nagyon finom, rizzsel és tartárral.",
+      "textEn": "The fried cheese is very good, with rice and tartar sauce.",
+      "textRo": "Cașcavalul pane e foarte bun, cu orez și sos tartar.",
+      "choices": [
+        {
+          "text": "Akkor rántott sajtot kérek.",
+          "textEn": "Then I'll have fried cheese.",
+          "textRo": "Atunci iau cașcaval pane.",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Pincér",
+      "text": "Jó étvágyat! … Ízlett?",
+      "textEn": "Enjoy your meal! … Did you like it?",
+      "textRo": "Poftă bună! … V-a plăcut?",
+      "choices": [
+        {
+          "text": "Nagyon finom volt! Fizetni szeretnék.",
+          "textEn": "It was delicious! I'd like to pay.",
+          "textRo": "A fost foarte bun! Aș dori să plătesc.",
+          "to": "e"
+        },
+        {
+          "text": "Kérem a számlát.",
+          "textEn": "The bill, please.",
+          "textRo": "Nota, vă rog.",
+          "to": "e"
+        }
+      ]
+    },
+    "e": {
+      "speaker": "Pincér",
+      "text": "Kártyával vagy készpénzzel?",
+      "textEn": "Card or cash?",
+      "textRo": "Card sau numerar?",
+      "choices": [
+        {
+          "text": "Kártyával. És a borravaló tíz százalék.",
+          "textEn": "By card. And the tip is ten percent.",
+          "textRo": "Cu cardul. Și bacșișul e zece la sută.",
+          "to": "end",
+          "note": "Tipping is usually 10–15% in Hungary. Check the bill first: some places already add a service charge (szervízdíj)."
+        },
+        {
+          "text": "Készpénzzel. Köszönöm, a többi a magáé.",
+          "textEn": "Cash. Thank you, keep the change.",
+          "textRo": "Numerar. Mulțumesc, restul e al dumneavoastră.",
+          "to": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "Pincér",
+      "text": "Köszönöm szépen! Viszontlátásra!",
+      "textEn": "Thank you very much! Goodbye!",
+      "textRo": "Mulțumesc frumos! La revedere!",
+      "choices": [],
+      "end": "great"
+    }
+  },
+  "glossary": {
+    "pincér": "waiter",
+    "hányan": "how many (people)",
+    "egyedül": "alone",
+    "főre": "per person",
+    "étlap": "menu",
+    "szénsavmentes": "still (not fizzy)",
+    "ásványvíz": "mineral water",
+    "csapvíz": "tap water",
+    "napi menü": "set menu of the day",
+    "rántott": "breaded and fried",
+    "ízlett": "did you like it (food)",
+    "számla": "bill, invoice",
+    "készpénz": "cash",
+    "borravaló": "tip",
+    "a többi a magáé": "keep the change"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "sc-orvos",
+  "pack": "survival",
+  "title": "Az orvosnál",
+  "titleEn": "At the doctor's",
+  "intro": "You have an appointment (időpont) at the GP's. The doctor calls you in.",
+  "start": "a",
+  "nodes": {
+    "a": {
+      "speaker": "Orvos",
+      "text": "Jó napot! Foglaljon helyet. Mi a panasza?",
+      "textEn": "Good afternoon! Take a seat. What's the problem?",
+      "textRo": "Bună ziua! Luați loc. Ce probleme aveți?",
+      "choices": [
+        {
+          "text": "Jó napot! Fáj a fejem és a hasam.",
+          "textEn": "Hello! I have a headache and a stomach ache.",
+          "textRo": "Bună ziua! Mă doare capul și burta.",
+          "to": "b"
+        },
+        {
+          "text": "Jó napot! Fájok.",
+          "textEn": "Hello! I hurt.",
+          "textRo": "Bună ziua! Mă dor.",
+          "to": "a2",
+          "note": "Say what hurts: Fáj a fejem (my head hurts). The thing that hurts is the subject."
+        }
+      ]
+    },
+    "a2": {
+      "speaker": "Orvos",
+      "text": "Mi fáj pontosan?",
+      "textEn": "What exactly hurts?",
+      "textRo": "Ce vă doare exact?",
+      "choices": [
+        {
+          "text": "A fejem és a hasam fáj.",
+          "textEn": "My head and my stomach hurt.",
+          "textRo": "Mă doare capul și burta.",
+          "to": "b"
+        }
+      ]
+    },
+    "b": {
+      "speaker": "Orvos",
+      "text": "Mióta?",
+      "textEn": "Since when?",
+      "textRo": "De când?",
+      "choices": [
+        {
+          "text": "Két napja.",
+          "textEn": "For two days.",
+          "textRo": "De două zile.",
+          "to": "c"
+        },
+        {
+          "text": "Két nap múlva.",
+          "textEn": "In two days.",
+          "textRo": "Peste două zile.",
+          "to": "b2",
+          "note": "\"múlva\" means \"in (future) time\". For \"for two days (until now)\" say két napja."
+        }
+      ]
+    },
+    "b2": {
+      "speaker": "Orvos",
+      "text": "Két nap múlva? Úgy érti, két napja?",
+      "textEn": "In two days? You mean for two days?",
+      "textRo": "Peste două zile? Vreți să spuneți de două zile?",
+      "choices": [
+        {
+          "text": "Igen, két napja. Bocsánat!",
+          "textEn": "Yes, for two days. Sorry!",
+          "textRo": "Da, de două zile. Scuze!",
+          "to": "c"
+        }
+      ]
+    },
+    "c": {
+      "speaker": "Orvos",
+      "text": "Rendben. Kérem, vegyen egy mély levegőt. Köszönöm.",
+      "textEn": "All right. Please take a deep breath. Thank you.",
+      "textRo": "Bine. Vă rog, respirați adânc. Mulțumesc.",
+      "choices": [
+        {
+          "text": "Súlyos?",
+          "textEn": "Is it serious?",
+          "textRo": "E grav?",
+          "to": "d"
+        }
+      ]
+    },
+    "d": {
+      "speaker": "Orvos",
+      "text": "Nem súlyos, csak egy kis vírus. Pihenjen és igyon sok vizet. Írok egy igazolást is.",
+      "textEn": "It's not serious, just a little virus. Rest and drink lots of water. I'll also write you a sick note.",
+      "textRo": "Nu e grav, doar un mic virus. Odihniți-vă și beți multă apă. Vă scriu și o adeverință.",
+      "choices": [
+        {
+          "text": "Köszönöm, doktor úr!",
+          "textEn": "Thank you, doctor!",
+          "textRo": "Mulțumesc, domnule doctor!",
+          "to": "end"
+        },
+        {
+          "text": "Köszönöm, doktornő!",
+          "textEn": "Thank you, doctor (to a woman)!",
+          "textRo": "Mulțumesc, doamna doctor!",
+          "to": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "Orvos",
+      "text": "Nincs mit. Jobbulást!",
+      "textEn": "You're welcome. Get well soon!",
+      "textRo": "Cu plăcere. Însănătoșire grabnică!",
+      "choices": [],
+      "end": "great"
+    }
+  },
+  "glossary": {
+    "orvos": "doctor",
+    "panasz, panasza": "complaint, your complaint",
+    "foglaljon helyet": "take a seat (formal)",
+    "fej, fejem": "head, my head",
+    "has, hasam": "belly, my belly",
+    "mióta": "since when",
+    "napja": "for … days (until now)",
+    "mély": "deep",
+    "levegő": "air, breath",
+    "súlyos": "serious",
+    "pihenjen": "rest (formal)",
+    "igyon": "drink (formal)",
+    "igazolás": "certificate, sick note",
+    "doktornő": "female doctor"
+  }
+}

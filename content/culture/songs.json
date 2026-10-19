@@ -1,0 +1,305 @@
+{
+  "items": [
+    {
+      "id": "tavaszi-szel",
+      "kind": "folk",
+      "title": "Tavaszi szél vizet áraszt",
+      "titleEn": "The spring wind floods the water",
+      "about": "One of the best-known Hungarian folk songs. Every bird chooses a mate, and the singer wonders whom to choose.",
+      "lines": [
+        {
+          "hu": "Tavaszi szél vizet áraszt,",
+          "en": "The spring wind floods the water,",
+          "ro": "Vântul de primăvară revarsă apa,"
+        },
+        {
+          "hu": "virágom, virágom.",
+          "en": "my flower, my flower.",
+          "ro": "floarea mea, floarea mea."
+        },
+        {
+          "hu": "Minden madár társat választ,",
+          "en": "Every bird chooses a mate,",
+          "ro": "Fiecare pasăre își alege pereche,"
+        },
+        {
+          "hu": "virágom, virágom.",
+          "en": "my flower, my flower.",
+          "ro": "floarea mea, floarea mea."
+        },
+        {
+          "hu": "Hát én immár kit válasszak?",
+          "en": "So whom shall I choose now?",
+          "ro": "Pe cine să aleg eu acum?"
+        },
+        {
+          "hu": "Virágom, virágom.",
+          "en": "My flower, my flower.",
+          "ro": "Floarea mea, floarea mea."
+        },
+        {
+          "hu": "Te engemet, én tégedet,",
+          "en": "You choose me, I choose you,",
+          "ro": "Tu pe mine, eu pe tine,"
+        },
+        {
+          "hu": "virágom, virágom.",
+          "en": "my flower, my flower.",
+          "ro": "floarea mea, floarea mea."
+        }
+      ]
+    },
+    {
+      "id": "boci",
+      "kind": "rhyme",
+      "title": "Boci, boci tarka",
+      "titleEn": "Little calf, spotty calf",
+      "about": "Probably the first song every Hungarian toddler learns. It's silly on purpose: a calf with no ears and no tail!",
+      "lines": [
+        {
+          "hu": "Boci, boci tarka,",
+          "en": "Little calf, spotty calf,",
+          "ro": "Vițel, vițel bălțat,"
+        },
+        {
+          "hu": "se füle, se farka.",
+          "en": "no ears, no tail.",
+          "ro": "nici urechi, nici coadă."
+        },
+        {
+          "hu": "Oda megyünk lakni,",
+          "en": "We're going to live there,",
+          "ro": "Mergem să locuim acolo,"
+        },
+        {
+          "hu": "ahol tejet kapni.",
+          "en": "where you can get milk.",
+          "ro": "unde se găsește lapte."
+        }
+      ]
+    },
+    {
+      "id": "suss-fel-nap",
+      "kind": "rhyme",
+      "title": "Süss fel, nap!",
+      "titleEn": "Shine, sun!",
+      "about": "Children sing this to call the sun out on a cloudy day, so the geese don't freeze.",
+      "lines": [
+        {
+          "hu": "Süss fel, nap,",
+          "en": "Shine out, sun,",
+          "ro": "Ieși, soare,"
+        },
+        {
+          "hu": "fényes nap,",
+          "en": "bright sun,",
+          "ro": "soare luminos,"
+        },
+        {
+          "hu": "kertek alatt",
+          "en": "below the gardens",
+          "ro": "în spatele grădinilor"
+        },
+        {
+          "hu": "a ludaim megfagynak.",
+          "en": "my geese are freezing.",
+          "ro": "gâștele mele îngheață."
+        }
+      ]
+    },
+    {
+      "id": "csigabiga",
+      "kind": "rhyme",
+      "title": "Csiga-biga, gyere ki!",
+      "titleEn": "Snail, snail, come out!",
+      "about": "A rhyme to coax a snail out of its shell. It tells the snail its house is on fire, then bribes it with milk and butter.",
+      "lines": [
+        {
+          "hu": "Csiga-biga, gyere ki,",
+          "en": "Snail, snail, come out,",
+          "ro": "Melc, melc, ieși afară,"
+        },
+        {
+          "hu": "ég a házad ide ki!",
+          "en": "your house is on fire!",
+          "ro": "îți arde casa!"
+        },
+        {
+          "hu": "Kapsz tejet, vajat,",
+          "en": "You'll get milk and butter,",
+          "ro": "Primești lapte, unt,"
+        },
+        {
+          "hu": "holnapra is marad.",
+          "en": "and some will be left for tomorrow.",
+          "ro": "rămâne și pentru mâine."
+        }
+      ]
+    },
+    {
+      "id": "bujj-bujj",
+      "kind": "game",
+      "title": "Bújj, bújj, zöld ág",
+      "titleEn": "Duck under, green branch",
+      "about": "A circle game: two children make a gate with their arms and the others duck under it.",
+      "lines": [
+        {
+          "hu": "Bújj, bújj, zöld ág,",
+          "en": "Duck under, green branch,",
+          "ro": "Treci, treci, ramură verde,"
+        },
+        {
+          "hu": "zöld levelecske,",
+          "en": "little green leaf,",
+          "ro": "frunzuliță verde,"
+        },
+        {
+          "hu": "nyitva van az aranykapu,",
+          "en": "the golden gate is open,",
+          "ro": "poarta de aur e deschisă,"
+        },
+        {
+          "hu": "csak bújjatok rajta!",
+          "en": "just duck through it!",
+          "ro": "treceți pe sub ea!"
+        }
+      ]
+    },
+    {
+      "id": "lanc",
+      "kind": "game",
+      "title": "Lánc, lánc, eszterlánc",
+      "titleEn": "Chain, chain, Eszter's chain",
+      "about": "Children hold hands in a circle. Whoever's name is called turns to face outwards.",
+      "lines": [
+        {
+          "hu": "Lánc, lánc, eszterlánc,",
+          "en": "Chain, chain, Eszter's chain,",
+          "ro": "Lanț, lanț, lanțul Esterei,"
+        },
+        {
+          "hu": "eszterlánci cérna.",
+          "en": "Eszter's-chain thread.",
+          "ro": "ață din lanțul Esterei."
+        },
+        {
+          "hu": "Cérna volna, selyem volna,",
+          "en": "If it were thread, if it were silk,",
+          "ro": "De-ar fi ață, de-ar fi mătase,"
+        },
+        {
+          "hu": "mégis kifordulna.",
+          "en": "it would still turn out.",
+          "ro": "tot s-ar întoarce pe dos."
+        }
+      ]
+    },
+    {
+      "id": "nyuszi",
+      "kind": "game",
+      "title": "Nyuszi ül a fűben",
+      "titleEn": "The bunny sits in the grass",
+      "about": "An Easter-time circle game. The 'bunny' crouches in the middle, then jumps and picks the next bunny.",
+      "lines": [
+        {
+          "hu": "Nyuszi ül a fűben,",
+          "en": "The bunny sits in the grass,",
+          "ro": "Iepurașul stă în iarbă,"
+        },
+        {
+          "hu": "ülve szundikálva.",
+          "en": "sitting and dozing.",
+          "ro": "stă și moțăie."
+        },
+        {
+          "hu": "Nyuszi, talán beteg vagy,",
+          "en": "Bunny, maybe you're ill,",
+          "ro": "Iepurașule, poate ești bolnav,"
+        },
+        {
+          "hu": "hogy már nem tudsz ugrani?",
+          "en": "that you can't jump any more?",
+          "ro": "de nu mai poți sări?"
+        },
+        {
+          "hu": "Nyuszi, ugorj, nyuszi, ugorj,",
+          "en": "Bunny, jump, bunny, jump,",
+          "ro": "Iepurașule, sari, iepurașule, sari,"
+        },
+        {
+          "hu": "egyet-kettőt ugorj!",
+          "en": "jump once or twice!",
+          "ro": "sari o dată, de două ori!"
+        }
+      ]
+    },
+    {
+      "id": "erdo-mellett",
+      "kind": "folk",
+      "title": "Erdő mellett estvéledtem",
+      "titleEn": "Evening fell on me by the forest",
+      "about": "A slow, beautiful folk song, collected in the countryside. A lonely traveller sleeps under the open sky.",
+      "lines": [
+        {
+          "hu": "Erdő mellett estvéledtem,",
+          "en": "Evening fell on me by the forest,",
+          "ro": "M-a prins seara lângă pădure,"
+        },
+        {
+          "hu": "subám fejem alá tettem,",
+          "en": "I put my cloak under my head,",
+          "ro": "mi-am pus suba sub cap,"
+        },
+        {
+          "hu": "összetettem két kezemet,",
+          "en": "I put my two hands together,",
+          "ro": "mi-am împreunat mâinile,"
+        },
+        {
+          "hu": "úgy kértem jó Istenemet.",
+          "en": "and so I prayed to my good God.",
+          "ro": "și așa m-am rugat la bunul Dumnezeu."
+        }
+      ]
+    },
+    {
+      "id": "mennybol",
+      "kind": "christmas",
+      "title": "Mennyből az angyal",
+      "titleEn": "The angel from heaven",
+      "about": "The most loved Hungarian Christmas carol. Families sing it by the tree on Christmas Eve (Szenteste).",
+      "lines": [
+        {
+          "hu": "Mennyből az angyal",
+          "en": "The angel from heaven",
+          "ro": "Îngerul din cer"
+        },
+        {
+          "hu": "lejött hozzátok,",
+          "en": "came down to you,",
+          "ro": "a coborât la voi,"
+        },
+        {
+          "hu": "pásztorok, pásztorok!",
+          "en": "shepherds, shepherds!",
+          "ro": "păstori, păstori!"
+        },
+        {
+          "hu": "Hogy Betlehembe",
+          "en": "So that, hurrying",
+          "ro": "Ca, grăbindu-vă"
+        },
+        {
+          "hu": "sietve menvén,",
+          "en": "to Bethlehem,",
+          "ro": "spre Betleem,"
+        },
+        {
+          "hu": "lássátok, lássátok!",
+          "en": "you may see, you may see!",
+          "ro": "să vedeți, să vedeți!"
+        }
+      ]
+    }
+  ]
+}
