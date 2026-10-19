@@ -1,0 +1,128 @@
+{
+  "id": "eger",
+  "name": "Eger",
+  "lon": 20.38,
+  "lat": 47.9,
+  "category": "history",
+  "title": "Az egri csillagok",
+  "titleEn": "The stars of Eger",
+  "titleRo": "Stelele din Eger",
+  "story": [
+    {
+      "hu": "1552-ben egy nagy török sereg jön Eger alá.",
+      "en": "In 1552 a huge Ottoman army arrives at Eger.",
+      "ro": "În 1552 o armată otomană uriașă ajunge la Eger."
+    },
+    {
+      "hu": "A várban csak kevés katona van, a kapitány neve Dobó István.",
+      "en": "There are only a few soldiers in the castle; the captain is István Dobó.",
+      "ro": "În cetate sunt doar puțini soldați; căpitanul se numește István Dobó."
+    },
+    {
+      "hu": "A törökök sokan vannak, de az egriek nem adják fel.",
+      "en": "There are many Turks, but the people of Eger don't give up.",
+      "ro": "Turcii sunt mulți, dar cei din Eger nu se predau."
+    },
+    {
+      "hu": "Az asszonyok is harcolnak: forró vizet és köveket dobnak a falról.",
+      "en": "The women fight too: they throw hot water and stones from the walls.",
+      "ro": "Și femeile luptă: aruncă apă fierbinte și pietre de pe ziduri."
+    },
+    {
+      "hu": "Több mint egy hónap után a törökök hazamennek. Eger győz!",
+      "en": "After more than a month the Turks go home. Eger wins!",
+      "ro": "După mai bine de o lună, turcii pleacă acasă. Eger învinge!"
+    },
+    {
+      "hu": "A legenda szerint a katonák vörösbort isznak, és a törökök azt hiszik, hogy bikavért!",
+      "en": "Legend says the soldiers drink red wine, and the Turks think it's bull's blood!",
+      "ro": "Legenda spune că soldații beau vin roșu, iar turcii cred că e sânge de taur!"
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Gárdonyi Géza regénye, az Egri csillagok, minden magyar iskolában kötelező.",
+      "en": "Géza Gárdonyi's novel \"Eclipse of the Crescent Moon\" (Egri csillagok) about the siege is read in every Hungarian school.",
+      "ro": "Romanul lui Géza Gárdonyi, „Stelele din Eger”, despre asediu, se citește în toate școlile maghiare."
+    },
+    {
+      "hu": "Az egri bort ma is Bikavérnek hívják.",
+      "en": "Eger's famous red wine blend is still called Bikavér (Bull's Blood).",
+      "ro": "Vinul roșu faimos din Eger se numește și azi Bikavér (Sânge de taur)."
+    },
+    {
+      "hu": "Egerben van Európa egyik legészakibb minaretje.",
+      "en": "Eger has the northernmost Ottoman-era minaret in Europe, 40 metres tall.",
+      "ro": "Eger are cel mai nordic minaret din epoca otomană din Europa, înalt de 40 de metri."
+    }
+  ],
+  "words": [
+    {
+      "hu": "sereg",
+      "en": "army",
+      "ro": "armată"
+    },
+    {
+      "hu": "kapitány",
+      "en": "captain",
+      "ro": "căpitan"
+    },
+    {
+      "hu": "fal",
+      "en": "wall",
+      "ro": "zid"
+    },
+    {
+      "hu": "forró",
+      "en": "hot",
+      "ro": "fierbinte"
+    },
+    {
+      "hu": "győz",
+      "en": "to win",
+      "ro": "a învinge, a câștiga"
+    },
+    {
+      "hu": "bor",
+      "en": "wine",
+      "ro": "vin"
+    },
+    {
+      "hu": "bika",
+      "en": "bull",
+      "ro": "taur"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Melyik évben jönnek a törökök Eger alá?",
+      "qEn": "In which year do the Turks come to Eger?",
+      "options": [
+        "1552",
+        "1956",
+        "1848"
+      ],
+      "answer": "1552"
+    },
+    {
+      "q": "Mit csinálnak az asszonyok?",
+      "qEn": "What do the women do?",
+      "options": [
+        "forró vizet dobnak a falról",
+        "elmennek",
+        "énekelnek"
+      ],
+      "answer": "forró vizet dobnak a falról"
+    },
+    {
+      "q": "Mit hisznek a törökök a borról?",
+      "qEn": "What do the Turks think the wine is?",
+      "options": [
+        "bikavér",
+        "víz",
+        "tej"
+      ],
+      "answer": "bikavér"
+    }
+  ]
+}

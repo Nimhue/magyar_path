@@ -1,0 +1,128 @@
+{
+  "id": "tokaj",
+  "name": "Tokaj",
+  "lon": 21.41,
+  "lat": 48.12,
+  "category": "food",
+  "title": "Az aszú titka",
+  "titleEn": "The secret of aszú",
+  "titleRo": "Secretul vinului aszú",
+  "story": [
+    {
+      "hu": "Tokaj kis város két folyó, a Tisza és a Bodrog találkozásánál.",
+      "en": "Tokaj is a small town where two rivers, the Tisza and the Bodrog, meet.",
+      "ro": "Tokaj este un orășel la confluența a două râuri, Tisa și Bodrog."
+    },
+    {
+      "hu": "A hegyeken szőlő nő.",
+      "en": "Grapes grow on the hills.",
+      "ro": "Pe dealuri crește viță-de-vie."
+    },
+    {
+      "hu": "Ősszel a folyók miatt reggel köd van, délután nap süt.",
+      "en": "In autumn the rivers bring morning fog, and in the afternoon the sun shines.",
+      "ro": "Toamna râurile aduc ceață dimineața, iar după-amiaza strălucește soarele."
+    },
+    {
+      "hu": "Ettől a szőlő lassan összeaszalódik, mint a mazsola.",
+      "en": "Because of this the grapes slowly shrivel, like raisins.",
+      "ro": "Din cauza asta strugurii se zbârcesc încet, ca stafidele."
+    },
+    {
+      "hu": "Ezekből a szemekből készül a híres, édes tokaji aszú.",
+      "en": "From these berries comes the famous sweet Tokaji aszú.",
+      "ro": "Din aceste boabe se face faimosul vin dulce Tokaji aszú."
+    },
+    {
+      "hu": "Még a magyar Himnuszban is benne van Tokaj!",
+      "en": "Tokaj is even in the Hungarian national anthem!",
+      "ro": "Tokaj apare chiar și în imnul național maghiar!"
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A Himnusz így szól: „Tokaj szőlővesszein nektárt csepegtettél.”",
+      "en": "The anthem says: \"On Tokaj's vines you dripped nectar.\"",
+      "ro": "Imnul spune: „Pe vițele din Tokaj ai picurat nectar.”"
+    },
+    {
+      "hu": "A tokaji borvidék 2002 óta a világörökség része.",
+      "en": "The Tokaj wine region has been a UNESCO World Heritage site since 2002.",
+      "ro": "Regiunea viticolă Tokaj face parte din Patrimoniul Mondial UNESCO din 2002."
+    },
+    {
+      "hu": "A régi mondás szerint a tokaji a „királyok bora, a borok királya”.",
+      "en": "An old saying, often linked to Louis XIV, calls it \"the wine of kings, the king of wines\".",
+      "ro": "O zicală veche, legată adesea de Ludovic al XIV-lea, îl numește „vinul regilor, regele vinurilor”."
+    }
+  ],
+  "words": [
+    {
+      "hu": "folyó",
+      "en": "river",
+      "ro": "râu"
+    },
+    {
+      "hu": "szőlő",
+      "en": "grape(s), vineyard",
+      "ro": "strugure, vie"
+    },
+    {
+      "hu": "köd",
+      "en": "fog",
+      "ro": "ceață"
+    },
+    {
+      "hu": "süt",
+      "en": "to shine (sun); to bake",
+      "ro": "a străluci (soarele); a coace"
+    },
+    {
+      "hu": "mazsola",
+      "en": "raisin",
+      "ro": "stafidă"
+    },
+    {
+      "hu": "lassan",
+      "en": "slowly",
+      "ro": "încet"
+    },
+    {
+      "hu": "híres",
+      "en": "famous",
+      "ro": "faimos"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Melyik két folyó találkozik Tokajnál?",
+      "qEn": "Which two rivers meet at Tokaj?",
+      "options": [
+        "a Tisza és a Bodrog",
+        "a Duna és a Rába",
+        "a Maros és a Körös"
+      ],
+      "answer": "a Tisza és a Bodrog"
+    },
+    {
+      "q": "Mi van reggel ősszel?",
+      "qEn": "What is there in the mornings in autumn?",
+      "options": [
+        "köd",
+        "hó",
+        "tűz"
+      ],
+      "answer": "köd"
+    },
+    {
+      "q": "Mi lesz a szőlőből?",
+      "qEn": "What do the grapes become like?",
+      "options": [
+        "mazsola",
+        "csempe",
+        "kolbász"
+      ],
+      "answer": "mazsola"
+    }
+  ]
+}

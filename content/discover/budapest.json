@@ -1,0 +1,138 @@
+{
+  "id": "budapest",
+  "name": "Budapest",
+  "lon": 19.04,
+  "lat": 47.5,
+  "category": "invention",
+  "title": "A Rubik-kocka",
+  "titleEn": "The Rubik's Cube",
+  "titleRo": "Cubul Rubik",
+  "story": [
+    {
+      "hu": "Budapest, 1974.",
+      "en": "Budapest, 1974.",
+      "ro": "Budapesta, 1974."
+    },
+    {
+      "hu": "Rubik Ernő fiatal tanár és építész.",
+      "en": "Ernő Rubik is a young teacher and architect.",
+      "ro": "Ernő Rubik este un tânăr profesor și arhitect."
+    },
+    {
+      "hu": "A diákjainak egy játékot készít: egy kicsi, színes kockát.",
+      "en": "He makes a toy for his students: a small, colourful cube.",
+      "ro": "Le face studenților o jucărie: un cub mic și colorat."
+    },
+    {
+      "hu": "A kockának hat oldala és hat színe van.",
+      "en": "The cube has six sides and six colours.",
+      "ro": "Cubul are șase fețe și șase culori."
+    },
+    {
+      "hu": "Rubik Ernő forgatja, és a színek összekeverednek.",
+      "en": "Rubik turns it, and the colours get mixed up.",
+      "ro": "Rubik îl rotește, iar culorile se amestecă."
+    },
+    {
+      "hu": "Egy hónapig tart, amíg újra kirakja!",
+      "en": "It takes him a month to solve it again!",
+      "ro": "Îi ia o lună până îl rezolvă din nou!"
+    },
+    {
+      "hu": "Ma a világon mindenki ismeri a Rubik-kockát.",
+      "en": "Today everyone in the world knows the Rubik's Cube.",
+      "ro": "Azi toată lumea cunoaște cubul Rubik."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A budapesti M1-es metró 1896 óta jár.",
+      "en": "Budapest's M1 metro has run since 1896: the oldest underground railway on the European continent.",
+      "ro": "Metroul M1 din Budapesta circulă din 1896: cel mai vechi metrou de pe continentul european."
+    },
+    {
+      "hu": "A golyóstollat Bíró László találja fel.",
+      "en": "The ballpoint pen was invented by László Bíró from Budapest; in Britain it's still called a \"biro\".",
+      "ro": "Pixul a fost inventat de budapestanul László Bíró; în Marea Britanie i se spune și azi „biro”."
+    },
+    {
+      "hu": "A Gömböc mindig magától feláll.",
+      "en": "The Gömböc, designed in Budapest in 2006, is a shape that always rolls back upright by itself.",
+      "ro": "Gömböc, creat la Budapesta în 2006, este o formă care se ridică mereu singură."
+    },
+    {
+      "hu": "Kemény János budapesti tudós.",
+      "en": "John G. Kemény, born in Budapest, co-created the BASIC programming language.",
+      "ro": "John G. Kemény, născut la Budapesta, a creat împreună cu un coleg limbajul de programare BASIC."
+    }
+  ],
+  "words": [
+    {
+      "hu": "kocka",
+      "en": "cube",
+      "ro": "cub"
+    },
+    {
+      "hu": "játék",
+      "en": "toy, game",
+      "ro": "jucărie, joc"
+    },
+    {
+      "hu": "szín",
+      "en": "colour",
+      "ro": "culoare"
+    },
+    {
+      "hu": "oldal",
+      "en": "side, page",
+      "ro": "latură, pagină"
+    },
+    {
+      "hu": "forgat",
+      "en": "to turn, to rotate",
+      "ro": "a roti"
+    },
+    {
+      "hu": "kirak",
+      "en": "to solve (a puzzle), to lay out",
+      "ro": "a rezolva (un puzzle), a așeza"
+    },
+    {
+      "hu": "ismer",
+      "en": "to know (someone or something)",
+      "ro": "a cunoaște"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mi Rubik Ernő?",
+      "qEn": "What is Ernő Rubik's job?",
+      "options": [
+        "tanár és építész",
+        "orvos",
+        "sofőr"
+      ],
+      "answer": "tanár és építész"
+    },
+    {
+      "q": "Hány színe van a kockának?",
+      "qEn": "How many colours does the cube have?",
+      "options": [
+        "hat",
+        "négy",
+        "nyolc"
+      ],
+      "answer": "hat"
+    },
+    {
+      "q": "Ki ismeri ma a Rubik-kockát?",
+      "qEn": "Who knows the Rubik's Cube today?",
+      "options": [
+        "mindenki a világon",
+        "csak a diákok",
+        "senki"
+      ],
+      "answer": "mindenki a világon"
+    }
+  ]
+}

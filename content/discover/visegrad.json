@@ -1,0 +1,138 @@
+{
+  "id": "visegrad",
+  "name": "Visegrád",
+  "lon": 18.97,
+  "lat": 47.79,
+  "category": "tale",
+  "title": "Mátyás király és a kolozsvári bíró",
+  "titleEn": "King Matthias and the judge of Kolozsvár",
+  "titleRo": "Regele Matia și judele din Cluj",
+  "story": [
+    {
+      "hu": "Mátyás király Visegrádon él, egy gyönyörű palotában.",
+      "en": "King Matthias lives in Visegrád, in a beautiful palace.",
+      "ro": "Regele Matia trăiește la Visegrád, într-un palat minunat."
+    },
+    {
+      "hu": "Mátyás kolozsvári: ott van a szülőháza.",
+      "en": "Matthias is from Kolozsvár (Cluj): his birth house is there.",
+      "ro": "Matia este din Cluj: acolo e casa în care s-a născut."
+    },
+    {
+      "hu": "Szereti álruhában járni az országot.",
+      "en": "He likes to travel the country in disguise.",
+      "ro": "Îi place să colinde țara deghizat."
+    },
+    {
+      "hu": "Egy nap szegény embernek öltözik, és Kolozsvárra megy.",
+      "en": "One day he dresses as a poor man and goes to Kolozsvár.",
+      "ro": "Într-o zi se îmbracă în om sărac și pleacă la Cluj."
+    },
+    {
+      "hu": "A bíró emberei elfogják, és fát kell vinnie a bíró házához.",
+      "en": "The judge's men catch him, and he has to carry wood to the judge's house.",
+      "ro": "Oamenii judelui îl prind și trebuie să care lemne la casa judelui."
+    },
+    {
+      "hu": "Mátyás titokban egy jelet vés a fába.",
+      "en": "Matthias secretly carves a mark into the wood.",
+      "ro": "Matia scrijelește în secret un semn în lemn."
+    },
+    {
+      "hu": "Pár nap múlva a király visszajön, és megmutatja a jelet. A bíró nagyon fél!",
+      "en": "A few days later the king returns and shows the mark. The judge is terrified!",
+      "ro": "După câteva zile regele se întoarce și arată semnul. Judele se sperie foarte tare!"
+    },
+    {
+      "hu": "Mátyás megbünteti, mert a szegény emberekkel is igazságosnak kell lenni.",
+      "en": "Matthias punishes him, because you must be fair to poor people too.",
+      "ro": "Matia îl pedepsește, pentru că trebuie să fii drept și cu oamenii săraci."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Mátyás neve: Igazságos Mátyás.",
+      "en": "Matthias Corvinus (king 1458–1490) is remembered as \"Matthias the Just\".",
+      "ro": "Matia Corvin (rege între 1458 și 1490) a rămas în memorie drept „Matia cel Drept”."
+    },
+    {
+      "hu": "Mátyás szülőháza ma is áll Kolozsváron.",
+      "en": "His birth house still stands in Cluj-Napoca (Kolozsvár).",
+      "ro": "Casa în care s-a născut se află și azi la Cluj-Napoca."
+    },
+    {
+      "hu": "A könyvtárának könyveit corvinának hívják.",
+      "en": "His library was one of Europe's greatest; its surviving books are called \"corvinas\".",
+      "ro": "Biblioteca lui a fost una dintre cele mai mari din Europa; cărțile păstrate se numesc „corvine”."
+    }
+  ],
+  "words": [
+    {
+      "hu": "palota",
+      "en": "palace",
+      "ro": "palat"
+    },
+    {
+      "hu": "álruha",
+      "en": "disguise",
+      "ro": "deghizare"
+    },
+    {
+      "hu": "szegény",
+      "en": "poor",
+      "ro": "sărac"
+    },
+    {
+      "hu": "bíró",
+      "en": "judge; village mayor",
+      "ro": "jude, judecător"
+    },
+    {
+      "hu": "fa",
+      "en": "wood; tree",
+      "ro": "lemn; copac"
+    },
+    {
+      "hu": "jel",
+      "en": "sign, mark",
+      "ro": "semn"
+    },
+    {
+      "hu": "igazságos",
+      "en": "fair, just",
+      "ro": "drept, just"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hol él Mátyás király?",
+      "qEn": "Where does King Matthias live?",
+      "options": [
+        "Visegrádon",
+        "Debrecenben",
+        "Bécsben"
+      ],
+      "answer": "Visegrádon"
+    },
+    {
+      "q": "Mit csinál Mátyás a fával?",
+      "qEn": "What does Matthias do with the wood?",
+      "options": [
+        "jelet vés bele",
+        "eladja",
+        "elégeti"
+      ],
+      "answer": "jelet vés bele"
+    },
+    {
+      "q": "Miért bünteti meg a bírót?",
+      "qEn": "Why does he punish the judge?",
+      "options": [
+        "mert nem igazságos",
+        "mert szegény",
+        "mert nem tud énekelni"
+      ],
+      "answer": "mert nem igazságos"
+    }
+  ]
+}

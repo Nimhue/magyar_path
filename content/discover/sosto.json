@@ -1,0 +1,138 @@
+{
+  "id": "sosto",
+  "name": "Nyíregyháza",
+  "lon": 21.72,
+  "lat": 47.96,
+  "category": "tale",
+  "title": "A só",
+  "titleEn": "Salt",
+  "titleRo": "Sarea",
+  "story": [
+    {
+      "hu": "Nyíregyháza mellett van a Sóstó. A név jelentése: „sós tó”. Ehhez a helyhez illik ez a mese.",
+      "en": "Near Nyíregyháza lies Sóstó, which means \"salt lake\". This tale fits the place.",
+      "ro": "Lângă Nyíregyháza se află Sóstó, adică „lacul sărat”. Povestea asta se potrivește locului."
+    },
+    {
+      "hu": "Egy királynak három lánya van.",
+      "en": "A king has three daughters.",
+      "ro": "Un rege are trei fiice."
+    },
+    {
+      "hu": "A király megkérdezi: „Mennyire szerettek engem?”",
+      "en": "The king asks: \"How much do you love me?\"",
+      "ro": "Regele întreabă: „Cât de mult mă iubiți?”"
+    },
+    {
+      "hu": "Az első lány: „Mint a galamb a tiszta búzát.” A második: „Mint a szép ruhát.”",
+      "en": "The first girl: \"As the dove loves clean wheat.\" The second: \"As I love a beautiful dress.\"",
+      "ro": "Prima fată: „Cum iubește porumbelul grâul curat.” A doua: „Cum iubesc o rochie frumoasă.”"
+    },
+    {
+      "hu": "A legkisebb lány: „Úgy szeretlek, mint az emberek a sót.”",
+      "en": "The youngest: \"I love you as people love salt.\"",
+      "ro": "Cea mai mică: „Te iubesc cum iubesc oamenii sarea.”"
+    },
+    {
+      "hu": "A király dühös, és elküldi a lányt.",
+      "en": "The king is angry and sends the girl away.",
+      "ro": "Regele se înfurie și o alungă pe fată."
+    },
+    {
+      "hu": "Később az országban elfogy a só. Az étel nem jó, mindenki szomorú.",
+      "en": "Later the country runs out of salt. The food is bad, everyone is sad.",
+      "ro": "Mai târziu, în țară se termină sarea. Mâncarea nu e bună, toată lumea e tristă."
+    },
+    {
+      "hu": "Ekkor érti meg a király: a só nagyon fontos. A lány hazajön, és nagy a boldogság.",
+      "en": "Then the king understands: salt is very important. The girl comes home, and everyone is overjoyed.",
+      "ro": "Atunci înțelege regele: sarea e foarte importantă. Fata se întoarce acasă și bucuria e mare."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A mese román változata is ismert.",
+      "en": "Romanians know this tale too: Petre Ispirescu wrote a version, \"Sarea în bucate\".",
+      "ro": "Și românii cunosc povestea: Petre Ispirescu a scris o variantă, „Sarea în bucate”."
+    },
+    {
+      "hu": "A sóstói víz sós és lúgos.",
+      "en": "Sóstó's water is slightly salty and alkaline, so the spa and lake have been popular for 200 years.",
+      "ro": "Apa din Sóstó este ușor sărată și alcalină, de aceea băile și lacul sunt căutate de 200 de ani."
+    },
+    {
+      "hu": "Sóstón állatkert és falumúzeum is van.",
+      "en": "Sóstó also has a big zoo and an open-air village museum.",
+      "ro": "La Sóstó există și o grădină zoologică mare și un muzeu al satului."
+    }
+  ],
+  "words": [
+    {
+      "hu": "só",
+      "en": "salt",
+      "ro": "sare"
+    },
+    {
+      "hu": "sós",
+      "en": "salty",
+      "ro": "sărat"
+    },
+    {
+      "hu": "lány",
+      "en": "girl; daughter",
+      "ro": "fată; fiică"
+    },
+    {
+      "hu": "szeret",
+      "en": "to love, to like",
+      "ro": "a iubi, a plăcea"
+    },
+    {
+      "hu": "dühös",
+      "en": "angry",
+      "ro": "furios"
+    },
+    {
+      "hu": "étel",
+      "en": "food, dish",
+      "ro": "mâncare"
+    },
+    {
+      "hu": "fontos",
+      "en": "important",
+      "ro": "important"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hány lánya van a királynak?",
+      "qEn": "How many daughters does the king have?",
+      "options": [
+        "három",
+        "kettő",
+        "öt"
+      ],
+      "answer": "három"
+    },
+    {
+      "q": "Hogy szereti a legkisebb lány a királyt?",
+      "qEn": "How does the youngest girl love the king?",
+      "options": [
+        "mint az emberek a sót",
+        "mint a szép ruhát",
+        "mint a galamb a búzát"
+      ],
+      "answer": "mint az emberek a sót"
+    },
+    {
+      "q": "Mit jelent a „Sóstó”?",
+      "qEn": "What does Sóstó mean?",
+      "options": [
+        "sós tó (salt lake)",
+        "nagy hegy",
+        "régi vár"
+      ],
+      "answer": "sós tó (salt lake)"
+    }
+  ]
+}

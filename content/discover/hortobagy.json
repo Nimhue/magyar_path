@@ -1,0 +1,133 @@
+{
+  "id": "hortobagy",
+  "name": "Hortobágy",
+  "lon": 21.15,
+  "lat": 47.58,
+  "category": "nature",
+  "title": "A puszta",
+  "titleEn": "The puszta",
+  "titleRo": "Pusta",
+  "story": [
+    {
+      "hu": "Hortobágy egy nagy, lapos, füves síkság: a puszta.",
+      "en": "Hortobágy is a big, flat, grassy plain: the puszta.",
+      "ro": "Hortobágy este o câmpie mare, plată, cu iarbă: pusta."
+    },
+    {
+      "hu": "Itt nincs hegy, és alig van fa. Az ég nagyon nagy!",
+      "en": "There are no hills here and hardly any trees. The sky is enormous!",
+      "ro": "Aici nu sunt dealuri și aproape niciun copac. Cerul e uriaș!"
+    },
+    {
+      "hu": "A pusztán szürke marhák élnek, hosszú, nagy szarvakkal.",
+      "en": "Grey cattle live on the puszta, with big long horns.",
+      "ro": "Pe pustă trăiesc vite sure, cu coarne mari și lungi."
+    },
+    {
+      "hu": "Vannak racka juhok is, csavart szarvval.",
+      "en": "There are also racka sheep, with twisted spiral horns.",
+      "ro": "Sunt și oi racka, cu coarne răsucite."
+    },
+    {
+      "hu": "A pásztorok segítője a puli, a kis, göndör kutya.",
+      "en": "The shepherds' helper is the puli, the small curly dog.",
+      "ro": "Ajutorul ciobanilor este puli, câinele mic și creț."
+    },
+    {
+      "hu": "Ősszel ezer és ezer daru jön ide pihenni.",
+      "en": "In autumn thousands and thousands of cranes come here to rest.",
+      "ro": "Toamna, mii și mii de cocori vin aici să se odihnească."
+    },
+    {
+      "hu": "Éjjel nincs lámpa, ezért nagyon sok csillag látszik.",
+      "en": "At night there are no lights, so you can see loads of stars.",
+      "ro": "Noaptea nu sunt lumini, așa că se văd foarte multe stele."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A Hortobágyi Nemzeti Park Magyarország első nemzeti parkja (1973).",
+      "en": "Hortobágy National Park, founded in 1973, was Hungary's first national park, and it is a UNESCO site.",
+      "ro": "Parcul Național Hortobágy, înființat în 1973, a fost primul parc național al Ungariei și este sit UNESCO."
+    },
+    {
+      "hu": "Itt van a Kilenclyukú híd, az ország leghosszabb régi kőhídja.",
+      "en": "The Nine-Arch Bridge (Kilenclyukú híd) is one of Hungary's longest old stone bridges.",
+      "ro": "Podul cu Nouă Arcade (Kilenclyukú híd) este unul dintre cele mai lungi poduri vechi de piatră din Ungaria."
+    },
+    {
+      "hu": "A Hortobágy csillagoségbolt-park.",
+      "en": "Hortobágy is an official Dark Sky Park, perfect for stargazing.",
+      "ro": "Hortobágy este un Parc al Cerului Întunecat, perfect pentru privit stelele."
+    }
+  ],
+  "words": [
+    {
+      "hu": "lapos",
+      "en": "flat",
+      "ro": "plat"
+    },
+    {
+      "hu": "fű",
+      "en": "grass",
+      "ro": "iarbă"
+    },
+    {
+      "hu": "ég",
+      "en": "sky",
+      "ro": "cer"
+    },
+    {
+      "hu": "marha",
+      "en": "cattle",
+      "ro": "vită"
+    },
+    {
+      "hu": "juh",
+      "en": "sheep",
+      "ro": "oaie"
+    },
+    {
+      "hu": "pásztor",
+      "en": "shepherd",
+      "ro": "cioban, păstor"
+    },
+    {
+      "hu": "csillag",
+      "en": "star",
+      "ro": "stea"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen a puszta?",
+      "qEn": "What is the puszta like?",
+      "options": [
+        "lapos és füves",
+        "magas és köves",
+        "hideg és havas"
+      ],
+      "answer": "lapos és füves"
+    },
+    {
+      "q": "Milyen kutya a puli?",
+      "qEn": "What kind of dog is the puli?",
+      "options": [
+        "kicsi és göndör",
+        "nagy és fekete",
+        "rövid szőrű"
+      ],
+      "answer": "kicsi és göndör"
+    },
+    {
+      "q": "Mi jön ősszel?",
+      "qEn": "What comes in autumn?",
+      "options": [
+        "darvak",
+        "hollók",
+        "kecskék"
+      ],
+      "answer": "darvak"
+    }
+  ]
+}

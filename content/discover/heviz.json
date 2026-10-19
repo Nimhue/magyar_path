@@ -1,0 +1,128 @@
+{
+  "id": "heviz",
+  "name": "Hévíz",
+  "lon": 17.19,
+  "lat": 46.79,
+  "category": "nature",
+  "title": "A meleg tó",
+  "titleEn": "The warm lake",
+  "titleRo": "Lacul cald",
+  "story": [
+    {
+      "hu": "Hévíz mellett van egy különleges tó.",
+      "en": "Near Hévíz there's a very special lake.",
+      "ro": "Lângă Hévíz se află un lac deosebit."
+    },
+    {
+      "hu": "A víz alulról jön, egy forrásból, és meleg.",
+      "en": "The water comes from below, from a spring, and it's warm.",
+      "ro": "Apa vine de jos, dintr-un izvor, și e caldă."
+    },
+    {
+      "hu": "Nyáron kb. 33–35 fok, télen is 23–25 fok.",
+      "en": "In summer it's about 33–35 °C, and even in winter 23–25 °C.",
+      "ro": "Vara are cam 33–35 °C, iar iarna tot 23–25 °C."
+    },
+    {
+      "hu": "Ezért télen is lehet benne úszni!",
+      "en": "So you can swim in it even in winter!",
+      "ro": "De aceea poți înota în el și iarna!"
+    },
+    {
+      "hu": "Télen a tó fölött pára van, olyan, mint egy mese.",
+      "en": "In winter there's mist above the lake; it looks like a fairy tale.",
+      "ro": "Iarna, deasupra lacului e abur, arată ca într-o poveste."
+    },
+    {
+      "hu": "A tavon piros és rózsaszín tavirózsák nőnek.",
+      "en": "Red and pink water lilies grow on the lake.",
+      "ro": "Pe lac cresc nuferi roșii și roz."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A hévízi tó a világ legnagyobb fürdésre alkalmas természetes termáltava.",
+      "en": "Lake Hévíz is the largest natural thermal lake in the world suitable for bathing (about 4.4 hectares).",
+      "ro": "Lacul Hévíz este cel mai mare lac termal natural din lume în care se poate face baie (circa 4,4 hectare)."
+    },
+    {
+      "hu": "A tó vize pár nap alatt kicserélődik.",
+      "en": "The spring refreshes the lake's whole volume in just a few days.",
+      "ro": "Izvorul înnoiește întreaga apă a lacului în doar câteva zile."
+    },
+    {
+      "hu": "A tavirózsákat több mint száz éve ültették.",
+      "en": "The tropical water lilies were planted over a hundred years ago and still thrive in the warm water.",
+      "ro": "Nuferii tropicali au fost plantați acum peste o sută de ani și încă înfloresc în apa caldă."
+    }
+  ],
+  "words": [
+    {
+      "hu": "víz",
+      "en": "water",
+      "ro": "apă"
+    },
+    {
+      "hu": "forrás",
+      "en": "spring (water); source",
+      "ro": "izvor; sursă"
+    },
+    {
+      "hu": "fok",
+      "en": "degree",
+      "ro": "grad"
+    },
+    {
+      "hu": "úszik",
+      "en": "to swim",
+      "ro": "a înota"
+    },
+    {
+      "hu": "pára",
+      "en": "mist, steam",
+      "ro": "abur, ceață"
+    },
+    {
+      "hu": "rózsaszín",
+      "en": "pink",
+      "ro": "roz"
+    },
+    {
+      "hu": "tavirózsa",
+      "en": "water lily",
+      "ro": "nufăr"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen a hévízi tó vize?",
+      "qEn": "What is the water of Lake Hévíz like?",
+      "options": [
+        "meleg",
+        "jeges",
+        "sós"
+      ],
+      "answer": "meleg"
+    },
+    {
+      "q": "Mikor lehet benne úszni?",
+      "qEn": "When can you swim in it?",
+      "options": [
+        "télen is",
+        "csak augusztusban",
+        "soha"
+      ],
+      "answer": "télen is"
+    },
+    {
+      "q": "Milyen virágok vannak a tavon?",
+      "qEn": "What flowers are on the lake?",
+      "options": [
+        "tavirózsák",
+        "rózsák",
+        "levendulák"
+      ],
+      "answer": "tavirózsák"
+    }
+  ]
+}

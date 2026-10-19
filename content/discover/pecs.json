@@ -1,0 +1,128 @@
+{
+  "id": "pecs",
+  "name": "Pécs",
+  "lon": 18.23,
+  "lat": 46.07,
+  "category": "tradition",
+  "title": "A Zsolnay-csempe",
+  "titleEn": "The Zsolnay tiles",
+  "titleRo": "Plăcile Zsolnay",
+  "story": [
+    {
+      "hu": "Pécs napos, meleg város délen, a Mecsek hegy alatt.",
+      "en": "Pécs is a sunny, warm town in the south, below Mecsek hill.",
+      "ro": "Pécs este un oraș însorit și cald din sud, sub dealul Mecsek."
+    },
+    {
+      "hu": "Itt él a Zsolnay család. Kerámiát és porcelánt készítenek.",
+      "en": "The Zsolnay family lives here. They make ceramics and porcelain.",
+      "ro": "Aici trăiește familia Zsolnay. Fac ceramică și porțelan."
+    },
+    {
+      "hu": "A Zsolnay-csempe színes és fényes, és nem fél a hidegtől.",
+      "en": "Zsolnay tiles are colourful and shiny, and they don't mind the cold.",
+      "ro": "Plăcile Zsolnay sunt colorate și lucioase și rezistă la frig."
+    },
+    {
+      "hu": "Budapesten is sok Zsolnay-tető van, például a Mátyás-templomon.",
+      "en": "Budapest has many Zsolnay roofs too, for example on Matthias Church.",
+      "ro": "Și la Budapesta sunt multe acoperișuri Zsolnay, de exemplu pe Biserica Matia."
+    },
+    {
+      "hu": "Van egy különleges színük, az eozin. Olyan, mint a szivárvány egy bogár hátán.",
+      "en": "They have a special glaze, eosin. It shimmers like a rainbow on a beetle's back.",
+      "ro": "Au o glazură specială, eozina. Strălucește ca un curcubeu pe spatele unui gândac."
+    },
+    {
+      "hu": "Ma a régi gyárban múzeumok és kávézók vannak.",
+      "en": "Today the old factory is full of museums and cafés.",
+      "ro": "Astăzi, în fabrica veche sunt muzee și cafenele."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A pécsi főtéren egy régi török mecset áll, ma templom.",
+      "en": "The main square's big domed church was built as an Ottoman mosque in the 16th century.",
+      "ro": "Biserica mare cu cupolă din piața principală a fost construită ca moschee otomană în secolul al XVI-lea."
+    },
+    {
+      "hu": "Pécs ókeresztény sírkamrái a világörökség részei.",
+      "en": "Pécs's early Christian burial chambers (4th century) are a UNESCO World Heritage site.",
+      "ro": "Camerele funerare paleocreștine din Pécs (secolul IV) fac parte din Patrimoniul Mondial UNESCO."
+    },
+    {
+      "hu": "2010-ben Pécs Európa kulturális fővárosa.",
+      "en": "In 2010 Pécs was a European Capital of Culture.",
+      "ro": "În 2010 Pécs a fost Capitală Europeană a Culturii."
+    }
+  ],
+  "words": [
+    {
+      "hu": "dél",
+      "en": "south; noon",
+      "ro": "sud; amiază"
+    },
+    {
+      "hu": "meleg",
+      "en": "warm",
+      "ro": "cald"
+    },
+    {
+      "hu": "család",
+      "en": "family",
+      "ro": "familie"
+    },
+    {
+      "hu": "csempe",
+      "en": "tile",
+      "ro": "plăcuță, faianță"
+    },
+    {
+      "hu": "fényes",
+      "en": "shiny, bright",
+      "ro": "lucios"
+    },
+    {
+      "hu": "tető",
+      "en": "roof",
+      "ro": "acoperiș"
+    },
+    {
+      "hu": "gyár",
+      "en": "factory",
+      "ro": "fabrică"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mit készít a Zsolnay család?",
+      "qEn": "What does the Zsolnay family make?",
+      "options": [
+        "kerámiát és porcelánt",
+        "bort",
+        "kolbászt"
+      ],
+      "answer": "kerámiát és porcelánt"
+    },
+    {
+      "q": "Hol van Zsolnay-tető Budapesten?",
+      "qEn": "Where in Budapest is there a Zsolnay roof?",
+      "options": [
+        "a Mátyás-templomon",
+        "a metróban",
+        "a Balatonon"
+      ],
+      "answer": "a Mátyás-templomon"
+    },
+    {
+      "q": "Mi van ma a régi gyárban?",
+      "qEn": "What is in the old factory today?",
+      "options": [
+        "múzeumok és kávézók",
+        "katonák",
+        "egy tó"
+      ],
+      "answer": "múzeumok és kávézók"
+    }
+  ]
+}

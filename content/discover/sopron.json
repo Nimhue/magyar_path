@@ -1,0 +1,128 @@
+{
+  "id": "sopron",
+  "name": "Sopron",
+  "lon": 16.59,
+  "lat": 47.68,
+  "category": "history",
+  "title": "A leghűségesebb város",
+  "titleEn": "The most loyal town",
+  "titleRo": "Cel mai credincios oraș",
+  "story": [
+    {
+      "hu": "Sopron régi város a nyugati határon.",
+      "en": "Sopron is an old town on the western border.",
+      "ro": "Sopron este un oraș vechi la granița de vest."
+    },
+    {
+      "hu": "1921-ben nagy kérdés van: Sopron Ausztriához vagy Magyarországhoz tartozik?",
+      "en": "In 1921 there's a big question: does Sopron belong to Austria or to Hungary?",
+      "ro": "În 1921 se pune o mare întrebare: Sopron aparține Austriei sau Ungariei?"
+    },
+    {
+      "hu": "Az emberek szavaznak.",
+      "en": "The people vote.",
+      "ro": "Oamenii votează."
+    },
+    {
+      "hu": "A többség Magyarországot választja.",
+      "en": "The majority choose Hungary.",
+      "ro": "Majoritatea aleg Ungaria."
+    },
+    {
+      "hu": "Ezért Sopron neve ma: „a leghűségesebb város”, latinul Civitas Fidelissima.",
+      "en": "That's why Sopron is called \"the most loyal town\", in Latin Civitas Fidelissima.",
+      "ro": "De aceea Sopron se numește „cel mai credincios oraș”, în latină Civitas Fidelissima."
+    },
+    {
+      "hu": "A Tűztorony alatt van a Hűségkapu.",
+      "en": "Beneath the Fire Tower is the Gate of Loyalty.",
+      "ro": "Sub Turnul de Foc se află Poarta Credinței."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A Tűztoronyból régen őrök figyelték a tüzet.",
+      "en": "Watchmen in the Fire Tower used to look out for fires and blow a horn to warn the town.",
+      "ro": "Paznicii din Turnul de Foc urmăreau odinioară incendiile și sunau din trompetă ca să avertizeze orașul."
+    },
+    {
+      "hu": "1989-ben Sopron mellett volt a Páneurópai piknik.",
+      "en": "The Pan-European Picnic near Sopron in 1989 opened the border for a few hours, and hundreds of East Germans walked to freedom.",
+      "ro": "Picnicul Paneuropean de lângă Sopron, din 1989, a deschis granița câteva ore, iar sute de est-germani au trecut spre libertate."
+    },
+    {
+      "hu": "Sopron a kékfrankos bor városa.",
+      "en": "Sopron is known for its Kékfrankos red wine.",
+      "ro": "Sopron e cunoscut pentru vinul roșu Kékfrankos."
+    }
+  ],
+  "words": [
+    {
+      "hu": "régi",
+      "en": "old (things)",
+      "ro": "vechi"
+    },
+    {
+      "hu": "nyugat",
+      "en": "west",
+      "ro": "vest"
+    },
+    {
+      "hu": "tartozik",
+      "en": "to belong",
+      "ro": "a aparține"
+    },
+    {
+      "hu": "szavaz",
+      "en": "to vote",
+      "ro": "a vota"
+    },
+    {
+      "hu": "többség",
+      "en": "majority",
+      "ro": "majoritate"
+    },
+    {
+      "hu": "választ",
+      "en": "to choose",
+      "ro": "a alege"
+    },
+    {
+      "hu": "torony",
+      "en": "tower",
+      "ro": "turn"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Melyik évben szavaznak?",
+      "qEn": "In which year do they vote?",
+      "options": [
+        "1921",
+        "1552",
+        "2004"
+      ],
+      "answer": "1921"
+    },
+    {
+      "q": "Mit választ a többség?",
+      "qEn": "What does the majority choose?",
+      "options": [
+        "Magyarországot",
+        "Ausztriát",
+        "Romániát"
+      ],
+      "answer": "Magyarországot"
+    },
+    {
+      "q": "Mi van a Tűztorony alatt?",
+      "qEn": "What is beneath the Fire Tower?",
+      "options": [
+        "a Hűségkapu",
+        "egy tó",
+        "egy metró"
+      ],
+      "answer": "a Hűségkapu"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "aggtelek",
+  "name": "Aggtelek",
+  "lon": 20.5,
+  "lat": 48.47,
+  "category": "nature",
+  "title": "A Baradla-barlang",
+  "titleEn": "Baradla Cave",
+  "titleRo": "Peștera Baradla",
+  "story": [
+    {
+      "hu": "Aggtelek kicsi falu északon, a szlovák határ mellett.",
+      "en": "Aggtelek is a small village in the north, by the Slovak border.",
+      "ro": "Aggtelek este un sat mic din nord, lângă granița cu Slovacia."
+    },
+    {
+      "hu": "A föld alatt van egy hatalmas barlang: a Baradla.",
+      "en": "Under the ground there's a huge cave: Baradla.",
+      "ro": "Sub pământ se află o peșteră uriașă: Baradla."
+    },
+    {
+      "hu": "Több mint 25 kilométer hosszú, egy része Szlovákiában van.",
+      "en": "It's over 25 kilometres long, and part of it is in Slovakia.",
+      "ro": "Are peste 25 de kilometri lungime, iar o parte se află în Slovacia."
+    },
+    {
+      "hu": "Bent mindig hűvös van, kb. 10 fok, nyáron és télen is.",
+      "en": "Inside it's always cool, about 10 °C, in summer and winter.",
+      "ro": "Înăuntru e mereu răcoare, cam 10 °C, vara și iarna."
+    },
+    {
+      "hu": "A cseppkövek lassan nőnek: egy centi kb. száz év!",
+      "en": "Dripstones grow slowly: one centimetre takes about a hundred years!",
+      "ro": "Stalactitele cresc încet: un centimetru durează cam o sută de ani!"
+    },
+    {
+      "hu": "Egy nagy teremben koncerteket is tartanak, mert szép a hang.",
+      "en": "Concerts are even held in one big hall, because the sound is beautiful.",
+      "ro": "Într-o sală mare se țin chiar și concerte, pentru că sunetul e frumos."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A barlang 1995 óta a világörökség része.",
+      "en": "The Aggtelek and Slovak Karst caves have been a UNESCO World Heritage site since 1995.",
+      "ro": "Peșterile din Carstul Aggtelek și Slovac fac parte din Patrimoniul Mondial UNESCO din 1995."
+    },
+    {
+      "hu": "A barlangban denevérek is élnek.",
+      "en": "Several kinds of bats live in the cave.",
+      "ro": "În peșteră trăiesc mai multe specii de lilieci."
+    },
+    {
+      "hu": "A barlangban régen emberek is laktak.",
+      "en": "Prehistoric people used the cave thousands of years ago.",
+      "ro": "Oamenii preistorici foloseau peștera acum mii de ani."
+    }
+  ],
+  "words": [
+    {
+      "hu": "barlang",
+      "en": "cave",
+      "ro": "peșteră"
+    },
+    {
+      "hu": "föld alatt",
+      "en": "underground",
+      "ro": "sub pământ"
+    },
+    {
+      "hu": "hosszú",
+      "en": "long",
+      "ro": "lung"
+    },
+    {
+      "hu": "hűvös",
+      "en": "cool, chilly",
+      "ro": "răcoros"
+    },
+    {
+      "hu": "cseppkő",
+      "en": "dripstone (stalactite/stalagmite)",
+      "ro": "stalactită, stalagmită"
+    },
+    {
+      "hu": "terem",
+      "en": "hall, large room",
+      "ro": "sală"
+    },
+    {
+      "hu": "denevér",
+      "en": "bat",
+      "ro": "liliac"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hol van a Baradla?",
+      "qEn": "Where is Baradla?",
+      "options": [
+        "a föld alatt",
+        "a Balatonon",
+        "egy hegy tetején"
+      ],
+      "answer": "a föld alatt"
+    },
+    {
+      "q": "Milyen hőmérséklet van bent?",
+      "qEn": "What's the temperature inside?",
+      "options": [
+        "kb. 10 fok",
+        "35 fok",
+        "mínusz 20 fok"
+      ],
+      "answer": "kb. 10 fok"
+    },
+    {
+      "q": "Mi él a barlangban?",
+      "qEn": "What lives in the cave?",
+      "options": [
+        "denevérek",
+        "kecskék",
+        "halak a tóban"
+      ],
+      "answer": "denevérek"
+    }
+  ]
+}

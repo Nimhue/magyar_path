@@ -1,0 +1,133 @@
+{
+  "id": "tihany",
+  "name": "Tihany",
+  "lon": 17.89,
+  "lat": 46.91,
+  "category": "legend",
+  "title": "A tihanyi visszhang",
+  "titleEn": "The echo of Tihany",
+  "titleRo": "Ecoul din Tihany",
+  "story": [
+    {
+      "hu": "Tihany kis félsziget a Balatonon.",
+      "en": "Tihany is a small peninsula on Lake Balaton.",
+      "ro": "Tihany este o mică peninsulă pe lacul Balaton."
+    },
+    {
+      "hu": "A legenda szerint itt él egy szép, de nagyon büszke királylány.",
+      "en": "According to legend, a beautiful but very proud princess lives here.",
+      "ro": "Potrivit legendei, aici trăiește o prințesă frumoasă, dar foarte mândră."
+    },
+    {
+      "hu": "Vannak aranyszőrű kecskéi.",
+      "en": "She has goats with golden fleece.",
+      "ro": "Are capre cu blană de aur."
+    },
+    {
+      "hu": "A Balaton királya szereti a lányt, de a lány csak nevet rajta.",
+      "en": "The king of Lake Balaton loves the girl, but she just laughs at him.",
+      "ro": "Regele Balatonului o iubește pe fată, dar ea doar râde de el."
+    },
+    {
+      "hu": "A király dühös lesz: a kecskék a tóba esnek, a lány pedig hang lesz, visszhang.",
+      "en": "The king grows angry: the goats fall into the lake, and the girl becomes a voice, an echo.",
+      "ro": "Regele se înfurie: caprele cad în lac, iar fata devine o voce, un ecou."
+    },
+    {
+      "hu": "Azóta mindent visszamond, amit kiabálunk.",
+      "en": "Ever since, she repeats everything we shout.",
+      "ro": "De atunci repetă tot ce strigăm."
+    },
+    {
+      "hu": "Próbáld ki: kiabálj a Visszhang-dombon!",
+      "en": "Try it: shout from Echo Hill!",
+      "ro": "Încearcă: strigă de pe Dealul Ecoului!"
+    }
+  ],
+  "facts": [
+    {
+      "hu": "A tihanyi apátság alapítólevele 1055-ből való.",
+      "en": "The founding charter of Tihany Abbey (1055) is the oldest surviving document containing Hungarian words.",
+      "ro": "Actul de fondare al Abației Tihany (1055) este cel mai vechi document păstrat care conține cuvinte maghiare."
+    },
+    {
+      "hu": "Tihany a levendula hazája.",
+      "en": "Tihany is famous for its purple lavender fields, which bloom in early summer.",
+      "ro": "Tihany este faimos pentru câmpurile de lavandă, care înfloresc la începutul verii."
+    },
+    {
+      "hu": "A parton „kecskekörmöket” lehet találni.",
+      "en": "Little fossil shells called \"goat's toenails\" wash up on the shore; legend says they come from the princess's goats.",
+      "ro": "Pe mal apar mici scoici fosile numite „unghii de capră”; legenda spune că sunt de la caprele prințesei."
+    }
+  ],
+  "words": [
+    {
+      "hu": "félsziget",
+      "en": "peninsula",
+      "ro": "peninsulă"
+    },
+    {
+      "hu": "királylány",
+      "en": "princess",
+      "ro": "prințesă"
+    },
+    {
+      "hu": "büszke",
+      "en": "proud",
+      "ro": "mândru"
+    },
+    {
+      "hu": "kecske",
+      "en": "goat",
+      "ro": "capră"
+    },
+    {
+      "hu": "nevet",
+      "en": "to laugh",
+      "ro": "a râde"
+    },
+    {
+      "hu": "visszhang",
+      "en": "echo",
+      "ro": "ecou"
+    },
+    {
+      "hu": "kiabál",
+      "en": "to shout",
+      "ro": "a striga"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen a királylány?",
+      "qEn": "What is the princess like?",
+      "options": [
+        "szép, de büszke",
+        "csúnya és kedves",
+        "öreg és szegény"
+      ],
+      "answer": "szép, de büszke"
+    },
+    {
+      "q": "Milyenek a kecskék?",
+      "qEn": "What are the goats like?",
+      "options": [
+        "aranyszőrűek",
+        "feketék",
+        "nagyon kicsik"
+      ],
+      "answer": "aranyszőrűek"
+    },
+    {
+      "q": "Mi lesz a lányból?",
+      "qEn": "What does the girl become?",
+      "options": [
+        "visszhang",
+        "madár",
+        "kecske"
+      ],
+      "answer": "visszhang"
+    }
+  ]
+}

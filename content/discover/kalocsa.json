@@ -1,0 +1,128 @@
+{
+  "id": "kalocsa",
+  "name": "Kalocsa",
+  "lon": 18.98,
+  "lat": 46.53,
+  "category": "food",
+  "title": "A paprika városa",
+  "titleEn": "The paprika town",
+  "titleRo": "Orașul boiaului",
+  "story": [
+    {
+      "hu": "Kalocsa a Duna mellett van, az Alföldön.",
+      "en": "Kalocsa is by the Danube, on the Great Plain.",
+      "ro": "Kalocsa se află lângă Dunăre, în Câmpia Mare."
+    },
+    {
+      "hu": "Itt sok a nap, és a földeken piros paprika nő.",
+      "en": "There's a lot of sun here, and red paprika grows in the fields.",
+      "ro": "Aici e mult soare, iar pe câmpuri crește ardei roșu."
+    },
+    {
+      "hu": "Ősszel leszedik, megszárítják, és porrá őrlik.",
+      "en": "In autumn they pick it, dry it and grind it into powder.",
+      "ro": "Toamna îl culeg, îl usucă și îl macină în pulbere."
+    },
+    {
+      "hu": "Ez a fűszerpaprika: édes vagy csípős.",
+      "en": "That's paprika spice: sweet or hot.",
+      "ro": "Acesta e boiaua: dulce sau iute."
+    },
+    {
+      "hu": "Gulyás, pörkölt, halászlé: paprika nélkül nem magyar!",
+      "en": "Goulash, stew, fish soup: without paprika it isn't Hungarian!",
+      "ro": "Gulaș, tocăniță, ciorbă de pește: fără boia nu e maghiar!"
+    },
+    {
+      "hu": "Kalocsán a házak falára és a ruhákra is paprikaszínű virágokat festenek és hímeznek.",
+      "en": "In Kalocsa they also paint and embroider paprika-coloured flowers on house walls and clothes.",
+      "ro": "La Kalocsa se pictează și se brodează flori de culoarea boielei pe pereții caselor și pe haine."
+    }
+  ],
+  "facts": [
+    {
+      "hu": "Kalocsán Paprika Múzeum van.",
+      "en": "Kalocsa has a Paprika Museum that tells how the plant arrived and changed Hungarian cooking.",
+      "ro": "Kalocsa are un Muzeu al Boielei care povestește cum a ajuns planta și cum a schimbat bucătăria maghiară."
+    },
+    {
+      "hu": "A kalocsai „pingálóasszonyok” virágokat festenek a falakra.",
+      "en": "Kalocsa's \"painting women\" (pingálóasszonyok) decorate walls with free-hand flower patterns.",
+      "ro": "„Femeile pictorițe” din Kalocsa decorează pereții cu modele florale pictate cu mâna liberă."
+    },
+    {
+      "hu": "A magyar „paprika” zöldség és fűszer is.",
+      "en": "In Hungarian, \"paprika\" means both the vegetable (pepper) and the spice.",
+      "ro": "În maghiară, „paprika” înseamnă și legumă (ardei), și condiment (boia)."
+    }
+  ],
+  "words": [
+    {
+      "hu": "paprika",
+      "en": "pepper; paprika (spice)",
+      "ro": "ardei; boia"
+    },
+    {
+      "hu": "nő",
+      "en": "to grow; woman",
+      "ro": "a crește; femeie"
+    },
+    {
+      "hu": "szárít",
+      "en": "to dry",
+      "ro": "a usca"
+    },
+    {
+      "hu": "édes",
+      "en": "sweet",
+      "ro": "dulce"
+    },
+    {
+      "hu": "csípős",
+      "en": "hot, spicy",
+      "ro": "iute"
+    },
+    {
+      "hu": "virág",
+      "en": "flower",
+      "ro": "floare"
+    },
+    {
+      "hu": "hímez",
+      "en": "to embroider",
+      "ro": "a broda"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hol van Kalocsa?",
+      "qEn": "Where is Kalocsa?",
+      "options": [
+        "a Duna mellett",
+        "a Balatonon",
+        "a hegyekben"
+      ],
+      "answer": "a Duna mellett"
+    },
+    {
+      "q": "Milyen lehet a fűszerpaprika?",
+      "qEn": "What can paprika spice be like?",
+      "options": [
+        "édes vagy csípős",
+        "kék vagy zöld",
+        "hideg vagy sós"
+      ],
+      "answer": "édes vagy csípős"
+    },
+    {
+      "q": "Mit festenek a falakra?",
+      "qEn": "What do they paint on the walls?",
+      "options": [
+        "virágokat",
+        "autókat",
+        "hollókat"
+      ],
+      "answer": "virágokat"
+    }
+  ]
+}
