@@ -1,0 +1,35 @@
+{
+  "id": "possessive",
+  "order": 14,
+  "title": "Birtokos személyjelek: -m, -d",
+  "titleEn": "“My” and “your”: -m and -d",
+  "level": "A1",
+  "lesson": "l07-igek",
+  "summary": "Hungarian says “my” and “your” with an ending: a feleség → a feleségem (my wife), a feleséged (your wife).",
+  "sections": [
+    { "type": "text", "text": "Instead of a separate word, “my” is **-m** and informal “your” is **-d**, added to the noun. The article stays: **a** feleségem, **az** anyukám." },
+    {
+      "type": "table",
+      "head": ["Word ends in…", "my", "your", "Examples"],
+      "rows": [
+        ["a vowel", "-m", "-d", "a titkárnőm, az anyukám"],
+        ["consonant, back word", "-om (-am)", "-od (-ad)", "a házszámom, a házam"],
+        ["consonant, front word", "-em", "-ed", "a feleségem, a címem"],
+        ["consonant, ö/ő/ü/ű last", "-öm", "-öd", "a masszőröm, a sofőröd"]
+      ]
+    },
+    { "type": "tip", "tone": "warn", "text": "Final **a → á** and **e → é**: anyuk**a** → anyuk**á**m, iskol**a** → iskol**á**m." },
+    { "type": "heading", "text": "Tricky cases" },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "anya + nyelv → az anyanyelvem", "en": "compound words: the LAST word decides" },
+        { "hu": "a hotel → a hotelem, a koncert → a koncertem", "en": "foreign words: the last vowel decides" },
+        { "hu": "a ház → a házam, DE a szám → a számom", "en": "one-syllable words: learn them one by one" },
+        { "hu": "a név → a nevem", "en": "irregular: the é becomes e" }
+      ]
+    },
+    { "type": "tip", "text": "To stress MY, add **az én**: Az **én** barátom is cseh. = MY boyfriend is Czech too." },
+    { "type": "widget", "widget": "possessive" }
+  ]
+}

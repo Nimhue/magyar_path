@@ -1,0 +1,32 @@
+{
+  "id": "x01-sounds",
+  "lesson": "l01-abece",
+  "title": "Betűk és hangok",
+  "titleEn": "Letters and sounds",
+  "intro": "Match Hungarian letters to the sounds they make.",
+  "items": [
+    { "type": "choice", "prompt": "Which letter sounds like English “sh”?", "options": ["s", "sz", "zs", "cs"], "answer": "s", "explain": "s = sh, sz = s. Think: saláta = “shalata”." },
+    { "type": "choice", "prompt": "Which letter sounds like English “ch” in church?", "options": ["c", "cs", "ty", "sz"], "answer": "cs", "explain": "cs = ch, as in csokoládé." },
+    { "type": "choice", "prompt": "Which two spellings make the same sound?", "options": ["j and ly", "s and sz", "gy and dz", "c and cs"], "answer": "j and ly", "explain": "Both sound like English “y”: joghurt, lyuk." },
+    { "type": "choice", "prompt": "How do you pronounce “busz”?", "options": ["like “boos”", "like “bush”", "like “buzz”", "like “boots”"], "answer": "like “boos”", "explain": "sz is the English s sound." },
+    { "type": "choice", "prompt": "Which is the only three-character consonant?", "options": ["dzs", "csz", "ngy", "szs"], "answer": "dzs", "explain": "dzs is the háromjegyű mássalhangzó: dzsem, dzsip." },
+    { "type": "choice", "prompt": "Which sound starts “zsiráf”?", "options": ["“s” as in measure", "“z” as in zoo", "“s” as in see", "“ts” as in cats"], "answer": "“s” as in measure" },
+    { "type": "choice", "prompt": "How many letters does “csillag” have in the Hungarian alphabet?", "options": ["5", "6", "7", "8"], "answer": "6", "explain": "cs · i · l · l · a · g — cs counts as one letter, and the double l counts as two." },
+    { "type": "sort", "prompt": "Sort the words by their first sound.", "buckets": ["“ch” sound", "“s” sound", "“sh” sound"], "items": [
+      { "text": "csillag", "bucket": "“ch” sound" },
+      { "text": "csokoládé", "bucket": "“ch” sound" },
+      { "text": "szalámi", "bucket": "“s” sound" },
+      { "text": "sziget", "bucket": "“s” sound" },
+      { "text": "saláta", "bucket": "“sh” sound" },
+      { "text": "sofőr", "bucket": "“sh” sound" }
+    ] },
+    { "type": "match", "prompt": "Match the letter to a word that has it.", "pairs": [
+      { "left": "gy", "right": "gyufa" },
+      { "left": "ny", "right": "nyár" },
+      { "left": "ty", "right": "tyúk" },
+      { "left": "dz", "right": "bodza" }
+    ] },
+    { "type": "type", "prompt": "Write the Hungarian word for “jam” (it uses the three-character letter).", "answer": "dzsem" },
+    { "type": "type", "prompt": "Write the Hungarian word for “hen”.", "answer": "tyúk", "hint": "It starts with ty." }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "items": [
+    {
+      "id": "palacsinta",
+      "title": "Palacsinta",
+      "titleEn": "Hungarian pancakes",
+      "titleRo": "Clătite",
+      "serves": 4,
+      "minutes": 30,
+      "about": "Thin pancakes, like Romanian clătite. Hungarians fill them with jam, cocoa or cottage cheese, and roll them up.",
+      "ingredients": [
+        {
+          "amount": "2",
+          "hu": "tojás",
+          "en": "egg",
+          "ro": "ou"
+        },
+        {
+          "amount": "2 dl",
+          "hu": "tej",
+          "en": "milk",
+          "ro": "lapte"
+        },
+        {
+          "amount": "2 dl",
+          "hu": "szódavíz",
+          "en": "soda water",
+          "ro": "apă minerală"
+        },
+        {
+          "amount": "20 dkg",
+          "hu": "liszt",
+          "en": "flour",
+          "ro": "făină"
+        },
+        {
+          "amount": "1 csipet",
+          "hu": "só",
+          "en": "a pinch of salt",
+          "ro": "un praf de sare"
+        },
+        {
+          "amount": "1 kanál",
+          "hu": "olaj",
+          "en": "a spoon of oil",
+          "ro": "o lingură de ulei"
+        },
+        {
+          "amount": "",
+          "hu": "lekvár",
+          "en": "jam",
+          "ro": "gem"
+        }
+      ],
+      "steps": [
+        {
+          "hu": "Egy tálban összekeverjük a tojást, a tejet és a lisztet.",
+          "en": "In a bowl we mix the eggs, milk and flour.",
+          "ro": "Într-un bol amestecăm ouăle, laptele și făina."
+        },
+        {
+          "hu": "Hozzáadjuk a szódavizet, a sót és az olajat.",
+          "en": "We add the soda water, salt and oil.",
+          "ro": "Adăugăm apa minerală, sarea și uleiul."
+        },
+        {
+          "hu": "A tészta legyen híg, mint a tejszín.",
+          "en": "The batter should be runny, like cream.",
+          "ro": "Aluatul să fie subțire, ca smântâna lichidă."
+        },
+        {
+          "hu": "Forró serpenyőbe öntünk egy kevés tésztát.",
+          "en": "We pour a little batter into a hot pan.",
+          "ro": "Turnăm puțin aluat într-o tigaie fierbinte."
+        },
+        {
+          "hu": "Egy perc után megfordítjuk.",
+          "en": "After a minute we flip it.",
+          "ro": "După un minut o întoarcem."
+        },
+        {
+          "hu": "Megkenjük lekvárral, és feltekerjük. Jó étvágyat!",
+          "en": "We spread it with jam and roll it up. Enjoy your meal!",
+          "ro": "O ungem cu gem și o rulăm. Poftă bună!"
+        }
+      ],
+      "tip": "Szódavíz (fizzy water) makes them extra light: that's the Hungarian secret. 'dkg' is a dekagram (10 g), the unit Hungarians use for shopping."
+    },
+    {
+      "id": "langos",
+      "title": "Lángos",
+      "titleEn": "Fried flatbread",
+      "titleRo": "Lángoș",
+      "serves": 4,
+      "minutes": 90,
+      "about": "The king of Balaton beach food. Romanians know it as langoș. Classic topping: garlic, sour cream and cheese.",
+      "ingredients": [
+        {
+          "amount": "50 dkg",
+          "hu": "liszt",
+          "en": "flour",
+          "ro": "făină"
+        },
+        {
+          "amount": "3 dl",
+          "hu": "langyos tej",
+          "en": "lukewarm milk",
+          "ro": "lapte călduț"
+        },
+        {
+          "amount": "2,5 dkg",
+          "hu": "élesztő",
+          "en": "yeast",
+          "ro": "drojdie"
+        },
+        {
+          "amount": "1",
+          "hu": "főtt krumpli",
+          "en": "boiled potato",
+          "ro": "cartof fiert"
+        },
+        {
+          "amount": "1 kiskanál",
+          "hu": "só",
+          "en": "a teaspoon of salt",
+          "ro": "o linguriță de sare"
+        },
+        {
+          "amount": "",
+          "hu": "olaj a sütéshez",
+          "en": "oil for frying",
+          "ro": "ulei pentru prăjit"
+        },
+        {
+          "amount": "",
+          "hu": "fokhagyma, tejföl, sajt",
+          "en": "garlic, sour cream, cheese",
+          "ro": "usturoi, smântână, cașcaval"
+        }
+      ],
+      "steps": [
+        {
+          "hu": "Az élesztőt feloldjuk a langyos tejben.",
+          "en": "We dissolve the yeast in the lukewarm milk.",
+          "ro": "Dizolvăm drojdia în laptele călduț."
+        },
+        {
+          "hu": "Összekeverjük a liszttel, a sóval és a krumplival.",
+          "en": "We mix it with the flour, salt and potato.",
+          "ro": "O amestecăm cu făina, sarea și cartoful."
+        },
+        {
+          "hu": "Egy órát pihentetjük, amíg megkel.",
+          "en": "We let it rest for an hour until it rises.",
+          "ro": "O lăsăm să se odihnească o oră, până crește."
+        },
+        {
+          "hu": "Kis darabokat lapos körré nyújtunk.",
+          "en": "We stretch small pieces into flat circles.",
+          "ro": "Întindem bucăți mici în cercuri plate."
+        },
+        {
+          "hu": "Forró olajban kisütjük mindkét oldalát.",
+          "en": "We fry both sides in hot oil.",
+          "ro": "Le prăjim pe ambele părți în ulei încins."
+        },
+        {
+          "hu": "Fokhagymás vízzel megkenjük, majd jön a tejföl és a reszelt sajt.",
+          "en": "We brush it with garlic water, then add sour cream and grated cheese.",
+          "ro": "O ungem cu apă cu usturoi, apoi punem smântână și cașcaval ras."
+        }
+      ],
+      "tip": "At the Balaton you order it like this: 'Egy sajtos-tejfölös lángost kérek!'"
+    },
+    {
+      "id": "lecso",
+      "title": "Lecsó",
+      "titleEn": "Pepper and tomato stew",
+      "titleRo": "Lecso (tocăniță de ardei)",
+      "serves": 4,
+      "minutes": 40,
+      "about": "A summer classic, a close relative of Romanian ghiveci. Simple, cheap and full of paprika.",
+      "ingredients": [
+        {
+          "amount": "1 kg",
+          "hu": "zöldpaprika",
+          "en": "green (light) peppers",
+          "ro": "ardei gras"
+        },
+        {
+          "amount": "50 dkg",
+          "hu": "paradicsom",
+          "en": "tomatoes",
+          "ro": "roșii"
+        },
+        {
+          "amount": "2",
+          "hu": "hagyma",
+          "en": "onions",
+          "ro": "cepe"
+        },
+        {
+          "amount": "2 evőkanál",
+          "hu": "olaj",
+          "en": "tablespoons of oil",
+          "ro": "linguri de ulei"
+        },
+        {
+          "amount": "1 kiskanál",
+          "hu": "pirospaprika",
+          "en": "a teaspoon of paprika powder",
+          "ro": "o linguriță de boia"
+        },
+        {
+          "amount": "",
+          "hu": "só",
+          "en": "salt",
+          "ro": "sare"
+        }
+      ],
+      "steps": [
+        {
+          "hu": "A hagymát felvágjuk, és olajon megpirítjuk.",
+          "en": "We chop the onion and fry it in oil.",
+          "ro": "Tăiem ceapa și o călim în ulei."
+        },
+        {
+          "hu": "Hozzáadjuk a felvágott paprikát.",
+          "en": "We add the sliced peppers.",
+          "ro": "Adăugăm ardeii tăiați."
+        },
+        {
+          "hu": "Tíz perc után jön a paradicsom.",
+          "en": "After ten minutes the tomatoes go in.",
+          "ro": "După zece minute adăugăm roșiile."
+        },
+        {
+          "hu": "Megszórjuk sóval és pirospaprikával.",
+          "en": "We sprinkle it with salt and paprika.",
+          "ro": "Presărăm sare și boia."
+        },
+        {
+          "hu": "Lassan főzzük, amíg puha.",
+          "en": "We cook it slowly until soft.",
+          "ro": "O gătim încet, până se înmoaie."
+        },
+        {
+          "hu": "Kenyérrel vagy rizzsel esszük.",
+          "en": "We eat it with bread or rice.",
+          "ro": "O mâncăm cu pâine sau orez."
+        }
+      ],
+      "tip": "Many families add sliced kolbász or scrambled eggs at the end."
+    },
+    {
+      "id": "paprikas-krumpli",
+      "title": "Paprikás krumpli",
+      "titleEn": "Paprika potatoes",
+      "titleRo": "Cartofi cu boia",
+      "serves": 4,
+      "minutes": 45,
+      "about": "A cheap, cosy everyday dish: potatoes cooked with onion and paprika. Student food at its best.",
+      "ingredients": [
+        {
+          "amount": "1 kg",
+          "hu": "krumpli",
+          "en": "potatoes",
+          "ro": "cartofi"
+        },
+        {
+          "amount": "1",
+          "hu": "nagy hagyma",
+          "en": "large onion",
+          "ro": "ceapă mare"
+        },
+        {
+          "amount": "1",
+          "hu": "paprika",
+          "en": "pepper",
+          "ro": "ardei"
+        },
+        {
+          "amount": "1",
+          "hu": "paradicsom",
+          "en": "tomato",
+          "ro": "roșie"
+        },
+        {
+          "amount": "2 kiskanál",
+          "hu": "pirospaprika",
+          "en": "teaspoons of paprika powder",
+          "ro": "lingurițe de boia"
+        },
+        {
+          "amount": "1 pár",
+          "hu": "virsli vagy kolbász",
+          "en": "pair of frankfurters or sausage",
+          "ro": "pereche de crenvurști sau cârnat"
+        },
+        {
+          "amount": "",
+          "hu": "só, víz",
+          "en": "salt, water",
+          "ro": "sare, apă"
+        }
+      ],
+      "steps": [
+        {
+          "hu": "A hagymát apróra vágjuk, és olajon megpároljuk.",
+          "en": "We chop the onion finely and soften it in oil.",
+          "ro": "Tăiem ceapa mărunt și o călim în ulei."
+        },
+        {
+          "hu": "Levesszük a tűzről, és belekeverjük a pirospaprikát.",
+          "en": "We take it off the heat and stir in the paprika.",
+          "ro": "O luăm de pe foc și amestecăm boiaua."
+        },
+        {
+          "hu": "Hozzáadjuk a felkockázott krumplit, a paprikát és a paradicsomot.",
+          "en": "We add the diced potatoes, pepper and tomato.",
+          "ro": "Adăugăm cartofii tăiați cubulețe, ardeiul și roșia."
+        },
+        {
+          "hu": "Annyi vizet öntünk rá, hogy majdnem ellepje.",
+          "en": "We pour on enough water to almost cover it.",
+          "ro": "Turnăm apă cât să-i acopere aproape."
+        },
+        {
+          "hu": "Sózzuk, és fedő alatt főzzük kb. 25 percig.",
+          "en": "We salt it and cook it with a lid for about 25 minutes.",
+          "ro": "Sărăm și fierbem acoperit cam 25 de minute."
+        },
+        {
+          "hu": "A végén beletesszük a kolbászt. Savanyúsággal finom!",
+          "en": "At the end we add the sausage. Delicious with pickles!",
+          "ro": "La final punem cârnatul. E delicios cu murături!"
+        }
+      ],
+      "tip": "Never let paprika powder burn: take the pan off the heat before you add it, or it turns bitter."
+    },
+    {
+      "id": "gulyas",
+      "title": "Gulyásleves",
+      "titleEn": "Goulash soup",
+      "titleRo": "Supă gulaș",
+      "serves": 6,
+      "minutes": 120,
+      "about": "In Hungary, gulyás is a soup, not a thick stew (that's pörkölt). It was the dish of the herdsmen (gulyás) on the puszta.",
+      "ingredients": [
+        {
+          "amount": "50 dkg",
+          "hu": "marhahús",
+          "en": "beef",
+          "ro": "carne de vită"
+        },
+        {
+          "amount": "2",
+          "hu": "hagyma",
+          "en": "onions",
+          "ro": "cepe"
+        },
+        {
+          "amount": "2 kiskanál",
+          "hu": "pirospaprika",
+          "en": "teaspoons of paprika powder",
+          "ro": "lingurițe de boia"
+        },
+        {
+          "amount": "3",
+          "hu": "sárgarépa",
+          "en": "carrots",
+          "ro": "morcovi"
+        },
+        {
+          "amount": "50 dkg",
+          "hu": "krumpli",
+          "en": "potatoes",
+          "ro": "cartofi"
+        },
+        {
+          "amount": "1",
+          "hu": "paprika és paradicsom",
+          "en": "pepper and tomato",
+          "ro": "ardei și roșie"
+        },
+        {
+          "amount": "1 kiskanál",
+          "hu": "kömény",
+          "en": "a teaspoon of caraway",
+          "ro": "o linguriță de chimen"
+        },
+        {
+          "amount": "",
+          "hu": "só, víz",
+          "en": "salt, water",
+          "ro": "sare, apă"
+        }
+      ],
+      "steps": [
+        {
+          "hu": "A hagymát olajon megpirítjuk, aztán jön a felkockázott hús.",
+          "en": "We brown the onion in oil, then add the diced meat.",
+          "ro": "Călim ceapa în ulei, apoi adăugăm carnea tăiată cubulețe."
+        },
+        {
+          "hu": "Levesszük a tűzről, és megszórjuk pirospaprikával.",
+          "en": "We take it off the heat and sprinkle it with paprika.",
+          "ro": "O luăm de pe foc și presărăm boia."
+        },
+        {
+          "hu": "Felöntjük vízzel, sózzuk, és hozzáadjuk a köményt.",
+          "en": "We pour in water, salt it and add the caraway.",
+          "ro": "Turnăm apă, sărăm și adăugăm chimenul."
+        },
+        {
+          "hu": "Lassan főzzük, kb. egy órát.",
+          "en": "We cook it slowly for about an hour.",
+          "ro": "O fierbem încet, cam o oră."
+        },
+        {
+          "hu": "Belerakjuk a répát, a krumplit, a paprikát és a paradicsomot.",
+          "en": "We add the carrots, potatoes, pepper and tomato.",
+          "ro": "Adăugăm morcovii, cartofii, ardeiul și roșia."
+        },
+        {
+          "hu": "Még 30 percig főzzük. Kenyérrel tálaljuk.",
+          "en": "We cook it for 30 more minutes. We serve it with bread.",
+          "ro": "O mai fierbem 30 de minute. O servim cu pâine."
+        }
+      ],
+      "tip": "Add csipetke (tiny pinched noodles) or a spoon of Erős Pista (hot paprika paste) like the locals do."
+    }
+  ]
+}

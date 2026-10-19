@@ -1,0 +1,31 @@
+{
+  "id": "accents",
+  "order": 2,
+  "title": "Ékezetek",
+  "titleEn": "Accent marks",
+  "level": "A1",
+  "lesson": "l01-abece",
+  "summary": "Accent marks make a vowel long, and a long vowel can be a completely different word.",
+  "sections": [
+    { "type": "text", "text": "Hungarian has **14 vowels**: a short and a long version of each. The mark **´** makes a vowel long; on ö and ü the long version gets a double mark: **ő, ű**." },
+    {
+      "type": "table",
+      "head": ["Short", "Long"],
+      "rows": [["a", "á"], ["e", "é"], ["i", "í"], ["o", "ó"], ["ö", "ő"], ["u", "ú"], ["ü", "ű"]]
+    },
+    { "type": "tip", "text": "**a/á** and **e/é** differ in sound, not just length: *a* is like the “o” in British “hot”, *á* like the “a” in “father”. *e* is like “e” in “bed”, *é* like “ay” in “say” (without the y glide)." },
+    { "type": "heading", "text": "Same letters, different word" },
+    { "type": "text", "text": "Tap the speaker to hear each pair. Leaving out an accent can turn a bed into a brain." },
+    {
+      "type": "pairs",
+      "items": [
+        { "a": "agy", "aEn": "brain", "b": "ágy", "bEn": "bed" },
+        { "a": "örült", "aEn": "was happy", "b": "őrült", "bEn": "crazy" },
+        { "a": "Eger", "aEn": "Eger (city)", "b": "egér", "bEn": "mouse" },
+        { "a": "hat", "aEn": "six", "b": "hát", "bEn": "back; well…" },
+        { "a": "tör", "aEn": "breaks", "b": "tőr", "bEn": "dagger" },
+        { "a": "fel", "aEn": "up", "b": "fél", "bEn": "half; is afraid" }
+      ]
+    }
+  ]
+}

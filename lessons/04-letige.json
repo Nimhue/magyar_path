@@ -1,0 +1,127 @@
+{
+  "id": "l04-letige",
+  "order": 4,
+  "title": "A létige: van",
+  "titleEn": "The verb “to be”",
+  "level": "A1",
+  "summary": "Saying who and what you are: vagyok, vagy, van, and why “van” disappears in sentences like “András diák.” Plus age and nationality.",
+  "place": {
+    "name": "Hollókő",
+    "fact": "A UNESCO-listed village of whitewashed folk houses, famous for its Easter festival in traditional costume.",
+    "lon": 19.59,
+    "lat": 47.99
+  },
+  "grammar": [
+    "van"
+  ],
+  "exercises": [
+    "x04-van",
+    "x04-questions"
+  ],
+  "readings": [
+    "r04-bemutatkozas"
+  ],
+  "homework": [
+    "Textbook grammar section 2–3: exercise 1 (Vagyok, vagy, —?)"
+  ],
+  "stories": [
+    "s04-szomszed"
+  ],
+  "vocab": [
+    {
+      "name": "A létige · Forms of “to be”",
+      "items": [
+        {"hu": "létige", "en": "the verb “to be”", "ro": "verbul „a fi”", "note": "lét (existence) + ige (verb)"},
+        {"hu": "lenni", "en": "to be (infinitive)", "ro": "a fi"},
+        {"hu": "van", "en": "is (base form of “to be”)", "ro": "este"},
+        {"hu": "én vagyok", "en": "I am", "ro": "eu sunt", "kind": "phrase"},
+        {"hu": "te vagy", "en": "you are (informal, one person)", "ro": "tu ești", "kind": "phrase"},
+        {"hu": "Ön van", "en": "you are (formal, one person)", "ro": "dumneavoastră sunteți", "note": "Left out with a noun or adjective: Ön tanár.", "kind": "phrase"},
+        {"hu": "ő van", "en": "he / she is", "ro": "el / ea este", "note": "Left out with a noun or adjective: András diák.", "kind": "phrase"},
+        {"hu": "mi vagyunk", "en": "we are", "ro": "noi suntem", "kind": "phrase"},
+        {"hu": "ti vagytok", "en": "you are (informal, several people)", "ro": "voi sunteți", "kind": "phrase"},
+        {"hu": "Önök vannak", "en": "you are (formal, several people)", "ro": "dumneavoastră sunteți (plural)", "note": "Also left out with a noun or adjective", "kind": "phrase"},
+        {"hu": "ők vannak", "en": "they are", "ro": "ei / ele sunt", "note": "Also left out with a noun or adjective", "kind": "phrase"},
+        {"hu": "András diák. (no van!)", "en": "With he / she / they + a noun or adjective, van is left out", "ro": "cu el / ea / ei + substantiv sau adjectiv, „van” lipsește", "note": "Never “András van diák.” The same goes for Ön and Önök.", "kind": "rule"}
+      ]
+    },
+    {
+      "name": "Kérdések és válaszok · Questions and answers",
+      "items": [
+        {"hu": "Ki vagy?", "en": "Who are you? (informal)", "ro": "Cine ești?", "kind": "phrase"},
+        {"hu": "Ki Ön?", "en": "Who are you? (formal)", "ro": "Cine sunteți?", "kind": "phrase"},
+        {"hu": "Ki ő?", "en": "Who is he / she?", "ro": "Cine e el / ea?", "kind": "phrase"},
+        {"hu": "Éva vagyok.", "en": "I’m Éva.", "ro": "Sunt Éva.", "kind": "phrase"},
+        {"hu": "Ön Sarah.", "en": "You are Sarah. (formal)", "ro": "Dumneavoastră sunteți Sarah.", "kind": "phrase"},
+        {"hu": "Ő András.", "en": "He is András.", "ro": "El e András.", "kind": "phrase"},
+        {"hu": "Mi vagy?", "en": "What do you do? (literally: what are you?)", "ro": "Ce meserie ai?", "kind": "phrase"},
+        {"hu": "Mi Ön?", "en": "What do you do? (formal)", "ro": "Ce meserie aveți?", "kind": "phrase"},
+        {"hu": "Mérnök vagyok.", "en": "I’m an engineer.", "ro": "Sunt inginer.", "kind": "phrase"},
+        {"hu": "Ön tanár.", "en": "You are a teacher. (formal)", "ro": "Sunteți profesor.", "kind": "phrase"},
+        {"hu": "András diák.", "en": "András is a student.", "ro": "András e student.", "kind": "phrase"},
+        {"hu": "Mi ez?", "en": "What is this?", "ro": "Ce e asta?", "kind": "phrase"},
+        {"hu": "Ez egy város.", "en": "This is a city.", "ro": "Acesta e un oraș.", "kind": "phrase"},
+        {"hu": "Hány éves vagy?", "en": "How old are you? (informal)", "ro": "Câți ani ai?", "kind": "phrase"},
+        {"hu": "Hány éves Ön?", "en": "How old are you? (formal)", "ro": "Câți ani aveți?", "kind": "phrase"},
+        {"hu": "Húsz éves vagyok.", "en": "I’m twenty years old.", "ro": "Am douăzeci de ani.", "kind": "phrase"},
+        {"hu": "András huszonöt éves.", "en": "András is twenty-five.", "ro": "András are douăzeci și cinci de ani.", "kind": "phrase"},
+        {"hu": "Milyen nemzetiségű vagy?", "en": "What nationality are you? (informal)", "ro": "Ce naționalitate ai?", "kind": "phrase"},
+        {"hu": "Milyen nemzetiségű Ön?", "en": "What nationality are you? (formal)", "ro": "Ce naționalitate aveți?", "kind": "phrase"},
+        {"hu": "Német vagyok.", "en": "I’m German.", "ro": "Sunt german(ă).", "kind": "phrase"},
+        {"hu": "Milyen Magyarország?", "en": "What is Hungary like?", "ro": "Cum e Ungaria?", "kind": "phrase"},
+        {"hu": "Magyarország kicsi.", "en": "Hungary is small.", "ro": "Ungaria e mică.", "kind": "phrase"},
+        {"hu": "Ön is mérnök?", "en": "Are you an engineer too? (formal)", "ro": "Și dumneavoastră sunteți inginer?", "kind": "phrase"},
+        {"hu": "Nem, lengyel vagyok.", "en": "No, I’m Polish.", "ro": "Nu, sunt polonez(ă).", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Szavak · Words",
+      "items": [
+        {"hu": "ki", "en": "who", "ro": "cine"},
+        {"hu": "mi", "en": "what; also “we”", "ro": "ce; și „noi”"},
+        {"hu": "ez", "en": "this", "ro": "acesta, asta"},
+        {"hu": "az", "en": "that; also “the” before a vowel", "ro": "acela; și articolul hotărât înainte de vocală"},
+        {"hu": "mérnök", "en": "engineer", "ro": "inginer"},
+        {"hu": "tanár", "en": "teacher", "ro": "profesor"},
+        {"hu": "tanárnő", "en": "(female) teacher", "ro": "profesoară", "note": "-nő = woman"},
+        {"hu": "diák", "en": "student", "ro": "elev, student"},
+        {"hu": "város", "en": "city, town", "ro": "oraș"},
+        {"hu": "hány", "en": "how many", "ro": "câți, câte"},
+        {"hu": "év", "en": "year", "ro": "an"},
+        {"hu": "éves", "en": "… years old", "ro": "… ani (vârstă)"},
+        {"hu": "húsz", "en": "twenty (20)", "ro": "douăzeci (20)"},
+        {"hu": "negyven", "en": "forty (40)", "ro": "patruzeci (40)"},
+        {"hu": "negyvenegy", "en": "forty-one (41)", "ro": "patruzeci și unu (41)", "note": "negyven + egy"},
+        {"hu": "huszonöt", "en": "twenty-five (25)", "ro": "douăzeci și cinci (25)", "note": "huszon- (twenty-) + öt"},
+        {"hu": "milyen", "en": "what kind of; what … like", "ro": "ce fel de; cum"},
+        {"hu": "nemzetiség", "en": "nationality", "ro": "naționalitate"},
+        {"hu": "nemzetiségű", "en": "of … nationality", "ro": "de naționalitate …"},
+        {"hu": "magyar", "en": "Hungarian", "ro": "maghiar"},
+        {"hu": "német", "en": "German", "ro": "german"},
+        {"hu": "orosz", "en": "Russian", "ro": "rus"},
+        {"hu": "lengyel", "en": "Polish", "ro": "polonez"},
+        {"hu": "angol", "en": "English", "ro": "englez"},
+        {"hu": "román", "en": "Romanian", "ro": "român"},
+        {"hu": "kicsi", "en": "small, little", "ro": "mic"},
+        {"hu": "nagy", "en": "big, large", "ro": "mare"},
+        {"hu": "ország", "en": "country", "ro": "țară"},
+        {"hu": "Magyarország", "en": "Hungary", "ro": "Ungaria", "note": "magyar + ország"},
+        {"hu": "is", "en": "also, too", "ro": "și (de asemenea)", "note": "Comes AFTER the word it refers to: Ön is = you too"},
+        {"hu": "szegedi", "en": "from Szeged", "ro": "din Szeged", "note": "-i after a place name = from that place"},
+        {"hu": "budapesti", "en": "from Budapest", "ro": "din Budapesta"}
+      ]
+    },
+    {
+      "name": "A tankönyvből · From the textbook",
+      "items": [
+        {"hu": "forma", "en": "form", "ro": "formă"},
+        {"hu": "funkció", "en": "function, use", "ro": "funcție"},
+        {"hu": "helyhatározó", "en": "word or ending that says where (place)", "ro": "complement de loc"},
+        {"hu": "melyik", "en": "which", "ro": "care"},
+        {"hu": "kontinens", "en": "continent", "ro": "continent"},
+        {"hu": "sziget", "en": "island", "ro": "insulă"},
+        {"hu": "világ", "en": "world", "ro": "lume"}
+      ]
+    }
+  ]
+}

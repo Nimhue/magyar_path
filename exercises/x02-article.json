@@ -1,0 +1,28 @@
+{
+  "id": "x02-article",
+  "lesson": "l02-hangrend",
+  "title": "A vagy az?",
+  "titleEn": "A or az?",
+  "intro": "Look at the first sound of each word.",
+  "items": [
+    { "type": "choice", "prompt": "___ óra", "options": ["a", "az"], "answer": "az" },
+    { "type": "choice", "prompt": "___ citrom", "options": ["a", "az"], "answer": "a" },
+    { "type": "choice", "prompt": "___ uborka", "options": ["a", "az"], "answer": "az" },
+    { "type": "choice", "prompt": "___ dzsip", "options": ["a", "az"], "answer": "a", "explain": "dzs is a consonant." },
+    { "type": "choice", "prompt": "___ éjszaka", "options": ["a", "az"], "answer": "az" },
+    { "type": "choice", "prompt": "___ whisky", "options": ["a", "az"], "answer": "a", "explain": "w is a consonant." },
+    { "type": "choice", "prompt": "___ internet", "options": ["a", "az"], "answer": "az" },
+    { "type": "choice", "prompt": "___ zsiráf", "options": ["a", "az"], "answer": "a" },
+    { "type": "sort", "prompt": "Which article goes with each word?", "buckets": ["a", "az"], "items": [
+      { "text": "lámpa", "bucket": "a" },
+      { "text": "ház", "bucket": "a" },
+      { "text": "fotel", "bucket": "a" },
+      { "text": "olaj", "bucket": "az" },
+      { "text": "elefánt", "bucket": "az" },
+      { "text": "újság", "bucket": "az" }
+    ] },
+    { "type": "type", "prompt": "the desk → ___ íróasztal", "answer": "az" },
+    { "type": "type", "prompt": "a car (indefinite) → ___ autó", "answer": "egy", "hint": "“A / an” never changes." },
+    { "type": "type", "prompt": "Write “the coffee” in Hungarian.", "answer": "a kávé" }
+  ]
+}

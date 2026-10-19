@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "kind": "classic",
+      "level": 1,
+      "hu": "Mit sütsz, kis szűcs? Sós húst sütsz, kis szűcs?",
+      "en": "What are you frying, little furrier? Are you frying salty meat, little furrier?",
+      "ro": "Ce prăjești, micule cojocar? Prăjești carne sărată, micule cojocar?",
+      "tip": "s vs. sz, and the ü/ű sounds"
+    },
+    {
+      "kind": "classic",
+      "level": 1,
+      "hu": "Sárga bögre, görbe bögre.",
+      "en": "Yellow mug, crooked mug.",
+      "ro": "Cană galbenă, cană strâmbă.",
+      "tip": "ö and the rolled r. Say it 5 times fast!"
+    },
+    {
+      "kind": "classic",
+      "level": 2,
+      "hu": "Fekete bikapata kopog a patika pepita kövezetén.",
+      "en": "A black bull's hoof clatters on the pharmacy's checkered paving.",
+      "ro": "O copită neagră de taur tropăie pe pardoseala în carouri a farmaciei.",
+      "tip": "p, k, t without puffs of air"
+    },
+    {
+      "kind": "classic",
+      "level": 2,
+      "hu": "Répa, retek, mogyoró, korán reggel ritkán rikkant a rigó.",
+      "en": "Carrot, radish, hazelnut; early in the morning the blackbird rarely shrieks.",
+      "ro": "Morcov, ridiche, alună; dis-de-dimineață mierla rar țipă.",
+      "tip": "the rolled r"
+    },
+    {
+      "kind": "classic",
+      "level": 3,
+      "hu": "Az ipafai papnak fapipája van, ezért az ipafai papi pipa papi fapipa.",
+      "en": "The priest of Ipafa has a wooden pipe, so the Ipafa priestly pipe is a priestly wooden pipe.",
+      "ro": "Preotul din Ipafa are o pipă de lemn, deci pipa preoțească din Ipafa e o pipă preoțească de lemn.",
+      "tip": "short a vs. long á, and p/f"
+    },
+    {
+      "kind": "practice",
+      "level": 1,
+      "hu": "Gyuri gyorsan gyümölcsöt gyűjt.",
+      "en": "Gyuri quickly collects fruit.",
+      "ro": "Gyuri adună repede fructe.",
+      "tip": "gy: close to Romanian \"ghi\" in \"ghid\""
+    },
+    {
+      "kind": "practice",
+      "level": 1,
+      "hu": "Csaba csinos csizmát csinál.",
+      "en": "Csaba makes pretty boots.",
+      "ro": "Csaba face cizme frumoase.",
+      "tip": "cs = Romanian \"ce/ci\""
+    },
+    {
+      "kind": "practice",
+      "level": 2,
+      "hu": "Szép szőke Szilvi száz szál szegfűt szed.",
+      "en": "Pretty blonde Szilvi picks a hundred carnations.",
+      "ro": "Frumoasa și blonda Szilvi culege o sută de garoafe.",
+      "tip": "sz = s, never the Romanian ș"
+    },
+    {
+      "kind": "practice",
+      "level": 2,
+      "hu": "Nyolc nyuszi nyáron nyugodtan nyammog.",
+      "en": "Eight bunnies munch calmly in summer.",
+      "ro": "Opt iepurași ronțăie liniștiți vara.",
+      "tip": "ny: the \"gn\" sound in lasagna"
+    },
+    {
+      "kind": "practice",
+      "level": 2,
+      "hu": "Zsófi zsebében zsemle és zsiráf zsákja.",
+      "en": "In Zsófi's pocket: a bread roll and a giraffe's sack.",
+      "ro": "În buzunarul lui Zsófi: o chiflă și sacul unei girafe.",
+      "tip": "zs = Romanian j"
+    },
+    {
+      "kind": "practice",
+      "level": 3,
+      "hu": "Jól megjártad, Jóska, jókor jöttél.",
+      "en": "You've had quite a time, Jóska; you came at the right moment.",
+      "ro": "Ai pățit-o, Jóska; ai venit la momentul potrivit.",
+      "tip": "j and long ó"
+    },
+    {
+      "kind": "practice",
+      "level": 3,
+      "hu": "Kati tyúkja tyúkólban ül, Pityu pityeg.",
+      "en": "Kati's hen sits in the henhouse; Pityu whimpers.",
+      "ro": "Găina Katiei stă în coteț; Pityu scâncește.",
+      "tip": "ty: close to Romanian \"chi\" in \"chiar\""
+    }
+  ]
+}

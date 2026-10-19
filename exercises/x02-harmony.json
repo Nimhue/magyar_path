@@ -1,0 +1,145 @@
+{
+  "id": "x02-harmony",
+  "lesson": "l02-hangrend",
+  "title": "Hangrend",
+  "titleEn": "Vowel harmony",
+  "intro": "Look at the vowels in each word and decide its family.",
+  "items": [
+    {
+      "type": "sort",
+      "prompt": "Sort the words by vowel harmony.",
+      "buckets": [
+        "mély",
+        "magas",
+        "vegyes"
+      ],
+      "items": [
+        {
+          "text": "autó",
+          "bucket": "mély"
+        },
+        {
+          "text": "saláta",
+          "bucket": "mély"
+        },
+        {
+          "text": "joghurt",
+          "bucket": "mély"
+        },
+        {
+          "text": "üveg",
+          "bucket": "magas"
+        },
+        {
+          "text": "internet",
+          "bucket": "magas"
+        },
+        {
+          "text": "öt",
+          "bucket": "magas"
+        },
+        {
+          "text": "elefánt",
+          "bucket": "vegyes"
+        },
+        {
+          "text": "zsiráf",
+          "bucket": "vegyes"
+        },
+        {
+          "text": "éjszaka",
+          "bucket": "vegyes"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word has ONLY back (mély) vowels?",
+      "options": [
+        "tyúk",
+        "telefon",
+        "csokoládé",
+        "kert"
+      ],
+      "answer": "tyúk",
+      "explain": "csokoládé has é, so it's mixed."
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word has ONLY front (magas) vowels?",
+      "options": [
+        "dzsip",
+        "lámpa",
+        "gitár",
+        "olaj"
+      ],
+      "answer": "dzsip"
+    },
+    {
+      "type": "choice",
+      "prompt": "What kind of word is “zebra”?",
+      "options": [
+        "mély",
+        "magas",
+        "vegyes"
+      ],
+      "answer": "vegyes",
+      "explain": "e is front, a is back → mixed."
+    },
+    {
+      "type": "choice",
+      "prompt": "What is the memory word for the back vowels?",
+      "options": [
+        "AUTÓ",
+        "TENISZÜTŐ",
+        "SALÁTA"
+      ],
+      "answer": "AUTÓ"
+    },
+    {
+      "type": "choice",
+      "prompt": "Which vowel is NOT a front vowel?",
+      "options": [
+        "ü",
+        "é",
+        "ó",
+        "ő"
+      ],
+      "answer": "ó"
+    },
+    {
+      "type": "choice",
+      "prompt": "Mixed words like “zsiráf” usually take…",
+      "options": [
+        "back endings",
+        "front endings"
+      ],
+      "answer": "back endings",
+      "explain": "The back vowel wins: zsiráfban, elefántban. (Watch out: words ending in a short e, like hotel, often go front: hotelben.)"
+    },
+    {
+      "type": "choice",
+      "prompt": "ház + -ban/-ben = ?",
+      "options": [
+        "házban",
+        "házben"
+      ],
+      "answer": "házban"
+    },
+    {
+      "type": "choice",
+      "prompt": "kert + -ban/-ben = ?",
+      "options": [
+        "kertban",
+        "kertben"
+      ],
+      "answer": "kertben"
+    },
+    {
+      "type": "type",
+      "prompt": "lassú → ___ (slowly)",
+      "answer": "lassan",
+      "hint": "Back word, so -an (and the ú drops)."
+    }
+  ]
+}

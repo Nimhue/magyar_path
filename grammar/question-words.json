@@ -1,0 +1,27 @@
+{
+  "id": "question-words",
+  "order": 15,
+  "title": "Kérdőszavak",
+  "titleEn": "Question words",
+  "level": "A1",
+  "lesson": "l08-szorend",
+  "summary": "Ki, mi, hol, hány, melyik, milyen, miért: and they always come right before the verb.",
+  "sections": [
+    {
+      "type": "table",
+      "head": ["Question word", "Meaning", "Example"],
+      "rows": [
+        ["**Ki?**", "who", "Ki vagy? · Ki tud törökül?"],
+        ["**Mi?**", "what", "Mi ez? · Mi a telefonszámod?"],
+        ["**Hol?**", "where", "Hol élsz? · Hol van Bécs?"],
+        ["**Hány …?**", "how many", "Hány ember él Kínában?"],
+        ["**Hány éves?**", "how old", "Hány éves vagy?"],
+        ["**Melyik …?**", "which", "Melyik városban élsz?"],
+        ["**Milyen …?**", "what kind of", "Milyen nyelven beszélsz?"],
+        ["**Miért?**", "why", "Miért tanulsz magyarul?"]
+      ]
+    },
+    { "type": "tip", "text": "**Hány, melyik, milyen** need a noun after them: hány **ember**, melyik **városban**, milyen **nyelven**. The question word + noun together stand before the verb." },
+    { "type": "tip", "text": "Answer *Miért?* with **Mert …** (because): — Miért tanultok svédül? — **Mert** Stockholmban élünk." }
+  ]
+}

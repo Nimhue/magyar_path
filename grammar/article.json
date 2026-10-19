@@ -1,0 +1,33 @@
+{
+  "id": "article",
+  "order": 4,
+  "title": "A névelő: a, az, egy",
+  "titleEn": "Articles: “the” and “a”",
+  "level": "A1",
+  "lesson": "l02-hangrend",
+  "summary": "“The” is a before a consonant and az before a vowel. “A / an” is always egy.",
+  "sections": [
+    { "type": "text", "text": "The **határozott névelő** (definite article, “the”) has two forms. Just like English “a / an”, the choice depends on the **sound** that starts the next word." },
+    {
+      "type": "table",
+      "head": ["Next word starts with", "Article", "Examples"],
+      "rows": [
+        ["a **consonant** (b, c, cs, d, f…)", "**a**", "a gitár, a kávé, a csokoládé"],
+        ["a **vowel** (a, á, e, é, i…)", "**az**", "az autó, az óra, az íróasztal"]
+      ]
+    },
+    { "type": "tip", "text": "Digraphs count as consonants: **a dzsip**, **a zsiráf**. Foreign words follow the first sound too: **a whisky** (w is a consonant), **az internet**." },
+    { "type": "heading", "text": "“A / an” is always egy" },
+    { "type": "text", "text": "The indefinite article is **egy**, which is also the number one. It never changes." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "egy autó", "en": "a car" },
+        { "hu": "egy elefánt", "en": "an elephant" },
+        { "hu": "Ez egy város.", "en": "This is a city." }
+      ]
+    },
+    { "type": "text", "text": "Try it: type a word and get its article." },
+    { "type": "widget", "widget": "article" }
+  ]
+}

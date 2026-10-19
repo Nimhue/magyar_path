@@ -1,0 +1,159 @@
+{
+  "id": "l03-oran",
+  "order": 3,
+  "title": "Az órán és az utcán",
+  "titleEn": "In class and on the street",
+  "date": "2026-10-05",
+  "level": "A1",
+  "summary": "Survival phrases for class and the street, hello and goodbye in formal and informal Hungarian, and new everyday words.",
+  "place": {
+    "name": "Visegrád",
+    "fact": "A hilltop castle above the Danube Bend, where Hungarian kings once kept the Holy Crown.",
+    "lon": 18.97,
+    "lat": 47.79
+  },
+  "grammar": [
+    "greetings",
+    "suffixes-intro"
+  ],
+  "exercises": [
+    "x03-classroom",
+    "x03-greetings"
+  ],
+  "readings": [
+    "r03-magyarora"
+  ],
+  "homework": [],
+  "stories": [
+    "s03-pekseg"
+  ],
+  "vocab": [
+    {
+      "name": "A magyarórán · In Hungarian class",
+      "items": [
+        {"hu": "Kérdezhetek valamit?", "en": "May I ask something?", "ro": "Pot să întreb ceva?", "kind": "phrase"},
+        {"hu": "Van egy kérdésem.", "en": "I have a question.", "ro": "Am o întrebare.", "kind": "phrase"},
+        {"hu": "Mit jelent az, hogy „bocsánat”?", "en": "What does “bocsánat” mean?", "ro": "Ce înseamnă „bocsánat”?", "kind": "phrase"},
+        {"hu": "Hogy mondják magyarul azt, hogy „chair”?", "en": "How do you say “chair” in Hungarian?", "ro": "Cum se spune în maghiară „chair”?", "note": "Literally: how do they say in Hungarian that…", "kind": "phrase"},
+        {"hu": "Tessék!", "en": "Here you are! (handing something over)", "ro": "Poftim! (când dai ceva)", "note": "Like German “bitte”", "kind": "phrase"},
+        {"hu": "Köszönöm.", "en": "Thank you.", "ro": "Mulțumesc.", "kind": "phrase"},
+        {"hu": "Szívesen.", "en": "You’re welcome.", "ro": "Cu plăcere.", "note": "Also: gladly", "kind": "phrase"},
+        {"hu": "Világos minden?", "en": "Is everything clear?", "ro": "E totul clar?", "kind": "phrase"},
+        {"hu": "Igen.", "en": "Yes.", "ro": "Da.", "kind": "phrase"},
+        {"hu": "Nem.", "en": "No.", "ro": "Nu.", "kind": "phrase"},
+        {"hu": "Nem tudom.", "en": "I don’t know.", "ro": "Nu știu.", "kind": "phrase"},
+        {"hu": "Fogalmam sincs.", "en": "I have no idea.", "ro": "Habar n-am.", "note": "Literally: I don’t even have a concept", "kind": "phrase"},
+        {"hu": "Tessék?", "en": "Pardon? Sorry? (I didn’t hear)", "ro": "Poftim? (n-am auzit)", "kind": "phrase"},
+        {"hu": "Mit mondasz?", "en": "What are you saying? (informal)", "ro": "Ce spui?", "kind": "phrase"},
+        {"hu": "Elnézést, nem értem.", "en": "Excuse me, I don’t understand.", "ro": "Scuzați-mă, nu înțeleg.", "kind": "phrase"},
+        {"hu": "Nem értem.", "en": "I don’t understand.", "ro": "Nu înțeleg.", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Az utcán · On the street",
+      "items": [
+        {"hu": "Bocsánat!", "en": "Sorry! / Excuse me!", "ro": "Pardon! / Scuze!", "kind": "phrase"},
+        {"hu": "Elnézést!", "en": "Excuse me! (polite)", "ro": "Scuzați-mă!", "kind": "phrase"},
+        {"hu": "Lassabban, legyen szíves!", "en": "More slowly, please! (formal)", "ro": "Mai rar, vă rog!", "kind": "phrase"},
+        {"hu": "Sajnos, nem értem.", "en": "Unfortunately, I don’t understand.", "ro": "Din păcate, nu înțeleg.", "kind": "phrase"},
+        {"hu": "Külföldi vagyok.", "en": "I’m a foreigner.", "ro": "Sunt străin(ă).", "kind": "phrase"},
+        {"hu": "Nem beszélek magyarul.", "en": "I don’t speak Hungarian.", "ro": "Nu vorbesc maghiara.", "kind": "phrase"},
+        {"hu": "Beszélsz angolul?", "en": "Do you speak English? (informal)", "ro": "Vorbești engleză?", "note": "Formal: Beszél angolul?", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Köszönés · Greetings",
+      "items": [
+        {"hu": "Jó reggelt kívánok!", "en": "Good morning! (formal)", "ro": "Bună dimineața! (formal)", "note": "Literally: I wish (you) a good morning", "kind": "phrase"},
+        {"hu": "Jó reggelt!", "en": "Good morning! (formal or informal)", "ro": "Bună dimineața!", "kind": "phrase"},
+        {"hu": "Jó napot kívánok!", "en": "Hello! / Good day! (formal)", "ro": "Bună ziua! (formal)", "note": "The standard polite daytime hello", "kind": "phrase"},
+        {"hu": "Jó napot!", "en": "Good day! (formal)", "ro": "Bună ziua!", "kind": "phrase"},
+        {"hu": "Jó estét kívánok!", "en": "Good evening! (formal)", "ro": "Bună seara! (formal)", "kind": "phrase"},
+        {"hu": "Jó estét!", "en": "Good evening!", "ro": "Bună seara!", "kind": "phrase"},
+        {"hu": "Szia!", "en": "Hi! / Bye! (informal, to one person)", "ro": "Salut! / Pa!", "note": "Same meaning: Szervusz!", "kind": "phrase"},
+        {"hu": "Szervusz!", "en": "Hi! / Bye! (informal, to one person)", "ro": "Salut! / Servus!", "note": "A bit more old-fashioned than Szia", "kind": "phrase"},
+        {"hu": "Sziasztok!", "en": "Hi! / Bye! (informal, to several people)", "ro": "Salutare! / Pa! (mai multor persoane)", "note": "Same meaning: Szervusztok!", "kind": "phrase"},
+        {"hu": "Szervusztok!", "en": "Hi! / Bye! (informal, to several people)", "ro": "Servus! (mai multor persoane)", "kind": "phrase"},
+        {"hu": "Csókolom!", "en": "Hello! (said by children to adults, or to older women)", "ro": "Sărut mâna! (copii către adulți)", "note": "Literally: I kiss (it)", "kind": "phrase"},
+        {"hu": "Kezét csókolom!", "en": "Old-fashioned polite greeting to a woman", "ro": "Sărut mâna! (formal, de modă veche)", "note": "Literally: I kiss your hand", "kind": "phrase"},
+        {"hu": "Viszontlátásra!", "en": "Goodbye! (formal)", "ro": "La revedere!", "note": "Literally: until we see each other again", "kind": "phrase"},
+        {"hu": "Viszlát!", "en": "Bye! (short for Viszontlátásra)", "ro": "La revedere! (scurt)", "kind": "phrase"},
+        {"hu": "Jó éjszakát kívánok!", "en": "Good night! (formal)", "ro": "Noapte bună! (formal)", "kind": "phrase"},
+        {"hu": "Jó éjszakát!", "en": "Good night!", "ro": "Noapte bună!", "kind": "phrase"},
+        {"hu": "Jó éjt!", "en": "Good night! (short)", "ro": "Noapte bună! (scurt)", "kind": "phrase"},
+        {"hu": "Nagyon örülök!", "en": "Nice to meet you!", "ro": "Încântat(ă)! / Îmi pare bine!", "note": "Literally: I’m very glad", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Szavak · Words",
+      "items": [
+        {"hu": "találkozás", "en": "meeting, encounter", "ro": "întâlnire"},
+        {"hu": "köszönés", "en": "greeting", "ro": "salut, salutare"},
+        {"hu": "bemutatkozás", "en": "introduction (introducing yourself)", "ro": "prezentare (a se prezenta)"},
+        {"hu": "búcsúzás", "en": "saying goodbye, farewell", "ro": "rămas-bun"},
+        {"hu": "tegezés", "en": "speaking informally (using “te”)", "ro": "a vorbi cu „tu”", "note": "Friends, family, children, often young people"},
+        {"hu": "önözés", "en": "speaking formally (using “Ön”)", "ro": "a vorbi cu „dumneavoastră”", "note": "Strangers, older people, officials, shops"},
+        {"hu": "jó", "en": "good", "ro": "bun"},
+        {"hu": "reggel", "en": "morning", "ro": "dimineață"},
+        {"hu": "nap", "en": "day; also sun", "ro": "zi; și soare"},
+        {"hu": "este", "en": "evening", "ro": "seară"},
+        {"hu": "éj", "en": "night (short form of éjszaka)", "ro": "noapte (formă scurtă)"},
+        {"hu": "kíván", "en": "to wish", "ro": "a dori, a ura", "note": "kívánok = I wish"},
+        {"hu": "nagyon", "en": "very", "ro": "foarte"},
+        {"hu": "örül", "en": "to be glad, to be happy", "ro": "a se bucura"},
+        {"hu": "csókol", "en": "to kiss", "ro": "a săruta"},
+        {"hu": "kéz", "en": "hand", "ro": "mână", "note": "kezét = your hand (as object)"},
+        {"hu": "utca", "en": "street", "ro": "stradă", "note": "az utcán = on the street"},
+        {"hu": "virág", "en": "flower", "ro": "floare"},
+        {"hu": "kert", "en": "garden", "ro": "grădină"},
+        {"hu": "sofőr", "en": "driver, chauffeur", "ro": "șofer"},
+        {"hu": "víz", "en": "water", "ro": "apă"},
+        {"hu": "Egészségedre!", "en": "Bless you! / Cheers! (informal)", "ro": "Noroc! / Sănătate! (informal)", "note": "egészség = health", "kind": "phrase"},
+        {"hu": "kenyér", "en": "bread", "ro": "pâine"},
+        {"hu": "csillag", "en": "star", "ro": "stea"},
+        {"hu": "fincsi", "en": "yummy (casual)", "ro": "delicios (familiar)"},
+        {"hu": "finom", "en": "delicious; also fine, delicate", "ro": "delicios; fin"},
+        {"hu": "űr", "en": "(outer) space", "ro": "spațiu (cosmic)"},
+        {"hu": "hajó", "en": "ship, boat", "ro": "navă, vapor"},
+        {"hu": "még", "en": "still, yet; more", "ro": "încă; mai", "note": "még egy = one more"},
+        {"hu": "kérdez", "en": "to ask (a question)", "ro": "a întreba"},
+        {"hu": "kérdés", "en": "question", "ro": "întrebare"},
+        {"hu": "valami", "en": "something", "ro": "ceva"},
+        {"hu": "jelent", "en": "to mean", "ro": "a însemna"},
+        {"hu": "mit?", "en": "what? (as the object)", "ro": "ce? (complement)", "note": "Mit jelent? = What does it mean?"},
+        {"hu": "hogy", "en": "how; also “that” (linking word)", "ro": "cum; și „că”"},
+        {"hu": "mond", "en": "to say", "ro": "a spune"},
+        {"hu": "minden", "en": "everything; every", "ro": "totul; fiecare"},
+        {"hu": "világos", "en": "clear; also bright, light", "ro": "clar; luminos"},
+        {"hu": "ért", "en": "to understand", "ro": "a înțelege"},
+        {"hu": "tud", "en": "to know; can, to be able to", "ro": "a ști; a putea"},
+        {"hu": "fogalom", "en": "concept, idea", "ro": "noțiune, idee", "note": "fogalmam = my idea"},
+        {"hu": "sincs", "en": "there isn’t even; isn’t … either", "ro": "nu e nici măcar"},
+        {"hu": "lassú", "en": "slow", "ro": "încet, lent"},
+        {"hu": "lassabb", "en": "slower", "ro": "mai încet"},
+        {"hu": "lassan", "en": "slowly", "ro": "încet (adverb)"},
+        {"hu": "lassabban", "en": "more slowly", "ro": "mai încet"},
+        {"hu": "legyen szíves", "en": "please (formal)", "ro": "vă rog (formal)", "note": "Literally: be kind"},
+        {"hu": "bocsánat", "en": "sorry, pardon", "ro": "scuze, pardon"},
+        {"hu": "sajnos", "en": "unfortunately", "ro": "din păcate"},
+        {"hu": "külföldi", "en": "foreigner; foreign", "ro": "străin", "note": "külföld = abroad (literally: outside land)"},
+        {"hu": "beszél", "en": "to speak", "ro": "a vorbi"},
+        {"hu": "magyarul", "en": "in Hungarian", "ro": "în maghiară"},
+        {"hu": "angolul", "en": "in English", "ro": "în engleză"}
+      ]
+    },
+    {
+      "name": "A tankönyvből · From the textbook",
+      "items": [
+        {"hu": "fejezet", "en": "chapter", "ro": "capitol", "note": "2. fejezet = Chapter 2"},
+        {"hu": "hasznos", "en": "useful", "ro": "util"},
+        {"hu": "kifejezés", "en": "expression", "ro": "expresie", "note": "plural: kifejezések"},
+        {"hu": "mondat", "en": "sentence", "ro": "propoziție", "note": "plural: mondatok"},
+        {"hu": "Olvassa el, és hallgassa meg a mondatokat!", "en": "Read and listen to the sentences!", "ro": "Citiți și ascultați propozițiile!", "kind": "phrase"},
+        {"hu": "olvas", "en": "to read", "ro": "a citi"},
+        {"hu": "informális", "en": "informal (I)", "ro": "informal"},
+        {"hu": "formális", "en": "formal (F)", "ro": "formal"}
+      ]
+    }
+  ]
+}

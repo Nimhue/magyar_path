@@ -1,0 +1,37 @@
+{
+  "id": "x06-endings",
+  "lesson": "l06-orszagok",
+  "title": "-ban/-ben, -n, -i, -ul/-ül",
+  "titleEn": "Where, from where, which language",
+  "intro": "Think about vowel harmony and whether it's a Hungarian town.",
+  "items": [
+    { "type": "sort", "prompt": "-ban or -ben?", "buckets": ["-ban", "-ben"], "items": [
+      { "text": "Svájc", "bucket": "-ban" },
+      { "text": "Párizs", "bucket": "-ban" },
+      { "text": "London", "bucket": "-ban" },
+      { "text": "Berlin", "bucket": "-ben" },
+      { "text": "Bécs", "bucket": "-ben" },
+      { "text": "Peking", "bucket": "-ben" }
+    ] },
+    { "type": "choice", "prompt": "Prága + -ban = ?", "options": ["Prágában", "Prágaban", "Prágán"], "answer": "Prágában", "explain": "a → á before the ending." },
+    { "type": "choice", "prompt": "Lipcse + -ben = ?", "options": ["Lipcsében", "Lipcseben", "Lipcsén"], "answer": "Lipcsében" },
+    { "type": "choice", "prompt": "Vera Magyarország___ él.", "options": ["-on", "-ban", "-ben"], "answer": "-on", "explain": "Hungary takes -n: Magyarországon." },
+    { "type": "choice", "prompt": "Szeged___ élsz?", "options": ["-en", "-ben", "-ban"], "answer": "-en" },
+    { "type": "choice", "prompt": "Németország___ élek.", "options": ["-ban", "-on", "-ben"], "answer": "-ban" },
+    { "type": "choice", "prompt": "Ön is Kijev___ él?", "options": ["-ben", "-en", "-ban"], "answer": "-ben" },
+    { "type": "choice", "prompt": "Ciprus___ (on Cyprus)", "options": ["-on", "-ban", "-ben"], "answer": "-on", "explain": "Islands take -n." },
+    { "type": "choice", "prompt": "Someone from Bucharest is…", "options": ["bukaresti", "bukarestben", "bukarestül"], "answer": "bukaresti" },
+    { "type": "choice", "prompt": "Someone from Australia is…", "options": ["ausztrál", "ausztráliai", "osztrák"], "answer": "ausztrál" },
+    { "type": "sort", "prompt": "-ul or -ül?", "buckets": ["-ul", "-ül"], "items": [
+      { "text": "orosz", "bucket": "-ul" },
+      { "text": "spanyol", "bucket": "-ul" },
+      { "text": "román", "bucket": "-ul" },
+      { "text": "finn", "bucket": "-ül" },
+      { "text": "svéd", "bucket": "-ül" },
+      { "text": "török", "bucket": "-ül" }
+    ] },
+    { "type": "type", "prompt": "francia → in French: ___", "answer": "franciául", "hint": "a → á" },
+    { "type": "type", "prompt": "Spanyol vagyok. Spanyolország___ élek. Write the whole place word.", "answer": "Spanyolországban" },
+    { "type": "type", "prompt": "Write: “I live in Hungary.”", "answer": "Magyarországon élek." }
+  ]
+}

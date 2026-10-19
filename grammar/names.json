@@ -1,0 +1,45 @@
+{
+  "id": "names",
+  "order": 8,
+  "title": "Magyar nevek",
+  "titleEn": "Hungarian names",
+  "level": "A1",
+  "lesson": "l05-bemutatkozas",
+  "summary": "In Hungarian the family name comes first. Married women may add -né to their husband's family name.",
+  "sections": [
+    { "type": "text", "text": "Hungarian puts the **family name first** and the first name second, in every situation: introductions, forms, books, street signs. *Kis Balázs* is Balázs from the Kis family." },
+    {
+      "type": "table",
+      "head": ["Hungarian order", "English order"],
+      "rows": [
+        ["Kis Balázs", "Balázs Kis"],
+        ["Pető Réka", "Réka Pető"],
+        ["Petőfi Sándor", "Sándor Petőfi (the poet)"],
+        ["Bartók Béla", "Béla Bartók (the composer)"]
+      ]
+    },
+    { "type": "tip", "text": "Foreign names keep their own order: *John Peters vagyok.* But a Hungarian who introduces themselves to you will say the family name first, so *Szabó Iván* is Iván." },
+    { "type": "heading", "text": "The -né ending" },
+    { "type": "text", "text": "**-né** means “wife of”. *Kovácsné* = Mrs Kovács. A married woman can be *Kovácsné Radnai Beáta*: husband's family name + **-né**, then her own family and first name. Many younger women simply keep their own name." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Kovácsné", "en": "Mrs Kovács" },
+        { "hu": "Kovácsné Radnai Beáta", "en": "Beáta Radnai, married to Mr Kovács" },
+        { "hu": "Nagyné Kis Anna", "en": "Anna Kis, married to Mr Nagy" }
+      ]
+    },
+    { "type": "heading", "text": "Formal or informal?" },
+    {
+      "type": "table",
+      "head": ["", "Informal (tegező)", "Formal (önöző)"],
+      "rows": [
+        ["Hello", "Szia!", "Jó napot kívánok!"],
+        ["I'm …", "Tamara vagyok.", "John Peters vagyok."],
+        ["Are you …?", "Te vagy Kis Balázs?", "Ön Kis Balázs?"],
+        ["Nice to meet you", "Szia! / Örülök!", "Nagyon örülök."]
+      ]
+    },
+    { "type": "tip", "text": "Notice: Te **vagy** Kis Balázs? uses vagy, but Ön Kis Balázs? has **no verb**, because Ön works like ő." }
+  ]
+}

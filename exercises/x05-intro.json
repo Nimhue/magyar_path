@@ -1,0 +1,21 @@
+{
+  "id": "x05-intro",
+  "lesson": "l05-bemutatkozas",
+  "title": "Bemutatkozás",
+  "titleEn": "Introductions",
+  "intro": "Formal or informal? Right name or wrong person?",
+  "items": [
+    { "type": "choice", "prompt": "You meet a new classmate your age. You say:", "options": ["Szia! Anna vagyok.", "Jó napot kívánok! Anna vagyok.", "Viszontlátásra! Anna vagyok."], "answer": "Szia! Anna vagyok." },
+    { "type": "choice", "prompt": "You meet your partner's grandfather. You say:", "options": ["Jó napot kívánok! Anna vagyok.", "Szia! Anna vagyok.", "Sziasztok! Anna vagyok."], "answer": "Jó napot kívánok! Anna vagyok." },
+    { "type": "choice", "prompt": "Formal: “Excuse me, are you Péter Szabó?”", "options": ["Elnézést, Ön Szabó Péter?", "Elnézést, te vagy Szabó Péter?", "Elnézést, Ön van Szabó Péter?"], "answer": "Elnézést, Ön Szabó Péter?", "explain": "Ön works like ő: no verb needed." },
+    { "type": "choice", "prompt": "Informal: “Excuse me, are you Lili?”", "options": ["Elnézést, te vagy Lili?", "Elnézést, te Lili?", "Elnézést, Ön vagy Lili?"], "answer": "Elnézést, te vagy Lili?" },
+    { "type": "choice", "prompt": "— Elnézést, Ön Nagy Kornél? — It's not him. He says:", "options": ["Nem, én Kis Balázs vagyok.", "Igen, én vagyok.", "Semmi baj."], "answer": "Nem, én Kis Balázs vagyok." },
+    { "type": "choice", "prompt": "You called someone by the wrong name. You say:", "options": ["Jaj, elnézést!", "Én is nagyon örülök.", "Tessék!"], "answer": "Jaj, elnézést!" },
+    { "type": "choice", "prompt": "Someone apologises for a small mistake. You answer:", "options": ["Semmi baj.", "Jaj, elnézést!", "Fogalmam sincs."], "answer": "Semmi baj." },
+    { "type": "choice", "prompt": "— Nagyon örülök. — You answer:", "options": ["Én is nagyon örülök.", "Én sem.", "Szívesen."], "answer": "Én is nagyon örülök." },
+    { "type": "choice", "prompt": "Kis Balázs: what is his first name?", "options": ["Balázs", "Kis"], "answer": "Balázs", "explain": "Family name first: Kis is the family name." },
+    { "type": "choice", "prompt": "“Kovácsné” means…", "options": ["Mrs Kovács", "Mr Kovács", "Kovács's daughter"], "answer": "Mrs Kovács" },
+    { "type": "type", "prompt": "Write in Hungarian: “No problem.”", "answer": "Semmi baj." },
+    { "type": "type", "prompt": "Write: “Yes, that's me.”", "answer": ["Igen, én vagyok.", "Igen, én vagyok"] }
+  ]
+}

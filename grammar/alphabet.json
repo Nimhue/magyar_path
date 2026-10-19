@@ -1,0 +1,44 @@
+{
+  "id": "alphabet",
+  "order": 1,
+  "title": "Az ábécé és a hangok",
+  "titleEn": "The alphabet and its sounds",
+  "level": "A1",
+  "lesson": "l01-abece",
+  "summary": "Hungarian is spelled the way it sounds. Learn the few letters that differ from English and you can read any word aloud.",
+  "sections": [
+    { "type": "text", "text": "Hungarian spelling is very regular: **one letter = one sound**, and every letter is pronounced. The stress is always on the **first syllable** of a word." },
+    { "type": "heading", "text": "Letters that surprise English speakers" },
+    {
+      "type": "table",
+      "head": ["Letter", "Sounds like", "Example"],
+      "rows": [
+        ["s", "**sh** in shoe", "saláta"],
+        ["sz", "**s** in see", "szalámi"],
+        ["cs", "**ch** in church", "csokoládé"],
+        ["c", "**ts** in cats", "citrom"],
+        ["zs", "**s** in measure", "zsiráf"],
+        ["j / ly", "**y** in yes", "joghurt, lyuk"],
+        ["gy", "soft **dy** (British “dew”)", "gyufa"],
+        ["ny", "**ny** in canyon", "nyolc"],
+        ["ty", "soft **ty** (British “tube”)", "tyúk"],
+        ["dz", "**ds** in kids", "bodza"],
+        ["dzs", "**j** in jam", "dzsip"]
+      ]
+    },
+    { "type": "tip", "tone": "warn", "text": "The most common mistake: reading **s** as English s. In Hungarian **s = sh** and **sz = s**. So *busz* sounds like “boos” and *saláta* like “shalata”." },
+    { "type": "heading", "text": "Letters made of two or three characters" },
+    { "type": "text", "text": "**cs, dz, gy, ly, ny, sz, ty, zs** are *kétjegyű mássalhangzók* (two-character consonants). **dzs** is the only *háromjegyű mássalhangzó* (three-character consonant). Each one counts as **a single letter** in the alphabet and in dictionaries." },
+    { "type": "text", "text": "**q, w, x, y** only appear in foreign words and names: *IQ, whisky, xilofon*. The letter y is called *ipszilon*." },
+    {
+      "type": "examples",
+      "items": [
+        { "hu": "Csilla, Csaba", "en": "names with cs" },
+        { "hu": "Szilvia", "en": "name with sz" },
+        { "hu": "Zsuzsanna, Zsófia", "en": "names with zs" },
+        { "hu": "György → Gyuri", "en": "name with gy, and its nickname" },
+        { "hu": "dzsessz, dzsem, dzsungel", "en": "jazz, jam, jungle" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "x04-questions",
+  "lesson": "l04-letige",
+  "title": "Kérdések",
+  "titleEn": "Asking about people",
+  "intro": "Find the right question or answer.",
+  "items": [
+    { "type": "match", "prompt": "Match each question to an answer.", "pairs": [
+      { "left": "Ki vagy?", "right": "Éva vagyok." },
+      { "left": "Mi vagy?", "right": "Mérnök vagyok." },
+      { "left": "Hány éves vagy?", "right": "Húsz éves vagyok." },
+      { "left": "Milyen nemzetiségű vagy?", "right": "Német vagyok." }
+    ] },
+    { "type": "choice", "prompt": "“Mi ez?” — answer:", "options": ["Ez egy város.", "Éva vagyok.", "Húsz éves."], "answer": "Ez egy város." },
+    { "type": "choice", "prompt": "Ask a professor (formally) how old they are:", "options": ["Hány éves Ön?", "Hány éves vagy?", "Hány éves vagyok?"], "answer": "Hány éves Ön?" },
+    { "type": "choice", "prompt": "Ask a child their name:", "options": ["Ki vagy?", "Ki Ön?", "Ki ő?"], "answer": "Ki vagy?" },
+    { "type": "choice", "prompt": "“Milyen nemzetiségű ő?” means…", "options": ["What nationality is he/she?", "How old is he/she?", "Who is he/she?"], "answer": "What nationality is he/she?" },
+    { "type": "choice", "prompt": "“is” in “Ön is mérnök?” means…", "options": ["too / also", "is", "and"], "answer": "too / also", "explain": "is = also. It comes right after the word it refers to." },
+    { "type": "choice", "prompt": "huszonöt = ?", "options": ["25", "20", "41", "5"], "answer": "25" },
+    { "type": "choice", "prompt": "negyvenegy = ?", "options": ["41", "14", "40", "25"], "answer": "41" },
+    { "type": "type", "prompt": "Ask a friend: “What nationality are you?”", "answer": "Milyen nemzetiségű vagy?" },
+    { "type": "type", "prompt": "Ask: “Who is he?”", "answer": "Ki ő?" }
+  ]
+}

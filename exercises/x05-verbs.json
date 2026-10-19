@@ -1,0 +1,29 @@
+{
+  "id": "x05-verbs",
+  "lesson": "l05-bemutatkozas",
+  "title": "Vagyok, élek, beszélek, tanulok",
+  "titleEn": "Which verb fits?",
+  "intro": "Each word goes with one verb: vagyok (I am), élek (I live), beszélek / tanulok (I speak / I learn).",
+  "items": [
+    { "type": "sort", "prompt": "Which verb goes with each word?", "buckets": ["vagyok", "élek", "beszélek"], "items": [
+      { "text": "portugál", "bucket": "vagyok" },
+      { "text": "mérnök", "bucket": "vagyok" },
+      { "text": "huszonhárom éves", "bucket": "vagyok" },
+      { "text": "Lisszabonban", "bucket": "élek" },
+      { "text": "Budapesten", "bucket": "élek" },
+      { "text": "Franciaországban", "bucket": "élek" },
+      { "text": "spanyolul", "bucket": "beszélek" },
+      { "text": "németül", "bucket": "beszélek" },
+      { "text": "franciául", "bucket": "beszélek" }
+    ] },
+    { "type": "choice", "prompt": "Szegedi ___, de Budapesten élek.", "options": ["vagyok", "élek", "beszélek"], "answer": "vagyok" },
+    { "type": "choice", "prompt": "Most magyarul ___.", "options": ["tanulok", "vagyok", "élek"], "answer": "tanulok" },
+    { "type": "choice", "prompt": "Párizsban ___.", "options": ["élek", "beszélek", "vagyok"], "answer": "élek" },
+    { "type": "choice", "prompt": "Where's the stress in “beszélek”?", "options": ["BE-szélek", "be-SZÉ-lek", "be-szé-LEK"], "answer": "BE-szélek", "explain": "Always the first syllable, even when a later vowel is long." },
+    { "type": "choice", "prompt": "“Budapesten él?” is a question. Where does the voice rise?", "options": ["on -ten (second to last syllable)", "on Bu- (first syllable)", "on él (last syllable)"], "answer": "on -ten (second to last syllable)" },
+    { "type": "order", "prompt": "I'm from Szeged, but I live in Budapest.", "tiles": ["Szegedi", "vagyok,", "de", "Budapesten", "élek."], "answer": "Szegedi vagyok, de Budapesten élek." },
+    { "type": "order", "prompt": "Now I'm learning Hungarian.", "tiles": ["Most", "magyarul", "tanulok."], "answer": "Most magyarul tanulok." },
+    { "type": "type", "prompt": "Write: “I'm forty years old.”", "answer": ["Negyven éves vagyok.", "40 éves vagyok."] },
+    { "type": "type", "prompt": "Write: “I speak Romanian and English.”", "answer": ["Románul és angolul beszélek.", "Angolul és románul beszélek."] }
+  ]
+}

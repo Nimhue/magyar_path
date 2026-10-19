@@ -1,0 +1,30 @@
+{
+  "id": "x07-possessive",
+  "lesson": "l07-igek",
+  "title": "-m, -d",
+  "titleEn": "My and your",
+  "intro": "Vowel at the end: -m/-d. Otherwise -om/-od, -em/-ed or -öm/-öd.",
+  "items": [
+    { "type": "choice", "prompt": "a férj → my husband", "options": ["a férjem", "a férjom", "a férjöm"], "answer": "a férjem" },
+    { "type": "choice", "prompt": "a barát → my friend", "options": ["a barátom", "a barátem", "a barátm"], "answer": "a barátom" },
+    { "type": "choice", "prompt": "a sofőr → your driver", "options": ["a sofőröd", "a sofőred", "a sofőrod"], "answer": "a sofőröd", "explain": "ő in the last syllable → -öd." },
+    { "type": "choice", "prompt": "az iskola → my school", "options": ["az iskolám", "az iskolam", "az iskolaom"], "answer": "az iskolám", "explain": "a → á, then -m." },
+    { "type": "choice", "prompt": "a név → my name", "options": ["a nevem", "a névem", "a névom"], "answer": "a nevem", "explain": "Irregular." },
+    { "type": "choice", "prompt": "a ház → my house", "options": ["a házam", "a házom", "a házem"], "answer": "a házam" },
+    { "type": "choice", "prompt": "a szám → my number", "options": ["a számom", "a számam", "a számem"], "answer": "a számom", "explain": "Unlike ház → házam. Learn these one by one." },
+    { "type": "choice", "prompt": "az anyanyelv → my mother tongue", "options": ["az anyanyelvem", "az anyanyelvom", "az anyanyelvam"], "answer": "az anyanyelvem", "explain": "Compound: the last word (nyelv) decides." },
+    { "type": "choice", "prompt": "a hotel → my hotel", "options": ["a hotelem", "a hotelom", "a hotelöm"], "answer": "a hotelem", "explain": "Foreign word: the last vowel (e) decides." },
+    { "type": "sort", "prompt": "Which “my” ending?", "buckets": ["-om", "-em", "-m"], "items": [
+      { "text": "város", "bucket": "-om" },
+      { "text": "család", "bucket": "-om" },
+      { "text": "mobil", "bucket": "-om" },
+      { "text": "cím", "bucket": "-em" },
+      { "text": "feleség", "bucket": "-em" },
+      { "text": "koncert", "bucket": "-em" },
+      { "text": "titkárnő", "bucket": "-m" },
+      { "text": "anyuka", "bucket": "-m" }
+    ] },
+    { "type": "type", "prompt": "— Mi a ___? (your phone number) — 0036 70 123 4567", "answer": "telefonszámod" },
+    { "type": "type", "prompt": "Write: “my country”", "answer": "az országom" }
+  ]
+}
