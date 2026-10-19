@@ -4,12 +4,15 @@ import { QuestCard } from "./Practice";
 import { useState } from "react";
 import { cloudAvailable, useCloud } from "../lib/cloud";
 import { MascotSays, mascotName } from "../components/Mascot";
-import { Icon, Ring } from "../components/ui";
+import { Icon, Meaning, Ring, SpeakButton } from "../components/ui";
 import { currentLesson, isUnlocked, lessonStatus, unlockedLessons } from "../lib/progress";
 import { href } from "../lib/router";
 import { dueCards } from "../lib/srs";
 import { levelFor, liveStreak, useProgress, type Progress } from "../lib/store";
 import type { Lesson } from "../content/schema";
+import { CATS, factOfDay, wordOfDay } from "../lib/discover";
+
+
 
 const DAILY_GOAL = 50;
 
@@ -192,7 +195,59 @@ export function PathPage() {
           })}
         </ol>
       </section>
+
+      <OfTheDay />
     </div>
+  );
+}
+
+/** Word and fact of the day: a little extra after the study path. */
+function OfTheDay() {
+  const p = useProgress();
+  const w = wordOfDay(p);
+  const f = factOfDay();
+  return (
+    <section className="stack">
+      <h2 className="section-title">Ma · Today's extras</h2>
+      <div className="otd-grid">
+        {w && (
+          <div className="otd word">
+            <span className="otd-kicker">
+              <Icon name="star" size={14} /> A nap szava · Word of the day
+            </span>
+            <div className="row gap">
+              <strong lang="hu" className="otd-word">
+                {w.hu}
+              </strong>
+              <SpeakButton text={w.hu} small />
+            </div>
+            <Meaning en={w.en} ro={w.ro} />
+            {w.note && <span className="muted small-print">{w.note}</span>}
+          </div>
+        )}
+        {f && (
+          <a className={`otd fact tone-${CATS[f.place.category].tone}`} href={href(`discover/${f.place.id}`)}>
+            <span className="otd-kicker">
+              <Icon name="bulb" size={14} /> A nap ténye · Fact of the day
+            </span>
+            <span className="otd-fact">{f.en}</span>
+            {p.settings.showRo && (
+              <span className="ro small-print" lang="ro">
+                {f.ro}
+              </span>
+            )}
+            <span className="otd-more">
+              {f.place.name}: read the story <Icon name="next" size={14} />
+            </span>
+          </a>
+        )}
+      </div>
+      <a className="cta discover-cta" href={href("kultura")}>
+        <span className="cta-kicker">Kultúra · when you want a break</span>
+        <span className="cta-title">Discover Hungary: legends, songs, sayings and recipes</span>
+        <Icon name="compass" />
+      </a>
+    </section>
   );
 }
 

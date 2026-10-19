@@ -1,4 +1,4 @@
-import { lessons } from "../content";
+import { lessons, scenarios } from "../content";
 import { Icon, PageHead } from "../components/ui";
 import { claimQuest, questProgress, todaysQuests } from "../lib/game";
 import { isUnlocked } from "../lib/progress";
@@ -56,6 +56,8 @@ export function QuestCard() {
   );
 }
 
+const SC_ICON: Record<string, string> = { "sc-jegy": "map", "sc-patika": "plus", "sc-orvos": "heart", "sc-etterem": "bowl", "sc-posta": "notes" };
+
 export function PracticePage() {
   const p = useProgress();
   const mistakes = Object.keys(p.mistakes).length;
@@ -93,6 +95,39 @@ export function PracticePage() {
             <span className="cta-title">{mistakes ? `Fix ${mistakes} tricky word${mistakes > 1 ? "s" : ""}` : "No mistakes saved"}</span>
             <Icon name="back" />
           </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="section-title">Számok · Numbers</h2>
+        <a className="cta numbers-cta" href={href("numbers")}>
+          <span className="cta-kicker">Listen, write, prices, years and the time</span>
+          <span className="cta-title">{p.games["numbers"] ? `Numbers trainer · best ${p.games["numbers"].best}/10` : "Numbers trainer"}</span>
+          <Icon name="hash" />
+        </a>
+      </section>
+
+      <section>
+        <h2 className="section-title">Túlélőcsomag · Survival pack</h2>
+        <p className="muted">Everyday situations in Budapest, always open. Pick what you'd say; slips come with a tip.</p>
+        <div className="scenario-grid">
+          {scenarios.map((s, i) => {
+            const res = p.stories[s.id];
+            return (
+              <a key={s.id} href={href(`story/${s.id}`)} className={`scenario tone-${["blue", "green", "red", "paprika", "yellow", "purple"][i % 6]}` + (res ? " done" : "")}>
+                <span className="sc-icon">
+                  <Icon name={SC_ICON[s.id] ?? "chat"} size={22} />
+                </span>
+                <strong lang="hu">{s.title}</strong>
+                <span className="muted small-print">{s.titleEn}</span>
+                {res && (
+                  <span className="sc-done">
+                    <Icon name={res === "great" ? "star" : "check"} size={13} />
+                  </span>
+                )}
+              </a>
+            );
+          })}
         </div>
       </section>
 

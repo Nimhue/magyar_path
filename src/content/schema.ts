@@ -32,7 +32,16 @@ export const LessonSchema = z.object({
   level: z.enum(["A1", "A2", "B1", "B2", "C1"]).default("A1"),
   summary: z.string(),
   /** stop on the "journey around Hungary" map: shown on the path and when the lesson is finished */
-  place: z.object({ name: z.string(), fact: z.string(), lon: z.number().optional(), lat: z.number().optional() }).optional(),
+  place: z
+    .object({
+      name: z.string(),
+      fact: z.string(),
+      lon: z.number().optional(),
+      lat: z.number().optional(),
+      /** drawing on the journey trail: parliament, palace, castle, village, church, basilica, fortress, lake (guessed from the name if left out) */
+      icon: z.enum(["parliament", "palace", "castle", "village", "church", "basilica", "fortress", "lake", "star"]).optional(),
+    })
+    .optional(),
   grammar: z.array(id).default([]),
   exercises: z.array(id).default([]),
   readings: z.array(id).default([]),
@@ -160,11 +169,14 @@ const StoryNodeSchema = z.object({
   text: z.string(),
   /** English translation, revealed on tap */
   textEn: z.string(),
+  /** Romanian translation (optional), shown with the English when Romanian is on */
+  textRo: z.string().optional(),
   choices: z
     .array(
       z.object({
         text: z.string(),
         textEn: z.string().optional(),
+        textRo: z.string().optional(),
         to: z.string(),
         /** short note shown after picking this choice */
         note: z.string().optional(),
@@ -177,7 +189,10 @@ const StoryNodeSchema = z.object({
 
 export const StorySchema = z.object({
   id,
-  lesson: id,
+  /** lesson it belongs to (locked until then); leave out for always-open scenario packs */
+  lesson: id.optional(),
+  /** scenario pack, e.g. "survival": shown under Practice, always open */
+  pack: z.string().optional(),
   title: z.string(),
   titleEn: z.string(),
   intro: z.string().optional(),
@@ -197,6 +212,78 @@ export const DictionarySchema = z.object({
   mark: z.string().max(3),
   intro: z.string().optional(),
   groups: z.array(VocabGroupSchema).min(1),
+});
+
+const Tri = z.object({ hu: z.string().min(1), en: z.string().min(1), ro: z.string().min(1) });
+
+export const DISCOVER_CATEGORIES = ["legend", "tale", "history", "invention", "food", "nature", "tradition", "music", "language"] as const;
+
+/** One pin on the Discover Hungary map (content/discover). */
+export const DiscoverSchema = z.object({
+  id,
+  name: z.string(),
+  lon: z.number().min(16).max(23),
+  lat: z.number().min(45.7).max(48.6),
+  category: z.enum(DISCOVER_CATEGORIES),
+  title: z.string(),
+  titleEn: z.string(),
+  titleRo: z.string(),
+  /** the story, one easy Hungarian sentence per line with English and Romanian */
+  story: z.array(Tri).min(2),
+  facts: z.array(Tri).default([]),
+  words: z.array(Tri).default([]),
+  questions: z
+    .array(z.object({ q: z.string(), qEn: z.string().optional(), options: z.array(z.string()).min(2), answer: z.string() }))
+    .default([]),
+});
+
+export const ProverbsSchema = z.object({
+  items: z.array(
+    z.object({ kind: z.enum(["proverb", "idiom"]), hu: z.string(), literal: z.string(), meaning: z.string(), ro: z.string() })
+  ),
+});
+
+export const TwistersSchema = z.object({
+  items: z.array(
+    z.object({
+      kind: z.enum(["classic", "practice"]),
+      level: z.number().int().min(1).max(3),
+      hu: z.string(),
+      en: z.string(),
+      ro: z.string(),
+      tip: z.string().optional(),
+    })
+  ),
+});
+
+export const SongsSchema = z.object({
+  items: z.array(
+    z.object({
+      id,
+      kind: z.enum(["folk", "rhyme", "game", "christmas"]),
+      title: z.string(),
+      titleEn: z.string(),
+      about: z.string(),
+      lines: z.array(Tri).min(2),
+    })
+  ),
+});
+
+export const RecipesSchema = z.object({
+  items: z.array(
+    z.object({
+      id,
+      title: z.string(),
+      titleEn: z.string(),
+      titleRo: z.string(),
+      serves: z.number(),
+      minutes: z.number(),
+      about: z.string(),
+      ingredients: z.array(z.object({ amount: z.string(), hu: z.string(), en: z.string(), ro: z.string() })),
+      steps: z.array(Tri).min(1),
+      tip: z.string().optional(),
+    })
+  ),
 });
 
 export const ConfigSchema = z.object({
@@ -220,4 +307,11 @@ export type Reading = z.infer<typeof ReadingSchema>;
 export type Story = z.infer<typeof StorySchema>;
 export type StoryNode = Story["nodes"][string];
 export type DictCategory = z.infer<typeof DictionarySchema>;
+export type Tri = z.infer<typeof Tri>;
+export type DiscoverPlace = z.infer<typeof DiscoverSchema>;
+export type DiscoverCategory = DiscoverPlace["category"];
+export type Proverb = z.infer<typeof ProverbsSchema>["items"][number];
+export type Twister = z.infer<typeof TwistersSchema>["items"][number];
+export type Song = z.infer<typeof SongsSchema>["items"][number];
+export type Recipe = z.infer<typeof RecipesSchema>["items"][number];
 export type Config = z.infer<typeof ConfigSchema>;

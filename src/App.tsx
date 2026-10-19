@@ -26,15 +26,19 @@ import { GamesPage } from "./pages/Games";
 import { StoryPage } from "./pages/Story";
 import { TrophiesPage } from "./pages/Trophies";
 import { DevicesPage } from "./pages/Devices";
+import { CulturePage } from "./pages/Culture";
+import { PlacePage } from "./pages/Place";
+import { NumbersPage } from "./pages/Numbers";
 
 const NAV = [
   { id: "", label: "Path", icon: "home", match: ["", "lesson"] },
   { id: "vocab", label: "Vocab", icon: "cards", match: ["vocab"] },
   { id: "dict", label: "Szótár", icon: "globe", match: ["dict"] },
-  { id: "practice", label: "Practice", icon: "game", match: ["practice", "quiz", "drills", "play"] },
+  { id: "practice", label: "Practice", icon: "game", match: ["practice", "quiz", "drills", "play", "numbers"] },
   { id: "grammar", label: "Grammar", icon: "book", match: ["grammar"] },
   { id: "read", label: "Read", icon: "read", match: ["read", "story"] },
   { id: "notes", label: "Notes", icon: "notes", match: ["notes"] },
+  { id: "kultura", label: "Kultúra", icon: "compass", match: ["kultura", "discover"] },
 ];
 
 function useTheme(palette: string, mode: "system" | "light" | "dark") {
@@ -146,6 +150,15 @@ export function App() {
       break;
     case "story":
       page = <StoryPage id={route[1]} />;
+      break;
+    case "kultura":
+      page = <CulturePage args={route.slice(1)} />;
+      break;
+    case "discover":
+      page = <PlacePage id={route[1]} />;
+      break;
+    case "numbers":
+      page = <NumbersPage mode={route[1]} />;
       break;
     case "notes":
       page = <NotesPage />;

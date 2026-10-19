@@ -1,5 +1,5 @@
 /** Daily quests, trophies and Bodza's outfits. */
-import { allDictCards, cardsByDict, dictionaryCats, lessons } from "../content";
+import { allDictCards, cardsByDict, dictionaryCats, lessons, places } from "../content";
 import { lessonStatus } from "./progress";
 import { addXp, levelFor, liveStreak, today, update, type Counter, type Progress } from "./store";
 
@@ -22,6 +22,7 @@ const POOL: Quest[] = [
   { id: "drill", counter: "drill", goal: 1, title: "Finish a grammar drill set", reward: 15 },
   { id: "quiz", counter: "quiz", goal: 1, title: "Finish a quiz", reward: 15 },
   { id: "xp60", counter: "xp", goal: 60, title: "Earn 60 XP", reward: 20 },
+  { id: "place", counter: "place", goal: 1, title: "Visit a place on the Discover map", reward: 15 },
 ];
 
 function hash(s: string) {
@@ -91,6 +92,9 @@ export const TROPHIES: Trophy[] = [
   { id: "night", titleHu: "Éjjeli bagoly", title: "Night owl", desc: "Study after 10 pm", test: (p) => !!p.flags.nightOwl },
   { id: "early", titleHu: "Korai madár", title: "Early bird", desc: "Study before 7 am", test: (p) => !!p.flags.earlyBird },
   { id: "level5", titleHu: "Ötödik szint", title: "Level 5", desc: "Reach level 5", test: (p) => levelFor(p.xp).level >= 5 },
+  { id: "stamp1", titleHu: "Első pecsét", title: "First stamp", desc: "Get a passport stamp in Discover Hungary", test: (p) => Object.keys(p.stamps ?? {}).length >= 1 },
+  { id: "stamp10", titleHu: "Világjáró", title: "Globetrotter", desc: "Collect 10 passport stamps", test: (p) => Object.keys(p.stamps ?? {}).length >= 10 },
+  { id: "stamps-all", titleHu: "Országjáró", title: "Seen it all", desc: "Collect every passport stamp", test: (p) => places.every((x) => p.stamps?.[x.id]) },
   { id: "level10", titleHu: "Tizedik szint", title: "Level 10", desc: "Reach level 10", test: (p) => levelFor(p.xp).level >= 10 },
 ];
 

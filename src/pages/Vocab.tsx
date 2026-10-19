@@ -10,11 +10,13 @@ import { dueCards, newCards, nextLabel, schedule, type Rating } from "../lib/srs
 import { addXp, bump, getState, update, useProgress } from "../lib/store";
 import { sfx } from "../lib/sound";
 import { speak } from "../lib/speech";
+import { myWordCards, removeMyWord } from "../lib/discover";
 
 export function VocabPage({ args }: { args: string[] }) {
   const p = useProgress();
   const [a] = args;
   if (a === "review") return <ReviewSession />;
+  if (a === "mine") return <MyWordsDeck />;
   if (a) {
     const l = lessonById[a];
     if (!l) return <PageHead title="Lesson not found" back={href("vocab")} />;
@@ -29,6 +31,13 @@ export function VocabPage({ args }: { args: string[] }) {
         <span className="cta-kicker">Spaced review</span>
         <span className="cta-title">{due ? `${due} card${due > 1 ? "s" : ""} are due` : "Nothing due right now"}</span>
         <Icon name="back" />
+      </a>
+      <a className="cta mine-cta" href={href("vocab/mine")}>
+        <span className="cta-kicker">Saját szavaim · My words</span>
+        <span className="cta-title">
+          {myWordCards(p).length ? `${myWordCards(p).length} saved word${myWordCards(p).length > 1 ? "s" : ""}` : "Save words from Kultúra with +"}
+        </span>
+        <Icon name="heart" />
       </a>
       <section>
         <h2 className="section-title">Lessons</h2>
@@ -167,7 +176,7 @@ function LessonDeck({ lessonId }: { lessonId: string }) {
 
 function ReviewSession() {
   const p = useProgress();
-  const [cards] = useState(() => shuffle(dueCards(unlockedLessons(p).flatMap((l) => cardsByLesson[l.id]), p)));
+  const [cards] = useState(() => shuffle(dueCards([...unlockedLessons(p).flatMap((l) => cardsByLesson[l.id]), ...myWordCards(p)], p)));
   if (!cards.length)
     return (
       <div className="stack">
@@ -182,6 +191,70 @@ function ReviewSession() {
       </div>
     );
   return <Session title="Spaced review" cards={cards} onExit={() => (location.hash = "#/vocab")} exitLabel="Done" />;
+}
+
+function MyWordsDeck() {
+  const p = useProgress();
+  const cards = myWordCards(p);
+  const [session, setSession] = useState<Card[] | null>(null);
+  if (session) return <Session title="My words" cards={session} onExit={() => setSession(null)} exitLabel="Back to my words" />;
+  const unseen = newCards(cards, p);
+  const due = dueCards(cards, p);
+  return (
+    <div className="stack-lg">
+      <PageHead title="Saját szavaim" sub="My words · saved from stories, songs, recipes and sayings" back={href("vocab")} />
+      {!cards.length ? (
+        <MascotSays mood="happy">
+          <strong>Nothing saved yet</strong>
+          <span>In Kultúra, tap a word or the + button next to it, and it lands here as a flashcard.</span>
+        </MascotSays>
+      ) : (
+        <>
+          <div className="stack">
+            <button className="study-option" disabled={!unseen.length} onClick={() => setSession(unseen.slice(0, config.newCardsPerDay))}>
+              <span className="so-num">{unseen.length}</span>
+              <span>
+                <strong>Learn new cards</strong>
+                <span className="muted">Words you haven't studied yet</span>
+              </span>
+            </button>
+            <button className="study-option" disabled={!due.length} onClick={() => setSession(shuffle(due))}>
+              <span className="so-num">{due.length}</span>
+              <span>
+                <strong>Review due cards</strong>
+                <span className="muted">Spaced repetition</span>
+              </span>
+            </button>
+            <button className="study-option" onClick={() => setSession(shuffle(cards))}>
+              <span className="so-num">{cards.length}</span>
+              <span>
+                <strong>Practise them all</strong>
+                <span className="muted">Shuffled</span>
+              </span>
+            </button>
+          </div>
+          <ul className="word-rows">
+            {cards.map((c) => (
+              <li key={c.id}>
+                <span className="wr-hu" lang="hu">
+                  {c.hu}
+                </span>
+                <span className="wr-mean">
+                  <Meaning en={c.en} ro={c.ro} inline /> <span className="muted small-print">· {c.group}</span>
+                </span>
+                <span className="row gap-s">
+                  <SpeakButton text={c.hu} small />
+                  <button className="icon-btn" onClick={() => removeMyWord(c.hu)} aria-label={`Remove ${c.hu}`}>
+                    <Icon name="trash" size={16} />
+                  </button>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+    </div>
+  );
 }
 
 /** One flashcard session. Rating a card schedules its next review. */

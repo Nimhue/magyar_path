@@ -1,96 +1,164 @@
-/** "Journey around Hungary": each lesson is a stop on a stylised map. */
+/** "Utazás · Your journey": a scrollable trail over rolling hills, one landmark per lesson. */
+import { useEffect, useRef } from "react";
 import { lessons } from "../content";
+import { DANUBE, OUTLINE, TISZA, projection } from "../lib/hungary";
 import { currentLesson, isUnlocked, lessonStatus } from "../lib/progress";
 import { href } from "../lib/router";
 import { useProgress } from "../lib/store";
+import { Landmark, landmarkFor } from "./Landmarks";
+import { Buddy } from "./Mascot";
 
-const W = 340;
-const H = 210;
-const LON0 = 15.95;
-const LON1 = 23.05;
-const LAT0 = 48.7;
-const LAT1 = 45.65;
-const x = (lon: number) => ((lon - LON0) / (LON1 - LON0)) * W;
-const y = (lat: number) => ((LAT0 - lat) / (LAT0 - LAT1)) * H;
-const pts = (list: number[][]) => list.map(([lo, la]) => `${x(lo).toFixed(1)},${y(la).toFixed(1)}`).join(" ");
+const SP = 124;
+const PADX = 74;
+const H = 236;
+const TONES = ["red", "green", "blue", "purple", "paprika", "teal", "pink", "yellow"];
+const yAt = (i: number) => 134 + 30 * Math.sin(i * 1.35 + 0.4);
 
-const OUTLINE = [
-  [16.11, 46.87], [16.4, 47.15], [16.54, 47.39], [16.42, 47.6], [16.65, 47.75], [17.07, 48.0], [17.25, 48.02], [17.7, 47.77],
-  [18.0, 47.75], [18.5, 47.77], [18.75, 47.82], [18.95, 47.95], [19.0, 48.07], [19.5, 48.2], [19.9, 48.15], [20.3, 48.3],
-  [20.8, 48.57], [21.4, 48.56], [21.7, 48.4], [22.15, 48.42], [22.9, 47.95], [22.3, 47.75], [21.95, 47.4], [21.65, 46.95],
-  [21.25, 46.4], [20.75, 46.17], [20.3, 46.1], [19.6, 46.17], [19.1, 45.97], [18.85, 45.9], [18.4, 45.75], [17.6, 45.95],
-  [17.25, 46.25], [16.6, 46.48], [16.3, 46.55],
-];
-const DANUBE = [
-  [17.1, 48.06], [17.7, 47.8], [18.4, 47.79], [18.75, 47.84], [18.95, 47.82], [19.07, 47.62], [19.05, 47.4], [18.97, 47.0],
-  [18.9, 46.5], [18.86, 45.9],
-];
-const TISZA = [
-  [22.1, 48.38], [21.4, 48.2], [21.05, 47.6], [20.25, 47.15], [20.15, 46.6], [20.2, 46.15],
-];
+function hills(width: number, base: number, amp: number, period: number, phase: number) {
+  let d = `M0 ${H} L0 ${base}`;
+  for (let x = 0; x <= width + period; x += period / 2) {
+    const k = Math.round(x / (period / 2));
+    const y = base + (k % 2 ? -amp : amp * 0.3) * (1 + 0.25 * Math.sin(k + phase));
+    d += ` Q${x - period / 4} ${y} ${x} ${base}`;
+  }
+  return d + ` L${width + period} ${H} Z`;
+}
+
+function road(pts: { x: number; y: number }[], from = 0, to = pts.length - 1) {
+  let d = `M${pts[from].x} ${pts[from].y}`;
+  for (let i = from + 1; i <= to; i++) {
+    const a = pts[i - 1];
+    const b = pts[i];
+    d += ` C${a.x + SP / 2} ${a.y} ${b.x - SP / 2} ${b.y} ${b.x} ${b.y}`;
+  }
+  return d;
+}
+
+function MiniMap({ cur }: { cur: string }) {
+  const pr = projection(120, 4);
+  const stops = lessons.filter((l) => l.place?.lon !== undefined && l.place?.lat !== undefined);
+  return (
+    <svg className="mini-map" viewBox={`0 0 ${pr.W} ${pr.H}`} aria-hidden="true">
+      <polygon points={pr.pts(OUTLINE)} className="hu-land" />
+      <polyline points={pr.pts(DANUBE)} className="hu-river" />
+      <polyline points={pr.pts(TISZA)} className="hu-river" />
+      {stops.map((l) => (
+        <circle
+          key={l.id}
+          cx={pr.x(l.place!.lon!)}
+          cy={pr.y(l.place!.lat!)}
+          r={l.id === cur ? 4 : 2.2}
+          className={l.id === cur ? "mm-cur" : "mm-dot"}
+        />
+      ))}
+    </svg>
+  );
+}
 
 export function JourneyMap() {
   const p = useProgress();
   const cur = currentLesson(p);
-  const stops = lessons.filter((l) => l.place?.lon !== undefined && l.place?.lat !== undefined);
-  if (stops.length < 2) return null;
+  const scroller = useRef<HTMLDivElement>(null);
+  const width = PADX * 2 + SP * (lessons.length - 1);
+  const pts = lessons.map((_, i) => ({ x: PADX + i * SP, y: yAt(i) }));
+  const curIdx = Math.max(0, lessons.findIndex((l) => l.id === cur.id));
+  const doneUpTo = curIdx;
+  const finished = lessons.filter((l) => lessonStatus(l, p).complete).length;
+
+  useEffect(() => {
+    const el = scroller.current;
+    if (!el) return;
+    el.scrollLeft = Math.max(0, pts[curIdx].x - el.clientWidth / 2);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [curIdx]);
+
+  if (lessons.length < 2) return null;
   const next = cur.place;
+
   return (
     <section className="panel journey">
       <div className="row between">
         <h2 className="section-title">Utazás · Your journey</h2>
-        <span className="muted small-print tabnum">
-          {stops.filter((l) => lessonStatus(l, p).complete).length}/{stops.length} stops
+        <span className="chip tabnum">
+          {finished}/{lessons.length} stops
         </span>
       </div>
-      <div className="journey-map">
-        <svg viewBox={`-6 -6 ${W + 12} ${H + 12}`} role="img" aria-label="Map of Hungary with your lesson stops">
-          <polygon points={pts(OUTLINE)} className="hu-land" />
-          <polyline points={pts(DANUBE)} className="hu-river" />
-          <polyline points={pts(TISZA)} className="hu-river" />
-          <ellipse cx={x(17.72)} cy={y(46.87)} rx={x(18.17) - x(17.72)} ry="4" transform={`rotate(-22 ${x(17.72)} ${y(46.87)})`} className="hu-lake" />
-          <polyline points={pts(stops.map((l) => [l.place!.lon!, l.place!.lat!]))} className="route" />
-          <polyline
-            points={pts(stops.filter((l) => lessonStatus(l, p).complete || l.id === cur.id).map((l) => [l.place!.lon!, l.place!.lat!]))}
-            className="route done"
-          />
-          {stops.map((l) => {
-            const st = lessonStatus(l, p);
-            const open = isUnlocked(l.id, p);
-            const state = st.complete ? "done" : l.id === cur.id ? "current" : open ? "open" : "locked";
-            const cx = x(l.place!.lon!);
-            const cy = y(l.place!.lat!);
-            const dot = (
-              <g className={"stop " + state}>
-                {state === "current" && <circle cx={cx} cy={cy} r="13" className="pulse" />}
-                <circle cx={cx} cy={cy} r="8" />
-                <text x={cx} y={cy + 3.5} textAnchor="middle">
-                  {l.order}
-                </text>
-                {state === "current" && (
-                  <text x={cx + 12} y={cy - 11} className="stop-label">
-                    {l.place!.name}
-                  </text>
-                )}
-                <title>{`${l.order}. ${l.place!.name} · ${l.title}`}</title>
-              </g>
-            );
-            return open ? (
-              <a key={l.id} href={href(`lesson/${l.id}`)}>
-                {dot}
-              </a>
-            ) : (
-              <g key={l.id}>{dot}</g>
-            );
-          })}
-        </svg>
+      <div className="trail-wrap">
+        <MiniMap cur={cur.id} />
+        <div className="trail-scroll" ref={scroller}>
+          <div className="trail" style={{ width }}>
+            <svg width={width} height={H} viewBox={`0 0 ${width} ${H}`} role="img" aria-label="Your journey: one stop per lesson">
+              <circle cx={width - 60} cy={40} r={20} className="trail-sun" />
+              {[0.12, 0.42, 0.7, 0.92].map((f, k) => (
+                <g key={k} className="cloud" style={{ animationDelay: `${-k * 7}s` }} transform={`translate(${f * width} ${26 + (k % 2) * 18})`}>
+                  <ellipse cx="0" cy="8" rx="22" ry="9" />
+                  <ellipse cx="12" cy="2" rx="13" ry="10" />
+                  <ellipse cx="-10" cy="4" rx="10" ry="8" />
+                </g>
+              ))}
+              <path d={hills(width, 120, 26, 300, 0)} className="hill back" />
+              <path d={hills(width, 168, 18, 220, 2)} className="hill front" />
+              <path d={`M0 ${pts[0].y} L${pts[0].x} ${pts[0].y}`} className="road-edge" />
+              <path d={road(pts)} className="road-edge" />
+              <path d={`M0 ${pts[0].y} L${pts[0].x} ${pts[0].y}`} className="road" />
+              <path d={road(pts)} className="road" />
+              {doneUpTo > 0 && <path d={road(pts, 0, doneUpTo)} className="road-done" />}
+              {pts.map((pt, i) => {
+                const l = lessons[i];
+                const st = lessonStatus(l, p);
+                const open = isUnlocked(l.id, p);
+                const state = st.complete ? "done" : l.id === cur.id ? "current" : open ? "open" : "locked";
+                const tone = TONES[i % TONES.length];
+                const stop = (
+                  <g className={`tstop ${state} tone-${tone}`}>
+                    {state === "current" && <circle cx={pt.x} cy={pt.y} r="38" className="tpulse" />}
+                    <ellipse cx={pt.x} cy={pt.y + 33} rx="26" ry="5" className="tshadow" />
+                    <circle cx={pt.x} cy={pt.y} r="30" className="tbadge" />
+                    <Landmark kind={landmarkFor(l.place?.name ?? "", l.place?.icon)} x={pt.x} y={pt.y + 1} size={42} />
+                    {state === "done" && (
+                      <g transform={`translate(${pt.x - 26} ${pt.y - 44})`} className="tflag">
+                        <path d="M0 0v22" />
+                        <rect x="1" y="0" width="13" height="3.4" fill="#ce2939" />
+                        <rect x="1" y="3.4" width="13" height="3.4" fill="#fff" />
+                        <rect x="1" y="6.8" width="13" height="3.4" fill="#477050" />
+                      </g>
+                    )}
+                    <circle cx={pt.x + 23} cy={pt.y - 22} r="11" className="tnum" />
+                    <text x={pt.x + 23} y={pt.y - 18} textAnchor="middle" className="tnum-text">
+                      {state === "done" ? "✓" : state === "locked" ? "·" : l.order}
+                    </text>
+                    <text x={pt.x} y={pt.y + 54} textAnchor="middle" className="tname">
+                      {l.place?.name ?? l.title}
+                    </text>
+                    <text x={pt.x} y={pt.y + 69} textAnchor="middle" className="ttitle">
+                      {l.title}
+                    </text>
+                    <title>{`${l.order}. ${l.place?.name ?? ""} · ${l.title}${state === "locked" ? " (locked)" : ""}`}</title>
+                  </g>
+                );
+                return open ? (
+                  <a key={l.id} href={href(`lesson/${l.id}`)} aria-label={`Lesson ${l.order}: ${l.title}`}>
+                    {stop}
+                  </a>
+                ) : (
+                  <g key={l.id}>{stop}</g>
+                );
+              })}
+            </svg>
+            <div className="trail-buddy" style={{ left: pts[curIdx].x - 70, top: pts[curIdx].y - 104 }} aria-hidden="true">
+              <Buddy mood="happy" size={62} />
+              <span className="trail-say">{lessonStatus(cur, p).complete ? "Kész!" : "Itt vagyunk!"}</span>
+            </div>
+          </div>
+        </div>
       </div>
       {next && (
         <p className="journey-fact">
-          <strong>
-            {lessonStatus(cur, p).complete ? "You've reached" : "Next stop"}: {next.name}.
-          </strong>{" "}
-          {next.fact}
+          <span className="postmark" style={{ fontSize: next.name.length > 7 ? "0.54rem" : undefined }}>{next.name}</span>
+          <span>
+            <strong>{lessonStatus(cur, p).complete ? "You've reached" : "Next stop"}: </strong>
+            {next.fact}
+          </span>
         </p>
       )}
     </section>

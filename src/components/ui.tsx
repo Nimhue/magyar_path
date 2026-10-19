@@ -103,7 +103,66 @@ const paths: Record<string, ReactNode> = {
   ),
   crown: <path d="M3 18h18M4 18 3 7l5 4 4-7 4 7 5-4-1 11" />,
   sword: <path d="M14.5 17.5 21 11V3h-8l-6.5 6.5M13 19l-6-6M16 16l-4 4M8 16l-4 4" />,
+  sparkle: <path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7zM19 16c.3 1.6 1.1 2.4 2.7 2.7-1.6.3-2.4 1.1-2.7 2.7-.3-1.6-1.1-2.4-2.7-2.7 1.6-.3 2.4-1.1 2.7-2.7z" />,
+  castle: <path d="M4 21V9h3v2h2V9h3v2h0M12 11V5h3v2h2V5h3v16M4 21h16M10 21v-4a2 2 0 0 1 4 0v4M4 13h8" />,
+  bulb: <path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.9.7 1.6 1.7 1.6 2.9V17h4v-.3c0-1.2.7-2.2 1.6-2.9A6 6 0 0 0 12 3z" />,
+  bowl: <path d="M3 11h18a9 9 0 0 1-18 0zM8 7c0-1.5 1-1.5 1-3M12 7c0-1.5 1-1.5 1-3M16 7c0-1.5 1-1.5 1-3M9 20h6" />,
+  leaf: <path d="M5 19C5 10 10 4 20 4c0 10-6 15-15 15zM5 19l8-8" />,
+  mask: <path d="M4 5c5 2 11 2 16 0v6a8 8 0 0 1-16 0zM8.5 10.5h2M13.5 10.5h2M9.5 15c1.5 1 3.5 1 5 0M4 5 2 2M20 5l2-3" />,
+  note: (
+    <>
+      <path d="M9 18V5l11-2v13" />
+      <circle cx="6.5" cy="18" r="2.5" />
+      <circle cx="17.5" cy="16" r="2.5" />
+    </>
+  ),
+  chat: <path d="M4 5h16v11H9l-5 4zM8 9h8M8 12h5" />,
+  compass: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="m15.5 8.5-2 5-5 2 2-5z" />
+    </>
+  ),
+  stamp: <path d="M9 3h6l-1 7h3a2 2 0 0 1 2 2v3H5v-3a2 2 0 0 1 2-2h3zM5 18h14M7 21h10" />,
+  hash: <path d="M5 9h15M4 15h15M10 3 8 21M16 3l-2 18" />,
+  clock: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </>
+  ),
+  sun: (
+    <>
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+    </>
+  ),
+  bag: <path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 0 1 6 0v2" />,
+  next: <path d="M9 5l7 7-7 7" />,
+  play: <path d="M7 4v16l13-8z" />,
 };
+
+/** An icon placed inside another SVG at (x, y), centred. */
+export function IconGlyph({ name, x, y, size = 14, color }: { name: string; x: number; y: number; size?: number; color?: string }) {
+  return (
+    <svg
+      x={x - size / 2}
+      y={y - size / 2}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color ?? "currentColor"}
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      overflow="visible"
+    >
+      {paths[name]}
+    </svg>
+  );
+}
 
 export function Icon({ name, size = 20, title }: { name: keyof typeof paths | string; size?: number; title?: string }) {
   return (

@@ -1,5 +1,5 @@
 // Offline support: network-first for pages, cache-first for built assets.
-const CACHE = "magyar-path-v3";
+const CACHE = "magyar-path-v4";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["/", "/manifest.webmanifest", "/icons/icon.svg"])));

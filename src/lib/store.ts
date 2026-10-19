@@ -17,7 +17,16 @@ export interface CardState {
 }
 
 /** Things that count toward daily quests and trophies. */
-export type Counter = "card" | "correct" | "combo5" | "game" | "story" | "dict" | "drill" | "xp" | "quiz";
+export type Counter = "card" | "correct" | "combo5" | "game" | "story" | "dict" | "drill" | "xp" | "quiz" | "place";
+
+/** A word the learner saved from Discover, a song or a recipe. removed = deleted (kept so devices agree). */
+export interface MyWord {
+  en: string;
+  ro?: string;
+  from: string;
+  at: number;
+  removed?: boolean;
+}
 
 export interface Settings {
   theme: "system" | "light" | "dark";
@@ -54,6 +63,10 @@ export interface Progress {
   speedBest: number;
   flags: { nightOwl?: boolean; earlyBird?: boolean; perfectQuiz?: boolean };
   trophies: Record<string, string>;
+  /** Discover Hungary passport: place id → date stamped */
+  stamps: Record<string, string>;
+  /** "My words" flashcard deck, keyed by the Hungarian word */
+  myWords: Record<string, MyWord>;
   teacher: boolean;
   settings: Settings;
   /** last local change (epoch ms) */
@@ -89,6 +102,8 @@ function fresh(): Progress {
     speedBest: 0,
     flags: {},
     trophies: {},
+    stamps: {},
+    myWords: {},
     teacher: false,
     settings: { theme: "system", palette: "barack", direction: "hu", name: "", showRo: true, sound: true, outfit: "auto", mascot: "cirmi", voice: "" },
     updatedAt: 0,

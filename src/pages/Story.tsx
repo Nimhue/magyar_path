@@ -16,6 +16,7 @@ interface Line {
   speaker?: string;
   text: string;
   en?: string;
+  ro?: string;
 }
 
 export function StoryPage({ id }: { id?: string }) {
@@ -23,7 +24,7 @@ export function StoryPage({ id }: { id?: string }) {
   const s = id ? stories[id] : undefined;
   const [round, setRound] = useState(0);
   if (!s) return <PageHead title="Story not found" back={href("read")} />;
-  if (!isUnlocked(s.lesson, p)) return <Locked back="read" />;
+  if (s.lesson && !isUnlocked(s.lesson, p)) return <Locked back="read" />;
   return <StoryRun key={round} s={s} onAgain={() => setRound((r) => r + 1)} />;
 }
 
@@ -62,7 +63,7 @@ function StoryRun({ s, onAgain }: { s: Story; onAgain: () => void }) {
     if (isSlip) setSlips((x) => x + 1);
     sfx(isSlip ? "bad" : "tap");
     speak(c.text);
-    const add: Line[] = [{ who: "me", text: c.text, en: c.textEn }];
+    const add: Line[] = [{ who: "me", text: c.text, en: c.textEn, ro: c.textRo }];
     if (c.note) add.push({ who: "note", text: c.note });
     setLog((l) => [...l, ...add, ...lineFor(s, c.to)]);
     setNode(c.to);
@@ -74,7 +75,11 @@ function StoryRun({ s, onAgain }: { s: Story; onAgain: () => void }) {
 
   return (
     <div className="stack story">
-      <PageHead title={s.title} sub={`${s.titleEn} · Lesson ${lessonById[s.lesson].order}`} back={href("read")} />
+      <PageHead
+        title={s.title}
+        sub={`${s.titleEn} · ${s.lesson ? `Lesson ${lessonById[s.lesson].order}` : "Survival pack"}`}
+        back={href(s.lesson ? "read" : "practice")}
+      />
       {s.intro && <p className="intro-line">{s.intro}</p>}
       <div className="chat" aria-live="polite">
         {log.map((line, k) =>
@@ -105,7 +110,7 @@ function StoryRun({ s, onAgain }: { s: Story; onAgain: () => void }) {
                       onClick={() => setShown((sh) => new Set(sh).add(k))}
                       aria-expanded={shown.has(k)}
                     >
-                      {shown.has(k) ? line.en : "Translate"}
+                      {shown.has(k) ? (getState().settings.showRo && line.ro ? `${line.en} · RO: ${line.ro}` : line.en) : "Translate"}
                     </button>
                   )}
                 </div>
@@ -138,7 +143,7 @@ function StoryRun({ s, onAgain }: { s: Story; onAgain: () => void }) {
             <button className="btn primary" onClick={onAgain}>
               Play again
             </button>
-            <a className="btn" href={href("read")}>
+            <a className="btn" href={href(s.lesson ? "read" : "practice")}>
               More stories
             </a>
           </div>
@@ -160,6 +165,6 @@ function StoryRun({ s, onAgain }: { s: Story; onAgain: () => void }) {
 function lineFor(s: Story, id: string): Line[] {
   const n = s.nodes[id];
   if (!n) return [];
-  if (n.end) return [{ who: "note", text: n.text }];
-  return [{ who: "them", speaker: n.speaker, text: n.text, en: n.textEn || undefined }];
+  if (n.end && !n.speaker) return [{ who: "note", text: n.text }];
+  return [{ who: "them", speaker: n.speaker, text: n.text, en: n.textEn || undefined, ro: n.textRo }];
 }

@@ -53,6 +53,9 @@ export function mergeProgress(local: Progress, remote: Partial<Progress> | null 
     out.games[id] = { plays: Math.max(m?.plays ?? 0, g.plays), best: Math.max(m?.best ?? 0, g.best) };
   }
   out.trophies = { ...(r.trophies ?? {}), ...local.trophies };
+  out.stamps = { ...(r.stamps ?? {}), ...(local.stamps ?? {}) };
+  out.myWords = { ...(local.myWords ?? {}) };
+  for (const [hu, w] of Object.entries(r.myWords ?? {})) if (!out.myWords[hu] || w.at > out.myWords[hu].at) out.myWords[hu] = w;
   out.flags = { ...(r.flags ?? {}), ...local.flags };
   for (const k of Object.keys(r.flags ?? {}) as (keyof Progress["flags"])[]) out.flags[k] = !!local.flags[k] || !!r.flags[k];
 
