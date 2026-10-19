@@ -38,6 +38,8 @@ content/
   readings/          short texts with comprehension questions
   stories/           choose-your-path conversations
   dictionary/        themed word collections (food, travel, holidays…), always open
+  discover/          one file per place on the Discover Hungary map
+  culture/           proverbs, tongue twisters, songs and recipes (one file each)
 ```
 
 1. Copy an existing lesson file, e.g. `content/lessons/03-orana.json` → `05-something.json`.
@@ -94,6 +96,36 @@ A story is a set of `nodes`, starting at `start`. Each node has the Hungarian `t
 
 `content/dictionary/NN-name.json`: `id`, `order`, `title`, `titleEn`, `color` (red, paprika, yellow, green, teal, blue, purple, pink, gray), `mark` (1–3 letters for the tile) and `groups` of items, same shape as lesson vocab. Dictionary words never lock and get their own flashcards, quiz and memory game.
 
+### Discover Hungary places
+
+`content/discover/<id>.json` puts a pin on the Kultúra map:
+
+```json
+{
+  "id": "tata", "name": "Tata", "lon": 18.32, "lat": 47.65,
+  "category": "history",
+  "title": "A vizek városa", "titleEn": "The city of waters", "titleRo": "Orașul apelor",
+  "story":     [{ "hu": "…", "en": "…", "ro": "…" }],
+  "facts":     [{ "hu": "…", "en": "…", "ro": "…" }],
+  "words":     [{ "hu": "tó", "en": "lake", "ro": "lac" }],
+  "questions": [{ "q": "…", "qEn": "…", "options": ["…"], "answer": "…" }]
+}
+```
+
+`category` is one of `legend`, `tale`, `history`, `invention`, `food`, `nature`, `tradition`, `music`, `language` (these are the map filters). Keep story sentences short and in easy Hungarian. Answering two of three questions stamps the learner's passport.
+
+### Culture files
+
+`content/culture/proverbs.json`, `tongue-twisters.json`, `songs.json` and `recipes.json` each hold an `items` list; copy an existing item to add one. Only add songs that are traditional or out of copyright.
+
+### Survival pack
+
+A story with `"pack": "survival"` and no `lesson` is always open and shows under Practice → Survival pack. Nodes and choices can carry `textRo` next to `textEn`.
+
+### Journey trail
+
+Each lesson's `place` is a stop on the trail. Add `"icon"` (`parliament`, `palace`, `castle`, `village`, `church`, `basilica`, `fortress`, `lake`) to choose its drawing; otherwise it's guessed from the name.
+
 ### Tidy formatting
 
 `python3 scripts/format-content.py` rewrites lesson and dictionary files with one word per line. Pass a JSON file of `{"hu": "ro"}` pairs to fill in missing Romanian meanings in bulk.
@@ -103,8 +135,15 @@ A story is a set of `nodes`, starting at `start`. Each node has the Hungarian `t
 - **Mini-games:** memory pairs, word rain, sentence builder, petals (hangman), vowel harmony sort, listening bingo. They use words from unlocked lessons plus dictionary words you've learned.
 - **Boss challenge** per lesson: 15 mixed questions, 3 hearts; winning puts a crown on the path.
 - **Combos:** 5 in a row doubles XP, 10 in a row triples it.
-- **Daily quests** (3 a day), **24 trophies**, **levels**, **streaks**, a weekly XP chart, and **Bodza's wardrobe**: outfits unlock with levels, streaks and seasons.
+- **Daily quests** (3 a day), **27 trophies**, **levels**, **streaks**, a weekly XP chart, and **Bodza's wardrobe**: outfits unlock with levels, streaks and seasons.
 - **Themes:** Paprika, Balaton, Tokaj, Levendula, Matyó and Éjjel, each in light and dark (Settings).
+
+## Kultúra (always open, never needed to finish a lesson)
+
+- **Discover Hungary:** a map with 26 places and 9 filters. Each place has a short story in easy Hungarian with English and Romanian, fun facts, words you can add to *My words*, and a passport stamp.
+- **Sayings** (proverbs and idioms with their Romanian twins), **tongue twisters**, **folk songs and nursery rhymes**, **recipes**.
+- **Word and fact of the day** sit at the end of the Path page.
+- Under Practice: the **numbers trainer** (listening, writing, prices, years, the time) and the **survival pack** (ticket office, pharmacy, doctor, restaurant, post office).
 
 ## How a lesson is completed
 
