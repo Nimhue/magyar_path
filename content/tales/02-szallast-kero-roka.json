@@ -1,0 +1,116 @@
+{
+  "id": "szallast-kero-roka",
+  "order": 2,
+  "title": "A szállást kérő róka",
+  "titleEn": "A Fox Seeks Shelter",
+  "titleRo": "Vulpea care cere găzduire",
+  "episode": "S01E02",
+  "level": 1,
+  "video": {
+    "hu": "6FJfjUQukr4",
+    "huTitle": "Magyar népmesék: A szállást kérő róka",
+    "en": "aX0Mxp1M1L8",
+    "enTitle": "A Fox Seeks Shelter"
+  },
+  "summary": [
+    {
+      "hu": "A róka nagyon ravasz.",
+      "en": "The fox is very cunning.",
+      "ro": "Vulpea este foarte șireată."
+    },
+    {
+      "hu": "Este szállást kér egy gazdától. A zsákjában egy kakas van.",
+      "en": "In the evening he asks a farmer for a bed. There's a rooster in his sack.",
+      "ro": "Seara cere găzduire unui gospodar. În sac are un cocoș."
+    },
+    {
+      "hu": "Azt mondja: „Ez egy liba.”",
+      "en": "He says: \"This is a goose.\"",
+      "ro": "Spune: „Asta e o gâscă.”"
+    },
+    {
+      "hu": "Éjjel megeszi a kakast. Reggel kiabál: „Hol a libám?”",
+      "en": "At night he eats the rooster. In the morning he shouts: \"Where's my goose?\"",
+      "ro": "Noaptea mănâncă cocoșul. Dimineața strigă: „Unde e gâsca mea?”"
+    },
+    {
+      "hu": "A gazda szégyelli magát, és ad neki egy libát.",
+      "en": "The farmer feels ashamed and gives him a goose.",
+      "ro": "Gospodarului îi e rușine și îi dă o gâscă."
+    },
+    {
+      "hu": "A róka újra és újra csal, de a végén egy okos gazda kutyákat tesz a zsákba!",
+      "en": "The fox cheats again and again, but in the end a clever farmer puts dogs in the sack!",
+      "ro": "Vulpea înșală iar și iar, dar la final un gospodar isteț pune câini în sac!"
+    }
+  ],
+  "words": [
+    {
+      "hu": "róka",
+      "en": "fox",
+      "ro": "vulpe"
+    },
+    {
+      "hu": "ravasz",
+      "en": "cunning, sly",
+      "ro": "șiret"
+    },
+    {
+      "hu": "szállás",
+      "en": "a place to stay",
+      "ro": "găzduire, cazare"
+    },
+    {
+      "hu": "zsák",
+      "en": "sack",
+      "ro": "sac"
+    },
+    {
+      "hu": "kakas",
+      "en": "rooster",
+      "ro": "cocoș"
+    },
+    {
+      "hu": "liba",
+      "en": "goose",
+      "ro": "gâscă"
+    },
+    {
+      "hu": "kutya",
+      "en": "dog",
+      "ro": "câine"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mi van a róka zsákjában először?",
+      "qEn": "What is in the fox's sack at first?",
+      "options": [
+        "egy kakas",
+        "egy liba",
+        "egy kutya"
+      ],
+      "answer": "egy kakas"
+    },
+    {
+      "q": "Mit mond a róka reggel?",
+      "qEn": "What does the fox say in the morning?",
+      "options": [
+        "Hol a libám?",
+        "Jó reggelt!",
+        "Köszönöm a vacsorát!"
+      ],
+      "answer": "Hol a libám?"
+    },
+    {
+      "q": "Mit tesz az okos gazda a zsákba?",
+      "qEn": "What does the clever farmer put in the sack?",
+      "options": [
+        "kutyákat",
+        "köveket",
+        "almákat"
+      ],
+      "answer": "kutyákat"
+    }
+  ]
+}

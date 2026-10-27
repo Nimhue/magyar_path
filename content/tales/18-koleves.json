@@ -1,0 +1,114 @@
+{
+  "id": "koleves",
+  "order": 18,
+  "title": "A kőleves",
+  "titleEn": "Stone Soup",
+  "titleRo": "Supa de piatră",
+  "episode": "S05E04",
+  "level": 1,
+  "video": {
+    "hu": "Al4DpKBL8o4",
+    "huTitle": "Magyar népmesék: A kőleves"
+  },
+  "summary": [
+    {
+      "hu": "Egy katona hazafelé megy a háborúból. Nagyon éhes.",
+      "en": "A soldier is walking home from the war. He's very hungry.",
+      "ro": "Un soldat se întoarce acasă de la război. E foarte flămând."
+    },
+    {
+      "hu": "Bemegy egy öregasszonyhoz, de az nem ad neki enni.",
+      "en": "He goes in to an old woman, but she won't give him food.",
+      "ro": "Intră la o bătrână, dar ea nu-i dă de mâncare."
+    },
+    {
+      "hu": "A katona azt mondja: „Főzök kőlevest!”",
+      "en": "The soldier says: \"I'll cook stone soup!\"",
+      "ro": "Soldatul spune: „Gătesc supă de piatră!”"
+    },
+    {
+      "hu": "Egy követ tesz a fazékba, vízzel.",
+      "en": "He puts a stone in the pot, with water.",
+      "ro": "Pune o piatră în oală, cu apă."
+    },
+    {
+      "hu": "Aztán kér egy kis sót, egy kis szalonnát, egy kis zöldséget…",
+      "en": "Then he asks for a little salt, a little bacon, a few vegetables…",
+      "ro": "Apoi cere puțină sare, puțină slănină, niște legume…"
+    },
+    {
+      "hu": "A végén finom leves lesz, és a kő marad a fazékban.",
+      "en": "In the end it's a delicious soup, and the stone stays in the pot.",
+      "ro": "La final iese o supă gustoasă, iar piatra rămâne în oală."
+    }
+  ],
+  "words": [
+    {
+      "hu": "katona",
+      "en": "soldier",
+      "ro": "soldat"
+    },
+    {
+      "hu": "háború",
+      "en": "war",
+      "ro": "război"
+    },
+    {
+      "hu": "éhes",
+      "en": "hungry",
+      "ro": "flămând"
+    },
+    {
+      "hu": "kő",
+      "en": "stone",
+      "ro": "piatră"
+    },
+    {
+      "hu": "fazék",
+      "en": "pot",
+      "ro": "oală"
+    },
+    {
+      "hu": "szalonna",
+      "en": "bacon, lard",
+      "ro": "slănină"
+    },
+    {
+      "hu": "zöldség",
+      "en": "vegetable",
+      "ro": "legumă"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Honnan jön a katona?",
+      "qEn": "Where is the soldier coming from?",
+      "options": [
+        "a háborúból",
+        "az iskolából",
+        "a piacról"
+      ],
+      "answer": "a háborúból"
+    },
+    {
+      "q": "Mit tesz a fazékba először?",
+      "qEn": "What does he put in the pot first?",
+      "options": [
+        "egy követ",
+        "húst",
+        "tojást"
+      ],
+      "answer": "egy követ"
+    },
+    {
+      "q": "Milyen lesz a leves?",
+      "qEn": "What is the soup like?",
+      "options": [
+        "finom",
+        "rossz",
+        "hideg"
+      ],
+      "answer": "finom"
+    }
+  ]
+}

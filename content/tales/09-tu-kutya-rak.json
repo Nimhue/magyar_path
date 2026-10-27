@@ -1,0 +1,111 @@
+{
+  "id": "tu-kutya-rak",
+  "order": 9,
+  "title": "A tű, a kutya, a rák, a tojás és a kakas vándorútja",
+  "titleEn": "The Pin, the Dog, the Crayfish, the Egg and the Cockerel",
+  "titleRo": "Călătoria acului, câinelui, racului, oului și cocoșului",
+  "episode": "S03E10",
+  "level": 1,
+  "video": {
+    "hu": "iQK55x6fAYg",
+    "huTitle": "Magyar népmesék: A tű, a kutya, a rák, a tojás és a kakas vándorútja",
+    "en": "O_w86MG-EVY",
+    "enTitle": "The Wandering of the Pin, the Dog, the Crayfish, the Egg and the Cock"
+  },
+  "summary": [
+    {
+      "hu": "A tű, a kutya, a rák, a tojás és a kakas útra kelnek.",
+      "en": "The pin, the dog, the crayfish, the egg and the rooster set off on a journey.",
+      "ro": "Acul, câinele, racul, oul și cocoșul pornesc la drum."
+    },
+    {
+      "hu": "Este a rókák barlangjában alszanak.",
+      "en": "In the evening they sleep in the foxes' den.",
+      "ro": "Seara dorm în vizuina vulpilor."
+    },
+    {
+      "hu": "A rókák nincsenek otthon: lopni mentek.",
+      "en": "The foxes aren't home: they've gone stealing.",
+      "ro": "Vulpile nu sunt acasă: au plecat să fure."
+    },
+    {
+      "hu": "Mindenki elbújik egy helyen.",
+      "en": "Everyone hides in a place.",
+      "ro": "Fiecare se ascunde undeva."
+    },
+    {
+      "hu": "Amikor a rókák hazajönnek, a barátok megleckéztetik őket!",
+      "en": "When the foxes come home, the friends teach them a lesson!",
+      "ro": "Când vulpile vin acasă, prietenii le dau o lecție!"
+    }
+  ],
+  "words": [
+    {
+      "hu": "tű",
+      "en": "needle, pin",
+      "ro": "ac"
+    },
+    {
+      "hu": "rák",
+      "en": "crayfish; crab",
+      "ro": "rac"
+    },
+    {
+      "hu": "tojás",
+      "en": "egg",
+      "ro": "ou"
+    },
+    {
+      "hu": "kakas",
+      "en": "rooster",
+      "ro": "cocoș"
+    },
+    {
+      "hu": "vándorút",
+      "en": "journey on foot",
+      "ro": "drumeție, călătorie"
+    },
+    {
+      "hu": "barlang",
+      "en": "cave, den",
+      "ro": "peșteră, vizuină"
+    },
+    {
+      "hu": "elbújik",
+      "en": "to hide",
+      "ro": "a se ascunde"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hol alszanak este?",
+      "qEn": "Where do they sleep in the evening?",
+      "options": [
+        "a rókák barlangjában",
+        "egy hotelben",
+        "egy fán"
+      ],
+      "answer": "a rókák barlangjában"
+    },
+    {
+      "q": "Hol vannak a rókák?",
+      "qEn": "Where are the foxes?",
+      "options": [
+        "lopni mentek",
+        "otthon alszanak",
+        "iskolában vannak"
+      ],
+      "answer": "lopni mentek"
+    },
+    {
+      "q": "Hány utazó van?",
+      "qEn": "How many travellers are there?",
+      "options": [
+        "öt",
+        "három",
+        "tíz"
+      ],
+      "answer": "öt"
+    }
+  ]
+}

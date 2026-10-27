@@ -1,0 +1,116 @@
+{
+  "id": "kicsi-dio",
+  "order": 5,
+  "title": "A kicsi dió",
+  "titleEn": "The Little Walnut",
+  "titleRo": "Nucușoara",
+  "episode": "S01E09",
+  "level": 2,
+  "video": {
+    "hu": "axhYKDxEkRo",
+    "huTitle": "Magyar népmesék: A kicsi dió",
+    "en": "1qYvaTkwW_g",
+    "enTitle": "The Little Walnut"
+  },
+  "summary": [
+    {
+      "hu": "Egy szegény embernek sok gyereke van.",
+      "en": "A poor man has many children.",
+      "ro": "Un om sărac are mulți copii."
+    },
+    {
+      "hu": "Az ördög ad neki egy varázsdiót.",
+      "en": "The devil gives him a magic walnut.",
+      "ro": "Dracul îi dă o nucă fermecată."
+    },
+    {
+      "hu": "Cserébe kéri a házban lévő dolgokat.",
+      "en": "In return he asks for the things in the house.",
+      "ro": "În schimb cere lucrurile din casă."
+    },
+    {
+      "hu": "Később születik még egy fiú.",
+      "en": "Later another son is born.",
+      "ro": "Mai târziu se naște încă un fiu."
+    },
+    {
+      "hu": "Az ördög csalni akar, de Szent Péter és Szent Pál segít.",
+      "en": "The devil wants to cheat, but Saint Peter and Saint Paul help.",
+      "ro": "Dracul vrea să înșele, dar Sfântul Petru și Sfântul Pavel ajută."
+    },
+    {
+      "hu": "Az ember és a gyereke megmenekül.",
+      "en": "The man and his child are saved.",
+      "ro": "Omul și copilul lui scapă."
+    }
+  ],
+  "words": [
+    {
+      "hu": "dió",
+      "en": "walnut",
+      "ro": "nucă"
+    },
+    {
+      "hu": "szegény",
+      "en": "poor",
+      "ro": "sărac"
+    },
+    {
+      "hu": "gyerek",
+      "en": "child",
+      "ro": "copil"
+    },
+    {
+      "hu": "ördög",
+      "en": "devil",
+      "ro": "drac"
+    },
+    {
+      "hu": "varázs-",
+      "en": "magic",
+      "ro": "fermecat, magic"
+    },
+    {
+      "hu": "fiú",
+      "en": "boy; son",
+      "ro": "băiat; fiu"
+    },
+    {
+      "hu": "segít",
+      "en": "to help",
+      "ro": "a ajuta"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mit ad az ördög a szegény embernek?",
+      "qEn": "What does the devil give the poor man?",
+      "options": [
+        "egy diót",
+        "egy almát",
+        "egy lovat"
+      ],
+      "answer": "egy diót"
+    },
+    {
+      "q": "Ki segít az embernek?",
+      "qEn": "Who helps the man?",
+      "options": [
+        "Szent Péter és Szent Pál",
+        "a király",
+        "a róka"
+      ],
+      "answer": "Szent Péter és Szent Pál"
+    },
+    {
+      "q": "Mi születik később?",
+      "qEn": "Who is born later?",
+      "options": [
+        "egy fiú",
+        "egy kecske",
+        "egy királylány"
+      ],
+      "answer": "egy fiú"
+    }
+  ]
+}

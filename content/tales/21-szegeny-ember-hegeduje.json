@@ -1,0 +1,116 @@
+{
+  "id": "szegeny-ember-hegeduje",
+  "order": 21,
+  "title": "A szegény ember hegedűje",
+  "titleEn": "The Poor Man and His Fiddle",
+  "titleRo": "Vioara omului sărac",
+  "episode": "S06E12",
+  "level": 3,
+  "video": {
+    "hu": "8WsMwIa_U68",
+    "huTitle": "Magyar népmesék: A szegény ember hegedűje",
+    "en": "Z-g0KcgwBMI",
+    "enTitle": "The Poor Man and His Fiddle"
+  },
+  "summary": [
+    {
+      "hu": "A királynak három lánya van.",
+      "en": "The king has three daughters.",
+      "ro": "Regele are trei fiice."
+    },
+    {
+      "hu": "A két nővér irigy egy piros szoknya miatt.",
+      "en": "The two older sisters are jealous because of a red skirt.",
+      "ro": "Cele două surori mai mari sunt invidioase din cauza unei fuste roșii."
+    },
+    {
+      "hu": "Bántják a legkisebb húgukat, és elrejtik.",
+      "en": "They hurt their youngest sister and hide her.",
+      "ro": "O fac rău surioarei celei mici și o ascund."
+    },
+    {
+      "hu": "Egy szegény favágó talál egy hegedűt.",
+      "en": "A poor woodcutter finds a fiddle.",
+      "ro": "Un tăietor de lemne sărac găsește o vioară."
+    },
+    {
+      "hu": "A hegedű szomorú dalt játszik, és elmondja az igazságot.",
+      "en": "The fiddle plays a sad song and tells the truth.",
+      "ro": "Vioara cântă un cântec trist și spune adevărul."
+    },
+    {
+      "hu": "A legkisebb királylány újra él, hazamegy, és megkapja a piros szoknyát.",
+      "en": "The youngest princess lives again, goes home and gets the red skirt.",
+      "ro": "Prințesa cea mică învie, se întoarce acasă și primește fusta roșie."
+    }
+  ],
+  "words": [
+    {
+      "hu": "hegedű",
+      "en": "violin, fiddle",
+      "ro": "vioară"
+    },
+    {
+      "hu": "nővér",
+      "en": "older sister",
+      "ro": "soră mai mare"
+    },
+    {
+      "hu": "húg",
+      "en": "younger sister",
+      "ro": "soră mai mică"
+    },
+    {
+      "hu": "irigy",
+      "en": "jealous, envious",
+      "ro": "invidios"
+    },
+    {
+      "hu": "szoknya",
+      "en": "skirt",
+      "ro": "fustă"
+    },
+    {
+      "hu": "favágó",
+      "en": "woodcutter",
+      "ro": "tăietor de lemne"
+    },
+    {
+      "hu": "igazság",
+      "en": "truth; justice",
+      "ro": "adevăr; dreptate"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mi miatt irigyek a nővérek?",
+      "qEn": "What are the sisters jealous about?",
+      "options": [
+        "egy piros szoknya",
+        "egy ló",
+        "egy palota"
+      ],
+      "answer": "egy piros szoknya"
+    },
+    {
+      "q": "Ki találja meg a hegedűt?",
+      "qEn": "Who finds the fiddle?",
+      "options": [
+        "egy szegény favágó",
+        "a király",
+        "egy katona"
+      ],
+      "answer": "egy szegény favágó"
+    },
+    {
+      "q": "Mit mond el a hegedű dala?",
+      "qEn": "What does the fiddle's song tell?",
+      "options": [
+        "az igazságot",
+        "egy viccet",
+        "a receptet"
+      ],
+      "answer": "az igazságot"
+    }
+  ]
+}

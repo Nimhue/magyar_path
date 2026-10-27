@@ -1,0 +1,116 @@
+{
+  "id": "szegeny-ember-szoloje",
+  "order": 8,
+  "title": "A szegény ember szőlője",
+  "titleEn": "The Poor Man's Vineyard",
+  "titleRo": "Via omului sărac",
+  "episode": "S03E07",
+  "level": 2,
+  "video": {
+    "hu": "NkpZSw6e6TI",
+    "huTitle": "Magyar népmesék: A szegény ember szőlője",
+    "en": "zEAOldp3MPI",
+    "enTitle": "The Poor Man's Vineyard"
+  },
+  "summary": [
+    {
+      "hu": "Egy szegény embernek három fia van és egy szőlője.",
+      "en": "A poor man has three sons and a vineyard.",
+      "ro": "Un om sărac are trei fii și o vie."
+    },
+    {
+      "hu": "Valaki minden éjjel tönkreteszi a szőlőt. A fiúk vigyáznak rá.",
+      "en": "Someone ruins the vineyard every night. The sons guard it.",
+      "ro": "Cineva strică via în fiecare noapte. Fiii o păzesc."
+    },
+    {
+      "hu": "Csak a legkisebb fiú tudja megvédeni.",
+      "en": "Only the youngest son can protect it.",
+      "ro": "Doar fiul cel mic reușește s-o apere."
+    },
+    {
+      "hu": "Ő ételt adott egy békának.",
+      "en": "He gave food to a frog.",
+      "ro": "El i-a dat mâncare unei broaște."
+    },
+    {
+      "hu": "A béka hálából három varázslovat ad neki.",
+      "en": "To thank him, the frog gives him three magic horses.",
+      "ro": "Drept mulțumire, broasca îi dă trei cai fermecați."
+    },
+    {
+      "hu": "A lovakkal a fiú elnyeri a királylány kezét.",
+      "en": "With the horses the boy wins the princess's hand.",
+      "ro": "Cu caii, băiatul câștigă mâna prințesei."
+    }
+  ],
+  "words": [
+    {
+      "hu": "szőlő",
+      "en": "grapes; vineyard",
+      "ro": "struguri; vie"
+    },
+    {
+      "hu": "fiú, fia",
+      "en": "son; his son",
+      "ro": "fiu; fiul lui"
+    },
+    {
+      "hu": "vigyáz",
+      "en": "to look after, to guard",
+      "ro": "a păzi, a avea grijă"
+    },
+    {
+      "hu": "béka",
+      "en": "frog",
+      "ro": "broască"
+    },
+    {
+      "hu": "ló, lovak",
+      "en": "horse, horses",
+      "ro": "cal, cai"
+    },
+    {
+      "hu": "királylány",
+      "en": "princess",
+      "ro": "prințesă"
+    },
+    {
+      "hu": "legkisebb",
+      "en": "youngest, smallest",
+      "ro": "cel mai mic"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mije van a szegény embernek?",
+      "qEn": "What does the poor man have?",
+      "options": [
+        "egy szőlője",
+        "egy palotája",
+        "egy hajója"
+      ],
+      "answer": "egy szőlője"
+    },
+    {
+      "q": "Kinek ad ételt a legkisebb fiú?",
+      "qEn": "Who does the youngest son give food to?",
+      "options": [
+        "egy békának",
+        "egy sárkánynak",
+        "a királynak"
+      ],
+      "answer": "egy békának"
+    },
+    {
+      "q": "Mit kap a békától?",
+      "qEn": "What does he get from the frog?",
+      "options": [
+        "három lovat",
+        "három aranyat",
+        "három tojást"
+      ],
+      "answer": "három lovat"
+    }
+  ]
+}

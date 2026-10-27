@@ -1,0 +1,111 @@
+{
+  "id": "mezeinyul-es-sundiszno",
+  "order": 13,
+  "title": "A mezeinyúl és a sündisznó",
+  "titleEn": "The Hare and the Hedgehog",
+  "titleRo": "Iepurele și ariciul",
+  "episode": "S04E02",
+  "level": 1,
+  "video": {
+    "hu": "IvOUN-pdtjM",
+    "huTitle": "Magyar népmesék: A mezeinyúl és a sündisznó",
+    "en": "3ejX_pbAyYw",
+    "enTitle": "The Hare and the Hedgehog"
+  },
+  "summary": [
+    {
+      "hu": "A nyúl nagyon büszke: ő a leggyorsabb!",
+      "en": "The hare is very proud: he's the fastest!",
+      "ro": "Iepurele e foarte mândru: e cel mai rapid!"
+    },
+    {
+      "hu": "Kineveti a sündisznót a rövid lábai miatt.",
+      "en": "He laughs at the hedgehog because of his short legs.",
+      "ro": "Râde de arici din cauza picioarelor lui scurte."
+    },
+    {
+      "hu": "A sündisznó azt mondja: „Versenyezzünk!”",
+      "en": "The hedgehog says: \"Let's race!\"",
+      "ro": "Ariciul spune: „Hai să ne întrecem!”"
+    },
+    {
+      "hu": "A sün felesége a pálya végére áll, és ugyanúgy néz ki, mint a férje.",
+      "en": "The hedgehog's wife stands at the end of the track, and she looks just like her husband.",
+      "ro": "Soția ariciului stă la capătul pistei și arată exact ca soțul ei."
+    },
+    {
+      "hu": "A nyúl fut, fut, de a végén mindig ott a sün: „Én már itt vagyok!”",
+      "en": "The hare runs and runs, but at the end the hedgehog is always there: \"I'm already here!\"",
+      "ro": "Iepurele aleargă și aleargă, dar la capăt ariciul e mereu acolo: „Eu sunt deja aici!”"
+    }
+  ],
+  "words": [
+    {
+      "hu": "nyúl",
+      "en": "hare, rabbit",
+      "ro": "iepure"
+    },
+    {
+      "hu": "sündisznó (sün)",
+      "en": "hedgehog",
+      "ro": "arici"
+    },
+    {
+      "hu": "gyors",
+      "en": "fast",
+      "ro": "rapid"
+    },
+    {
+      "hu": "rövid",
+      "en": "short",
+      "ro": "scurt"
+    },
+    {
+      "hu": "láb",
+      "en": "leg; foot",
+      "ro": "picior"
+    },
+    {
+      "hu": "verseny",
+      "en": "race, competition",
+      "ro": "întrecere, cursă"
+    },
+    {
+      "hu": "fut",
+      "en": "to run",
+      "ro": "a alerga"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen a nyúl?",
+      "qEn": "What is the hare like?",
+      "options": [
+        "büszke",
+        "szomorú",
+        "lassú"
+      ],
+      "answer": "büszke"
+    },
+    {
+      "q": "Ki áll a pálya végére?",
+      "qEn": "Who stands at the end of the track?",
+      "options": [
+        "a sün felesége",
+        "a róka",
+        "a nyúl anyja"
+      ],
+      "answer": "a sün felesége"
+    },
+    {
+      "q": "Mit mond a sün a végén?",
+      "qEn": "What does the hedgehog say at the end?",
+      "options": [
+        "Én már itt vagyok!",
+        "Segítség!",
+        "Jó éjszakát!"
+      ],
+      "answer": "Én már itt vagyok!"
+    }
+  ]
+}

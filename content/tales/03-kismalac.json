@@ -1,0 +1,116 @@
+{
+  "id": "kismalac",
+  "order": 3,
+  "title": "A kismalac és a farkasok",
+  "titleEn": "The Little Pig and the Wolves",
+  "titleRo": "Purcelușul și lupii",
+  "episode": "S01E03",
+  "level": 1,
+  "video": {
+    "hu": "DfsaeqIuPB4",
+    "huTitle": "Magyar népmesék: A kismalac és a farkasok",
+    "en": "890utwxKACE",
+    "enTitle": "The Little Pig and the Wolves"
+  },
+  "summary": [
+    {
+      "hu": "A kismalac egyedül él az erdő közepén.",
+      "en": "The little pig lives alone in the middle of the forest.",
+      "ro": "Purcelușul trăiește singur în mijlocul pădurii."
+    },
+    {
+      "hu": "Jön egy farkas, és meg akarja enni.",
+      "en": "A wolf comes and wants to eat him.",
+      "ro": "Vine un lup și vrea să-l mănânce."
+    },
+    {
+      "hu": "A kismalac forró vizet önt a farkasra.",
+      "en": "The little pig pours hot water on the wolf.",
+      "ro": "Purcelușul toarnă apă fierbinte pe lup."
+    },
+    {
+      "hu": "A farkas elszalad, és hívja a többi farkast.",
+      "en": "The wolf runs away and calls the other wolves.",
+      "ro": "Lupul fuge și îi cheamă pe ceilalți lupi."
+    },
+    {
+      "hu": "A farkasok együtt jönnek, de nagyon gyávák.",
+      "en": "The wolves come together, but they're very cowardly.",
+      "ro": "Lupii vin împreună, dar sunt foarte fricoși."
+    },
+    {
+      "hu": "A kismalac okos, és megmenekül.",
+      "en": "The little pig is clever and gets away.",
+      "ro": "Purcelușul e isteț și scapă."
+    }
+  ],
+  "words": [
+    {
+      "hu": "kismalac",
+      "en": "piglet",
+      "ro": "purceluș"
+    },
+    {
+      "hu": "farkas",
+      "en": "wolf",
+      "ro": "lup"
+    },
+    {
+      "hu": "erdő",
+      "en": "forest",
+      "ro": "pădure"
+    },
+    {
+      "hu": "forró",
+      "en": "hot",
+      "ro": "fierbinte"
+    },
+    {
+      "hu": "víz",
+      "en": "water",
+      "ro": "apă"
+    },
+    {
+      "hu": "gyáva",
+      "en": "cowardly",
+      "ro": "fricos, laș"
+    },
+    {
+      "hu": "okos",
+      "en": "clever",
+      "ro": "isteț, deștept"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hol él a kismalac?",
+      "qEn": "Where does the piglet live?",
+      "options": [
+        "az erdő közepén",
+        "a városban",
+        "egy hajón"
+      ],
+      "answer": "az erdő közepén"
+    },
+    {
+      "q": "Mit önt a farkasra?",
+      "qEn": "What does he pour on the wolf?",
+      "options": [
+        "forró vizet",
+        "tejet",
+        "bort"
+      ],
+      "answer": "forró vizet"
+    },
+    {
+      "q": "Milyenek a farkasok?",
+      "qEn": "What are the wolves like?",
+      "options": [
+        "gyávák",
+        "bátrak",
+        "kedvesek"
+      ],
+      "answer": "gyávák"
+    }
+  ]
+}

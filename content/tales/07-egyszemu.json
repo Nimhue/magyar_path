@@ -1,0 +1,116 @@
+{
+  "id": "egyszemu",
+  "order": 7,
+  "title": "Egyszemű, kétszemű, háromszemű",
+  "titleEn": "One-Eyed, Two-Eyed, Three-Eyed",
+  "titleRo": "Un-ochi, Două-ochi, Trei-ochi",
+  "episode": "S02E01",
+  "level": 2,
+  "video": {
+    "hu": "GPqk6h6oDgE",
+    "huTitle": "Magyar népmesék: Egyszemű, kétszemű, háromszemű",
+    "en": "dXKJpSGP4rk",
+    "enTitle": "One-Eyed, Two-Eyed, Three-Eyed"
+  },
+  "summary": [
+    {
+      "hu": "Egy özvegyasszonynak három lánya van.",
+      "en": "A widow has three daughters.",
+      "ro": "O văduvă are trei fiice."
+    },
+    {
+      "hu": "Az egyiknek egy szeme van, a másiknak kettő, a harmadiknak három.",
+      "en": "One has one eye, another has two, the third has three.",
+      "ro": "Una are un ochi, alta două, a treia trei."
+    },
+    {
+      "hu": "Az anya először a két idősebb lányt akarja férjhez adni.",
+      "en": "The mother wants to marry off the two older daughters first.",
+      "ro": "Mama vrea să le mărite mai întâi pe cele două mai mari."
+    },
+    {
+      "hu": "Ezért elküldi a legkisebb lány kérőjét.",
+      "en": "So she sends the youngest daughter's suitor away.",
+      "ro": "De aceea îl alungă pe pețitorul fetei celei mai mici."
+    },
+    {
+      "hu": "De van egy varázskecske, és segít.",
+      "en": "But there's a magic goat, and it helps.",
+      "ro": "Dar există o capră fermecată, și ea ajută."
+    },
+    {
+      "hu": "A végén a legkisebb lány hozzámegy ahhoz, akit szeret.",
+      "en": "In the end the youngest marries the one she loves.",
+      "ro": "La final cea mai mică se mărită cu cel pe care îl iubește."
+    }
+  ],
+  "words": [
+    {
+      "hu": "egy, kettő, három",
+      "en": "one, two, three",
+      "ro": "unu, doi, trei"
+    },
+    {
+      "hu": "szem",
+      "en": "eye",
+      "ro": "ochi"
+    },
+    {
+      "hu": "özvegy",
+      "en": "widow(ed)",
+      "ro": "văduv(ă)"
+    },
+    {
+      "hu": "idősebb",
+      "en": "older",
+      "ro": "mai mare (ca vârstă)"
+    },
+    {
+      "hu": "kérő",
+      "en": "suitor",
+      "ro": "pețitor"
+    },
+    {
+      "hu": "kecske",
+      "en": "goat",
+      "ro": "capră"
+    },
+    {
+      "hu": "férjhez megy",
+      "en": "to get married (said of a woman)",
+      "ro": "a se mărita"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hány lánya van az asszonynak?",
+      "qEn": "How many daughters does the woman have?",
+      "options": [
+        "három",
+        "egy",
+        "öt"
+      ],
+      "answer": "három"
+    },
+    {
+      "q": "Ki segít a legkisebb lánynak?",
+      "qEn": "Who helps the youngest daughter?",
+      "options": [
+        "egy kecske",
+        "egy sárkány",
+        "egy róka"
+      ],
+      "answer": "egy kecske"
+    },
+    {
+      "q": "Hány szeme van a harmadik lánynak?",
+      "qEn": "How many eyes does the third daughter have?",
+      "options": [
+        "három",
+        "kettő",
+        "egy"
+      ],
+      "answer": "három"
+    }
+  ]
+}

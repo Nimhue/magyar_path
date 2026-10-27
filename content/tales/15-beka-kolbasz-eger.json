@@ -1,0 +1,114 @@
+{
+  "id": "beka-kolbasz-eger",
+  "order": 15,
+  "title": "A béka, a kolbász és az egér",
+  "titleEn": "The Frog, the Sausage and the Mouse",
+  "titleRo": "Broasca, cârnatul și șoarecele",
+  "episode": "S04E07",
+  "level": 1,
+  "video": {
+    "hu": "UKd3UuraJNk",
+    "huTitle": "Magyar népmesék: A béka, a kolbász és az egér"
+  },
+  "summary": [
+    {
+      "hu": "A béka, a kolbász és az egér barátok.",
+      "en": "The frog, the sausage and the mouse are friends.",
+      "ro": "Broasca, cârnatul și șoarecele sunt prieteni."
+    },
+    {
+      "hu": "Együtt laknak, és felváltva dolgoznak a házban.",
+      "en": "They live together and take turns doing the housework.",
+      "ro": "Locuiesc împreună și fac pe rând treburile casei."
+    },
+    {
+      "hu": "A kolbász a legjobb szakács: belefőzi magát a levesbe!",
+      "en": "The sausage is the best cook: he cooks himself into the soup!",
+      "ro": "Cârnatul e cel mai bun bucătar: se gătește pe sine în supă!"
+    },
+    {
+      "hu": "A béka utánozni akarja, de megfőzi magát.",
+      "en": "The frog wants to copy him, but he scalds himself.",
+      "ro": "Broasca vrea să-l imite, dar se opărește."
+    },
+    {
+      "hu": "Így lett a varangy!",
+      "en": "That's how the toad came to be!",
+      "ro": "Așa a apărut broasca râioasă!"
+    },
+    {
+      "hu": "A végén a barátság szétesik.",
+      "en": "In the end the friendship falls apart.",
+      "ro": "La final prietenia se destramă."
+    }
+  ],
+  "words": [
+    {
+      "hu": "béka",
+      "en": "frog",
+      "ro": "broască"
+    },
+    {
+      "hu": "kolbász",
+      "en": "sausage",
+      "ro": "cârnat"
+    },
+    {
+      "hu": "egér",
+      "en": "mouse",
+      "ro": "șoarece"
+    },
+    {
+      "hu": "barát",
+      "en": "friend",
+      "ro": "prieten"
+    },
+    {
+      "hu": "szakács",
+      "en": "cook",
+      "ro": "bucătar"
+    },
+    {
+      "hu": "leves",
+      "en": "soup",
+      "ro": "supă"
+    },
+    {
+      "hu": "főz",
+      "en": "to cook",
+      "ro": "a găti"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Kik a barátok?",
+      "qEn": "Who are the friends?",
+      "options": [
+        "a béka, a kolbász és az egér",
+        "a róka és a farkas",
+        "a király és a királylány"
+      ],
+      "answer": "a béka, a kolbász és az egér"
+    },
+    {
+      "q": "Ki a legjobb szakács?",
+      "qEn": "Who is the best cook?",
+      "options": [
+        "a kolbász",
+        "a béka",
+        "az egér"
+      ],
+      "answer": "a kolbász"
+    },
+    {
+      "q": "Mi lett a békából?",
+      "qEn": "What did the frog become?",
+      "options": [
+        "varangy",
+        "királyfi",
+        "hal"
+      ],
+      "answer": "varangy"
+    }
+  ]
+}

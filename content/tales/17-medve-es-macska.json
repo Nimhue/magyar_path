@@ -1,0 +1,116 @@
+{
+  "id": "medve-es-macska",
+  "order": 17,
+  "title": "A medve és a macska",
+  "titleEn": "The Bear and the Cat",
+  "titleRo": "Ursul și pisica",
+  "episode": "S04E11",
+  "level": 1,
+  "video": {
+    "hu": "LdnZVQYNkpk",
+    "huTitle": "Magyar népmesék: A medve és a macska",
+    "en": "pCLsh0tBVss",
+    "enTitle": "The Bear and the Cat"
+  },
+  "summary": [
+    {
+      "hu": "A medve és a macska együtt házat építenek.",
+      "en": "The bear and the cat build a house together.",
+      "ro": "Ursul și pisica construiesc o casă împreună."
+    },
+    {
+      "hu": "A padlásra zsírt és mézet tesznek télre.",
+      "en": "They put fat and honey in the loft for the winter.",
+      "ro": "Pun în pod untură și miere pentru iarnă."
+    },
+    {
+      "hu": "Télen a medve alszik.",
+      "en": "In winter the bear sleeps.",
+      "ro": "Iarna ursul doarme."
+    },
+    {
+      "hu": "A macska titokban mindent megeszik!",
+      "en": "The cat secretly eats everything!",
+      "ro": "Pisica mănâncă totul pe ascuns!"
+    },
+    {
+      "hu": "Tavasszal a medve felébred, és kéri a részét.",
+      "en": "In spring the bear wakes up and asks for his share.",
+      "ro": "Primăvara ursul se trezește și își cere partea."
+    },
+    {
+      "hu": "A macska becsapja, és elszalad.",
+      "en": "The cat tricks him and runs away.",
+      "ro": "Pisica îl păcălește și fuge."
+    }
+  ],
+  "words": [
+    {
+      "hu": "medve",
+      "en": "bear",
+      "ro": "urs"
+    },
+    {
+      "hu": "macska",
+      "en": "cat",
+      "ro": "pisică"
+    },
+    {
+      "hu": "ház",
+      "en": "house",
+      "ro": "casă"
+    },
+    {
+      "hu": "méz",
+      "en": "honey",
+      "ro": "miere"
+    },
+    {
+      "hu": "tél, télen",
+      "en": "winter, in winter",
+      "ro": "iarnă, iarna"
+    },
+    {
+      "hu": "alszik",
+      "en": "to sleep",
+      "ro": "a dormi"
+    },
+    {
+      "hu": "titokban",
+      "en": "secretly",
+      "ro": "pe ascuns"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mit tesznek a padlásra?",
+      "qEn": "What do they put in the loft?",
+      "options": [
+        "zsírt és mézet",
+        "almát és diót",
+        "aranyat"
+      ],
+      "answer": "zsírt és mézet"
+    },
+    {
+      "q": "Mit csinál a medve télen?",
+      "qEn": "What does the bear do in winter?",
+      "options": [
+        "alszik",
+        "dolgozik",
+        "főz"
+      ],
+      "answer": "alszik"
+    },
+    {
+      "q": "Ki eszi meg az ételt?",
+      "qEn": "Who eats the food?",
+      "options": [
+        "a macska",
+        "a medve",
+        "az egér"
+      ],
+      "answer": "a macska"
+    }
+  ]
+}

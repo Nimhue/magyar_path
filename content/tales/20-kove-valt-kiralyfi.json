@@ -1,0 +1,111 @@
+{
+  "id": "kove-valt-kiralyfi",
+  "order": 20,
+  "title": "A kővé vált királyfi",
+  "titleEn": "The Prince Who Turned Into Stone",
+  "titleRo": "Prințul prefăcut în piatră",
+  "episode": "S06E08",
+  "level": 2,
+  "video": {
+    "hu": "_SmtvMS_IyQ",
+    "huTitle": "Magyar népmesék: A kővé vált királyfi",
+    "en": "f-PrwrRD-F0",
+    "enTitle": "The Prince Who Turned Into Stone"
+  },
+  "summary": [
+    {
+      "hu": "Két királyfi elindul világot látni.",
+      "en": "Two princes set off to see the world.",
+      "ro": "Doi prinți pleacă să vadă lumea."
+    },
+    {
+      "hu": "Egy nagy fánál elválnak egymástól.",
+      "en": "At a big tree they part ways.",
+      "ro": "La un copac mare se despart."
+    },
+    {
+      "hu": "Az idősebb királyfi bajba kerül: kővé válik.",
+      "en": "The older prince gets into trouble: he turns to stone.",
+      "ro": "Prințul cel mare ajunge la necaz: se preface în piatră."
+    },
+    {
+      "hu": "Az öccse a segítségére siet.",
+      "en": "His younger brother rushes to help him.",
+      "ro": "Fratele lui mai mic se grăbește să-l ajute."
+    },
+    {
+      "hu": "Együtt túljárnak a boszorkány eszén.",
+      "en": "Together they outsmart the witch.",
+      "ro": "Împreună o păcălesc pe vrăjitoare."
+    }
+  ],
+  "words": [
+    {
+      "hu": "királyfi",
+      "en": "prince",
+      "ro": "prinț"
+    },
+    {
+      "hu": "világ",
+      "en": "world",
+      "ro": "lume"
+    },
+    {
+      "hu": "fa",
+      "en": "tree; wood",
+      "ro": "copac; lemn"
+    },
+    {
+      "hu": "kő",
+      "en": "stone",
+      "ro": "piatră"
+    },
+    {
+      "hu": "öcs, öccse",
+      "en": "younger brother, his younger brother",
+      "ro": "frate mai mic, fratele lui mai mic"
+    },
+    {
+      "hu": "siet",
+      "en": "to hurry",
+      "ro": "a se grăbi"
+    },
+    {
+      "hu": "boszorkány",
+      "en": "witch",
+      "ro": "vrăjitoare"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hány királyfi indul el?",
+      "qEn": "How many princes set off?",
+      "options": [
+        "kettő",
+        "három",
+        "egy"
+      ],
+      "answer": "kettő"
+    },
+    {
+      "q": "Hol válnak el?",
+      "qEn": "Where do they part?",
+      "options": [
+        "egy nagy fánál",
+        "a hídnál",
+        "a tónál"
+      ],
+      "answer": "egy nagy fánál"
+    },
+    {
+      "q": "Mivé válik az idősebb királyfi?",
+      "qEn": "What does the older prince turn into?",
+      "options": [
+        "kővé",
+        "békává",
+        "madárrá"
+      ],
+      "answer": "kővé"
+    }
+  ]
+}

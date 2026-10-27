@@ -1,0 +1,112 @@
+{
+  "id": "so",
+  "order": 1,
+  "title": "A só",
+  "titleEn": "The Salt Princess",
+  "titleRo": "Sarea",
+  "episode": "S01E01",
+  "level": 1,
+  "video": {
+    "hu": "2N4BvZJjk2Q",
+    "huTitle": "Magyar népmesék: A só",
+    "en": "FVGT3Syc31Q",
+    "enTitle": "The Salt Princess"
+  },
+  "summary": [
+    {
+      "hu": "Egy királynak három lánya van.",
+      "en": "A king has three daughters.",
+      "ro": "Un rege are trei fiice."
+    },
+    {
+      "hu": "Megkérdezi: „Mennyire szerettek engem?”",
+      "en": "He asks: \"How much do you love me?\"",
+      "ro": "Întreabă: „Cât de mult mă iubiți?”"
+    },
+    {
+      "hu": "A legkisebb lány azt mondja: „Úgy, mint az emberek a sót.”",
+      "en": "The youngest says: \"As much as people love salt.\"",
+      "ro": "Cea mai mică spune: „Cum iubesc oamenii sarea.”"
+    },
+    {
+      "hu": "A király dühös, és elküldi az erdőbe.",
+      "en": "The king is angry and sends her into the forest.",
+      "ro": "Regele se înfurie și o trimite în pădure."
+    },
+    {
+      "hu": "Egy fiatal király megtalálja, és feleségül veszi.",
+      "en": "A young king finds her and marries her.",
+      "ro": "Un rege tânăr o găsește și se căsătorește cu ea."
+    },
+    {
+      "hu": "Az esküvőn az ételben nincs só. Az apa megérti a hibáját.",
+      "en": "At the wedding there's no salt in the food. The father understands his mistake.",
+      "ro": "La nuntă mâncarea nu are sare. Tatăl își înțelege greșeala."
+    }
+  ],
+  "words": [
+    {
+      "hu": "király",
+      "en": "king",
+      "ro": "rege"
+    },
+    {
+      "hu": "lány",
+      "en": "girl; daughter",
+      "ro": "fată; fiică"
+    },
+    {
+      "hu": "só",
+      "en": "salt",
+      "ro": "sare"
+    },
+    {
+      "hu": "szeret",
+      "en": "to love",
+      "ro": "a iubi"
+    },
+    {
+      "hu": "erdő",
+      "en": "forest",
+      "ro": "pădure"
+    },
+    {
+      "hu": "esküvő",
+      "en": "wedding",
+      "ro": "nuntă"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hány lánya van a királynak?",
+      "qEn": "How many daughters does the king have?",
+      "options": [
+        "három",
+        "kettő",
+        "hét"
+      ],
+      "answer": "három"
+    },
+    {
+      "q": "Hová küldi a király a legkisebb lányt?",
+      "qEn": "Where does the king send the youngest?",
+      "options": [
+        "az erdőbe",
+        "a tengerre",
+        "az iskolába"
+      ],
+      "answer": "az erdőbe"
+    },
+    {
+      "q": "Mi hiányzik az ételből az esküvőn?",
+      "qEn": "What's missing from the food at the wedding?",
+      "options": [
+        "a só",
+        "a cukor",
+        "a kenyér"
+      ],
+      "answer": "a só"
+    }
+  ],
+  "place": "sosto"
+}

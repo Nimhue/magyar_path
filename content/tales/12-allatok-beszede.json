@@ -1,0 +1,116 @@
+{
+  "id": "allatok-beszede",
+  "order": 12,
+  "title": "Az állatok beszéde",
+  "titleEn": "The Shepherd and the Snake",
+  "titleRo": "Graiul animalelor",
+  "episode": "S04E01",
+  "level": 2,
+  "video": {
+    "hu": "ZvoNF1D3YYs",
+    "huTitle": "Magyar népmesék: Az állatok beszéde",
+    "en": "AC3oTs3oKaM",
+    "enTitle": "The Shepherd and the Snake"
+  },
+  "summary": [
+    {
+      "hu": "Egy juhász segít egy kígyónak.",
+      "en": "A shepherd helps a snake.",
+      "ro": "Un cioban ajută un șarpe."
+    },
+    {
+      "hu": "A kígyó hálából ajándékot ad: a juhász érti az állatok beszédét.",
+      "en": "To thank him, the snake gives a gift: the shepherd understands the animals' speech.",
+      "ro": "Drept mulțumire, șarpele îi face un dar: ciobanul înțelege graiul animalelor."
+    },
+    {
+      "hu": "De senkinek nem mondhatja el a titkot.",
+      "en": "But he can't tell the secret to anyone.",
+      "ro": "Dar nu poate spune nimănui secretul."
+    },
+    {
+      "hu": "Egyszer nevet azon, amit az állatok mondanak.",
+      "en": "Once he laughs at what the animals say.",
+      "ro": "Odată râde de ce spun animalele."
+    },
+    {
+      "hu": "A felesége tudni akarja, miért nevet.",
+      "en": "His wife wants to know why he's laughing.",
+      "ro": "Soția lui vrea să știe de ce râde."
+    },
+    {
+      "hu": "A juhásznak okosnak kell lennie, hogy megtartsa a titkot.",
+      "en": "The shepherd has to be clever to keep the secret.",
+      "ro": "Ciobanul trebuie să fie isteț ca să păstreze secretul."
+    }
+  ],
+  "words": [
+    {
+      "hu": "juhász",
+      "en": "shepherd",
+      "ro": "cioban"
+    },
+    {
+      "hu": "kígyó",
+      "en": "snake",
+      "ro": "șarpe"
+    },
+    {
+      "hu": "állat",
+      "en": "animal",
+      "ro": "animal"
+    },
+    {
+      "hu": "beszéd",
+      "en": "speech, talk",
+      "ro": "vorbire, grai"
+    },
+    {
+      "hu": "titok",
+      "en": "secret",
+      "ro": "secret"
+    },
+    {
+      "hu": "nevet",
+      "en": "to laugh",
+      "ro": "a râde"
+    },
+    {
+      "hu": "feleség",
+      "en": "wife",
+      "ro": "soție"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Kinek segít a juhász?",
+      "qEn": "Who does the shepherd help?",
+      "options": [
+        "egy kígyónak",
+        "egy farkasnak",
+        "a királynak"
+      ],
+      "answer": "egy kígyónak"
+    },
+    {
+      "q": "Mit ért meg a juhász?",
+      "qEn": "What can the shepherd understand?",
+      "options": [
+        "az állatok beszédét",
+        "a németet",
+        "a csillagokat"
+      ],
+      "answer": "az állatok beszédét"
+    },
+    {
+      "q": "Ki akarja tudni a titkot?",
+      "qEn": "Who wants to know the secret?",
+      "options": [
+        "a felesége",
+        "a kígyó",
+        "a kutya"
+      ],
+      "answer": "a felesége"
+    }
+  ]
+}

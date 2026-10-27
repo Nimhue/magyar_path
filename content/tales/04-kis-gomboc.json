@@ -1,0 +1,114 @@
+{
+  "id": "kis-gomboc",
+  "order": 4,
+  "title": "A kis gömböc",
+  "titleEn": "The Little Gömböc",
+  "titleRo": "Ghemotocul lacom",
+  "episode": "S01E05",
+  "level": 1,
+  "video": {
+    "hu": "sSnAbMhMeHs",
+    "huTitle": "Magyar népmesék: A kis gömböc"
+  },
+  "summary": [
+    {
+      "hu": "A padláson lóg egy kis gömböc.",
+      "en": "A little round dumpling-sausage hangs in the attic.",
+      "ro": "În pod atârnă un mic ghemotoc rotund."
+    },
+    {
+      "hu": "Aki meg akarja enni, azt a gömböc eszi meg!",
+      "en": "Whoever wants to eat it gets eaten by the gömböc!",
+      "ro": "Pe cine vrea să-l mănânce, îl mănâncă el!"
+    },
+    {
+      "hu": "Egyre nagyobb és nagyobb lesz.",
+      "en": "It gets bigger and bigger.",
+      "ro": "Devine tot mai mare."
+    },
+    {
+      "hu": "Kigurul az utcára, és mindenkit lenyel.",
+      "en": "It rolls out into the street and swallows everyone.",
+      "ro": "Se rostogolește în stradă și înghite pe toată lumea."
+    },
+    {
+      "hu": "Jön egy kis kanász, egy fiú a malacokkal.",
+      "en": "A little swineherd comes, a boy with the pigs.",
+      "ro": "Vine un porcărel, un băiat cu purceii."
+    },
+    {
+      "hu": "A bicskájával kiszabadít mindenkit.",
+      "en": "With his pocketknife he frees everyone.",
+      "ro": "Cu briceagul îi eliberează pe toți."
+    }
+  ],
+  "words": [
+    {
+      "hu": "gömböc",
+      "en": "round stuffed sausage; something round and fat",
+      "ro": "ghemotoc; cârnat rotund umplut"
+    },
+    {
+      "hu": "padlás",
+      "en": "attic",
+      "ro": "pod"
+    },
+    {
+      "hu": "megesz",
+      "en": "to eat up",
+      "ro": "a mânca tot"
+    },
+    {
+      "hu": "nagyobb",
+      "en": "bigger",
+      "ro": "mai mare"
+    },
+    {
+      "hu": "gurul",
+      "en": "to roll",
+      "ro": "a se rostogoli"
+    },
+    {
+      "hu": "utca",
+      "en": "street",
+      "ro": "stradă"
+    },
+    {
+      "hu": "bicska",
+      "en": "pocketknife",
+      "ro": "briceag"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hol lóg a gömböc?",
+      "qEn": "Where does the gömböc hang?",
+      "options": [
+        "a padláson",
+        "a fán",
+        "a konyhában"
+      ],
+      "answer": "a padláson"
+    },
+    {
+      "q": "Mit csinál a gömböc az utcán?",
+      "qEn": "What does it do in the street?",
+      "options": [
+        "mindenkit lenyel",
+        "énekel",
+        "alszik"
+      ],
+      "answer": "mindenkit lenyel"
+    },
+    {
+      "q": "Ki szabadít ki mindenkit?",
+      "qEn": "Who frees everyone?",
+      "options": [
+        "a kis kanász",
+        "a király",
+        "a róka"
+      ],
+      "answer": "a kis kanász"
+    }
+  ]
+}

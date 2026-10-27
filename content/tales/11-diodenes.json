@@ -1,0 +1,104 @@
+{
+  "id": "diodenes",
+  "order": 11,
+  "title": "Diódénes",
+  "titleEn": "Little Diodennis",
+  "titleRo": "Diódénes",
+  "episode": "S03E03",
+  "level": 2,
+  "video": {
+    "hu": "tQuv5ZrK8b8",
+    "huTitle": "Magyar népmesék: Diódénes"
+  },
+  "summary": [
+    {
+      "hu": "Diódénes egy kis tehénpásztor.",
+      "en": "Diódénes is a little cowherd.",
+      "ro": "Diódénes este un mic văcar."
+    },
+    {
+      "hu": "Vigyáz a tehenekre a mezőn.",
+      "en": "He looks after the cows in the field.",
+      "ro": "Are grijă de vaci pe câmp."
+    },
+    {
+      "hu": "Egy nap a tehenek elkóborolnak.",
+      "en": "One day the cows wander off.",
+      "ro": "Într-o zi vacile se rătăcesc."
+    },
+    {
+      "hu": "Diódénes nagy bajba kerül.",
+      "en": "Diódénes gets into big trouble.",
+      "ro": "Diódénes ajunge la mare necaz."
+    },
+    {
+      "hu": "De nagyon ügyes, és ravaszul kimászik a bajból.",
+      "en": "But he's very smart and cleverly gets himself out of trouble.",
+      "ro": "Dar e foarte isteț și scapă cu șiretenie din necaz."
+    }
+  ],
+  "words": [
+    {
+      "hu": "pásztor",
+      "en": "herdsman, shepherd",
+      "ro": "păstor, cioban"
+    },
+    {
+      "hu": "tehén, tehenek",
+      "en": "cow, cows",
+      "ro": "vacă, vaci"
+    },
+    {
+      "hu": "mező",
+      "en": "field, meadow",
+      "ro": "câmp"
+    },
+    {
+      "hu": "baj",
+      "en": "trouble",
+      "ro": "necaz"
+    },
+    {
+      "hu": "ügyes",
+      "en": "skilful, smart",
+      "ro": "îndemânatic, isteț"
+    },
+    {
+      "hu": "ravaszul",
+      "en": "cunningly",
+      "ro": "cu șiretenie"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Kire vigyáz Diódénes?",
+      "qEn": "What does Diódénes look after?",
+      "options": [
+        "a tehenekre",
+        "a kecskékre",
+        "a gyerekekre"
+      ],
+      "answer": "a tehenekre"
+    },
+    {
+      "q": "Mi történik egy nap?",
+      "qEn": "What happens one day?",
+      "options": [
+        "a tehenek elkóborolnak",
+        "esik a hó",
+        "jön a király"
+      ],
+      "answer": "a tehenek elkóborolnak"
+    },
+    {
+      "q": "Milyen Diódénes?",
+      "qEn": "What is Diódénes like?",
+      "options": [
+        "ügyes",
+        "lusta",
+        "gyáva"
+      ],
+      "answer": "ügyes"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "viz-tundere",
+  "order": 22,
+  "title": "A víz tündére",
+  "titleEn": "The Water Fairy",
+  "titleRo": "Zâna apei",
+  "episode": "S07E03",
+  "level": 3,
+  "video": {
+    "hu": "l8Sl95MjHTU",
+    "huTitle": "Magyar népmesék: A víz tündére",
+    "en": "E-nSlaBmk8g",
+    "enTitle": "The Water Fairy"
+  },
+  "summary": [
+    {
+      "hu": "Egy szegény molnár alkut köt a víz tündérével.",
+      "en": "A poor miller makes a deal with the water fairy.",
+      "ro": "Un morar sărac face un târg cu zâna apei."
+    },
+    {
+      "hu": "Gazdag lesz, de a tündér kér valamit cserébe.",
+      "en": "He becomes rich, but the fairy asks for something in return.",
+      "ro": "Devine bogat, dar zâna cere ceva în schimb."
+    },
+    {
+      "hu": "Kiderül, hogy a molnár saját gyerekét kéri!",
+      "en": "It turns out she's asking for the miller's own child!",
+      "ro": "Se dovedește că cere copilul morarului!"
+    },
+    {
+      "hu": "A szülők védik a fiút, de a tündér elviszi.",
+      "en": "The parents protect the boy, but the fairy takes him.",
+      "ro": "Părinții îl apără pe băiat, dar zâna îl ia."
+    },
+    {
+      "hu": "Az anya keresi a családját. Egy titokzatos öregasszony segít neki.",
+      "en": "The mother searches for her family. A mysterious old woman helps her.",
+      "ro": "Mama își caută familia. O bătrână misterioasă o ajută."
+    },
+    {
+      "hu": "Mint sok népmesében, a végén újra együtt vannak.",
+      "en": "As in many folk tales, in the end they are together again.",
+      "ro": "Ca în multe povești populare, la final sunt din nou împreună."
+    }
+  ],
+  "words": [
+    {
+      "hu": "víz",
+      "en": "water",
+      "ro": "apă"
+    },
+    {
+      "hu": "tündér",
+      "en": "fairy",
+      "ro": "zână"
+    },
+    {
+      "hu": "molnár",
+      "en": "miller",
+      "ro": "morar"
+    },
+    {
+      "hu": "gazdag",
+      "en": "rich",
+      "ro": "bogat"
+    },
+    {
+      "hu": "alku",
+      "en": "deal, bargain",
+      "ro": "târg, înțelegere"
+    },
+    {
+      "hu": "szülők",
+      "en": "parents",
+      "ro": "părinți"
+    },
+    {
+      "hu": "keres",
+      "en": "to look for",
+      "ro": "a căuta"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Kivel köt alkut a molnár?",
+      "qEn": "Who does the miller make a deal with?",
+      "options": [
+        "a víz tündérével",
+        "az ördöggel",
+        "a királlyal"
+      ],
+      "answer": "a víz tündérével"
+    },
+    {
+      "q": "Mit kér a tündér?",
+      "qEn": "What does the fairy ask for?",
+      "options": [
+        "a molnár gyerekét",
+        "aranyat",
+        "a malmot"
+      ],
+      "answer": "a molnár gyerekét"
+    },
+    {
+      "q": "Ki segít az anyának?",
+      "qEn": "Who helps the mother?",
+      "options": [
+        "egy öregasszony",
+        "egy róka",
+        "a molnár"
+      ],
+      "answer": "egy öregasszony"
+    }
+  ]
+}

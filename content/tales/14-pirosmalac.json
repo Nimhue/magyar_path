@@ -1,0 +1,111 @@
+{
+  "id": "pirosmalac",
+  "order": 14,
+  "title": "Pirosmalac",
+  "titleEn": "The Pink Pig",
+  "titleRo": "Purcelușa roz",
+  "episode": "S04E04",
+  "level": 2,
+  "video": {
+    "hu": "G-lHXVk2bfM",
+    "huTitle": "Magyar népmesék: Pirosmalac",
+    "en": "_hIbRntfOAg",
+    "enTitle": "The Pink Pig"
+  },
+  "summary": [
+    {
+      "hu": "Egy asszonynak nincs gyereke.",
+      "en": "A woman has no children.",
+      "ro": "O femeie nu are copii."
+    },
+    {
+      "hu": "Felnevel egy kismalacot, mintha a gyereke lenne.",
+      "en": "She raises a piglet as if it were her child.",
+      "ro": "Crește un purceluș ca și cum ar fi copilul ei."
+    },
+    {
+      "hu": "Pirosmalacnak hívja, és iskolába is küldi.",
+      "en": "She calls it Pink Pig and even sends it to school.",
+      "ro": "O numește Purcelușa Roz și o trimite chiar și la școală."
+    },
+    {
+      "hu": "Egy nap a szomszéd fiú lát valamit.",
+      "en": "One day the neighbour boy sees something.",
+      "ro": "Într-o zi băiatul vecinilor vede ceva."
+    },
+    {
+      "hu": "Pirosmalac leveszi a malacbőrt, és alatta egy gyönyörű lány van!",
+      "en": "Pink Pig takes off her pig skin, and under it is a beautiful girl!",
+      "ro": "Purcelușa își scoate pielea de porc, iar dedesubt e o fată frumoasă!"
+    }
+  ],
+  "words": [
+    {
+      "hu": "malac",
+      "en": "pig, piglet",
+      "ro": "porc, purcel"
+    },
+    {
+      "hu": "piros",
+      "en": "red (pink, for a pig)",
+      "ro": "roșu (roz, la porc)"
+    },
+    {
+      "hu": "asszony",
+      "en": "woman, wife",
+      "ro": "femeie"
+    },
+    {
+      "hu": "iskola",
+      "en": "school",
+      "ro": "școală"
+    },
+    {
+      "hu": "szomszéd",
+      "en": "neighbour",
+      "ro": "vecin"
+    },
+    {
+      "hu": "bőr",
+      "en": "skin",
+      "ro": "piele"
+    },
+    {
+      "hu": "gyönyörű",
+      "en": "beautiful",
+      "ro": "minunat, foarte frumos"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mit nevel fel az asszony?",
+      "qEn": "What does the woman raise?",
+      "options": [
+        "egy kismalacot",
+        "egy kutyát",
+        "egy csikót"
+      ],
+      "answer": "egy kismalacot"
+    },
+    {
+      "q": "Hová küldi a malacot?",
+      "qEn": "Where does she send the pig?",
+      "options": [
+        "iskolába",
+        "a piacra",
+        "az erdőbe"
+      ],
+      "answer": "iskolába"
+    },
+    {
+      "q": "Mi van a malacbőr alatt?",
+      "qEn": "What's under the pig skin?",
+      "options": [
+        "egy szép lány",
+        "egy kincs",
+        "egy sárkány"
+      ],
+      "answer": "egy szép lány"
+    }
+  ]
+}

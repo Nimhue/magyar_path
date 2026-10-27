@@ -1,0 +1,111 @@
+{
+  "id": "papucsszaggato",
+  "order": 19,
+  "title": "A papucsszaggató királykisasszonyok",
+  "titleEn": "The Slipper-Tearing Princesses",
+  "titleRo": "Prințesele care rupeau papucii",
+  "episode": "S06E04",
+  "level": 2,
+  "video": {
+    "hu": "3Ck32Synblk",
+    "huTitle": "Magyar népmesék: A papucsszaggató királykisasszonyok",
+    "en": "52pnZYdeS6k",
+    "enTitle": "The Slipper Tearing Princesses"
+  },
+  "summary": [
+    {
+      "hu": "A királynak sok lánya van.",
+      "en": "The king has many daughters.",
+      "ro": "Regele are multe fiice."
+    },
+    {
+      "hu": "Minden reggel lyukas a papucsuk. Senki sem tudja, miért.",
+      "en": "Every morning their slippers are full of holes. Nobody knows why.",
+      "ro": "În fiecare dimineață papucii lor sunt găuriți. Nimeni nu știe de ce."
+    },
+    {
+      "hu": "A király azt mondja: aki kitalálja, feleségül veheti az egyik lányt.",
+      "en": "The king says: whoever finds out can marry one of the daughters.",
+      "ro": "Regele spune: cine află poate lua de soție una dintre fete."
+    },
+    {
+      "hu": "Egy ügyes fiú éjjel követi a lányokat.",
+      "en": "A clever lad follows the girls at night.",
+      "ro": "Un flăcău isteț le urmărește pe fete noaptea."
+    },
+    {
+      "hu": "A lányok titokban táncolni járnak egy varázslatos helyre.",
+      "en": "The girls secretly go dancing in a magical place.",
+      "ro": "Fetele merg pe ascuns la dans într-un loc fermecat."
+    }
+  ],
+  "words": [
+    {
+      "hu": "királykisasszony",
+      "en": "princess",
+      "ro": "prințesă, domniță"
+    },
+    {
+      "hu": "papucs",
+      "en": "slipper",
+      "ro": "papuc"
+    },
+    {
+      "hu": "lyukas",
+      "en": "full of holes, torn",
+      "ro": "găurit"
+    },
+    {
+      "hu": "reggel",
+      "en": "morning, in the morning",
+      "ro": "dimineață"
+    },
+    {
+      "hu": "követ",
+      "en": "to follow",
+      "ro": "a urmări"
+    },
+    {
+      "hu": "táncol",
+      "en": "to dance",
+      "ro": "a dansa"
+    },
+    {
+      "hu": "titokban",
+      "en": "secretly",
+      "ro": "pe ascuns"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen reggel a papucsuk?",
+      "qEn": "What are their slippers like in the morning?",
+      "options": [
+        "lyukas",
+        "új",
+        "arany"
+      ],
+      "answer": "lyukas"
+    },
+    {
+      "q": "Mikor követi a fiú a lányokat?",
+      "qEn": "When does the lad follow the girls?",
+      "options": [
+        "éjjel",
+        "délben",
+        "vasárnap"
+      ],
+      "answer": "éjjel"
+    },
+    {
+      "q": "Mit csinálnak a lányok titokban?",
+      "qEn": "What do the girls do in secret?",
+      "options": [
+        "táncolnak",
+        "főznek",
+        "tanulnak"
+      ],
+      "answer": "táncolnak"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "szorgalmas-es-rest",
+  "order": 10,
+  "title": "A szorgalmas és a rest leány",
+  "titleEn": "The Diligent Girl and the Lazy Girl",
+  "titleRo": "Fata harnică și fata leneșă",
+  "episode": "S03E11",
+  "level": 1,
+  "video": {
+    "hu": "tADkcAzu_-Q",
+    "huTitle": "Magyar népmesék: A szorgalmas és a rest leány",
+    "en": "ih6y3NILQWM",
+    "enTitle": "The Diligent Girl and the Lazy Girl"
+  },
+  "summary": [
+    {
+      "hu": "Egy mostohaanyának van egy saját lánya és egy mostohalánya.",
+      "en": "A stepmother has her own daughter and a stepdaughter.",
+      "ro": "O mamă vitregă are o fiică a ei și o fiică vitregă."
+    },
+    {
+      "hu": "A szorgalmas lányt elküldi szolgálni.",
+      "en": "She sends the hard-working girl away to work as a servant.",
+      "ro": "O trimite pe fata harnică să slujească."
+    },
+    {
+      "hu": "Egy év múlva a lány arannyal és ezüsttel jön haza.",
+      "en": "After a year the girl comes home with gold and silver.",
+      "ro": "După un an fata vine acasă cu aur și argint."
+    },
+    {
+      "hu": "A mostohaanya irigy, és a saját lányát is elküldi.",
+      "en": "The stepmother is jealous and sends her own daughter too.",
+      "ro": "Mama vitregă e invidioasă și o trimite și pe fiica ei."
+    },
+    {
+      "hu": "De ez a lány lusta.",
+      "en": "But this girl is lazy.",
+      "ro": "Dar fata asta e leneșă."
+    },
+    {
+      "hu": "Tüskés, piszkos ruhában jön haza.",
+      "en": "She comes home in thorny, dirty clothes.",
+      "ro": "Vine acasă cu haine pline de spini și murdare."
+    }
+  ],
+  "words": [
+    {
+      "hu": "szorgalmas",
+      "en": "hard-working",
+      "ro": "harnic"
+    },
+    {
+      "hu": "rest (lusta)",
+      "en": "lazy",
+      "ro": "leneș"
+    },
+    {
+      "hu": "mostohaanya",
+      "en": "stepmother",
+      "ro": "mamă vitregă"
+    },
+    {
+      "hu": "szolgál",
+      "en": "to serve, to work as a servant",
+      "ro": "a sluji"
+    },
+    {
+      "hu": "arany",
+      "en": "gold",
+      "ro": "aur"
+    },
+    {
+      "hu": "ezüst",
+      "en": "silver",
+      "ro": "argint"
+    },
+    {
+      "hu": "ruha",
+      "en": "clothes; dress",
+      "ro": "haine; rochie"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Milyen a mostohalány?",
+      "qEn": "What is the stepdaughter like?",
+      "options": [
+        "szorgalmas",
+        "lusta",
+        "dühös"
+      ],
+      "answer": "szorgalmas"
+    },
+    {
+      "q": "Mivel jön haza egy év múlva?",
+      "qEn": "What does she come home with after a year?",
+      "options": [
+        "arannyal és ezüsttel",
+        "egy kutyával",
+        "semmivel"
+      ],
+      "answer": "arannyal és ezüsttel"
+    },
+    {
+      "q": "Milyen a mostohaanya saját lánya?",
+      "qEn": "What is the stepmother's own daughter like?",
+      "options": [
+        "lusta",
+        "szorgalmas",
+        "okos"
+      ],
+      "answer": "lusta"
+    }
+  ]
+}

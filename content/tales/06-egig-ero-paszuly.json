@@ -1,0 +1,121 @@
+{
+  "id": "egig-ero-paszuly",
+  "order": 6,
+  "title": "Az égig érő paszuly",
+  "titleEn": "The Giant Beanstalk",
+  "titleRo": "Fasolea până la cer",
+  "episode": "S01E12",
+  "level": 2,
+  "video": {
+    "hu": "_WvVee6RM38",
+    "huTitle": "Magyar népmesék: Az égig érő paszuly",
+    "en": "qHnUD7oHP_s",
+    "enTitle": "The Giant Beanstalk"
+  },
+  "summary": [
+    {
+      "hu": "Egy szegény özvegy asszonynak van egy fia és egy tehene.",
+      "en": "A poor widow has a son and a cow.",
+      "ro": "O văduvă săracă are un fiu și o vacă."
+    },
+    {
+      "hu": "A fiú elcseréli a tehenet egyetlen babszemre.",
+      "en": "The boy swaps the cow for a single bean.",
+      "ro": "Băiatul schimbă vaca pe un singur bob de fasole."
+    },
+    {
+      "hu": "A bab varázsbab: égig érő paszuly nő belőle!",
+      "en": "It's a magic bean: a beanstalk grows right up to the sky!",
+      "ro": "E o fasole fermecată: din ea crește o fasole până la cer!"
+    },
+    {
+      "hu": "A fiú felmászik, és fent egy palotát talál. Ott egy háromfejű sárkány lakik.",
+      "en": "The boy climbs up and finds a palace up there. A three-headed dragon lives there.",
+      "ro": "Băiatul se cațără și sus găsește un palat. Acolo locuiește un balaur cu trei capete."
+    },
+    {
+      "hu": "A sárkány feleségének segítségével elhozza az aranytojást tojó tyúkot.",
+      "en": "With the dragon's wife's help he takes the hen that lays golden eggs.",
+      "ro": "Cu ajutorul soției balaurului ia găina cu ouă de aur."
+    },
+    {
+      "hu": "Lent kivágja a paszulyt, és a sárkány leesik.",
+      "en": "Down below he chops the beanstalk, and the dragon falls.",
+      "ro": "Jos taie fasolea, iar balaurul cade."
+    }
+  ],
+  "words": [
+    {
+      "hu": "paszuly (bab)",
+      "en": "bean (regional word)",
+      "ro": "fasole"
+    },
+    {
+      "hu": "ég",
+      "en": "sky",
+      "ro": "cer"
+    },
+    {
+      "hu": "tehén",
+      "en": "cow",
+      "ro": "vacă"
+    },
+    {
+      "hu": "felmászik",
+      "en": "to climb up",
+      "ro": "a se cățăra"
+    },
+    {
+      "hu": "palota",
+      "en": "palace",
+      "ro": "palat"
+    },
+    {
+      "hu": "sárkány",
+      "en": "dragon",
+      "ro": "balaur, dragon"
+    },
+    {
+      "hu": "tyúk",
+      "en": "hen",
+      "ro": "găină"
+    },
+    {
+      "hu": "aranytojás",
+      "en": "golden egg",
+      "ro": "ou de aur"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Mire cseréli a fiú a tehenet?",
+      "qEn": "What does the boy swap the cow for?",
+      "options": [
+        "egy babszemre",
+        "egy kecskére",
+        "egy kalapra"
+      ],
+      "answer": "egy babszemre"
+    },
+    {
+      "q": "Ki lakik fent a palotában?",
+      "qEn": "Who lives up in the palace?",
+      "options": [
+        "egy háromfejű sárkány",
+        "egy király",
+        "egy macska"
+      ],
+      "answer": "egy háromfejű sárkány"
+    },
+    {
+      "q": "Mit hoz le a fiú?",
+      "qEn": "What does the boy bring down?",
+      "options": [
+        "az aranytojást tojó tyúkot",
+        "egy kardot",
+        "egy lovat"
+      ],
+      "answer": "az aranytojást tojó tyúkot"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "kilenc-tyuk",
+  "order": 16,
+  "title": "A szegény ember kilenc tyúkja és kakasa",
+  "titleEn": "The Poor Man's Nine Hens and One Cockerel",
+  "titleRo": "Cele nouă găini și cocoșul omului sărac",
+  "episode": "S04E08",
+  "level": 2,
+  "video": {
+    "hu": "yY2MQcsPxcQ",
+    "huTitle": "Magyar népmesék: A szegény ember kilenc tyúkja és kakasa",
+    "en": "8RCiajqYHRA",
+    "enTitle": "The Poor Man's Nine Hens and One Cockerel"
+  },
+  "summary": [
+    {
+      "hu": "Egy szegény embernek kilenc tyúkja és egy kakasa van.",
+      "en": "A poor man has nine hens and a rooster.",
+      "ro": "Un om sărac are nouă găini și un cocoș."
+    },
+    {
+      "hu": "Jön a ravasz róka.",
+      "en": "The sly fox comes.",
+      "ro": "Vine vulpea cea șireată."
+    },
+    {
+      "hu": "A szegény ember figyeli a rókát, és tanul tőle.",
+      "en": "The poor man watches the fox and learns from it.",
+      "ro": "Omul sărac urmărește vulpea și învață de la ea."
+    },
+    {
+      "hu": "Ő is ravasz lesz.",
+      "en": "He becomes cunning too.",
+      "ro": "Și el devine șiret."
+    },
+    {
+      "hu": "A végén a szegény ember túljár a róka eszén!",
+      "en": "In the end the poor man outsmarts the fox!",
+      "ro": "La final omul sărac o păcălește pe vulpe!"
+    }
+  ],
+  "words": [
+    {
+      "hu": "kilenc",
+      "en": "nine",
+      "ro": "nouă"
+    },
+    {
+      "hu": "tyúk",
+      "en": "hen",
+      "ro": "găină"
+    },
+    {
+      "hu": "kakas",
+      "en": "rooster",
+      "ro": "cocoș"
+    },
+    {
+      "hu": "figyel",
+      "en": "to watch, to pay attention",
+      "ro": "a urmări, a fi atent"
+    },
+    {
+      "hu": "tanul",
+      "en": "to learn, to study",
+      "ro": "a învăța"
+    },
+    {
+      "hu": "túljár valakinek az eszén",
+      "en": "to outsmart someone",
+      "ro": "a păcăli pe cineva"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Hány tyúkja van a szegény embernek?",
+      "qEn": "How many hens does the poor man have?",
+      "options": [
+        "kilenc",
+        "három",
+        "tizenkettő"
+      ],
+      "answer": "kilenc"
+    },
+    {
+      "q": "Kitől tanul a szegény ember?",
+      "qEn": "Who does the poor man learn from?",
+      "options": [
+        "a rókától",
+        "a papnál",
+        "a királytól"
+      ],
+      "answer": "a rókától"
+    },
+    {
+      "q": "Ki nyer a végén?",
+      "qEn": "Who wins in the end?",
+      "options": [
+        "a szegény ember",
+        "a róka",
+        "a kakas"
+      ],
+      "answer": "a szegény ember"
+    }
+  ]
+}
