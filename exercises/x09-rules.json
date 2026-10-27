@@ -1,0 +1,143 @@
+{
+  "id": "x09-rules",
+  "lesson": "l09-varos",
+  "title": "Szabályok és csevegés",
+  "titleEn": "Rules and small talk",
+  "intro": "Compounds, loan words, a→á / e→é, and everyday phrases.",
+  "items": [
+    {
+      "type": "choice",
+      "prompt": "konyhaszekrény + -ban/-ben = ?",
+      "options": [
+        "konyhaszekrényben",
+        "konyhaszekrényban"
+      ],
+      "answer": "konyhaszekrényben",
+      "explain": "Compound: ignore konyha, szekrény is front."
+    },
+    {
+      "type": "choice",
+      "prompt": "számítógép + -ban/-ben = ?",
+      "options": [
+        "számítógépben",
+        "számítógépban"
+      ],
+      "answer": "számítógépben",
+      "explain": "Compound: the last part is gép (front)."
+    },
+    {
+      "type": "choice",
+      "prompt": "hotel + -ban/-ben = ?",
+      "options": [
+        "hotelben",
+        "hotelban"
+      ],
+      "answer": "hotelben",
+      "explain": "Loan word: look at the last syllable, -tel."
+    },
+    {
+      "type": "choice",
+      "prompt": "Budapest + -n = ?",
+      "options": [
+        "Budapesten",
+        "Budapeston",
+        "Budapestben"
+      ],
+      "answer": "Budapesten"
+    },
+    {
+      "type": "choice",
+      "prompt": "alma → (accusative) ?",
+      "options": [
+        "almát",
+        "almat",
+        "almet"
+      ],
+      "answer": "almát",
+      "explain": "Final a → á before any ending."
+    },
+    {
+      "type": "choice",
+      "prompt": "lecke → (accusative) ?",
+      "options": [
+        "leckét",
+        "lecket",
+        "leckat"
+      ],
+      "answer": "leckét",
+      "explain": "Final e → é before any ending."
+    },
+    {
+      "type": "choice",
+      "prompt": "zene + -ben = ?",
+      "options": [
+        "zenében",
+        "zeneben",
+        "zenában"
+      ],
+      "answer": "zenében"
+    },
+    {
+      "type": "match",
+      "prompt": "Informal or formal?",
+      "pairs": [
+        {
+          "left": "Hogy vagy?",
+          "right": "How are you? (informal)"
+        },
+        {
+          "left": "Hogy van?",
+          "right": "How are you? (formal)"
+        },
+        {
+          "left": "Mi a neved?",
+          "right": "What's your name? (informal)"
+        },
+        {
+          "left": "Mi a neve?",
+          "right": "What's your name? (formal)"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "prompt": "— Megfáztam. — …",
+      "promptEn": "I've caught a cold.",
+      "options": [
+        "Sajnálom. Jobbulást!",
+        "Egészségedre!",
+        "Nagyon örülök!"
+      ],
+      "answer": "Sajnálom. Jobbulást!"
+    },
+    {
+      "type": "type",
+      "prompt": "I'm feeling better.",
+      "answer": [
+        "Jobban vagyok.",
+        "Jobban vagyok"
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "I'm very happy we met.",
+      "tiles": [
+        "Nagyon",
+        "örülök,",
+        "hogy",
+        "találkoztunk!"
+      ],
+      "answer": "Nagyon örülök, hogy találkoztunk!"
+    },
+    {
+      "type": "order",
+      "prompt": "Peter drinks COFFEE (not tea).",
+      "tiles": [
+        "Péter",
+        "kávét",
+        "iszik."
+      ],
+      "answer": "Péter kávét iszik."
+    }
+  ]
+}

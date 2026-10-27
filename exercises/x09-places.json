@@ -1,0 +1,162 @@
+{
+  "id": "x09-places",
+  "lesson": "l09-varos",
+  "title": "Hol vagy?",
+  "titleEn": "Places in town with -ban/-ben",
+  "intro": "Vowel harmony, plus: final a → á, e → é.",
+  "items": [
+    {
+      "type": "sort",
+      "prompt": "-ban or -ben?",
+      "buckets": [
+        "-ban",
+        "-ben"
+      ],
+      "items": [
+        {
+          "text": "bolt",
+          "bucket": "-ban"
+        },
+        {
+          "text": "kórház",
+          "bucket": "-ban"
+        },
+        {
+          "text": "templom",
+          "bucket": "-ban"
+        },
+        {
+          "text": "mosdó",
+          "bucket": "-ban"
+        },
+        {
+          "text": "kert",
+          "bucket": "-ben"
+        },
+        {
+          "text": "étterem",
+          "bucket": "-ben"
+        },
+        {
+          "text": "épület",
+          "bucket": "-ben"
+        },
+        {
+          "text": "rendelő",
+          "bucket": "-ben"
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "prompt": "iskola + -ban = ?",
+      "options": [
+        "iskolában",
+        "iskolaban",
+        "iskolán"
+      ],
+      "answer": "iskolában",
+      "explain": "Final a → á before any ending."
+    },
+    {
+      "type": "choice",
+      "prompt": "iroda + -ban = ?",
+      "options": [
+        "irodában",
+        "irodaban",
+        "irodaben"
+      ],
+      "answer": "irodában"
+    },
+    {
+      "type": "choice",
+      "prompt": "szoba + -ban = ?",
+      "options": [
+        "szobában",
+        "szobaban",
+        "szobábán"
+      ],
+      "answer": "szobában"
+    },
+    {
+      "type": "type",
+      "prompt": "pékség → in the bakery",
+      "answer": "pékségben"
+    },
+    {
+      "type": "type",
+      "prompt": "könyvtár → in the library",
+      "answer": "könyvtárban",
+      "hint": "Compound: look at tár."
+    },
+    {
+      "type": "type",
+      "prompt": "gyógyszertár → in the pharmacy",
+      "answer": "gyógyszertárban"
+    },
+    {
+      "type": "type",
+      "prompt": "virágbolt → in the flower shop",
+      "answer": "virágboltban"
+    },
+    {
+      "type": "choice",
+      "prompt": "Az orvos a ___ dolgozik.",
+      "promptEn": "The doctor works in the hospital.",
+      "options": [
+        "kórházban",
+        "kórházben",
+        "kórházon"
+      ],
+      "answer": "kórházban"
+    },
+    {
+      "type": "choice",
+      "prompt": "A pincér az ___ van.",
+      "promptEn": "The waiter is in the restaurant.",
+      "options": [
+        "étteremben",
+        "étteremban",
+        "étteremen"
+      ],
+      "answer": "étteremben"
+    },
+    {
+      "type": "match",
+      "prompt": "Who works where?",
+      "pairs": [
+        {
+          "left": "pincér",
+          "right": "étterem"
+        },
+        {
+          "left": "orvos",
+          "right": "kórház"
+        },
+        {
+          "left": "pék",
+          "right": "pékség"
+        },
+        {
+          "left": "pap",
+          "right": "templom"
+        },
+        {
+          "left": "eladó",
+          "right": "bolt"
+        }
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Anna studies in the library.",
+      "tiles": [
+        "Anna",
+        "a",
+        "könyvtárban",
+        "tanul."
+      ],
+      "answer": "Anna a könyvtárban tanul."
+    }
+  ]
+}

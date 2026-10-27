@@ -5,22 +5,177 @@
   "titleEn": "Forms of “to be”",
   "intro": "Fill in the right form. If no word is needed, choose “—”.",
   "items": [
-    { "type": "choice", "prompt": "Én mérnök ___.", "options": ["vagyok", "vagy", "van", "—"], "answer": "vagyok" },
-    { "type": "choice", "prompt": "Te diák ___?", "options": ["vagyok", "vagy", "van", "—"], "answer": "vagy" },
-    { "type": "choice", "prompt": "András magyar ___.", "options": ["vagyok", "vagy", "van", "—"], "answer": "—", "explain": "3rd person + adjective: van is left out." },
-    { "type": "choice", "prompt": "Ön német ___?", "options": ["vagyok", "vagy", "van", "—"], "answer": "—", "explain": "Ön works like he/she, so van is left out." },
-    { "type": "choice", "prompt": "Mi diákok ___.", "options": ["vagyunk", "vagytok", "vannak", "—"], "answer": "vagyunk" },
-    { "type": "choice", "prompt": "Ti tanárok ___?", "options": ["vagyunk", "vagytok", "vannak", "—"], "answer": "vagytok" },
-    { "type": "choice", "prompt": "Ők lengyelek ___.", "options": ["vagyunk", "vagytok", "vannak", "—"], "answer": "—" },
-    { "type": "choice", "prompt": "Which sentence is correct?", "options": ["Mária szegedi.", "Mária van szegedi.", "Mária vagy szegedi."], "answer": "Mária szegedi." },
-    { "type": "match", "prompt": "Match the person to the verb form.", "pairs": [
-      { "left": "én", "right": "vagyok" },
-      { "left": "te", "right": "vagy" },
-      { "left": "mi", "right": "vagyunk" },
-      { "left": "ti", "right": "vagytok" }
-    ] },
-    { "type": "type", "prompt": "Write: “I am twenty years old.”", "answer": ["Húsz éves vagyok.", "Én húsz éves vagyok."] },
-    { "type": "type", "prompt": "Write: “Hungary is small.”", "answer": "Magyarország kicsi." },
-    { "type": "type", "prompt": "Write: “Are you an engineer too?” (formal)", "answer": "Ön is mérnök?" }
+    {
+      "type": "choice",
+      "prompt": "Én mérnök ___.",
+      "options": [
+        "vagyok",
+        "vagy",
+        "van",
+        "—"
+      ],
+      "answer": "vagyok"
+    },
+    {
+      "type": "choice",
+      "prompt": "Te diák ___?",
+      "options": [
+        "vagyok",
+        "vagy",
+        "van",
+        "—"
+      ],
+      "answer": "vagy"
+    },
+    {
+      "type": "choice",
+      "prompt": "András magyar ___.",
+      "options": [
+        "vagyok",
+        "vagy",
+        "van",
+        "—"
+      ],
+      "answer": "—",
+      "explain": "3rd person + adjective: van is left out."
+    },
+    {
+      "type": "choice",
+      "prompt": "Ön német ___?",
+      "options": [
+        "vagyok",
+        "vagy",
+        "van",
+        "—"
+      ],
+      "answer": "—",
+      "explain": "Ön works like he/she, so van is left out."
+    },
+    {
+      "type": "choice",
+      "prompt": "Mi diákok ___.",
+      "options": [
+        "vagyunk",
+        "vagytok",
+        "vannak",
+        "—"
+      ],
+      "answer": "vagyunk"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ti tanárok ___?",
+      "options": [
+        "vagyunk",
+        "vagytok",
+        "vannak",
+        "—"
+      ],
+      "answer": "vagytok"
+    },
+    {
+      "type": "choice",
+      "prompt": "Ők lengyelek ___.",
+      "options": [
+        "vagyunk",
+        "vagytok",
+        "vannak",
+        "—"
+      ],
+      "answer": "—"
+    },
+    {
+      "type": "choice",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        "Mária szegedi.",
+        "Mária van szegedi.",
+        "Mária vagy szegedi."
+      ],
+      "answer": "Mária szegedi."
+    },
+    {
+      "type": "match",
+      "prompt": "Match the person to the verb form.",
+      "pairs": [
+        {
+          "left": "én",
+          "right": "vagyok"
+        },
+        {
+          "left": "te",
+          "right": "vagy"
+        },
+        {
+          "left": "mi",
+          "right": "vagyunk"
+        },
+        {
+          "left": "ti",
+          "right": "vagytok"
+        }
+      ]
+    },
+    {
+      "type": "type",
+      "prompt": "Write: “I am twenty years old.”",
+      "answer": [
+        "Húsz éves vagyok.",
+        "Én húsz éves vagyok."
+      ]
+    },
+    {
+      "type": "type",
+      "prompt": "Write: “Hungary is small.”",
+      "answer": "Magyarország kicsi."
+    },
+    {
+      "type": "type",
+      "prompt": "Write: “Are you an engineer too?” (formal)",
+      "answer": "Ön is mérnök?"
+    },
+    {
+      "type": "choice",
+      "prompt": "Péter ___ otthon.",
+      "promptEn": "Peter isn't at home.",
+      "options": [
+        "nincs",
+        "nem van",
+        "nem"
+      ],
+      "answer": "nincs",
+      "explain": "Where someone is → nincs."
+    },
+    {
+      "type": "choice",
+      "prompt": "Dániel ___ magyar.",
+      "promptEn": "Daniel isn't Hungarian.",
+      "options": [
+        "nem",
+        "nincs",
+        "nem van"
+      ],
+      "answer": "nem",
+      "explain": "What someone is → just nem."
+    },
+    {
+      "type": "choice",
+      "prompt": "A diákok ___ az iskolában.",
+      "promptEn": "The students aren't at school.",
+      "options": [
+        "nincsenek",
+        "nincs",
+        "nem vannak"
+      ],
+      "answer": "nincsenek"
+    },
+    {
+      "type": "type",
+      "prompt": "I'm not a teacher.",
+      "answer": [
+        "Nem vagyok tanár.",
+        "Nem vagyok tanár"
+      ]
+    }
   ]
 }

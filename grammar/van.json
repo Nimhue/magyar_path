@@ -5,7 +5,7 @@
   "titleEn": "The verb “to be”",
   "level": "A1",
   "lesson": "l04-letige",
-  "summary": "vagyok, vagy, van, vagyunk, vagytok, vannak — and the rule that makes van vanish.",
+  "summary": "vagyok, vagy, van, vagyunk, vagytok, vannak — the rule that makes van vanish, and nem vs nincs.",
   "sections": [
     {
       "type": "text",
@@ -95,6 +95,76 @@
     {
       "type": "tip",
       "text": "You can usually drop the pronoun too, because the verb already shows who: **Mérnök vagyok** is more natural than *Én mérnök vagyok*. Use *én* for contrast: *Én mérnök vagyok, ő tanár.*"
+    },
+    {
+      "type": "heading",
+      "text": "Saying “not”: nem and nincs"
+    },
+    {
+      "type": "table",
+      "head": [
+        "",
+        "Positive",
+        "Negative"
+      ],
+      "rows": [
+        [
+          "én",
+          "vagyok",
+          "**nem vagyok**"
+        ],
+        [
+          "te",
+          "vagy",
+          "**nem vagy**"
+        ],
+        [
+          "Ön, ő",
+          "(van) / —",
+          "**nem …** / **nincs**"
+        ],
+        [
+          "mi",
+          "vagyunk",
+          "**nem vagyunk**"
+        ],
+        [
+          "ti",
+          "vagytok",
+          "**nem vagytok**"
+        ],
+        [
+          "Önök, ők",
+          "(vannak) / —",
+          "**nem …** / **nincsenek**"
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "tone": "warn",
+      "text": "Never say *nem van*. In the 3rd person there are two kinds of “not”:\n**who/what someone is** → just **nem**: *Ő nem tanár.* *Dániel nem magyar.*\n**where someone is / whether something exists** → **nincs** (plural **nincsenek**): *Péter nincs otthon.* *A diákok nincsenek az iskolában.* *Nincs kávé.*"
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "hu": "Nem vagyok magyar, román vagyok.",
+          "en": "I'm not Hungarian, I'm Romanian."
+        },
+        {
+          "hu": "Ön nem tanár?",
+          "en": "Aren't you a teacher? (formal)"
+        },
+        {
+          "hu": "Anna nincs itt.",
+          "en": "Anna isn't here."
+        },
+        {
+          "hu": "Ők nincsenek otthon.",
+          "en": "They aren't at home."
+        }
+      ]
     },
     {
       "type": "text",

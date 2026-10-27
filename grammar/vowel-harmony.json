@@ -99,6 +99,45 @@
       ]
     },
     {
+      "type": "heading",
+      "text": "Two more rules from class"
+    },
+    {
+      "type": "table",
+      "head": [
+        "Word type",
+        "Rule",
+        "Example"
+      ],
+      "rows": [
+        [
+          "Back words",
+          "back endings",
+          "ház → házban"
+        ],
+        [
+          "Front words",
+          "front endings",
+          "kert → kertben"
+        ],
+        [
+          "Mixed words",
+          "usually back endings",
+          "zsiráf → zsiráfban"
+        ],
+        [
+          "Compounds",
+          "ignore the 1st part, use rules 1–3 on the last part",
+          "(Buda)pest → Budapesten, (konyha)szekrény → konyhaszekrényben"
+        ],
+        [
+          "New loan words",
+          "look at the last syllable",
+          "hotel → hotelben"
+        ]
+      ]
+    },
+    {
       "type": "text",
       "text": "Try it: type any Hungarian word and see which family it belongs to."
     },

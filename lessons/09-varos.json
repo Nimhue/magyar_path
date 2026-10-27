@@ -1,0 +1,161 @@
+{
+  "id": "l09-varos",
+  "order": 7,
+  "title": "A városban",
+  "titleEn": "Around town: in the shop, at school",
+  "date": "2026-10-26",
+  "level": "A1",
+  "summary": "Places in town with -ban/-ben, the a→á and e→é rule, compound and loan words in vowel harmony, small talk, feeling ill, and a few new countries.",
+  "place": {
+    "name": "Debrecen",
+    "icon": "church",
+    "fact": "Hungary's second city, with the big yellow Great Church on its main square. Its university, hospital and markets make it a busy student town.",
+    "lon": 21.63,
+    "lat": 47.53
+  },
+  "grammar": [
+    "places-in-town"
+  ],
+  "exercises": [
+    "x09-places",
+    "x09-rules"
+  ],
+  "readings": [],
+  "stories": [],
+  "homework": [
+    "Book p. 19 ex. 4: write an introduction about yourself",
+    "Finish the countries crossword",
+    "Workbook pp. 8–9, ex. 7 and 8"
+  ],
+  "vocab": [
+    {
+      "name": "Helyek · Places in town",
+      "items": [
+        {"hu": "bolt", "en": "shop, store", "ro": "magazin"},
+        {"hu": "virágbolt", "en": "flower shop", "ro": "florărie"},
+        {"hu": "könyvesbolt", "en": "bookshop", "ro": "librărie"},
+        {"hu": "pékség", "en": "bakery", "ro": "brutărie"},
+        {"hu": "pék", "en": "baker", "ro": "brutar"},
+        {"hu": "étterem", "en": "restaurant", "ro": "restaurant"},
+        {"hu": "kórház", "en": "hospital", "ro": "spital"},
+        {"hu": "rendelő", "en": "doctor's office, surgery", "ro": "cabinet medical"},
+        {"hu": "gyógyszertár", "en": "pharmacy", "ro": "farmacie", "note": "Also: patika"},
+        {"hu": "gyógyszer", "en": "medicine", "ro": "medicament"},
+        {"hu": "iroda", "en": "office", "ro": "birou"},
+        {"hu": "iskola", "en": "school", "ro": "școală"},
+        {"hu": "gimnázium", "en": "secondary school, high school", "ro": "liceu", "note": "Not a gym!"},
+        {"hu": "konditerem", "en": "gym", "ro": "sală de forță"},
+        {"hu": "terem", "en": "hall, large room", "ro": "sală"},
+        {"hu": "szoba", "en": "room", "ro": "cameră"},
+        {"hu": "mosdó", "en": "toilet, washroom (in a public place)", "ro": "toaletă (publică)"},
+        {"hu": "fürdőszoba", "en": "bathroom (at home)", "ro": "baie"},
+        {"hu": "könyvtár", "en": "library", "ro": "bibliotecă", "note": "könyv + tár"},
+        {"hu": "könyv", "en": "book", "ro": "carte"},
+        {"hu": "tár", "en": "storage, store", "ro": "depozit, magazie"},
+        {"hu": "épület", "en": "building", "ro": "clădire"},
+        {"hu": "templom", "en": "church", "ro": "biserică"},
+        {"hu": "szentély", "en": "shrine, temple", "ro": "sanctuar, templu"},
+        {"hu": "számítógép", "en": "computer", "ro": "calculator", "note": "számító + gép"},
+        {"hu": "gép", "en": "machine", "ro": "mașină, aparat"},
+        {"hu": "számít", "en": "to calculate; to count, matter", "ro": "a calcula; a conta"},
+        {"hu": "számító", "en": "calculating", "ro": "care calculează"},
+        {"hu": "számol", "en": "to count", "ro": "a număra"},
+        {"hu": "számológép", "en": "calculator", "ro": "calculator de buzunar"},
+        {"hu": "autó", "en": "car", "ro": "mașină"}
+      ]
+    },
+    {
+      "name": "Hol? · In the…",
+      "items": [
+        {"hu": "boltban", "en": "in the shop", "ro": "în magazin"},
+        {"hu": "virágboltban", "en": "in the flower shop", "ro": "în florărie"},
+        {"hu": "pékségben", "en": "in the bakery", "ro": "în brutărie"},
+        {"hu": "étteremben", "en": "in the restaurant", "ro": "în restaurant"},
+        {"hu": "kórházban", "en": "in the hospital", "ro": "în spital"},
+        {"hu": "rendelőben", "en": "at the doctor's office", "ro": "la cabinetul medical"},
+        {"hu": "gyógyszertárban", "en": "in the pharmacy", "ro": "în farmacie"},
+        {"hu": "irodában", "en": "in the office", "ro": "la birou", "note": "iroda → irodá-ban"},
+        {"hu": "iskolában", "en": "at school", "ro": "la școală", "note": "iskola → iskolá-ban"},
+        {"hu": "gimnáziumban", "en": "at secondary school", "ro": "la liceu"},
+        {"hu": "teremben", "en": "in the hall", "ro": "în sală"},
+        {"hu": "szobában", "en": "in the room", "ro": "în cameră", "note": "szoba → szobá-ban"},
+        {"hu": "mosdóban", "en": "in the toilet", "ro": "la toaletă"},
+        {"hu": "könyvtárban", "en": "in the library", "ro": "la bibliotecă"},
+        {"hu": "könyvben", "en": "in the book", "ro": "în carte"},
+        {"hu": "számítógépben", "en": "in the computer", "ro": "în calculator", "note": "Compound: look at gép → -ben"},
+        {"hu": "autóban", "en": "in the car", "ro": "în mașină"},
+        {"hu": "épületben", "en": "in the building", "ro": "în clădire"},
+        {"hu": "templomban", "en": "in the church", "ro": "în biserică"},
+        {"hu": "kertben", "en": "in the garden", "ro": "în grădină"},
+        {"hu": "házban", "en": "in the house", "ro": "în casă"}
+      ]
+    },
+    {
+      "name": "Emberek · People",
+      "items": [
+        {"hu": "pincér", "en": "waiter", "ro": "ospătar, chelner"},
+        {"hu": "eladó", "en": "shop assistant; for sale", "ro": "vânzător; de vânzare"},
+        {"hu": "igazgató", "en": "director, head teacher", "ro": "director"},
+        {"hu": "pap", "en": "priest", "ro": "preot"},
+        {"hu": "orvos", "en": "doctor", "ro": "medic"},
+        {"hu": "beteg", "en": "patient; ill, sick", "ro": "pacient; bolnav"}
+      ]
+    },
+    {
+      "name": "Hogy vagy? · Small talk",
+      "items": [
+        {"hu": "Hogy vagy?", "en": "How are you? (informal)", "ro": "Ce faci? (informal)", "kind": "phrase"},
+        {"hu": "Hogy van?", "en": "How are you? (formal)", "ro": "Ce mai faceți? (formal)", "kind": "phrase"},
+        {"hu": "Köszönöm, jól vagyok.", "en": "I'm fine, thank you.", "ro": "Mulțumesc, sunt bine.", "kind": "phrase"},
+        {"hu": "Jól, köszi.", "en": "Fine, thanks.", "ro": "Bine, mersi.", "kind": "phrase"},
+        {"hu": "És te?", "en": "And you? (informal)", "ro": "Și tu?", "kind": "phrase"},
+        {"hu": "És Ön?", "en": "And you? (formal)", "ro": "Și dumneavoastră?", "kind": "phrase"},
+        {"hu": "Mi a neved?", "en": "What's your name? (informal)", "ro": "Cum te cheamă?", "kind": "phrase"},
+        {"hu": "Mi a neve?", "en": "What's your name? (formal)", "ro": "Cum vă numiți?", "kind": "phrase"},
+        {"hu": "Nagyon örülök!", "en": "Nice to meet you!", "ro": "Încântat(ă)! / Îmi pare bine!", "kind": "phrase"},
+        {"hu": "Nagyon örülök, hogy találkoztunk!", "en": "I'm very happy we met.", "ro": "Mă bucur foarte mult că ne-am cunoscut!", "kind": "phrase"},
+        {"hu": "Én is!", "en": "Me too!", "ro": "Și eu!", "kind": "phrase"},
+        {"hu": "szó", "en": "word", "ro": "cuvânt", "kind": "phrase"},
+        {"hu": "fa", "en": "tree; wood", "ro": "copac; lemn", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Beteg vagyok · Feeling ill",
+      "items": [
+        {"hu": "beteg vagyok", "en": "I'm ill", "ro": "sunt bolnav(ă)", "kind": "phrase"},
+        {"hu": "Megfáztam.", "en": "I've caught a cold.", "ro": "Am răcit.", "kind": "phrase"},
+        {"hu": "megfázik", "en": "to catch a cold", "ro": "a răci", "kind": "phrase"},
+        {"hu": "fázik", "en": "to be cold, to feel cold", "ro": "a-i fi frig", "kind": "phrase"},
+        {"hu": "Fázom.", "en": "I'm cold.", "ro": "Mi-e frig.", "note": "fázik → fázom (an -ik verb)", "kind": "phrase"},
+        {"hu": "Sajnálom.", "en": "I'm sorry (to hear that).", "ro": "Îmi pare rău.", "kind": "phrase"},
+        {"hu": "Jobbulást!", "en": "Get well soon!", "ro": "Însănătoșire grabnică!", "kind": "phrase"},
+        {"hu": "jobb", "en": "better", "ro": "mai bun", "kind": "phrase"},
+        {"hu": "mint", "en": "than; like, as", "ro": "decât; ca", "kind": "phrase"},
+        {"hu": "Jobb vagyok, mint ő.", "en": "I'm better than him/her.", "ro": "Sunt mai bun(ă) decât el/ea.", "kind": "phrase"},
+        {"hu": "Jobban vagyok.", "en": "I'm feeling better.", "ro": "Mă simt mai bine.", "note": "jobb + -an = jobban", "kind": "phrase"}
+      ]
+    },
+    {
+      "name": "Országok · More countries",
+      "items": [
+        {"hu": "Egyesült Királyság", "en": "United Kingdom", "ro": "Regatul Unit"},
+        {"hu": "Anglia", "en": "England", "ro": "Anglia"},
+        {"hu": "Bosznia-Hercegovina", "en": "Bosnia and Herzegovina", "ro": "Bosnia și Herțegovina"},
+        {"hu": "bosnyák", "en": "Bosnian", "ro": "bosniac"},
+        {"hu": "Oroszország", "en": "Russia", "ro": "Rusia"},
+        {"hu": "Olaszország", "en": "Italy", "ro": "Italia"}
+      ]
+    },
+    {
+      "name": "Szabályok · Rules from class",
+      "items": [
+        {"hu": "alma → almát, iskola → iskolába", "en": "A final -a becomes -á before ANY ending", "ro": "-a finală devine -á înaintea oricărei terminații", "kind": "rule"},
+        {"hu": "lecke → leckét, zene → zenében", "en": "A final -e becomes -é before ANY ending", "ro": "-e finală devine -é înaintea oricărei terminații", "kind": "rule"},
+        {"hu": "Budapest → Budapesten", "en": "Compound words: ignore the first part, follow the last one (pest)", "ro": "Cuvinte compuse: contează ultima parte (pest)", "kind": "rule"},
+        {"hu": "konyhaszekrény → konyhaszekrényben", "en": "konyha + szekrény: szekrény is front, so -ben", "ro": "konyha + szekrény: szekrény e „front”, deci -ben", "kind": "rule"},
+        {"hu": "hotel → hotelben", "en": "New loan words: look at the last syllable", "ro": "Împrumuturi noi: contează ultima silabă", "kind": "rule"},
+        {"hu": "Péter KÁVÉT iszik.", "en": "Focus: the important (new) part goes right before the verb: Peter drinks COFFEE (not tea).", "ro": "Focus: partea importantă stă chiar înaintea verbului.", "kind": "rule"}
+      ]
+    }
+  ]
+}

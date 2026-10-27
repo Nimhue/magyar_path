@@ -27,6 +27,7 @@
   "stories": [
     "s04-szomszed"
   ],
+  "date": "2026-10-15",
   "vocab": [
     {
       "name": "A létige · Forms of “to be”",
@@ -42,7 +43,10 @@
         {"hu": "ti vagytok", "en": "you are (informal, several people)", "ro": "voi sunteți", "kind": "phrase"},
         {"hu": "Önök vannak", "en": "you are (formal, several people)", "ro": "dumneavoastră sunteți (plural)", "note": "Also left out with a noun or adjective", "kind": "phrase"},
         {"hu": "ők vannak", "en": "they are", "ro": "ei / ele sunt", "note": "Also left out with a noun or adjective", "kind": "phrase"},
-        {"hu": "András diák. (no van!)", "en": "With he / she / they + a noun or adjective, van is left out", "ro": "cu el / ea / ei + substantiv sau adjectiv, „van” lipsește", "note": "Never “András van diák.” The same goes for Ön and Önök.", "kind": "rule"}
+        {"hu": "András diák. (no van!)", "en": "With he / she / they + a noun or adjective, van is left out", "ro": "cu el / ea / ei + substantiv sau adjectiv, „van” lipsește", "note": "Never “András van diák.” The same goes for Ön and Önök.", "kind": "rule"},
+        {"hu": "nem vagyok", "en": "I am not", "ro": "nu sunt", "kind": "phrase"},
+        {"hu": "nincs", "en": "is not (there), there isn't", "ro": "nu este, nu există", "note": "Péter nincs otthon. But: Ő nem tanár.", "kind": "word"},
+        {"hu": "nincsenek", "en": "are not (there), there aren't", "ro": "nu sunt, nu există", "kind": "word"}
       ]
     },
     {

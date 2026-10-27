@@ -1,0 +1,95 @@
+{
+  "id": "places-in-town",
+  "order": 17,
+  "title": "Hol vagy? A városban",
+  "titleEn": "In town: -ban/-ben and the a→á, e→é rule",
+  "level": "A1",
+  "lesson": "l09-varos",
+  "summary": "Shops, school, hospital: most places in town take -ban/-ben. Final a and e get longer, and compounds follow their last part.",
+  "sections": [
+    {
+      "type": "text",
+      "text": "For most buildings and rooms, *in* is **-ban** (back and most mixed words) or **-ben** (front words). The same vowel harmony you already know decides which."
+    },
+    {
+      "type": "table",
+      "caption": "From class",
+      "head": [
+        "Back / mixed: -ban",
+        "Front: -ben"
+      ],
+      "rows": [
+        [
+          "boltban, kórházban, házban, autóban",
+          "kertben, étteremben, teremben"
+        ],
+        [
+          "irodában, iskolában, szobában",
+          "épületben, pékségben, rendelőben"
+        ],
+        [
+          "mosdóban, templomban, gimnáziumban",
+          "könyvben, templomkertben (compound: kert)"
+        ],
+        [
+          "könyvtárban, gyógyszertárban, virágboltban",
+          "számítógépben (compound: gép)"
+        ]
+      ]
+    },
+    {
+      "type": "tip",
+      "tone": "warn",
+      "text": "**Final a → á, final e → é** before ANY ending, not just -ban/-ben: alma → alm**á**t, iskola → iskol**á**ba, iroda → irod**á**ban; lecke → leck**é**t, zene → zen**é**ben."
+    },
+    {
+      "type": "heading",
+      "text": "Compound words"
+    },
+    {
+      "type": "text",
+      "text": "A compound is two words glued together. **Ignore the first part** and apply vowel harmony to the **last** one: (Buda)**pest** → Budapest**en**, (konyha)**szekrény** → konyhaszekrény**ben**, (számító)**gép** → számítógép**ben**, (könyv)**tár** → könyvtár**ban**."
+    },
+    {
+      "type": "heading",
+      "text": "A few places use **-n / -on / -en / -ön** (“on”) instead of -ban/-ben. Learn them one by one: a post**á**n (at the post office), a piac**on** (at the market), az egyetem**en** (at university), a pályaudvar**on** (at the railway station)."
+    },
+    {
+      "type": "text",
+      "text": "For new international words, look at the **last syllable**: hot**el** → hotel**ben**, fot**el** → fotel**ben**, but tax**i** → taxi**ban**, kávé → kávé**ban**."
+    },
+    {
+      "type": "tip",
+      "text": "A few places use **-n / -on / -en / -ön** (\"on\") instead of -ban/-ben. Learn them as you meet them: a posta**n**? no: a post**á**n (post office), a piac**on** (market), az egyetem**en** (university), a pályaudvar**on** (railway station)."
+    },
+    {
+      "type": "examples",
+      "items": [
+        {
+          "hu": "Anna a könyvtárban tanul.",
+          "en": "Anna studies in the library."
+        },
+        {
+          "hu": "Az orvos a kórházban dolgozik.",
+          "en": "The doctor works in the hospital."
+        },
+        {
+          "hu": "A pincér az étteremben van.",
+          "en": "The waiter is in the restaurant."
+        },
+        {
+          "hu": "Hol vagy? — A pékségben vagyok.",
+          "en": "Where are you? — I'm at the bakery."
+        },
+        {
+          "hu": "Péter nincs otthon, az irodában van.",
+          "en": "Peter isn't at home, he's at the office."
+        }
+      ]
+    },
+    {
+      "type": "widget",
+      "widget": "location"
+    }
+  ]
+}
