@@ -32,6 +32,18 @@ export function VocabPage({ args }: { args: string[] }) {
         <span className="cta-title">{due ? `${due} card${due > 1 ? "s" : ""} are due` : "Nothing due right now"}</span>
         <Icon name="back" />
       </a>
+      <a className="drops-cta" href={href("drops")}>
+        <span className="dc-drops" aria-hidden="true">
+          <i />
+          <i />
+          <i />
+        </span>
+        <span className="dc-body">
+          <span className="cta-kicker">Cseppek · Drops</span>
+          <strong>5 minutes of pictures, taps and spelling</strong>
+        </span>
+        <Icon name="next" />
+      </a>
       <a className="cta mine-cta" href={href("vocab/mine")}>
         <span className="cta-kicker">Saját szavaim · My words</span>
         <span className="cta-title">

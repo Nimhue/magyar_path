@@ -28,6 +28,26 @@ export interface MyWord {
   removed?: boolean;
 }
 
+/** A moment saved from a cartoon (clip) or a line written down from a show (line). */
+export interface MyScene {
+  kind: "clip" | "line";
+  /** clip: the tale and video it comes from */
+  tale?: string;
+  video?: string;
+  start?: number;
+  end?: number;
+  /** line: where it's from, e.g. "Friends S02E05" */
+  show?: string;
+  /** the original (e.g. English) line, for shows */
+  original?: string;
+  hu: string;
+  en: string;
+  ro?: string;
+  note?: string;
+  at: number;
+  removed?: boolean;
+}
+
 export interface Settings {
   theme: "system" | "light" | "dark";
   palette: string;
@@ -67,6 +87,12 @@ export interface Progress {
   stamps: Record<string, string>;
   /** "My words" flashcard deck, keyed by the Hungarian word */
   myWords: Record<string, MyWord>;
+  /** Mesék: best quiz score per tale and whether it was watched */
+  tales: Record<string, { best: number; watched: boolean }>;
+  /** My scenes, keyed by a random id */
+  myScenes: Record<string, MyScene>;
+  /** Cseppek (Drops-style) level per card id: 1–3 learning, 4 learned */
+  drops: Record<string, number>;
   teacher: boolean;
   settings: Settings;
   /** last local change (epoch ms) */
@@ -104,6 +130,9 @@ function fresh(): Progress {
     trophies: {},
     stamps: {},
     myWords: {},
+    tales: {},
+    myScenes: {},
+    drops: {},
     teacher: false,
     settings: { theme: "system", palette: "barack", direction: "hu", name: "", showRo: true, sound: true, outfit: "auto", mascot: "cirmi", voice: "" },
     updatedAt: 0,

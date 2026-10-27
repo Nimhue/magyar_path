@@ -29,16 +29,18 @@ import { DevicesPage } from "./pages/Devices";
 import { CulturePage } from "./pages/Culture";
 import { PlacePage } from "./pages/Place";
 import { NumbersPage } from "./pages/Numbers";
+import { TalePage } from "./pages/Tales";
+import { DropsPage } from "./pages/Drops";
 
 const NAV = [
   { id: "", label: "Path", icon: "home", match: ["", "lesson"] },
-  { id: "vocab", label: "Vocab", icon: "cards", match: ["vocab"] },
+  { id: "vocab", label: "Vocab", icon: "cards", match: ["vocab", "drops"] },
   { id: "dict", label: "Szótár", icon: "globe", match: ["dict"] },
   { id: "practice", label: "Practice", icon: "game", match: ["practice", "quiz", "drills", "play", "numbers"] },
   { id: "grammar", label: "Grammar", icon: "book", match: ["grammar"] },
   { id: "read", label: "Read", icon: "read", match: ["read", "story"] },
   { id: "notes", label: "Notes", icon: "notes", match: ["notes"] },
-  { id: "kultura", label: "Kultúra", icon: "compass", match: ["kultura", "discover"] },
+  { id: "kultura", label: "Kultúra", icon: "compass", match: ["kultura", "discover", "mese"] },
 ];
 
 function useTheme(palette: string, mode: "system" | "light" | "dark") {
@@ -156,6 +158,12 @@ export function App() {
       break;
     case "discover":
       page = <PlacePage id={route[1]} />;
+      break;
+    case "drops":
+      page = <DropsPage topic={route[1]} />;
+      break;
+    case "mese":
+      page = <TalePage id={route[1]} />;
       break;
     case "numbers":
       page = <NumbersPage mode={route[1]} />;

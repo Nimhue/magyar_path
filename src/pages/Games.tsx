@@ -12,6 +12,7 @@ import { canSpeak, hasHungarianVoice, speak } from "../lib/speech";
 import { addXp, bump, getState, update, useProgress } from "../lib/store";
 import { classify } from "./Grammar";
 import { distractors, practicePool, useCombo } from "./Quiz";
+import { EkezetGame, HolGame, MORE_GAMES, TegezGame, ValaszGame, VanGame } from "./Games2";
 
 export const GAMES = [
   { id: "memory", title: "Memória", titleEn: "Memory pairs", desc: "Flip cards to find Hungarian–English pairs.", tone: "purple" },
@@ -20,6 +21,7 @@ export const GAMES = [
   { id: "petals", title: "Szirmok", titleEn: "Petals (hangman)", desc: "Guess the word letter by letter before the flower loses its petals.", tone: "pink" },
   { id: "harmony", title: "Mély vagy magas?", titleEn: "Vowel harmony sort", desc: "Sort words into back, front and mixed as fast as you can.", tone: "paprika" },
   { id: "bingo", title: "Hallás-bingó", titleEn: "Listening bingo", desc: "Hear a word, find it on your card, get three in a row.", tone: "teal" },
+  ...MORE_GAMES,
 ] as const;
 
 function recordGame(id: string, score: number, xp: number) {
@@ -58,6 +60,16 @@ export function GamesPage({ args }: { args: string[] }) {
       return <HarmonySort />;
     case "bingo":
       return <Bingo />;
+    case "hol":
+      return <HolGame />;
+    case "vangep":
+      return <VanGame />;
+    case "valasz":
+      return <ValaszGame />;
+    case "ekezet":
+      return <EkezetGame />;
+    case "tegez":
+      return <TegezGame />;
   }
   return <GameGrid />;
 }

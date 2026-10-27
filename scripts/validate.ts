@@ -18,6 +18,7 @@ import {
   TwistersSchema,
   SongsSchema,
   RecipesSchema,
+  TaleSchema,
 } from "../src/content/schema";
 
 const root = join(import.meta.dirname, "..", "content");
@@ -54,6 +55,7 @@ const readings = load("readings", ReadingSchema);
 const dictionary = load("dictionary", DictionarySchema);
 const stories = load("stories", StorySchema);
 const discover = load("discover", DiscoverSchema);
+const tales = load("tales", TaleSchema);
 function one<T extends z.ZodTypeAny>(file: string, schema: T) {
   try {
     const res = schema.safeParse(JSON.parse(readFileSync(join(root, "culture", file), "utf8")));
@@ -81,7 +83,12 @@ const exerciseIds = uniqueIds(exercises, "exercise");
 const readingIds = uniqueIds(readings, "reading");
 uniqueIds(dictionary, "dictionary");
 const storyIds = uniqueIds(stories, "story");
-uniqueIds(discover, "discover place");
+const placeIds = uniqueIds(discover, "discover place");
+uniqueIds(tales, "tale");
+for (const { file, data } of tales) {
+  if (data.place && !placeIds.has(data.place)) problems.push(`${file}: unknown Discover place "${data.place}"`);
+  data.questions.forEach((q, i) => q.options.includes(q.answer) || problems.push(`${file} → questions.${i}: answer not in options`));
+}
 for (const { file, data } of discover)
   data.questions.forEach((q, i) => q.options.includes(q.answer) || problems.push(`${file} → questions.${i}: answer not in options`));
 for (const { file, data } of stories)
@@ -152,5 +159,5 @@ if (problems.length) {
   process.exit(1);
 }
 console.log(
-  `✓ Content OK: ${lessons.length} lessons, ${grammar.length} grammar topics, ${exercises.length} drill sets, ${readings.length} readings, ${dictionary.length} dictionary categories, ${stories.length} stories, ${discover.length} Discover places`
+  `✓ Content OK: ${lessons.length} lessons, ${grammar.length} grammar topics, ${exercises.length} drill sets, ${readings.length} readings, ${dictionary.length} dictionary categories, ${stories.length} stories, ${discover.length} Discover places, ${tales.length} tales`
 );

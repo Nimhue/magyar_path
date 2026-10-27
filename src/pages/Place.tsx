@@ -1,6 +1,6 @@
 /** One Discover Hungary place: the story, fun facts, words and a three-question passport check. */
 import { useEffect, useMemo, useState } from "react";
-import { placeById, places } from "../content";
+import { placeById, places, tales } from "../content";
 import type { DiscoverPlace } from "../content/schema";
 import { SaveWord, TapText, Trans, placeGlossary } from "../components/CultureBits";
 import { MascotSays } from "../components/Mascot";
@@ -91,6 +91,18 @@ function PlaceView({ pl }: { pl: DiscoverPlace }) {
           ))}
         </ol>
       </section>
+
+      {tales
+        .filter((t) => t.place === pl.id)
+        .map((t) => (
+          <a key={t.id} className="cta tale-link" href={href(`mese/${t.id}`)}>
+            <span className="cta-kicker">Watch the cartoon · Magyar népmesék</span>
+            <span className="cta-title" lang="hu">
+              {t.title}
+            </span>
+            <Icon name="play" />
+          </a>
+        ))}
 
       {pl.facts.length > 0 && (
         <section className="stack">

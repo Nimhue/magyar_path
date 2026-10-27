@@ -40,6 +40,7 @@ content/
   dictionary/        themed word collections (food, travel, holidays…), always open
   discover/          one file per place on the Discover Hungary map
   culture/           proverbs, tongue twisters, songs and recipes (one file each)
+  tales/             Magyar népmesék episodes (YouTube embeds + easy retelling + quiz)
 ```
 
 1. Copy an existing lesson file, e.g. `content/lessons/03-orana.json` → `05-something.json`.
@@ -118,6 +119,26 @@ A story is a set of `nodes`, starting at `start`. Each node has the Hungarian `t
 
 `content/culture/proverbs.json`, `tongue-twisters.json`, `songs.json` and `recipes.json` each hold an `items` list; copy an existing item to add one. Only add songs that are traditional or out of copyright.
 
+### Mesék (cartoon tales)
+
+`content/tales/NN-id.json` adds an episode of *Magyar népmesék*:
+
+```json
+{
+  "id": "so", "order": 1, "title": "A só", "titleEn": "The Salt Princess", "titleRo": "Sarea",
+  "episode": "S01E01", "level": 1,
+  "video": { "hu": "2N4BvZJjk2Q", "huTitle": "Magyar népmesék: A só", "en": "FVGT3Syc31Q", "enTitle": "The Salt Princess" },
+  "place": "sosto",
+  "summary": [{ "hu": "…", "en": "…", "ro": "…" }],
+  "words": [{ "hu": "só", "en": "salt", "ro": "sare" }],
+  "questions": [{ "q": "…", "qEn": "…", "options": ["…"], "answer": "…" }]
+}
+```
+
+`hu` and `en` are YouTube video ids (the part after `watch?v=`) from the official channels: **Kecskemetfilm Kids** (Hungarian) and **Hungarian Folk Tales** (English dub). Only use official uploads. When a video loads, the app compares its real title and channel with `huTitle` / `enTitle` and shows a warning if a link now points somewhere else. `place` links the tale to a Discover pin.
+
+**My scenes** (Kultúra → Jelenetek) are saved per learner: moments saved while watching a tale (they replay from that point) and lines written down from any show watched with Hungarian audio. Both can go straight into the My words flashcards.
+
 ### Survival pack
 
 A story with `"pack": "survival"` and no `lesson` is always open and shows under Practice → Survival pack. Nodes and choices can carry `textRo` next to `textEn`.
@@ -132,7 +153,9 @@ Each lesson's `place` is a stop on the trail. Add `"icon"` (`parliament`, `palac
 
 ## Games and rewards
 
-- **Mini-games:** memory pairs, word rain, sentence builder, petals (hangman), vowel harmony sort, listening bingo. They use words from unlocked lessons plus dictionary words you've learned.
+- **Mini-games:** memory pairs, word rain, sentence builder, petals (hangman), vowel harmony sort, listening bingo, *Hol van Cirmi?* (place endings), *Van-gép* (to be, nem / nincs), *Gyors válasz* (quick replies), *Ékezetvadász* (accent pairs), *Te vagy Ön?* (informal vs formal).
+- **Cseppek (Drops-style):** 2, 5 or 10-minute picture sessions per topic. Each word climbs 4 levels (meet, pick, hear, spell); learned words join the flashcard reviews.
+- **Numbers to egybillió (10¹²):** listen, write, build from tiles, big-number facts, prices, years, time, and the 10-rung *Számlétra* ladder. They use words from unlocked lessons plus dictionary words you've learned.
 - **Boss challenge** per lesson: 15 mixed questions, 3 hearts; winning puts a crown on the path.
 - **Combos:** 5 in a row doubles XP, 10 in a row triples it.
 - **Daily quests** (3 a day), **27 trophies**, **levels**, **streaks**, a weekly XP chart, and **Bodza's wardrobe**: outfits unlock with levels, streaks and seasons.
@@ -142,6 +165,7 @@ Each lesson's `place` is a stop on the trail. Add `"icon"` (`parliament`, `palac
 
 - **Discover Hungary:** a map with 26 places and 9 filters. Each place has a short story in easy Hungarian with English and Romanian, fun facts, words you can add to *My words*, and a passport stamp.
 - **Sayings** (proverbs and idioms with their Romanian twins), **tongue twisters**, **folk songs and nursery rhymes**, **recipes**.
+- **Mesék:** 22 episodes of the classic *Magyar népmesék* cartoon, embedded from the official channels: read an easy retelling, watch in Hungarian (tick off the words you hear), check with the official English dub, take a 3-question quiz. **My scenes** keeps moments and show lines as flashcards.
 - **Word and fact of the day** sit at the end of the Path page.
 - Under Practice: the **numbers trainer** (listening, writing, prices, years, the time) and the **survival pack** (ticket office, pharmacy, doctor, restaurant, post office).
 

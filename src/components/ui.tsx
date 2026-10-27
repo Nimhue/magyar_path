@@ -168,6 +168,7 @@ export function Icon({ name, size = 20, title }: { name: keyof typeof paths | st
   return (
     <svg
       className="icon"
+      data-icon={name}
       width={size}
       height={size}
       viewBox="0 0 24 24"

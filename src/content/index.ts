@@ -15,6 +15,8 @@ import {
   TwistersSchema,
   SongsSchema,
   RecipesSchema,
+  TaleSchema,
+  type Tale,
   type DiscoverPlace,
   type DictCategory,
   type ExerciseSet,
@@ -36,6 +38,7 @@ const exerciseFiles = import.meta.glob("../../content/exercises/*.json", { eager
 const readingFiles = import.meta.glob("../../content/readings/*.json", { eager: true, import: "default" });
 const storyFiles = import.meta.glob("../../content/stories/*.json", { eager: true, import: "default" });
 const dictFiles = import.meta.glob("../../content/dictionary/*.json", { eager: true, import: "default" });
+const taleFiles = import.meta.glob("../../content/tales/*.json", { eager: true, import: "default" });
 const discoverFiles = import.meta.glob("../../content/discover/*.json", { eager: true, import: "default" });
 
 export const config = ConfigSchema.parse(rawConfig);
@@ -62,6 +65,10 @@ export const places: DiscoverPlace[] = Object.values(discoverFiles)
   .map((f) => DiscoverSchema.parse(f))
   .sort((a, b) => a.name.localeCompare(b.name, "hu"));
 export const placeById = byId(places);
+export const tales: Tale[] = Object.values(taleFiles)
+  .map((f) => TaleSchema.parse(f))
+  .sort((a, b) => a.order - b.order);
+export const taleById = byId(tales);
 export const proverbs = ProverbsSchema.parse(rawProverbs).items;
 export const twisters = TwistersSchema.parse(rawTwisters).items;
 export const songs = SongsSchema.parse(rawSongs).items;

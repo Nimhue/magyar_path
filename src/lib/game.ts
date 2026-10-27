@@ -86,7 +86,7 @@ export const TROPHIES: Trophy[] = [
   { id: "boss-perfect", titleHu: "Sértetlen", title: "Untouched", desc: "Win a boss challenge with all 3 hearts", test: (p) => Object.values(p.boss).some((b) => b.bestHearts === 3) },
   { id: "story", titleHu: "Mesélő", title: "Storyteller", desc: "Get a great ending in a story", test: (p) => Object.values(p.stories).includes("great") },
   { id: "stories5", titleHu: "Kalandor", title: "Adventurer", desc: "Finish 5 stories", test: (p) => Object.keys(p.stories).length >= 5 },
-  { id: "gamer", titleHu: "Játékos", title: "Player", desc: "Try every mini-game", test: (p) => Object.keys(p.games).length >= 6 },
+  { id: "gamer", titleHu: "Játékos", title: "Player", desc: "Play 6 different games", test: (p) => Object.keys(p.games).length >= 6 },
   { id: "dict", titleHu: "Felfedező", title: "Explorer", desc: "Learn words from 5 dictionary categories", test: (p) => dictionaryCats.filter((c) => cardsByDict[c.id].some((x) => (p.cards[x.id]?.reps ?? 0) > 0)).length >= 5 },
   { id: "dict100", titleHu: "Szótárfaló", title: "Dictionary devourer", desc: "Learn 100 dictionary words", test: (p) => dictLearned(p) >= 100 },
   { id: "night", titleHu: "Éjjeli bagoly", title: "Night owl", desc: "Study after 10 pm", test: (p) => !!p.flags.nightOwl },

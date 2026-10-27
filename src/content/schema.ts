@@ -286,6 +286,35 @@ export const RecipesSchema = z.object({
   ),
 });
 
+const ytId = z.string().regex(/^[A-Za-z0-9_-]{11}$/, "a YouTube video id is 11 characters");
+
+/** A Magyar népmesék episode, embedded from the official YouTube channels (content/tales). */
+export const TaleSchema = z.object({
+  id,
+  order: z.number(),
+  title: z.string(),
+  titleEn: z.string(),
+  titleRo: z.string(),
+  episode: z.string().optional(),
+  level: z.number().int().min(1).max(3),
+  video: z.object({
+    /** Hungarian original */
+    hu: ytId,
+    /** the YouTube title it should have; used to warn if a link starts pointing elsewhere */
+    huTitle: z.string(),
+    /** official English dub, if there is one */
+    en: ytId.optional(),
+    enTitle: z.string().optional(),
+  }),
+  /** Discover place this tale belongs to */
+  place: id.optional(),
+  summary: z.array(Tri).min(2),
+  words: z.array(Tri).default([]),
+  questions: z
+    .array(z.object({ q: z.string(), qEn: z.string().optional(), options: z.array(z.string()).min(2), answer: z.string() }))
+    .default([]),
+});
+
 export const ConfigSchema = z.object({
   appName: z.string(),
   /** quiz score (%) needed to finish a lesson */
@@ -314,4 +343,5 @@ export type Proverb = z.infer<typeof ProverbsSchema>["items"][number];
 export type Twister = z.infer<typeof TwistersSchema>["items"][number];
 export type Song = z.infer<typeof SongsSchema>["items"][number];
 export type Recipe = z.infer<typeof RecipesSchema>["items"][number];
+export type Tale = z.infer<typeof TaleSchema>;
 export type Config = z.infer<typeof ConfigSchema>;

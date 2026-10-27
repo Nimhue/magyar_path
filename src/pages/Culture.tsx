@@ -12,9 +12,12 @@ import { go, href } from "../lib/router";
 import { sfx } from "../lib/sound";
 import { canSpeak, speak } from "../lib/speech";
 import { addXp, bump, update, useProgress } from "../lib/store";
+import { MyScenesTab, TalesTab } from "./Tales";
 
 const TABS = [
   { id: "map", hu: "Térkép", en: "Map", icon: "map" },
+  { id: "mesek", hu: "Mesék", en: "Cartoons", icon: "play" },
+  { id: "jelenetek", hu: "Jelenetek", en: "My scenes", icon: "clock" },
   { id: "proverbs", hu: "Mondások", en: "Sayings", icon: "chat" },
   { id: "twisters", hu: "Nyelvtörők", en: "Tongue twisters", icon: "sparkle" },
   { id: "songs", hu: "Dalok", en: "Songs", icon: "note" },
@@ -37,6 +40,8 @@ export function CulturePage({ args }: { args: string[] }) {
         ))}
       </div>
       {tab === "map" && <MapTab />}
+      {tab === "mesek" && <TalesTab />}
+      {tab === "jelenetek" && <MyScenesTab />}
       {tab === "proverbs" && <ProverbsTab />}
       {tab === "twisters" && <TwistersTab />}
       {tab === "songs" && <SongsTab />}
